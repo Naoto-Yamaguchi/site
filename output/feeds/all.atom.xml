@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-02-24T00:00:00+09:00</updated><entry><title>最初の投稿</title><link href="https://naoto-yamaguchi.github.io/site/zui-chu-notou-gao.html" rel="alternate"></link><published>2019-02-24T00:00:00+09:00</published><updated>2019-02-24T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-24:/site/zui-chu-notou-gao.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;## 最初の投稿です。
+
+Hello **world!**. My name is *SAIRA* from Japan.
+
+### 表を挿入
+
+|テスト1|テスト2|テスト3|
+|---|---|---|
+|テスト|テスト|テスト|
+
+### シンタックスハイライト
+```python
+print(&amp;#39;hello world!&amp;#39;)
+```
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;数式を書いてみる&lt;/h1&gt;
+&lt;p&gt;$$ \alpha_t(i) = P(O_1, O_2, \cdots O_t, q_t= S_i \lambda) $$&lt;/p&gt;</summary><content type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;## 最初の投稿です。
+
+Hello **world!**. My name is *SAIRA* from Japan.
+
+### 表を挿入
+
+|テスト1|テスト2|テスト3|
+|---|---|---|
+|テスト|テスト|テスト|
+
+### シンタックスハイライト
+```python
+print(&amp;#39;hello world!&amp;#39;)
+```
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;数式を書いてみる&lt;/h1&gt;
+&lt;p&gt;$$ \alpha_t(i) = P(O_1, O_2, \cdots O_t, q_t= S_i \lambda) $$&lt;/p&gt;</content></entry></feed>
