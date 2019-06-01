@@ -1,0 +1,524 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="nafoto'z_blog Atom">
+
+
+
+
+
+<meta name="author" content="Naoto Yamaguchi" />
+<meta name="description" content="動機 システム生物学の授業が書くことになったきっかけです。 hatenablog に書いたところ数式を上手く表示できず書き途中であったため、こちらで書きました。hatenablog の方に、意外とアクセスがあったので、折角訪問してくださった方にちゃんと見ていただきたいと思いました。hatenablog の方は放置していてひどいです。こちらのサイトも見た目等変なところが多いですがご容赦下さい。そのうち直します。 参考 実装は、以下のサイトを参考にしました https://ipython-books.github.io/124-simulating-a-partial-differential-equation-reaction-diffusion-systems-and-turing-patterns/ チューリングパターンとは？ 誤解を恐れずに言えば、こういう模様(=波)のことです。 こういう模様、パターンのことをチューリングパターンと言います。チューリング波、反応拡散波という言い方もあります。 そして重要なのは、以下の 2 点 このパターンはある条件を満たす化学反応システムが自発的に生み出す周期的なものであるということ 模様(=波)の仕組みは、反応拡散方程式で数学的に表せる！！ ということ この模様は、生物によく見られるものであり、一部の生物では、確かに反応拡散系によってこの模様が作られている！！ ということ 遺伝子だけで決まる訳ではない point①&amp;③ これは化学反応によって自発的に起こるパターンで、生物にも見られる …" />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="nafoto'z_blog"/>
+<meta property="og:title" content="チューリングパターンとは"/>
+<meta property="og:description" content="動機 システム生物学の授業が書くことになったきっかけです。 hatenablog に書いたところ数式を上手く表示できず書き途中であったため、こちらで書きました。hatenablog の方に、意外とアクセスがあったので、折角訪問してくださった方にちゃんと見ていただきたいと思いました。hatenablog の方は放置していてひどいです。こちらのサイトも見た目等変なところが多いですがご容赦下さい。そのうち直します。 参考 実装は、以下のサイトを参考にしました https://ipython-books.github.io/124-simulating-a-partial-differential-equation-reaction-diffusion-systems-and-turing-patterns/ チューリングパターンとは？ 誤解を恐れずに言えば、こういう模様(=波)のことです。 こういう模様、パターンのことをチューリングパターンと言います。チューリング波、反応拡散波という言い方もあります。 そして重要なのは、以下の 2 点 このパターンはある条件を満たす化学反応システムが自発的に生み出す周期的なものであるということ 模様(=波)の仕組みは、反応拡散方程式で数学的に表せる！！ ということ この模様は、生物によく見られるものであり、一部の生物では、確かに反応拡散系によってこの模様が作られている！！ ということ 遺伝子だけで決まる訳ではない point①&amp;③ これは化学反応によって自発的に起こるパターンで、生物にも見られる …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://naoto-yamaguchi.github.io/site/chiyuringupatantoha.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2019-04-04 00:00:00+09:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://naoto-yamaguchi.github.io/site/author/naoto-yamaguchi.html">
+<meta property="article:section" content="misc"/>
+<meta property="og:image" content="">
+
+  <title>nafoto'z_blog &ndash; チューリングパターンとは</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://naoto-yamaguchi.github.io/site">
+        <img src="https://naoto-yamaguchi.github.io/site/theme/img/profile.png" alt="" title="">
+      </a>
+      <h1><a href="https://naoto-yamaguchi.github.io/site"></a></h1>
+
+
+      <nav>
+        <ul class="list">
+
+          <li><a href="" target="_blank">Home</a></li>
+          <li><a href="http://twitter.com/nafoto_z" target="_blank">Twitter</a></li>
+          <li><a href="http://tatekaetaro.work/" target="_blank">立替たろう</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-You can add links in your config file" href="#" target="_blank"><i class="fa fa-You can add links in your config file"></i></a></li>
+        <li><a class="sc-Another social link" href="#" target="_blank"><i class="fa fa-Another social link"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="chiyuringupatantoha">チューリングパターンとは</h1>
+    <p>
+          Posted on 木 04 4月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/misc.html">misc</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <h2>動機</h2>
+<p>システム生物学の授業が書くことになったきっかけです。
+<a href="https://nafoto-z.hatenablog.com/entry/2018/12/07/184450">hatenablog</a> に書いたところ数式を上手く表示できず書き途中であったため、こちらで書きました。<a href="https://nafoto-z.hatenablog.com/entry/2018/12/07/184450">hatenablog</a> の方に、意外とアクセスがあったので、折角訪問してくださった方にちゃんと見ていただきたいと思いました。<a href="https://nafoto-z.hatenablog.com/entry/2018/12/07/184450">hatenablog</a> の方は放置していてひどいです。こちらのサイトも見た目等変なところが多いですがご容赦下さい。そのうち直します。</p>
+<h2>参考</h2>
+<p>実装は、以下のサイトを参考にしました https://ipython-books.github.io/124-simulating-a-partial-differential-equation-reaction-diffusion-systems-and-turing-patterns/</p>
+<h2>チューリングパターンとは？</h2>
+<p>誤解を恐れずに言えば、こういう模様(=波)のことです。
+<img alt="" src="https://paper-attachments.dropbox.com/s_FC172B40024B510FC7C44978CC0D4E41A14218694B499746443C68DDD9C8FBD5_1559322871809_pattern.png"></p>
+<p>こういう模様、パターンのことをチューリングパターンと言います。チューリング波、反応拡散波という言い方もあります。</p>
+<p>そして重要なのは、以下の 2 点</p>
+<ol>
+<li>このパターンはある条件を満たす化学反応システムが自発的に生み出す周期的なものであるということ</li>
+<li>模様(=波)の仕組みは、反応拡散方程式で数学的に表せる！！ ということ</li>
+<li>この模様は、生物によく見られるものであり、一部の生物では、確かに反応拡散系によってこの模様が作られている！！ ということ</li>
+</ol>
+<p>遺伝子だけで決まる訳ではない</p>
+<h2>point①&amp;③</h2>
+<p>これは化学反応によって自発的に起こるパターンで、生物にも見られる！！
+※ 画像はイメージです。<br>
+こちらからお借りしました。<a href="https://qiita.com/kanaya-tamihiro/items/a735c6f4ee8e914c5fc1">チューリング波（反応拡散波）を理解したい</a></p>
+<table>
+<thead>
+<tr>
+<th>実際の生き物に見られる模様のパターン</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="" src="https://camo.qiitausercontent.com/1a3cfcbed9f5b9bc17f758fdae845504c6c5928a/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3134313530332f66393132613633342d626366372d613566332d336638362d3534623337306238363565392e6a706567"></td>
+<td><img alt="" src="https://camo.qiitausercontent.com/f88df298db147f7519209a0f4655e2c394396ddf/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3134313530332f36326262353162312d306265302d353530632d616236352d3563666139643031316535372e6a706567"></td>
+</tr>
+<tr>
+<td><img alt="" src="https://camo.qiitausercontent.com/58b0457b75d51790ad0c73dc752d27a2434d6a97/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3134313530332f35636465656163632d366132362d343566612d636264332d3539316561316264373238612e6a706567"></td>
+<td><img alt="" src="https://camo.qiitausercontent.com/87cd36dbb384891ce7aec5d6cabdb233c017a02c/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3134313530332f39343164613733622d646230382d313230332d346339362d3737373736336661326165362e6a706567"></td>
+</tr>
+</tbody>
+</table>
+<p>ことの始まりは、イギリスの数学者アランチューリングが 1952 年に発表した論文で、「生物の模様は波によって作られる」という仮説。です</p>
+<blockquote>
+<p>生物の体の表面では化学反応が起きており、反応を活性化する因子と抑制する因子の広がる速さが異なることで「波」が生じ、模様が作られる</p>
+</blockquote>
+<p>https://www.jst.go.jp/pr/jst-news/pdf/2015/2015_04_p08.pdf
+という考え方。</p>
+<blockquote>
+<p>1952 年に、イギリスの代表的な数学者でコンピュータ科学の生みの親でもあるアラン・チューリングが、「2 つの仮想的な化学物質が、ある条件を満たして互いの合成をコントロールしあうとき、その物質の濃度分布は均一にならず、濃い部分と薄い部分が、空間に繰り返しパターン（反応拡散波）を作って安定する」ことを、数学的に証明した。1970 年代に数人の数学者がチューリングの方程式を 2 次元でシミュレーションしたところ（チューリングの時代はコンピュータがなかった）、方程式の定数（仮想的な化学物質の性質）を少し変えるだけで、シマウマのストライプ模様もキリンの網目模様も、豹の斑点模様も作り出せることを発見した。</p>
+</blockquote>
+<p>https://www.brh.co.jp/seimeishi/journal/011/to_1.html
+天才か...</p>
+<p>簡単に例えてみると...
+2 つの赤い物質(A)と青い物質(B)があって、この 2 つの関係が、</p>
+<ol>
+<li>赤い物質が増えると、自分(赤い物質)をより増やすようになる（=赤が自分を「促進」）</li>
+<li>赤い物質が増えると、青い物質を増やすようになる(=赤が青を「促進」)</li>
+<li>逆に青い物質が増えると、赤い物質を減らすようになる(=青が赤を「抑制」)
+ <img alt="" src="https://paper-attachments.dropbox.com/s_FC172B40024B510FC7C44978CC0D4E41A14218694B499746443C68DDD9C8FBD5_1559323168009_spread.png"></li>
+</ol>
+<p>ような関係で、
+4. 赤い物質より青い物質の方が周りに広がりやすい
+<img alt="" src="https://paper-attachments.dropbox.com/s_FC172B40024B510FC7C44978CC0D4E41A14218694B499746443C68DDD9C8FBD5_1559323178474_reaction.png"></p>
+<p>とき、ランダムに赤青がある状態からスタートして、ある程度時間が経つと、安定した赤青模様のパターンができる！ということである。
+<img alt="" src="https://paper-attachments.dropbox.com/s_FC172B40024B510FC7C44978CC0D4E41A14218694B499746443C68DDD9C8FBD5_1559323190004_pattern.png"></p>
+<p>上記のように初期状態やパラメーターによって色々な模様ができます。</p>
+<p>白黒でも良いですが、画像に合わせて赤青にしました。</p>
+<p>この関係は、食物連鎖の一部に例えてみるとわかりやすいでしょう全然現実世界に沿っていないとは思いますが...</p>
+<ol>
+<li>ネズミが増えるとネズミたちは、協力して生活するようになり、どんどんその数を増やしていきます(ネズミが自分たちの増加を「促進」)</li>
+<li>ネズミが増えると、ネズミを食べる猫たちは沢山食料を得られるので、猫たちの数も増えていきます(ネズミが猫の増加を「促進」) 3.　猫が増えると、ネズミは今まで以上に食べられてしまうので、数を減らしてしまいます。(猫の増加がネズミの増加を「抑制」)</li>
+</ol>
+<p>このような関係のイメージです。</p>
+<h2>ポイント 2 ~模様の仕組みは数学的に表せる！~</h2>
+<p>この 1~4 の関係を数学的に表すと、一例として、</p>
+<div class="math">$$ \frac{\partial u}{\partial t} = 0.6p - q - p^3 + 0.0002\Delta u$$</div>
+<div class="math">$$ \frac{\partial v}{\partial t} = 1.5p - 2q + 0.01\Delta u$$</div>
+<p>と表すことができます。これは反応拡散方程式と言われるものです。式の意味は後ほど説明します。</p>
+<h2>反応拡散方程式とは？？</h2>
+<p>位置付けとしては、今回の式は、2 変数の反応拡散方程式</p>
+<p>反応拡散方程式 : </p>
+<div class="math">$$ ∂u/∂t = F(u) + D∂^2u/∂x^2 $$</div>
+<p>反応方程式 : </p>
+<div class="math">$$ ∂u/∂t = F(u)$$</div>
+<p>拡散方程式 : </p>
+<div class="math">$$ ∂u/∂t = D∂^2u/∂x^2 (D は拡散係数)$$</div>
+<p>1 つめは反応項、2 つめを拡散項と呼ぶことにします。
+F(u)は 2 物質の化学反応による物質の濃度の変化を表す式が入ります。例えば、酵素の反応速度を表すミカエリス・メンテンの式などが入ることもあるでしょう。</p>
+<p>拡散項は、2 物質が空間を広がっていくことを考えるときに使います。</p>
+<p>2 つの化学物質 u と v があって、その二つの濃度が以下のような数式（反応拡散方程式）で表わされるとき、u と v の濃い部分と薄い部分がいい感じに模様のパターンを作って安定化するということである。</p>
+<h2>キリンやシマウマは違うっぽい</h2>
+<blockquote>
+<p>バーゼル市の動物園へ行って、シマウマやキリンの模様を詳しく観察してみた。すると、それらは反応拡散波そのものではないことに気がついた。反応拡散波は、化学反応が作り出す定常波であるから、その波長（模様の間隔）は、一定に保たれなければならない。しかし、シマウマやキリンの模様は皮膚に固定されているらしく、体が大きくなるにつれて模様の間隔が広がっていってしまう。</p>
+</blockquote>
+<p>近藤先生が、実験で証明したのは、タテジマについてです。シマウマやキリンについてはわかりません。近藤先生の物語はこちら
+https://www.terumozaidan.or.jp/labo/technology/15/index.html
+生物が模様を作る仕組みを 25 年かけて明らかにした。それを我々は学ぶことができている。感謝</p>
+<p>反応拡散系(=反応系 + 拡散系)
+化学反応と分子の拡散を組み合わせた反応システムのこと。</p>
+<p>http://www.fbs.osaka-u.ac.jp/labs/skondo/ozaki/what%20is%20RD%202(outline).htm</p>
+<h3>チューリングマシンとは？（ついでに）</h3>
+<p>todo
+情報科学の勉強しましょう。形式言語理論を学ぶとわかります。</p>
+<h3>というかアラン・チューリングって誰だよ？</h3>
+<p>めっちゃすごい人。計算機科学の父。映画、「イミテーションゲーム」はおすすめです。</p>
+<h3>セルオートマトン、ライフゲームって何？</h3>
+<blockquote>
+<p>チューリングは原論文（The Chemical Basis of Morphogenesis）の中で、反応拡散波が皮膚の模様形式だけでなく、「形態形成全般にはたらく基本的なメカニズム」であろうと述べている。</p>
+</blockquote>
+<p>つまり骨格なども形成しているのではという考え方もあるようです。</p>
+<h2>反応拡散方程式の導出(2 変数、1 次元)</h2>
+<p>三浦岳、発生の数理を参考</p>
+<h3>考える系について</h3>
+<p>まずは一次元の棒状の組織を考えてから二次元に拡張する。横の長さ 1, 縦の長さ</p>
+<div class="math">$$ dy $$</div>
+<p>として、</p>
+<div class="math">$$ dy &lt;&lt; 1 $$</div>
+<p>で縦方向の分布は無視する。この棒状の組織の中の細胞が 2 種類の分子、活性因子(activator)と抑制因子(inhibitor)を産生し、これらの分子が細胞の分子の産生、分解をコントロールしつつ、近傍の細胞に拡散している、という状態を考える。</p>
+<h3>離散化</h3>
+<p>このままでは空間的な分布の状態を考えるのは難しいので、この細長い棒を横方向に</p>
+<div class="math">$$ dx $$</div>
+<p>ずつ区切って、</p>
+<div class="math">$$ 1/ dx $$</div>
+<p>個の小さな組織片に分けて考える。(</p>
+<div class="math">$$ dx &lt;&lt; 1 $$</div>
+<p>)
+各組織片内での活性因子、抑制因子の分布はほぼ一様であるとして、</p>
+<ul>
+<li>組織片の中での活性因子、抑制因子の相互作用</li>
+<li>ある組織片と、両隣りの組織片との間での活性因子、抑制因子のやりとり</li>
+</ul>
+<p>の 2 つの要素を考え、時間変化をみる。時間は連続的なものだが、便宜上、微小区間</p>
+<div class="math">$$ dt $$</div>
+<p>に区切って考える。時刻</p>
+<div class="math">$$ m \* dt $$</div>
+<p>(</p>
+<div class="math">$$m$$</div>
+<p>は整数)に置ける、それぞれの組織片の中の活性因子、抑制因子の濃度について、左から数えて n 個目の組織片の中の活性化因子の濃度を</p>
+<div class="math">$$ p(n,m) $$</div>
+<p>、抑制因子の濃度を</p>
+<div class="math">$$ q(n, m) $$</div>
+<p>とする。</p>
+<h3>反応項</h3>
+<p>反応項は 2 種類の分子の相互作用によって決まり、様々なパターンがある。今回は一例として、チューリングパターン形成に置ける反応項を考える。今回考えている、チューリングパターンを生成する反応拡散系における反応系では、上で述べたように、</p>
+<ul>
+<li>活性化因子は、自身の産生を促進</li>
+<li>活性化因子は、抑制因子の産生を促進</li>
+<li>抑制因子は、活性因子の産生を抑制</li>
+</ul>
+<p>という相互作用をしていると考える。
+<img src="/img/reaction.png" width="300" height="200"></p>
+<p>これを数式で表すと、
+</p>
+<div class="math">$$ f(p, q) $$</div>
+<p>, </p>
+<div class="math">$$ g(p, q) $$</div>
+<p> を活性因子、抑制因子の濃度の変化率として、</p>
+<div class="math">$$ f(p, q) = ap - bq (a, b は正の定数)$$</div>
+<div class="math">$$　 g(p, q) = cp -dq (c, d は正の定数)$$</div>
+<p>変化量を考えると
+</p>
+<div class="math">$$ f(p(n, m), q(n, m)) \times dt $$</div>
+<div class="math">$$ g(p(n, m), q(n, m)) \times dt $$</div>
+<p>となる。</p>
+<p>今回の例では、2 種類の物質で考えたが、他にも 1 種類、3 種類での反応系を考えることができて、それらの相互作用(促進か、抑制か)に応じて、様々なダイナミクスが生じる。具体例としては、</p>
+<ul>
+<li>
+<p>遺伝子発現、解糖系振動、概日時計、細胞周期などにみられるダイナミクスなどがあげられる。ここを参考にした
+  http://www.fbs.osaka-u.ac.jp/labs/skondo/ozaki/what%20is%20RD%202(outline).htm</p>
+</li>
+<li>
+<p>活性因子は、ある程度以上の濃度になると産生が抑えられる(-p3)
+  ∂u/∂t の反応項 =
+  ∂v/∂t の反応項</p>
+</li>
+</ul>
+<h3>拡散項</h3>
+<p>次に、隣の組織片との間の相互作用を考え、拡散における濃度変化を考える。
+</p>
+<div class="math">$$n$$</div>
+<p>番目の組織片の活性化因子の濃度を</p>
+<div class="math">$$p(n, m)$$</div>
+<p>とすると、右隣の組織片の活性因子の濃度は、</p>
+<div class="math">$$p(n+1, m)$$</div>
+<p>となる。単純な拡散の場合、物質の移動量は濃度勾配と境界の長さに比例する(Fick の法則)ので、微小時間 dt の間に右隣の組織へと移動していく活性化因子の量は、</p>
+<div class="math">$$ d_p(p(n+1, m) - p(n, m)) / dx \times dy \times dt $$</div>
+<p>で表される。</p>
+<div class="math">$$d_p$$</div>
+<p>は活性化因子の拡散係数である。これによる</p>
+<div class="math">$$n$$</div>
+<p>番目の組織片の濃度変化は、この量を組織片の面積で割って、</p>
+<div class="math">$$ d_p(p(n+1, m) - p(n, m)) / dx^2 \times dt $$</div>
+<p>となる。同様に左隣の物質とのやりとりを考えると、左右合わせて、</p>
+<div class="math">$$n$$</div>
+<p>番目の組織片の濃度変化は、</p>
+<div class="math">$$ d_p(p(n+1, m) + p(n, m) - 2 \times p(n, m)) / dx^2 \times dt $$</div>
+<p>となる。</p>
+<p>同様に抑制因子の濃度変化は、</p>
+<div class="math">$$ d_q(q(n+1, m) + q(n, m) - 2 \times q(n, m)) / dx^2 \times dt (d_q は抑制因子の拡散係数)$$</div>
+<p>これが拡散項となる</p>
+<h3>反応拡散方程式</h3>
+<p>領域が十分広いという境界条件のもとで、</p>
+<div class="math">$$dt, dx$$</div>
+<p>を無限に 0 に近づけると、離散ではない連続の方程式を得ることができる。連続関数として、時刻</p>
+<div class="math">$$t$$</div>
+<p>における位置</p>
+<div class="math">$$x$$</div>
+<p>の活性因子、抑制因子の濃度をそれぞれ</p>
+<div class="math">$$u(x, t), v(x, t)$$</div>
+<p>とし、</p>
+<div class="math">$$dt, dx$$</div>
+<p>を無限に 0 に近づけると、</p>
+<div class="math">$$ ∂u(x, t) / ∂t = f(u(x, t), v(x, t)) + d_p∂^2u(x, t) / ∂x^2$$</div>
+<div class="math">$$ ∂v(x, t) / ∂t = g(u(x, t), v(x, t)) + d_q∂^2u(x, t) / ∂x^2$$</div>
+<p>とそれぞれの濃度変化を表すことができる。それぞれ第一項が反応項であり、第二項が拡散項である。これは一般の反応拡散方程式の表記</p>
+<h2>2 次元チューリングパターンの実装</h2>
+<p>ここでは、反応項として、</p>
+<div class="math">$$f(p, q) = 0.6p - q - p^3 $$</div>
+<div class="math">$$ g(p, q) = 1.5p - 2q $$</div>
+<p>を考える。(ちなみにこれは神経細胞の発火モデルである、FitzHugh-南雲モデルと類似している)<br>
+これは、</p>
+<ol>
+<li>活性因子が、自らの産生を促進する<div class="math">$$(0.6p)$$</div>
+</li>
+<li>活性因子は、抑制因子の産生を促進する<div class="math">$$(1.5p)$$</div>
+</li>
+<li>活性因子は、ある程度以上の濃度になると産生が抑えられる<div class="math">$$(-p^3)$$</div>
+</li>
+<li>抑制因子は、活性因子の産生を抑制する<div class="math">$$(-q)$$</div>
+</li>
+<li>抑制因子は、何もないと減衰していく<div class="math">$$(-2q)$$</div>
+</li>
+</ol>
+<p>という 5 つの条件を備えている。</p>
+<p>拡散項については、
+</p>
+<div class="math">$$ d_p = 0.0002 , d_q = 0.01$$</div>
+<p> とおく。<br>
+</p>
+<div class="math">$$ d_q $$</div>
+<p>の方が</p>
+<div class="math">$$ d_p $$</div>
+<p>よりも大きい値でないと、安定なパターンが形成されないことがわかっている。意味合いとしては、物質</p>
+<div class="math">$$v$$</div>
+<p>の方がより拡散しやすいということである。</p>
+<p>濃度変化は以下のように表せる。</p>
+<div class="math">$$ \frac{\partial u}{\partial t} = 0.6p - q - p^3 + 0.0002\Delta u$$</div>
+<div class="math">$$ \frac{\partial v}{\partial t} = 1.5p - 2q + 0.01\Delta u$$</div>
+<p>これを元にして、2 次元でのパターン形成の様子を描画してみる。</p>
+<div class="math">$$ \frac{\partial u}{\partial t} = f(u, v) + d_p\frac{\partial^2 u(x, t)}{\partial^2 x}$$</div>
+<div class="math">$$ \frac{\partial u}{\partial t} = f(u, v) + d_p\Delta u$$</div>
+<div class="math">$$ \frac{\partial v}{\partial t} = g(u, v) + d_q\frac{\partial^2 v(x, t)}{\partial^2 x}$$</div>
+<div class="math">$$ ∂v(x, t) / ∂t = g(u(x, t), v(x, t)) + d_q∂^2u(x, t) / ∂x^2$$</div>
+<h3>実装</h3>
+<h4>1. パッケージのインストール</h4>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+</pre></div>
+
+
+<h4>2. チューリングパターンのシミュレーションに、以下の偏微分方程式を用いる。範囲は-1~1</h4>
+<div class="math">$$ ∂u / ∂t = aΔu + u - u^3 - v + k $$</div>
+<div class="math">$$ τ ∂v/∂t = bΔv + u -v $$</div>
+<p>u は色素？濃度を表す。v もその濃度。v は u は抑制する。u は v を促進する。初期条件では、u,v は互いに独立したランダムな値とする。
+Neumann 境界条件</p>
+<h4>3. 以下のパラメータを定める</h4>
+<p>a = 2.0e-4
+b = 1e-2
+tau = 1
+k = 0</p>
+<h4>4. 時間と空間を離散化して範囲に分ける。</h4>
+<p>size = 100
+dx = 2. / size
+T = 54.0
+dt = .001
+n = int(T / dt</p>
+<h4>5. u と v を初期化。</h4>
+<div class="highlight"><pre><span></span><span class="n">U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">size</span><span class="p">)</span>
+<span class="n">V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">size</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">laplacian</span><span class="p">(</span><span class="n">Z</span><span class="p">):</span>
+    <span class="n">Ztop</span> <span class="o">=</span> <span class="n">Z</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">Zleft</span> <span class="o">=</span> <span class="n">Z</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">Zbottom</span> <span class="o">=</span> <span class="n">Z</span><span class="p">[</span><span class="mi">2</span><span class="p">:,</span> <span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">Zright</span> <span class="o">=</span> <span class="n">Z</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">:]</span>
+    <span class="n">Zcenter</span> <span class="o">=</span> <span class="n">Z</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">Ztop</span> <span class="o">+</span> <span class="n">Zleft</span> <span class="o">+</span> <span class="n">Zbottom</span> <span class="o">+</span> <span class="n">Zright</span> <span class="o">-</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">Zcenter</span><span class="p">)</span> <span class="o">/</span> <span class="n">dx</span> <span class="o">**</span> <span class="mi">2</span>
+</pre></div>
+
+
+<h4>7.行列を表示する関数を定義</h4>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">show_patterns</span><span class="p">(</span><span class="n">U</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">U</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">copper</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;bilinear&#39;</span><span class="p">,</span> <span class="n">extent</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
+
+    <span class="n">U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">size</span><span class="p">)</span>
+    <span class="n">V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">size</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">laplacian</span><span class="p">(</span><span class="n">Z</span><span class="p">):</span>
+        <span class="n">Ztop</span> <span class="o">=</span> <span class="n">Z</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">Zleft</span> <span class="o">=</span> <span class="n">Z</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+        <span class="n">Zbottom</span> <span class="o">=</span> <span class="n">Z</span><span class="p">[</span><span class="mi">2</span><span class="p">:,</span> <span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">Zright</span> <span class="o">=</span> <span class="n">Z</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">:]</span>
+        <span class="n">Zcenter</span> <span class="o">=</span> <span class="n">Z</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">Ztop</span> <span class="o">+</span> <span class="n">Zleft</span> <span class="o">+</span> <span class="n">Zbottom</span> <span class="o">+</span> <span class="n">Zright</span> <span class="o">-</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">Zcenter</span><span class="p">)</span> <span class="o">/</span> <span class="n">dx</span> <span class="o">**</span> <span class="mi">2</span>
+
+    <span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+    <span class="n">step_plot</span> <span class="o">=</span> <span class="n">n</span> <span class="o">//</span> <span class="mi">9</span>
+    <span class="c1"># 偏微分方程式を有限微小変化methodでシミュレーション</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="c1"># uとvのラプラシアンを計算</span>
+        <span class="n">deltaU</span> <span class="o">=</span> <span class="n">laplacian</span><span class="p">(</span><span class="n">U</span><span class="p">)</span>
+        <span class="n">deltaV</span> <span class="o">=</span> <span class="n">laplacian</span><span class="p">(</span><span class="n">V</span><span class="p">)</span>
+        <span class="c1"># uとvの値をグリッドの中でとる</span>
+        <span class="n">Uc</span> <span class="o">=</span> <span class="n">U</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">Vc</span> <span class="o">=</span> <span class="n">V</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="c1"># 値を更新する</span>
+        <span class="n">U</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">V</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> \
+            <span class="n">Uc</span> <span class="o">+</span> <span class="n">dt</span> <span class="o">*</span> <span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">deltaU</span> <span class="o">+</span> <span class="mf">0.6</span> <span class="o">*</span> <span class="n">Uc</span> <span class="o">-</span> <span class="n">Uc</span><span class="o">**</span><span class="mi">3</span> <span class="o">-</span> <span class="n">Vc</span> <span class="o">+</span> <span class="n">k</span><span class="p">),</span> \
+            <span class="n">Vc</span> <span class="o">+</span> <span class="n">dt</span> <span class="o">*</span> <span class="p">(</span><span class="n">b</span> <span class="o">*</span> <span class="n">deltaV</span> <span class="o">+</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">Uc</span> <span class="o">-</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="n">Vc</span><span class="p">)</span> <span class="o">/</span> <span class="n">tau</span>
+        <span class="c1"># Neumann条件: 端の微分は0?</span>
+        <span class="k">for</span> <span class="n">Z</span> <span class="ow">in</span> <span class="p">(</span><span class="n">U</span><span class="p">,</span> <span class="n">V</span><span class="p">):</span>
+            <span class="n">Z</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="n">Z</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:]</span>
+            <span class="n">Z</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="n">Z</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="p">:]</span>
+            <span class="n">Z</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">Z</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>
+            <span class="n">Z</span><span class="p">[:,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">Z</span><span class="p">[:,</span> <span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+
+        <span class="c1"># 9つの異なる時間に状況を分けてプロット</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="n">step_plot</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">9</span> <span class="o">*</span> <span class="n">step_plot</span><span class="p">:</span>
+            <span class="n">ax</span> <span class="o">=</span> <span class="n">axes</span><span class="o">.</span><span class="n">flat</span><span class="p">[</span><span class="n">i</span> <span class="o">//</span> <span class="n">step_plot</span><span class="p">]</span>
+            <span class="n">show_patterns</span><span class="p">(</span><span class="n">U</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;$t={i*dt:.2f}$&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="n">fig</span> <span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">show_patterns</span><span class="p">(</span><span class="n">U</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+</pre></div>
+
+
+<p><br>
+<img src="/img/turing_pattern.png"></p>
+<h3>感想</h3>
+<p>今回のお話は、システム生物学という分野で扱われがちなお話です。私が興味を持っているバイオインフォマティクスにシステム生物学が含まれるかどうかはわかりません。僕が所属する学科は、バイオインフォマティクスとシステム生物学という 2 つの学問分野を柱にしています。システム生物学もなかなか面白いなと思いました。今後こちらのブログも充実させていくので、是非チェックして見て下さい！
+todo あとで追記</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        fonts: [['STIX', 'TeX']]," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " nafoto'z_blog ",
+  "url" : "https://naoto-yamaguchi.github.io/site",
+  "image": "",
+  "description": ""
+}
+</script>
+
+</body>
+</html>
