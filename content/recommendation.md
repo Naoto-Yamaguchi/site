@@ -5,20 +5,14 @@ Tags: 好きなもの, 嗜好
 Slug: recommendation
 Authors: Naoto Yamaguchi
 Summary: おすすめ集、好きなもの
-
-    hogeh9ogehoge
+e
 
 
 # 動機、対象
-
-全ての人
+人のおすすめを聞いて自分の興味の幅が広がったり、新たな発見をすることがあったので。
+現状適当ですが、随時載せていきます。
 
 # 参考
-
-cell chap20
-国立がん研究センター ガン情報サービス (2018)
-知っておきたいがんの基礎知識
-https://ganjoho.jp/public/dia_tre/knowledge/basic.html
 
 # 目次
 
@@ -26,7 +20,8 @@ https://ganjoho.jp/public/dia_tre/knowledge/basic.html
     * サピエンス全史
     * ホモデウス
     * 史上最強の哲学入門
-    * 
+    * 勉強の哲学
+    * 愛するということ
 * おすすめの英語
     * イミテーションゲーム
     * Begin Again
@@ -45,6 +40,9 @@ https://ganjoho.jp/public/dia_tre/knowledge/basic.html
 
 * おすすめのアプリ
     * Nuzzle
+
+* おすすめのサイト
+    * Golden
 
 
 

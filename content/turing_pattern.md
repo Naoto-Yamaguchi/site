@@ -1,10 +1,10 @@
 Title: チューリングパターンとは
 Date: 2019-04-04
-    Category: テスト
-    Tags: テスト, 投稿
-    Slug: FirstPost
-    Authors: UserName
-    Summary: 簡単にブログ作成
+Category: 生物学
+Tags: 生物学, Bioinfo
+Slug: turing_pattern
+Authors: Naoto Yamaguchi
+Summary: チューリングパターンの解説<br><img src="https://camo.qiitausercontent.com/58b0457b75d51790ad0c73dc752d27a2434d6a97/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3134313530332f35636465656163632d366132362d343566612d636264332d3539316561316264373238612e6a706567"></img>
 
 ## 動機
 
@@ -359,8 +359,7 @@ fig , ax = plt.subplots(1, 1, figsize=(8, 8))
 show_patterns(U, ax=ax)
 ```
 
-<br>
-<img src="/img/turing_pattern.png">
+![](https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630570606_turing_pattern.png)
 
 ### 感想
 

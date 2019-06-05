@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog - Python</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/python.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-02-20T00:00:00+09:00</updated><entry><title>Jupyter Notebookをリモートサーバーで利用し、ローカルのブラウザで確認する"</title><link href="https://naoto-yamaguchi.github.io/site/remote_jupyternotebook.html" rel="alternate"></link><published>2019-02-20T00:00:00+09:00</published><updated>2019-02-20T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-20:/site/remote_jupyternotebook.html</id><summary type="html">&lt;p&gt;Jupyter Notebook利用の備忘録&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630601567_jupyter.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h3&gt;動機&lt;/h3&gt;
+&lt;p&gt;データ分析で大量のデータを扱う際、ローカルの  コンピューターではなく  リモートサーバーにダウンロードなどを行うことがありました。そのデータを分析するために、Jupyter Notebook を利用したかったのですが、 ローカルで使えるだけではデータを参照できないので、データがおかれているリモートサーバーで  使えるようにする必要がありました。やりたいことは以下のような感じです。
+http://starpentagon.net/analytics/remote_jupyter_notebook/&lt;/p&gt;
+&lt;h3&gt;参考&lt;/h3&gt;
+&lt;p&gt;サムネイル画像は&lt;a href="https://en.wikipedia.org/wiki/Project_Jupyter"&gt;こちら&lt;/a&gt;より引用&lt;/p&gt;
+&lt;h3&gt;Step1: リモートサーバーに Jupyter Notebook をインストール&lt;/h3&gt;
+&lt;p&gt;リモートサーバーにおける権限などに注意する必要があります。おそらく&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ pip install jupyter --user
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;で十分ですが、自分は anaconda をインストールしました。このページの Linux でのインストール方法を参考にしました。
+https://qiita.com/t2y/items/2a3eb58103e85d8064b6
+https://stackoverflow.com/questions/38080407/how-can-i-install-the-latest-anaconda-with-wget&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ wget http://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh
+$ bash Anaconda3-4.2.0-Linux-x86_64.sh
+&lt;span class="c1"&gt;#PATHの設定&lt;/span&gt;
+~/.bash_profileに
+&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/home/yamaguchi/anaconda3/bin:PATH
+&lt;span class="c1"&gt;#を追記&lt;/span&gt;
+$ &lt;span class="nb"&gt;source&lt;/span&gt; ~/.bash_profile
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Step2: サーバー側の設定&lt;/h3&gt;
+&lt;p&gt;基本的にこちらを参考にしました。
+http://starpentagon.net/analytics/remote_jupyter_notebook/&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;ipython3&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;notebook.auth&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;passwd&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;passwd&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="c1"&gt;# ここでパスワードを入力し、出力されたsha1値をコピー&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;quit&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;~/.jupyter/jupyter_notebook_config.py を変更。なければ、&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ jupyter notebook --generate-config
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;~/.jupyter/jupyter_notebook_config.py を開き&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;c.NotebookApp.ip = &amp;#39;*&amp;#39;
+c.NotebookApp.open_browser = False
+c.NotebookApp.port = 8888
+c.NotebookApp.password = u&amp;#39;sha1:XXXXXXX&amp;#39; # 先ほど記録したsha1値を記載
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;以下のように設定。&lt;/p&gt;
+&lt;p&gt;これにて設定終了。 自分の場合、一旦 ssh 接続を切って、&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ssh -L 8888:localhost:8888 &amp;lt;username&amp;gt;@&amp;lt;ip address&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;で再度リモートサーバーに接続し、&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;jupyter notebook
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;を実行し、起動。&lt;/p&gt;
+&lt;p&gt;クライアント側のブラウザから、
+&lt;code&gt;http://localhost:8888&lt;/code&gt;にアクセス。jupyter notebook ぽい画面が表示され、sha1 値  生成時に入力したパスワード入力すると、認証が成功し、クライアント側のブラウザからリモートサーバー上で動く Jupyter Notebook を利用できます。&lt;/p&gt;
+&lt;h3&gt;参考&lt;/h3&gt;
+&lt;p&gt;https://qiita.com/Miggy/items/5466a2c1e968602f3ebe&lt;/p&gt;</content><category term="Python SSh"></category></entry></feed>
