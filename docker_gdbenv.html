@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="nafoto'z_blog Atom">
+
+
+
+
+
+<meta name="author" content="Naoto Yamaguchi" />
+<meta name="description" content="Dockerでgdb環境を構築した備忘録" />
+<meta name="keywords" content="Docker, Programming">
+
+<meta property="og:site_name" content="nafoto'z_blog"/>
+<meta property="og:title" content="Dockerでgdb環境構築"/>
+<meta property="og:description" content="Dockerでgdb環境を構築した備忘録"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://naoto-yamaguchi.github.io/site/docker_gdbenv.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2019-06-05 00:00:00+09:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://naoto-yamaguchi.github.io/site/author/naoto-yamaguchi.html">
+<meta property="article:section" content="Docker"/>
+<meta property="article:tag" content="Docker"/>
+<meta property="article:tag" content="Programming"/>
+<meta property="og:image" content="">
+
+  <title>nafoto'z_blog &ndash; Dockerでgdb環境構築</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://naoto-yamaguchi.github.io/site">
+        <img src="https://naoto-yamaguchi.github.io/site/theme/img/profile.png" alt="" title="">
+      </a>
+      <h1><a href="https://naoto-yamaguchi.github.io/site"></a></h1>
+
+
+      <nav>
+        <ul class="list">
+
+          <li><a href="" target="_blank">Home</a></li>
+          <li><a href="http://twitter.com/nafoto_z" target="_blank">Twitter</a></li>
+          <li><a href="http://tatekaetaro.work/" target="_blank">立替たろう</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-You can add links in your config file" href="#" target="_blank"><i class="fa fa-You can add links in your config file"></i></a></li>
+        <li><a class="sc-Another social link" href="#" target="_blank"><i class="fa fa-Another social link"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="docker_gdbenv">Dockerでgdb環境構築</h1>
+    <p>
+          Posted on 水 05 6月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/docker.html">Docker</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <h1>動機対象</h1>
+<p>学校の課題で、dえC++と機械語の命令を比較しながら、メモリアクセスを少なくし、実行クロック数の少ない命令で目的の計算をすることでという速いアルゴリズムを設計できるようになろう！というものがありました。そこで、gdbデバッガで、機械語リストを出力させるということをやったのですが、Mac OS Sierraでは、gdbコード署名用の証明書の作成が必要とのことで、面倒そうでした。そこで、DockerでCentOSコンテナを立てて、gdb環境を整えることで、その代わりとすることにしました！</p>
+<h1>参考</h1>
+<p>DockerでCentOSコンテナを立ち上げる</p>
+<p><a href="https://qiita.com/muniere/items/0569d05d470c5d3dc51b">CentOSにvimをインストール</a></p>
+<p><a href="https://qiita.com/SOJO/items/9d6a65f3da941c49da36">こちら</a>も参考になる</p>
+<p>この途中、<code>./configure</code>のところで、
+<code>configure: error: no acceptable C compiler found in $PATH</code>
+と出たが、これはgccがインストールされていなかったからだった。<a href="https://qiita.com/tmak_tsukamoto/items/b1c1f04d2a2ac527887c">以下</a>に記載の同様のエラーだったため、gccのインストールで解決</p>
+<p><a href="https://blog.sioyaki.com/entry/2017/04/10/101610">g++をyumでインストール</a></p>
+<p>gdb使ってみたら</p>
+<div class="highlight"><pre><span></span>(gdb) b main
+Breakpoint 1 at 0x4007e8: file a.cpp, line 6.
+(gdb) run
+Starting program: /root/01/a.out
+warning: no loadable sections found in added symbol-file system-supplied DSO at 0x7ffff7ffa000
+
+Breakpoint 1, main () at a.cpp:6
+6                cout &lt;&lt; 1 &lt;&lt; endl;
+Missing separate debuginfos, use: debuginfo-install glibc-2.12-1.212.el6_10.3.x86_64 libgcc-4.4.7-23.el6.x86_64 libstdc++-4.4.7-23.el6.x86_64
+</pre></div>
+
+
+<p>となったので、
+<a href="https://corgi-lab.com/linux/debug-with-gdb/">debuginfoのinstall</a>
+<a href="https://stackoverflow.com/questions/10389988/missing-separate-debuginfos-use-debuginfo-install-glibc-2-12-1-47-el6-2-9-i686">こちら</a>も、Missing separate debuginfosについて</p>
+<h1>目次</h1>
+<ul>
+<li>DockerでCentOSコンテナを立ち上げる</li>
+<li>CentOSにgdbをインストール</li>
+<li>CentOSにvimをインストール</li>
+<li>CentOSにg++, debuginfoをインストール</li>
+</ul>
+<h1>DockerでCentOSコンテナを立ち上げる</h1>
+<ul>
+<li>centosイメージのダウンロード</li>
+</ul>
+<div class="highlight"><pre><span></span>docker pull centos
+</pre></div>
+
+
+<ul>
+<li>コンテナの起動</li>
+</ul>
+<div class="highlight"><pre><span></span>docker run -d --cap-add=SYS_PTRACE --security-opt=&quot;seccomp=unconfined&quot; --name gdb centos:centos6.9 /bin/bash
+</pre></div>
+
+
+<p>-dオプションをつけてバックグラウンドで起動しないとうまくいかなかったので注意。</p>
+<ul>
+<li>起動しているコンテナの確認</li>
+</ul>
+<div class="highlight"><pre><span></span>docker ps
+</pre></div>
+
+
+<p>停止しているものも確認したい場合は<code>-a</code>をつける</p>
+<div class="highlight"><pre><span></span>docker exec -it gdb /bin/bash
+</pre></div>
+
+
+<p>でbashを起動し、中に入れる</p>
+<h1>CentOSにgdbをインストール</h1>
+<ul>
+<li>gdbのインストール</li>
+</ul>
+<div class="highlight"><pre><span></span>yum install gdb
+</pre></div>
+
+
+<p>これでできた！と思って、ファイルを作ってデバッグしてみようと思ったらvimがインストールされてなかった。</p>
+<h1>CentOSにvimをインストール</h1>
+<ul>
+<li>vimをインストールするのに必要なパッケージが入っているかを以下のコマンドで確認。"list installed"はインストール済みのパッケージ一覧を表示。</li>
+</ul>
+<div class="highlight"><pre><span></span>$ yum list installed <span class="p">|</span> grep mercurial
+$ yum list installed <span class="p">|</span> grep ncurses-devel
+$ yum list installed <span class="p">|</span> grep make         
+$ yum list installed <span class="p">|</span> grep gcc 
+</pre></div>
+
+
+<ul>
+<li>インストールされていない場合はそれぞれインストール。</li>
+</ul>
+<div class="highlight"><pre><span></span>$ yum install mercurial
+$ yum install ncurses-devel
+$ yum install make
+$ yum install gcc
+</pre></div>
+
+
+<ul>
+<li>vimのインストール</li>
+</ul>
+<div class="highlight"><pre><span></span>$ <span class="nb">cd</span> /usr/local/src
+$ sudo hg clone https://bitbucket.org/vim-mirror/vim vim
+$ <span class="nb">cd</span> vim
+$ ./configure --with-features<span class="o">=</span>huge --enable-multibyte --disable-selinux
+$ make
+$ make install
+</pre></div>
+
+
+<h1>CentOSにg++, debuginfoをインストール</h1>
+<p>これで、vimが使えるので、C++ファイルの作成をしました。コンパイルしようとしたところ、g++をインストールしていないことに気がついたので、</p>
+<div class="highlight"><pre><span></span>$ yum install gcc-c++
+</pre></div>
+
+
+<p>でインストールし、</p>
+<div class="highlight"><pre><span></span>$ g++ -g a.cpp
+</pre></div>
+
+
+<p>-gオプションをつけて、gdbデバック用にコンパイル。</p>
+<div class="highlight"><pre><span></span>$ gdb ./a.out
+</pre></div>
+
+
+<p>で実行して、</p>
+<div class="highlight"><pre><span></span>$ b main
+$ run
+</pre></div>
+
+
+<p>したところ、</p>
+<div class="highlight"><pre><span></span>    (gdb) b main
+    Breakpoint 1 at 0x4007e8: file a.cpp, line 6.
+    (gdb) run
+    Starting program: /root/01/a.out
+    warning: no loadable sections found in added symbol-file system-supplied DSO at 0x7ffff7ffa000
+
+    Breakpoint 1, main () at a.cpp:6
+    6                cout &lt;&lt; 1 &lt;&lt; endl;
+    Missing separate debuginfos, use: debuginfo-install glibc-2.12-1.212.el6_10.3.x86_64 libgcc-4.4.7-23.el6.x86_64 libstdc++-4.4.7-23.el6.x86_64
+</pre></div>
+
+
+<p>となったので、
+debuginfoをインストール</p>
+<div class="highlight"><pre><span></span>$ yum install yum-utils
+$ debuginfo-installglibc-2.12-1.212.el6_10.3.x86_64 libgcc-4.4.7-23.el6.x86_64 libstdc++-4.4.7-23.el6.x86_64 
+</pre></div>
+
+
+<p>これで、gdbでデバッグできるようになりました！
+参考にさせていただいた記事、ありがとうございます。</p>
+<h1>Dockerコンテナをcommitしてみる</h1>
+<p>gdbという名前のコンテナで動かしていたものを、gdbenvというイメージとして保存します。</p>
+<div class="highlight"><pre><span></span>$ docker commit gdb gdbenv
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+gdbenv              latest              c7e81afda91c        <span class="m">22</span> seconds ago      <span class="m">1</span>.34GB
+</pre></div>
+
+
+<p>で、<code>gdbenv</code>という名前のイメージができていることを確認。
+今後ここからイメージを起動して使うことができます。
+Docker Hubにimageを公開すれば他の人も利用可能になります。公開にはDockerのアカウントを作成する必要があるみたいです。</p>
+<h1>commitしたimageからコンテナを利用→エラー</h1>
+<ul>
+<li>commitしたgdbenvというイメージから、gdbenvという名前のコンテナを起動して、bashを動かした。</li>
+</ul>
+<div class="highlight"><pre><span></span>$ docker run --name gdbenv -it -d gdbenv /bin/bash
+$ docker <span class="nb">exec</span> -it gdbenv /bin/bash
+</pre></div>
+
+
+<p>これでgdbででバックしようとしたら、</p>
+<div class="highlight"><pre><span></span>(gdb) b main
+Breakpoint 1 at 0x4007e8: file a.cpp, line 6.
+(gdb) run
+Starting program: /root/01/a.out
+warning: Error disabling address space randomization: Operation not permitted
+1
+2
+During startup program exited normally.
+</pre></div>
+
+
+<p>となったので、調べてみると、
+gdbはシステムコールを使ってデバッグしているので、Dockerのコンテナを起動する際に、
+* --cap-add=SYS_PTRACE: コンテナ内からのgdbによるptrace(2)を許可
+* --security-opt="seccomp=unconfined": コンテナ内からのシステムコールの発行に制限を掛けない
+の2つのオプションを追加する必要があるようです。（初めのCentOSのイメージからコンテナ起動するときに使ったコマンドと同じ。てっきり忘れていました。
+<a href="https://www.cyamax.com/entry/2018/02/09/070000">こちら</a>を参考にさせていただきました。</p>
+<div class="highlight"><pre><span></span>$ docker run --cap-add<span class="o">=</span>SYS_PTRACE --security-opt<span class="o">=</span><span class="s2">&quot;seccomp=unconfined&quot;</span> --name gdbenv -it -d gdbenv /bin/bash
+$ docker <span class="nb">exec</span> -it gdbenv /bin/bash
+</pre></div>
+
+
+<p>このようすることで、うまくできました。</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://naoto-yamaguchi.github.io/site/tag/docker.html">Docker</a>
+      <a href="https://naoto-yamaguchi.github.io/site/tag/programming.html">Programming</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " nafoto'z_blog ",
+  "url" : "https://naoto-yamaguchi.github.io/site",
+  "image": "",
+  "description": ""
+}
+</script>
+
+</body>
+</html>

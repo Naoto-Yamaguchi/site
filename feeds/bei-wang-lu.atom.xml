@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog - 備忘録</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/bei-wang-lu.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-04-29T00:00:00+09:00</updated><entry><title>EC2からRDSへの接続と、RDSへのデータ投入&amp;日本語文字化け対応の備忘録</title><link href="https://naoto-yamaguchi.github.io/site/ec2_to_rds.html" rel="alternate"></link><published>2019-04-29T00:00:00+09:00</published><updated>2019-04-29T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-04-29:/site/ec2_to_rds.html</id><summary type="html">&lt;p&gt;RDS文字化け対応備忘録&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630545434_rds.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;動機&lt;/h2&gt;
+&lt;p&gt;あるプロジェクトで、EC2インスタンスからRDSに接続できるように設定する必要がありました。また、RDSへのデータの投入も初めてだったので、記録を残しておこうと思いました。&lt;/p&gt;
+&lt;h2&gt;EC2からRDSへの接続&lt;/h2&gt;
+&lt;p&gt;EC2からRDSへ接続するには以下のことが必要です。
+* EC2インスタンスに接続できる
+* RDSインスタンスが管理下にある
+* EC2インスタンスでmysqlコマンドを実行できる
+* RDSインスタンスのマスターユーザー名とマスターパスワードを知っている。もしくは、AWSコンソールにログインできる
+* RDSインスタンスのセキュリティグループで、MySQLポート(3306)を開放している（できる）&lt;/p&gt;
+&lt;p&gt;ここでは、目的のEC2インスタンスとRDSインスタンスが作成してあることは前提とします。作成については他の記事を参照してください。&lt;/p&gt;
+&lt;p&gt;EC2インスタンスからRDSインスタンスへは、&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mysql -h [ENDPOINT] -P 3306 -u [Username] –p [Name]
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;というコマンドで接続することができるのですが、そのためには以下の準備が必要です。
+* mysqlコマンドが実行できる
+* 今回のようにmysqlがEC2インスタンスにインストールされていない場合は、以下のようにしてインストールしました&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo yum install mysql
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;インストールできているかの確認は&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ yum list installed &lt;span class="p"&gt;|&lt;/span&gt; grep mysql
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;RDSインスタンスのエンドポイントがわかっている&lt;/li&gt;
+&lt;li&gt;これはAWSコンソールから確認できます。&lt;/li&gt;
+&lt;li&gt;[RDS]-&amp;gt;[データベース]-&amp;gt;インスタンスを選択-&amp;gt;[接続とセキュリティ]で確認できます。&lt;/li&gt;
+&lt;li&gt;RDSインスタンスのマスターユーザー名がわかっている&lt;/li&gt;
+&lt;li&gt;マスターユーザー名はRDSインスタンス作成時に指定するものです。&lt;/li&gt;
+&lt;li&gt;[RDS]-&amp;gt;[データベース]-&amp;gt;インスタンスを選択-&amp;gt;[設定]で確認できます。&lt;/li&gt;
+&lt;li&gt;RDSインスタンスのパスワードがわかっている&lt;/li&gt;
+&lt;li&gt;パスワードはAWSコンソールから確認はできませんが、変更することはできます。&lt;/li&gt;
+&lt;li&gt;[RDS]-&amp;gt;[データベース]-&amp;gt;インスタンスを選択-&amp;gt;[変更]で、設定という項目で、「新しいマスターパスワード」という欄があるので、そこで変更することができます。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以上で、接続への必要な情報は揃うと思います。&lt;/p&gt;
+&lt;p&gt;最後に、EC2インスタンスから、接続の要求をした際に、それを受け入れるための準備をRDS側でしておかないといけません（デフォルトでは許可されていません）。
+[RDS]-&amp;gt;[データベース]-&amp;gt;インスタンスを選択-&amp;gt;[接続とセキュリティ]-&amp;gt;[セキュリティグループのルール]で設定されている、セキュリティグループのinboundでMySQLポート(3306)を開放しましょう。
+以下の記事を参考になると思います。
+&lt;a href="https://hacknote.jp/archives/39927/"&gt;RDSへEC2から接続する方法 -HACK NOTE&lt;/a&gt;
+&lt;a href="https://docs.aws.amazon.com/ja_jp/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.MySQL.html"&gt;AWS RDS ドキュメント&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;これで、上記のコマンドを実行することで無事接続できるはずです！&lt;/p&gt;
+&lt;h2&gt;RDSへのデータ投入&lt;/h2&gt;
+&lt;p&gt;ECSインスタンス上にあるデータをRDSのDBに投入する方法です。
+以下の記事を参考にしました。
+RDSインスタンスにログインした状態で、データベースを指定し(use database_name)、&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;LOAD DATA LOCAL INFILE &amp;#39;sample.csv&amp;#39;
+REPLACE INTO TABLE database_name
+CHARACTER SET utf8
+FIELDS TERMINATED BY &amp;#39;,&amp;#39;
+OPTIONALLY ENCLOSED BY &amp;#39;&amp;quot;&amp;#39;
+IGNORE 1 LINES;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;でEC2上にあるCSVファイルをインポートできます。
+ファイル名の指定は、RDSインスタンスにログインする際にいたディレクトリからのパスになりますので、注意してください。またファイル名に日本語や、\などの文字が入っている場合も、上手くインポートできないことがあるので注意してください。&lt;/p&gt;
+&lt;p&gt;さて、すでに作成していたテーブルに上記のコマンドでデータをインポートできたのですが、テーブルの中身を確認してみると、日本語が文字化けしてしまっていました。。。&lt;/p&gt;
+&lt;h2&gt;日本語文字化けに対する対処&lt;/h2&gt;
+&lt;p&gt;やるべきことは、
+データベース、もしくはテーブルのキャラクターセットをutf8に変更することです。
+&lt;a href="https://qiita.com/reoy/items/e355debf1e2b2abd703b"&gt;RDSで日本語が文字化けする問題&lt;/a&gt;という記事を参考に、AWSコンソールから、RDSインスタンスのパラメータグループを設定しました。
+これだけ(Step4まで)では、すでに作成されているDBに対してパラメターグループの設定を行っても"character_set_database"は、latin1 のまま変更されないので、
+&lt;a href="http://d.hatena.ne.jp/It_lives_vainly/touch/20160906/1473154857"&gt;RDS の mySQL で日本語が文字化けて困った時の対応方法&lt;/a&gt;を参考に、設定すると無事日本語文字化けが直りました。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ ALTER DATABASE database_name default character &lt;span class="nb"&gt;set&lt;/span&gt; utf8
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;コマンドが重要です。&lt;/p&gt;
+&lt;p&gt;今後、RDSインスタンス新規作成の際に、パラメータグループをきちんと設定すると良さそうです。&lt;/p&gt;
+&lt;p&gt;どうでも良いですが、mysqlのテーブル名は最長で63文字らしいです。&lt;/p&gt;</content><category term="AWS"></category></entry></feed>

@@ -1,5 +1,257 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-05-31T00:00:00+09:00</updated><entry><title>がん</title><link href="https://naoto-yamaguchi.github.io/site/cancer.html" rel="alternate"></link><published>2019-05-31T00:00:00+09:00</published><updated>2019-05-31T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-05-31:/site/cancer.html</id><summary type="html">&lt;p&gt;がんの仕組みの解説&lt;/p&gt;</summary><content type="html">&lt;h2&gt;最初の投稿です。&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-06-05T00:00:00+09:00</updated><entry><title>Dockerでgdb環境構築</title><link href="https://naoto-yamaguchi.github.io/site/docker_gdbenv.html" rel="alternate"></link><published>2019-06-05T00:00:00+09:00</published><updated>2019-06-05T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-05:/site/docker_gdbenv.html</id><summary type="html">&lt;p&gt;Dockerでgdb環境を構築した備忘録&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559697621860_docker.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機対象&lt;/h1&gt;
+&lt;p&gt;学校の課題で、dえC++と機械語の命令を比較しながら、メモリアクセスを少なくし、実行クロック数の少ない命令で目的の計算をすることでという速いアルゴリズムを設計できるようになろう！というものがありました。そこで、gdbデバッガで、機械語リストを出力させるということをやったのですが、Mac OS Sierraでは、gdbコード署名用の証明書の作成が必要とのことで、面倒そうでした。そこで、DockerでCentOSコンテナを立てて、gdb環境を整えることで、その代わりとすることにしました！&lt;/p&gt;
+&lt;h1&gt;参考&lt;/h1&gt;
+&lt;p&gt;DockerでCentOSコンテナを立ち上げる&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://qiita.com/muniere/items/0569d05d470c5d3dc51b"&gt;CentOSにvimをインストール&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://qiita.com/SOJO/items/9d6a65f3da941c49da36"&gt;こちら&lt;/a&gt;も参考になる&lt;/p&gt;
+&lt;p&gt;この途中、&lt;code&gt;./configure&lt;/code&gt;のところで、
+&lt;code&gt;configure: error: no acceptable C compiler found in $PATH&lt;/code&gt;
+と出たが、これはgccがインストールされていなかったからだった。&lt;a href="https://qiita.com/tmak_tsukamoto/items/b1c1f04d2a2ac527887c"&gt;以下&lt;/a&gt;に記載の同様のエラーだったため、gccのインストールで解決&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://blog.sioyaki.com/entry/2017/04/10/101610"&gt;g++をyumでインストール&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;gdb使ってみたら&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(gdb) b main
+Breakpoint 1 at 0x4007e8: file a.cpp, line 6.
+(gdb) run
+Starting program: /root/01/a.out
+warning: no loadable sections found in added symbol-file system-supplied DSO at 0x7ffff7ffa000
+
+Breakpoint 1, main () at a.cpp:6
+6                cout &amp;lt;&amp;lt; 1 &amp;lt;&amp;lt; endl;
+Missing separate debuginfos, use: debuginfo-install glibc-2.12-1.212.el6_10.3.x86_64 libgcc-4.4.7-23.el6.x86_64 libstdc++-4.4.7-23.el6.x86_64
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;となったので、
+&lt;a href="https://corgi-lab.com/linux/debug-with-gdb/"&gt;debuginfoのinstall&lt;/a&gt;
+&lt;a href="https://stackoverflow.com/questions/10389988/missing-separate-debuginfos-use-debuginfo-install-glibc-2-12-1-47-el6-2-9-i686"&gt;こちら&lt;/a&gt;も、Missing separate debuginfosについて&lt;/p&gt;
+&lt;h1&gt;目次&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;DockerでCentOSコンテナを立ち上げる&lt;/li&gt;
+&lt;li&gt;CentOSにgdbをインストール&lt;/li&gt;
+&lt;li&gt;CentOSにvimをインストール&lt;/li&gt;
+&lt;li&gt;CentOSにg++, debuginfoをインストール&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;DockerでCentOSコンテナを立ち上げる&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;centosイメージのダウンロード&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;docker pull centos
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;コンテナの起動&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;docker run -d --cap-add=SYS_PTRACE --security-opt=&amp;quot;seccomp=unconfined&amp;quot; --name gdb centos:centos6.9 /bin/bash
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;-dオプションをつけてバックグラウンドで起動しないとうまくいかなかったので注意。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;起動しているコンテナの確認&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;docker ps
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;停止しているものも確認したい場合は&lt;code&gt;-a&lt;/code&gt;をつける&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;docker exec -it gdb /bin/bash
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;でbashを起動し、中に入れる&lt;/p&gt;
+&lt;h1&gt;CentOSにgdbをインストール&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;gdbのインストール&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;yum install gdb
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;これでできた！と思って、ファイルを作ってデバッグしてみようと思ったらvimがインストールされてなかった。&lt;/p&gt;
+&lt;h1&gt;CentOSにvimをインストール&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;vimをインストールするのに必要なパッケージが入っているかを以下のコマンドで確認。"list installed"はインストール済みのパッケージ一覧を表示。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ yum list installed &lt;span class="p"&gt;|&lt;/span&gt; grep mercurial
+$ yum list installed &lt;span class="p"&gt;|&lt;/span&gt; grep ncurses-devel
+$ yum list installed &lt;span class="p"&gt;|&lt;/span&gt; grep make         
+$ yum list installed &lt;span class="p"&gt;|&lt;/span&gt; grep gcc 
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;インストールされていない場合はそれぞれインストール。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ yum install mercurial
+$ yum install ncurses-devel
+$ yum install make
+$ yum install gcc
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;vimのインストール&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; /usr/local/src
+$ sudo hg clone https://bitbucket.org/vim-mirror/vim vim
+$ &lt;span class="nb"&gt;cd&lt;/span&gt; vim
+$ ./configure --with-features&lt;span class="o"&gt;=&lt;/span&gt;huge --enable-multibyte --disable-selinux
+$ make
+$ make install
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;CentOSにg++, debuginfoをインストール&lt;/h1&gt;
+&lt;p&gt;これで、vimが使えるので、C++ファイルの作成をしました。コンパイルしようとしたところ、g++をインストールしていないことに気がついたので、&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ yum install gcc-c++
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;でインストールし、&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ g++ -g a.cpp
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;-gオプションをつけて、gdbデバック用にコンパイル。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ gdb ./a.out
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;で実行して、&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ b main
+$ run
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;したところ、&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    (gdb) b main
+    Breakpoint 1 at 0x4007e8: file a.cpp, line 6.
+    (gdb) run
+    Starting program: /root/01/a.out
+    warning: no loadable sections found in added symbol-file system-supplied DSO at 0x7ffff7ffa000
+
+    Breakpoint 1, main () at a.cpp:6
+    6                cout &amp;lt;&amp;lt; 1 &amp;lt;&amp;lt; endl;
+    Missing separate debuginfos, use: debuginfo-install glibc-2.12-1.212.el6_10.3.x86_64 libgcc-4.4.7-23.el6.x86_64 libstdc++-4.4.7-23.el6.x86_64
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;となったので、
+debuginfoをインストール&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ yum install yum-utils
+$ debuginfo-installglibc-2.12-1.212.el6_10.3.x86_64 libgcc-4.4.7-23.el6.x86_64 libstdc++-4.4.7-23.el6.x86_64 
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;これで、gdbでデバッグできるようになりました！
+参考にさせていただいた記事、ありがとうございます。&lt;/p&gt;
+&lt;h1&gt;Dockerコンテナをcommitしてみる&lt;/h1&gt;
+&lt;p&gt;gdbという名前のコンテナで動かしていたものを、gdbenvというイメージとして保存します。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ docker commit gdb gdbenv
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+gdbenv              latest              c7e81afda91c        &lt;span class="m"&gt;22&lt;/span&gt; seconds ago      &lt;span class="m"&gt;1&lt;/span&gt;.34GB
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;で、&lt;code&gt;gdbenv&lt;/code&gt;という名前のイメージができていることを確認。
+今後ここからイメージを起動して使うことができます。
+Docker Hubにimageを公開すれば他の人も利用可能になります。公開にはDockerのアカウントを作成する必要があるみたいです。&lt;/p&gt;
+&lt;h1&gt;commitしたimageからコンテナを利用→エラー&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;commitしたgdbenvというイメージから、gdbenvという名前のコンテナを起動して、bashを動かした。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ docker run --name gdbenv -it -d gdbenv /bin/bash
+$ docker &lt;span class="nb"&gt;exec&lt;/span&gt; -it gdbenv /bin/bash
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;これでgdbででバックしようとしたら、&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(gdb) b main
+Breakpoint 1 at 0x4007e8: file a.cpp, line 6.
+(gdb) run
+Starting program: /root/01/a.out
+warning: Error disabling address space randomization: Operation not permitted
+1
+2
+During startup program exited normally.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;となったので、調べてみると、
+gdbはシステムコールを使ってデバッグしているので、Dockerのコンテナを起動する際に、
+* --cap-add=SYS_PTRACE: コンテナ内からのgdbによるptrace(2)を許可
+* --security-opt="seccomp=unconfined": コンテナ内からのシステムコールの発行に制限を掛けない
+の2つのオプションを追加する必要があるようです。（初めのCentOSのイメージからコンテナ起動するときに使ったコマンドと同じ。てっきり忘れていました。
+&lt;a href="https://www.cyamax.com/entry/2018/02/09/070000"&gt;こちら&lt;/a&gt;を参考にさせていただきました。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ docker run --cap-add&lt;span class="o"&gt;=&lt;/span&gt;SYS_PTRACE --security-opt&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;seccomp=unconfined&amp;quot;&lt;/span&gt; --name gdbenv -it -d gdbenv /bin/bash
+$ docker &lt;span class="nb"&gt;exec&lt;/span&gt; -it gdbenv /bin/bash
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;このようすることで、うまくできました。&lt;/p&gt;</content><category term="Docker"></category><category term="Programming"></category></entry><entry><title>細胞農業に興味がある理由(The reason why I'm interested in cellular agriculture)</title><link href="https://naoto-yamaguchi.github.io/site/cellular%20agriculture.html" rel="alternate"></link><published>2019-06-01T00:00:00+09:00</published><updated>2019-06-01T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-01:/site/cellular agriculture.html</id><summary type="html">&lt;p&gt;細胞農業について&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
+&lt;p&gt;自分の興味があるプロジェクトについて、英語で記述する機会がありました。
+そこで他人に見せることを意識しながら、自分が興味ある学問分野について書いてみました。
+全ての人&lt;/p&gt;
+&lt;h1&gt;参考&lt;/h1&gt;
+&lt;h1&gt;目次&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;日本語&lt;ul&gt;
+&lt;li&gt;&lt;a href="#what_is_ca_ja"&gt;細胞農業とは&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#why_ca_interests_me_ja"&gt;細胞農業に興味がある理由&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;きっかけ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;In Eglish&lt;ul&gt;
+&lt;li&gt;What is cellular agriculture?&lt;/li&gt;
+&lt;li&gt;The reason why I'm interested in cellular agriculture&lt;ul&gt;
+&lt;li&gt;Solution&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=what_is_ca_ja&gt;&lt;/div&gt;
+
+&lt;h2&gt;細胞農業とは&lt;/h2&gt;
+&lt;p&gt;&lt;div id=why_ca_interests_me_ja&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;h2&gt;細胞農業に興味がある理由&lt;/h2&gt;
+&lt;h3&gt;きっかけ&lt;/h3&gt;
+&lt;p&gt;私がSustainabilityに興味を持ったきっかけは、農業に興味がある友達に勧められた、Cowspiracyというドキュメンタリーでした。このドキュメンタリーは、畜産業が持続可能ではないことを主張したものです。
+国連が発表している人口統計によると、ほぼ確実に2050年には90億人を越えると言われており、これらの人を養う食糧生産方法の確立の必要性が声高に叫ばれています。中でも食肉の需要は高まる一方です。その一方で、現在の畜産業のあり方は持続可能ではなく、このままでは、将来の食料需要を満たすことはできません。従来の食肉生産方法では、牛肉1kgの生産に約10kgもの穀物を必要としており、エネルギー変換効率は悪く、生産に大量の飼料としての穀物と水や土地を必要とします。現状の畜産業の生産拡大には森林伐採等による土地の拡大を必要としますが、これには限りがあります。
+そのドキュメンタリーを通して、畜産業が持続可能でないことを知りました。また、環境的な要因の他にも、家畜の扱い方等倫理的な側面での問題も指摘されています。&lt;/p&gt;
+&lt;p&gt;現在、それらの食糧・環境・倫理問題の1つの解決策として細胞農業が注目されています。
+自分は兼ねてから人類史にインパクトを与え、これまでの価値観を大きく変えるような取り組みに関わりたいと考えていましたが、自分が取り組むべきテーマはこれなのではないかと考えています。
+自分の専門性を生かせて、持続可能な地球を実現するプロジェクトとして細胞農業に非常に興味があり、これにより持続可能性に取り組めるのではないかと考えています。
+私は、地球の持続可能性に対する問題意識を人一倍持っており、sustainabilityに関するプロジェクトへの参加を強く希望します。&lt;/p&gt;
+&lt;p&gt;The reason I am interested in sustainablility is because I watched the documentary, called "Cowspiracy", which a friend of mine who is interested in agriculture recommended me to watch. This movie persists that animal agriculture is not sustainable.
+According to demographic by the United Nations, world population projected to reach 9.8 billion in 2050 and food production feeding increasing world population is required. Especially, global meat consumption continues to rise. However, animal agriculture now is not sustainable and cannot meet the needs of future demand for food because their energy conversion efficiency is so bad that they require a lot of crops, water and lands, which are limited on our earth.
+Through the documentary, I understood that animal agriculture is not sustainable and there are other problems related to ethical issues.&lt;/p&gt;
+&lt;p&gt;In order to solve these issues, cellular agriculture is recently gathering attention.
+I have been hoping to get involved in the projects which have huge impact on human history and their way of thinking. I feel cellular agriculture is the subject that I need to pursue.
+In this topic, I wiil be able to make use of my specializationn and tackle sustainability issues.
+I have awareness of sustainability issues and strongly hope to join the projects about sustainability.&lt;/p&gt;
+&lt;p&gt;現在の畜産業はsustainableではなく、&lt;/p&gt;
+&lt;p&gt;The reason why I got interested in global health is that I read the book by Yuval Noah H, "Homo Deus".
+In this book, "For thousand years, famine, plague, and war were always at the top of the human agenda, but in the last few decades, we have managed to rein in them. Of course, these problems have not yet completely solved, but they have been transformed from incomprehensible and uncontrollable forces of nature into manageable challenges."
+While human have almost solved famine, for the first time in history, more people die today from eating too much than from eating too little. The most obvious examples of this are diabetes and obesity, which I think is a stupid situation.
+Type 2 diabetes and obesity is sometimes due to genetic factor, but basically due to lifestyle. I guess the reformation of education and culture may be required to tackle lifestyle diseases. 
+Especially, poor people in developed countries find it hard to avoid having fast food as daily consumption, which may lead to high diabetes rates. I think this is a big problem and that is the reason why I would like to address global health issues.&lt;/p&gt;
+&lt;p&gt;global healthに興味がある理由
+サピエンス全史という本を読んだことがきっかけです。
+この本では人間は、この数千年で兼ねてから大きな問題であった、飢餓、疫病、戦争という人類の課題が解決されつつあることを示し、新たな課題へと目を向けさせています。
+人類は、飢餓を解決してきた一方で、現代において飢餓で死ぬ人よりと食べ過ぎで死ぬ人の方が多い、という現状があります。このもっとも顕著な例が糖尿病と肥満ですが、
+私はこれは明らかに馬鹿げた状況であると考えています。
+糖尿病や肥満は、遺伝的な要因によることもありますが、基本的には生活習慣によるもので、治療法の開発はもちろんですが、根本的には、教育的、文化的側面から変えていかなくてはならないと考えています。
+さらに、所得や地域によっては、糖尿病を誘発するような食生活を避けられない状態になっており、強い問題意識を感じています。特に先進国の貧困層などは、日常的な食事としてファストフードを避けることが金銭的に困難な状況になっており、この状況を社会システムや教育を変えることで、解決に導けるのではないかと考えています。&lt;/p&gt;
+&lt;p&gt;特に&lt;/p&gt;
+&lt;p&gt;また
+ナウルの衝撃
+間違った食生活が蔓延ることで、社会を壊す恐れがある。&lt;/p&gt;</content><category term="好きなもの"></category><category term="生物"></category><category term="細胞農業"></category></entry><entry><title>がん</title><link href="https://naoto-yamaguchi.github.io/site/cancer.html" rel="alternate"></link><published>2019-05-31T00:00:00+09:00</published><updated>2019-05-31T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-05-31:/site/cancer.html</id><summary type="html">&lt;p&gt;がんの仕組みの解説&lt;/p&gt;</summary><content type="html">&lt;h2&gt;最初の投稿です。&lt;/h2&gt;
 &lt;p&gt;Hello &lt;strong&gt;world!&lt;/strong&gt;. My name is &lt;em&gt;SAIRA&lt;/em&gt; from Japan.&lt;/p&gt;
 &lt;h3&gt;表を挿入&lt;/h3&gt;
 &lt;table&gt;
@@ -231,24 +483,80 @@ https://ganjoho.jp/public/dia_tre/knowledge/basic.html&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;放射線療法&lt;/li&gt;
 &lt;li&gt;免疫療法&lt;/li&gt;
-&lt;/ul&gt;</content><category term="生物学"></category><category term="解説"></category><category term="授業まとめ"></category></entry><entry><title>チューリングパターンとは</title><link href="https://naoto-yamaguchi.github.io/site/chiyuringupatantoha.html" rel="alternate"></link><published>2019-04-04T00:00:00+09:00</published><updated>2019-04-04T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-04-04:/site/chiyuringupatantoha.html</id><summary type="html">&lt;h2&gt;動機&lt;/h2&gt;
-&lt;p&gt;システム生物学の授業が書くことになったきっかけです。
-&lt;a href="https://nafoto-z.hatenablog.com/entry/2018/12/07/184450"&gt;hatenablog&lt;/a&gt; に書いたところ数式を上手く表示できず書き途中であったため、こちらで書きました。&lt;a href="https://nafoto-z.hatenablog.com/entry/2018/12/07/184450"&gt;hatenablog&lt;/a&gt; の方に、意外とアクセスがあったので、折角訪問してくださった方にちゃんと見ていただきたいと思いました。&lt;a href="https://nafoto-z.hatenablog.com/entry/2018/12/07/184450"&gt;hatenablog&lt;/a&gt; の方は放置していてひどいです。こちらのサイトも見た目等変なところが多いですがご容赦下さい。そのうち直します。&lt;/p&gt;
-&lt;h2&gt;参考&lt;/h2&gt;
-&lt;p&gt;実装は、以下のサイトを参考にしました https://ipython-books.github.io/124-simulating-a-partial-differential-equation-reaction-diffusion-systems-and-turing-patterns/&lt;/p&gt;
-&lt;h2&gt;チューリングパターンとは？&lt;/h2&gt;
-&lt;p&gt;誤解を恐れずに言えば、こういう模様(=波)のことです。
-&lt;img alt="" src="https://paper-attachments.dropbox.com/s_FC172B40024B510FC7C44978CC0D4E41A14218694B499746443C68DDD9C8FBD5_1559322871809_pattern.png"&gt;&lt;/p&gt;
-&lt;p&gt;こういう模様、パターンのことをチューリングパターンと言います。チューリング波、反応拡散波という言い方もあります。&lt;/p&gt;
-&lt;p&gt;そして重要なのは、以下の 2 点&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;このパターンはある条件を満たす化学反応システムが自発的に生み出す周期的なものであるということ&lt;/li&gt;
-&lt;li&gt;模様(=波)の仕組みは、反応拡散方程式で数学的に表せる！！ ということ&lt;/li&gt;
-&lt;li&gt;この模様は、生物によく見られるものであり、一部の生物では、確かに反応拡散系によってこの模様が作られている！！ ということ&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;遺伝子だけで決まる訳ではない&lt;/p&gt;
-&lt;h2&gt;point①&amp;amp;③&lt;/h2&gt;
-&lt;p&gt;これは化学反応によって自発的に起こるパターンで、生物にも見られる …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;動機&lt;/h2&gt;
+&lt;/ul&gt;</content><category term="生物学"></category><category term="解説"></category><category term="授業まとめ"></category></entry><entry><title>EC2からRDSへの接続と、RDSへのデータ投入&amp;日本語文字化け対応の備忘録</title><link href="https://naoto-yamaguchi.github.io/site/ec2_to_rds.html" rel="alternate"></link><published>2019-04-29T00:00:00+09:00</published><updated>2019-04-29T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-04-29:/site/ec2_to_rds.html</id><summary type="html">&lt;p&gt;RDS文字化け対応備忘録&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630545434_rds.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;動機&lt;/h2&gt;
+&lt;p&gt;あるプロジェクトで、EC2インスタンスからRDSに接続できるように設定する必要がありました。また、RDSへのデータの投入も初めてだったので、記録を残しておこうと思いました。&lt;/p&gt;
+&lt;h2&gt;EC2からRDSへの接続&lt;/h2&gt;
+&lt;p&gt;EC2からRDSへ接続するには以下のことが必要です。
+* EC2インスタンスに接続できる
+* RDSインスタンスが管理下にある
+* EC2インスタンスでmysqlコマンドを実行できる
+* RDSインスタンスのマスターユーザー名とマスターパスワードを知っている。もしくは、AWSコンソールにログインできる
+* RDSインスタンスのセキュリティグループで、MySQLポート(3306)を開放している（できる）&lt;/p&gt;
+&lt;p&gt;ここでは、目的のEC2インスタンスとRDSインスタンスが作成してあることは前提とします。作成については他の記事を参照してください。&lt;/p&gt;
+&lt;p&gt;EC2インスタンスからRDSインスタンスへは、&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mysql -h [ENDPOINT] -P 3306 -u [Username] –p [Name]
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;というコマンドで接続することができるのですが、そのためには以下の準備が必要です。
+* mysqlコマンドが実行できる
+* 今回のようにmysqlがEC2インスタンスにインストールされていない場合は、以下のようにしてインストールしました&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo yum install mysql
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;インストールできているかの確認は&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ yum list installed &lt;span class="p"&gt;|&lt;/span&gt; grep mysql
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;RDSインスタンスのエンドポイントがわかっている&lt;/li&gt;
+&lt;li&gt;これはAWSコンソールから確認できます。&lt;/li&gt;
+&lt;li&gt;[RDS]-&amp;gt;[データベース]-&amp;gt;インスタンスを選択-&amp;gt;[接続とセキュリティ]で確認できます。&lt;/li&gt;
+&lt;li&gt;RDSインスタンスのマスターユーザー名がわかっている&lt;/li&gt;
+&lt;li&gt;マスターユーザー名はRDSインスタンス作成時に指定するものです。&lt;/li&gt;
+&lt;li&gt;[RDS]-&amp;gt;[データベース]-&amp;gt;インスタンスを選択-&amp;gt;[設定]で確認できます。&lt;/li&gt;
+&lt;li&gt;RDSインスタンスのパスワードがわかっている&lt;/li&gt;
+&lt;li&gt;パスワードはAWSコンソールから確認はできませんが、変更することはできます。&lt;/li&gt;
+&lt;li&gt;[RDS]-&amp;gt;[データベース]-&amp;gt;インスタンスを選択-&amp;gt;[変更]で、設定という項目で、「新しいマスターパスワード」という欄があるので、そこで変更することができます。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以上で、接続への必要な情報は揃うと思います。&lt;/p&gt;
+&lt;p&gt;最後に、EC2インスタンスから、接続の要求をした際に、それを受け入れるための準備をRDS側でしておかないといけません（デフォルトでは許可されていません）。
+[RDS]-&amp;gt;[データベース]-&amp;gt;インスタンスを選択-&amp;gt;[接続とセキュリティ]-&amp;gt;[セキュリティグループのルール]で設定されている、セキュリティグループのinboundでMySQLポート(3306)を開放しましょう。
+以下の記事を参考になると思います。
+&lt;a href="https://hacknote.jp/archives/39927/"&gt;RDSへEC2から接続する方法 -HACK NOTE&lt;/a&gt;
+&lt;a href="https://docs.aws.amazon.com/ja_jp/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.MySQL.html"&gt;AWS RDS ドキュメント&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;これで、上記のコマンドを実行することで無事接続できるはずです！&lt;/p&gt;
+&lt;h2&gt;RDSへのデータ投入&lt;/h2&gt;
+&lt;p&gt;ECSインスタンス上にあるデータをRDSのDBに投入する方法です。
+以下の記事を参考にしました。
+RDSインスタンスにログインした状態で、データベースを指定し(use database_name)、&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;LOAD DATA LOCAL INFILE &amp;#39;sample.csv&amp;#39;
+REPLACE INTO TABLE database_name
+CHARACTER SET utf8
+FIELDS TERMINATED BY &amp;#39;,&amp;#39;
+OPTIONALLY ENCLOSED BY &amp;#39;&amp;quot;&amp;#39;
+IGNORE 1 LINES;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;でEC2上にあるCSVファイルをインポートできます。
+ファイル名の指定は、RDSインスタンスにログインする際にいたディレクトリからのパスになりますので、注意してください。またファイル名に日本語や、\などの文字が入っている場合も、上手くインポートできないことがあるので注意してください。&lt;/p&gt;
+&lt;p&gt;さて、すでに作成していたテーブルに上記のコマンドでデータをインポートできたのですが、テーブルの中身を確認してみると、日本語が文字化けしてしまっていました。。。&lt;/p&gt;
+&lt;h2&gt;日本語文字化けに対する対処&lt;/h2&gt;
+&lt;p&gt;やるべきことは、
+データベース、もしくはテーブルのキャラクターセットをutf8に変更することです。
+&lt;a href="https://qiita.com/reoy/items/e355debf1e2b2abd703b"&gt;RDSで日本語が文字化けする問題&lt;/a&gt;という記事を参考に、AWSコンソールから、RDSインスタンスのパラメータグループを設定しました。
+これだけ(Step4まで)では、すでに作成されているDBに対してパラメターグループの設定を行っても"character_set_database"は、latin1 のまま変更されないので、
+&lt;a href="http://d.hatena.ne.jp/It_lives_vainly/touch/20160906/1473154857"&gt;RDS の mySQL で日本語が文字化けて困った時の対応方法&lt;/a&gt;を参考に、設定すると無事日本語文字化けが直りました。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ ALTER DATABASE database_name default character &lt;span class="nb"&gt;set&lt;/span&gt; utf8
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;コマンドが重要です。&lt;/p&gt;
+&lt;p&gt;今後、RDSインスタンス新規作成の際に、パラメータグループをきちんと設定すると良さそうです。&lt;/p&gt;
+&lt;p&gt;どうでも良いですが、mysqlのテーブル名は最長で63文字らしいです。&lt;/p&gt;</content><category term="AWS"></category></entry><entry><title>チューリングパターンとは</title><link href="https://naoto-yamaguchi.github.io/site/turing_pattern.html" rel="alternate"></link><published>2019-04-04T00:00:00+09:00</published><updated>2019-04-04T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-04-04:/site/turing_pattern.html</id><summary type="html">&lt;p&gt;チューリングパターンの解説&lt;br&gt;&lt;img src="https://camo.qiitausercontent.com/58b0457b75d51790ad0c73dc752d27a2434d6a97/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3134313530332f35636465656163632d366132362d343566612d636264332d3539316561316264373238612e6a706567"&gt;&lt;/img&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;動機&lt;/h2&gt;
 &lt;p&gt;システム生物学の授業が書くことになったきっかけです。
 &lt;a href="https://nafoto-z.hatenablog.com/entry/2018/12/07/184450"&gt;hatenablog&lt;/a&gt; に書いたところ数式を上手く表示できず書き途中であったため、こちらで書きました。&lt;a href="https://nafoto-z.hatenablog.com/entry/2018/12/07/184450"&gt;hatenablog&lt;/a&gt; の方に、意外とアクセスがあったので、折角訪問してくださった方にちゃんと見ていただきたいと思いました。&lt;a href="https://nafoto-z.hatenablog.com/entry/2018/12/07/184450"&gt;hatenablog&lt;/a&gt; の方は放置していてひどいです。こちらのサイトも見た目等変なところが多いですがご容赦下さい。そのうち直します。&lt;/p&gt;
 &lt;h2&gt;参考&lt;/h2&gt;
@@ -587,8 +895,7 @@ n = int(T / dt&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;br&gt;
-&lt;img src="/img/turing_pattern.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630570606_turing_pattern.png"&gt;&lt;/p&gt;
 &lt;h3&gt;感想&lt;/h3&gt;
 &lt;p&gt;今回のお話は、システム生物学という分野で扱われがちなお話です。私が興味を持っているバイオインフォマティクスにシステム生物学が含まれるかどうかはわかりません。僕が所属する学科は、バイオインフォマティクスとシステム生物学という 2 つの学問分野を柱にしています。システム生物学もなかなか面白いなと思いました。今後こちらのブログも充実させていくので、是非チェックして見て下さい！
 todo あとで追記&lt;/p&gt;
@@ -652,24 +959,54 @@ todo あとで追記&lt;/p&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content></entry><entry><title>私のおすすめのものたち</title><link href="https://naoto-yamaguchi.github.io/site/recommendation.html" rel="alternate"></link><published>2019-02-24T00:00:00+09:00</published><updated>2019-02-24T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-24:/site/recommendation.html</id><summary type="html">&lt;p&gt;おすすめ集、好きなもの&lt;/p&gt;</summary><content type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;hogeh9ogehoge
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/script&gt;</content><category term="生物学"></category><category term="Bioinfo"></category></entry><entry><title>SSHのポートフォワード（トンネリング）とは？</title><link href="https://naoto-yamaguchi.github.io/site/ssh_port_forward.html" rel="alternate"></link><published>2019-03-31T00:00:00+09:00</published><updated>2019-03-31T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-03-31:/site/ssh_port_forward.html</id><summary type="html">&lt;p&gt;SSHポートフォーワードとは（未完）&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630562939_port_forwarding.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h3&gt;動機&lt;/h3&gt;
+&lt;p&gt;SSH ポートフォワードを使っていた時に、SCP でファイルを送信したかったため。&lt;/p&gt;
+&lt;h3&gt;参考&lt;/h3&gt;
+&lt;p&gt;サムネイル画像は&lt;a href="https://cookbook.fortinet.com/port-forwarding-60/"&gt;こちら&lt;/a&gt;より引用&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.clear-code.com/blog/2014/9/12.html"&gt;SSH ポートフォワード（トンネリング）を使って、遠隔地から LAN 内のコンピュータにログインする&lt;/a&gt;
+&lt;a href="https://www.turbolinux.co.jp/products/server/11s/user_guide/x9016.html"&gt;Turbolinux 11 Server: ユーザーガイド 第 21 章 SSH（Secure SHell）サーバー&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;SSH ポートフォワードとは？&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ある特定のコンピュータの特定のポート番号に対して送られる通信内容を、別のコンピュータの特定のポート番号への接続として転送すること。インターネットと LAN の間でルーターは日常的にこれをこなしているが、SSH のポートフォワード機能を使うと、様々な設定でポートフォワードをすることができる。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;今回は、ある LAN の中にある PC から別の LAN の中にある PC に SSH 接続しており、そのコンピュータ間でファイル転送をおこないたいというモチベーションがありました。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;インターネット上の中継サーバを使う方法&lt;/li&gt;
+&lt;li&gt;LAN 内の中継サーバを使う方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;の 2 通りがあります。&lt;/p&gt;
+&lt;h3&gt;実際にやってみた&lt;/h3&gt;
+&lt;p&gt;すみません、まとめたら載せます。&lt;/p&gt;
+&lt;!-- zsh: no matches found
+[ss](http://d.hatena.ne.jp/eitya/20110707/1310023383)
+[]https://shirusu-ni-tarazu.hatenablog.jp/entry/2013/01/18/034233
+全然関係ないところでエラー
 
+[](https://qiita.com/kyrya/items/121fc54ae4c9c10c0e8b)
+を参考に
+`scp -o 'ProxyCommand ssh aca10555ym@as.abci.ai nc %h %p' lstm_human_antigen.ipynb aca10555ym@es:/groups2/gca50068/yamaguchi`
+やってみたけど、
+sh_exchange_identification ってエラー
+[](https://qiita.com/uutarou10/items/f8391965adc6b4c312d1)
+そもそも IP アドレスが違う説確認する
 
+tmux ってなに
+
+abci-gate した状態で
+[~] scp -r -P 10022 [送りたいディレクトリ][usrname]@localhost:[送り先のディレクトリ]
+でできた --&gt;</content><category term="SSH"></category><category term="portforward"></category></entry><entry><title>私のおすすめのものたち</title><link href="https://naoto-yamaguchi.github.io/site/recommendation.html" rel="alternate"></link><published>2019-02-24T00:00:00+09:00</published><updated>2019-02-24T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-24:/site/recommendation.html</id><summary type="html">&lt;p&gt;おすすめ集、好きなもの&lt;/p&gt;</summary><content type="html">&lt;p&gt;e&lt;/p&gt;
 &lt;h1&gt;動機、対象&lt;/h1&gt;
-&lt;p&gt;全ての人&lt;/p&gt;
+&lt;p&gt;人のおすすめを聞いて自分の興味の幅が広がったり、新たな発見をすることがあったので。
+現状適当ですが、随時載せていきます。&lt;/p&gt;
 &lt;h1&gt;参考&lt;/h1&gt;
-&lt;p&gt;cell chap20
-国立がん研究センター ガン情報サービス (2018)
-知っておきたいがんの基礎知識
-https://ganjoho.jp/public/dia_tre/knowledge/basic.html&lt;/p&gt;
 &lt;h1&gt;目次&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;おすすめの本&lt;ul&gt;
 &lt;li&gt;サピエンス全史&lt;/li&gt;
 &lt;li&gt;ホモデウス&lt;/li&gt;
 &lt;li&gt;史上最強の哲学入門&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;勉強の哲学&lt;/li&gt;
+&lt;li&gt;愛するということ&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;おすすめの英語&lt;ul&gt;
@@ -703,32 +1040,98 @@ https://ganjoho.jp/public/dia_tre/knowledge/basic.html&lt;/p&gt;
 &lt;li&gt;Nuzzle&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="好きなもの"></category><category term="嗜好"></category></entry><entry><title>最初の投稿</title><link href="https://naoto-yamaguchi.github.io/site/zui-chu-notou-gao.html" rel="alternate"></link><published>2019-02-24T00:00:00+09:00</published><updated>2019-02-24T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-24:/site/zui-chu-notou-gao.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;## 最初の投稿です。
+&lt;li&gt;
+&lt;p&gt;おすすめのサイト&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Golden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content><category term="好きなもの"></category><category term="嗜好"></category></entry><entry><title>NCBIからゲノムデータを取得する方法</title><link href="https://naoto-yamaguchi.github.io/site/how_to_get_genome_data_from_ncbi.html" rel="alternate"></link><published>2019-02-22T00:00:00+09:00</published><updated>2019-02-22T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-22:/site/how_to_get_genome_data_from_ncbi.html</id><summary type="html">&lt;p&gt;ゲノムデータ取得&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630593492_ncbi.png" width=150 height=150&gt;&lt;/p&gt;</summary><content type="html">&lt;h3&gt;動機&lt;/h3&gt;
+&lt;p&gt;NCBI からゲノムデータを取ってきたい時どうすれば良いかわからなかった。ftp を知らなかったけど、ダウンロードできました！&lt;/p&gt;
+&lt;h3&gt;参考&lt;/h3&gt;
+&lt;p&gt;サムネイル画像は&lt;a href="https://en.wikipedia.org/wiki/National_Center_for_Biotechnology_Information"&gt;こちら&lt;/a&gt;より引用&lt;/p&gt;
+&lt;h3&gt;Step1: 取得したいデータの ftp パスを手に入れる&lt;/h3&gt;
+&lt;p&gt;NCBI にどういうデータがどういう風に  あるかよくわかっていませんが、とりあえず自分がやった範囲では、ftp パスを用いて、圧縮された fna ファイルを  ダウンロードし、解凍しました。(解凍せずに中身を見ようとして、文字コードエラーが出たので注意！)
+解凍せずに扱おうとしたところ、&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;UnicodeDecodeError: &amp;#39;utf-8&amp;#39; codec can&amp;#39;t decode byte 0x8b in position 1
+&lt;/pre&gt;&lt;/div&gt;
 
-Hello **world!**. My name is *SAIRA* from Japan.
 
-### 表を挿入
+&lt;p&gt;というエラーとお友達になれました。&lt;/p&gt;
+&lt;p&gt;zip ファイルの解凍は、&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ gunzip
+&lt;/pre&gt;&lt;/div&gt;
 
-|テスト1|テスト2|テスト3|
-|---|---|---|
-|テスト|テスト|テスト|
 
-### シンタックスハイライト
-```python
-print(&amp;#39;hello world!&amp;#39;)
-```
-&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;## 最初の投稿です。
+&lt;p&gt;でできました。&lt;/p&gt;
+&lt;p&gt;流れとしては、例えば、~/data/に GCF_000010525.1.fna.gz というファイル名でダウンロードする場合、&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ wget -O ~/data/GCF_000010525.1.fna.gz ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/010/525/GCF_000010525.1_ASM1052v1/GCF_000010525.1_ASM1052v1_cds_from_genomic.fna.gz
+$ gunzip
+&lt;/pre&gt;&lt;/div&gt;
 
-Hello **world!**. My name is *SAIRA* from Japan.
 
-### 表を挿入
+&lt;p&gt;これで GCF_000010525.1.fna ファイルを見たり読み込ませたりして解析に用いることができます！&lt;/p&gt;
+&lt;p&gt;自分はこれしかやったことがないので、他にも試してみて、追記したいと思います。&lt;/p&gt;</content><category term="Bioinfo"></category><category term="生物情報"></category><category term="NCBI"></category></entry><entry><title>Jupyter Notebookをリモートサーバーで利用し、ローカルのブラウザで確認する"</title><link href="https://naoto-yamaguchi.github.io/site/remote_jupyternotebook.html" rel="alternate"></link><published>2019-02-20T00:00:00+09:00</published><updated>2019-02-20T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-20:/site/remote_jupyternotebook.html</id><summary type="html">&lt;p&gt;Jupyter Notebook利用の備忘録&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630601567_jupyter.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h3&gt;動機&lt;/h3&gt;
+&lt;p&gt;データ分析で大量のデータを扱う際、ローカルの  コンピューターではなく  リモートサーバーにダウンロードなどを行うことがありました。そのデータを分析するために、Jupyter Notebook を利用したかったのですが、 ローカルで使えるだけではデータを参照できないので、データがおかれているリモートサーバーで  使えるようにする必要がありました。やりたいことは以下のような感じです。
+http://starpentagon.net/analytics/remote_jupyter_notebook/&lt;/p&gt;
+&lt;h3&gt;参考&lt;/h3&gt;
+&lt;p&gt;サムネイル画像は&lt;a href="https://en.wikipedia.org/wiki/Project_Jupyter"&gt;こちら&lt;/a&gt;より引用&lt;/p&gt;
+&lt;h3&gt;Step1: リモートサーバーに Jupyter Notebook をインストール&lt;/h3&gt;
+&lt;p&gt;リモートサーバーにおける権限などに注意する必要があります。おそらく&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ pip install jupyter --user
+&lt;/pre&gt;&lt;/div&gt;
 
-|テスト1|テスト2|テスト3|
-|---|---|---|
-|テスト|テスト|テスト|
 
-### シンタックスハイライト
-```python
-print(&amp;#39;hello world!&amp;#39;)
-```
-&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title>My First Review</title><link href="https://naoto-yamaguchi.github.io/site/my-first-review.html" rel="alternate"></link><published>2010-12-03T10:20:00+09:00</published><updated>2010-12-03T10:20:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2010-12-03:/site/my-first-review.html</id><summary type="html">&lt;p&gt;Following is a review of my favorite mechanical keyboard.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Following is a review of my favorite mechanical keyboard.&lt;/p&gt;</content></entry></feed>
+&lt;p&gt;で十分ですが、自分は anaconda をインストールしました。このページの Linux でのインストール方法を参考にしました。
+https://qiita.com/t2y/items/2a3eb58103e85d8064b6
+https://stackoverflow.com/questions/38080407/how-can-i-install-the-latest-anaconda-with-wget&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ wget http://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh
+$ bash Anaconda3-4.2.0-Linux-x86_64.sh
+&lt;span class="c1"&gt;#PATHの設定&lt;/span&gt;
+~/.bash_profileに
+&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/home/yamaguchi/anaconda3/bin:PATH
+&lt;span class="c1"&gt;#を追記&lt;/span&gt;
+$ &lt;span class="nb"&gt;source&lt;/span&gt; ~/.bash_profile
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Step2: サーバー側の設定&lt;/h3&gt;
+&lt;p&gt;基本的にこちらを参考にしました。
+http://starpentagon.net/analytics/remote_jupyter_notebook/&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;ipython3&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;notebook.auth&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;passwd&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;passwd&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="c1"&gt;# ここでパスワードを入力し、出力されたsha1値をコピー&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;quit&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;~/.jupyter/jupyter_notebook_config.py を変更。なければ、&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ jupyter notebook --generate-config
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;~/.jupyter/jupyter_notebook_config.py を開き&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;c.NotebookApp.ip = &amp;#39;*&amp;#39;
+c.NotebookApp.open_browser = False
+c.NotebookApp.port = 8888
+c.NotebookApp.password = u&amp;#39;sha1:XXXXXXX&amp;#39; # 先ほど記録したsha1値を記載
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;以下のように設定。&lt;/p&gt;
+&lt;p&gt;これにて設定終了。 自分の場合、一旦 ssh 接続を切って、&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ssh -L 8888:localhost:8888 &amp;lt;username&amp;gt;@&amp;lt;ip address&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;で再度リモートサーバーに接続し、&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;jupyter notebook
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;を実行し、起動。&lt;/p&gt;
+&lt;p&gt;クライアント側のブラウザから、
+&lt;code&gt;http://localhost:8888&lt;/code&gt;にアクセス。jupyter notebook ぽい画面が表示され、sha1 値  生成時に入力したパスワード入力すると、認証が成功し、クライアント側のブラウザからリモートサーバー上で動く Jupyter Notebook を利用できます。&lt;/p&gt;
+&lt;h3&gt;参考&lt;/h3&gt;
+&lt;p&gt;https://qiita.com/Miggy/items/5466a2c1e968602f3ebe&lt;/p&gt;</content><category term="Python SSh"></category></entry></feed>

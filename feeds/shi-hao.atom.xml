@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog - 嗜好</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/shi-hao.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-02-24T00:00:00+09:00</updated><entry><title>私のおすすめのものたち</title><link href="https://naoto-yamaguchi.github.io/site/recommendation.html" rel="alternate"></link><published>2019-02-24T00:00:00+09:00</published><updated>2019-02-24T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-24:/site/recommendation.html</id><summary type="html">&lt;p&gt;おすすめ集、好きなもの&lt;/p&gt;</summary><content type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;hogeh9ogehoge
-&lt;/pre&gt;&lt;/div&gt;
-
-
+<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog - 嗜好</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/shi-hao.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-02-24T00:00:00+09:00</updated><entry><title>私のおすすめのものたち</title><link href="https://naoto-yamaguchi.github.io/site/recommendation.html" rel="alternate"></link><published>2019-02-24T00:00:00+09:00</published><updated>2019-02-24T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-24:/site/recommendation.html</id><summary type="html">&lt;p&gt;おすすめ集、好きなもの&lt;/p&gt;</summary><content type="html">&lt;p&gt;e&lt;/p&gt;
 &lt;h1&gt;動機、対象&lt;/h1&gt;
-&lt;p&gt;全ての人&lt;/p&gt;
+&lt;p&gt;人のおすすめを聞いて自分の興味の幅が広がったり、新たな発見をすることがあったので。
+現状適当ですが、随時載せていきます。&lt;/p&gt;
 &lt;h1&gt;参考&lt;/h1&gt;
-&lt;p&gt;cell chap20
-国立がん研究センター ガン情報サービス (2018)
-知っておきたいがんの基礎知識
-https://ganjoho.jp/public/dia_tre/knowledge/basic.html&lt;/p&gt;
 &lt;h1&gt;目次&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;おすすめの本&lt;ul&gt;
 &lt;li&gt;サピエンス全史&lt;/li&gt;
 &lt;li&gt;ホモデウス&lt;/li&gt;
 &lt;li&gt;史上最強の哲学入門&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;勉強の哲学&lt;/li&gt;
+&lt;li&gt;愛するということ&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;おすすめの英語&lt;ul&gt;
@@ -48,6 +43,12 @@ https://ganjoho.jp/public/dia_tre/knowledge/basic.html&lt;/p&gt;
 &lt;p&gt;おすすめのアプリ&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Nuzzle&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;おすすめのサイト&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Golden&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</content><category term="好きなもの"></category><category term="嗜好"></category></entry></feed>

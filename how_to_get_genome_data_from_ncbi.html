@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="nafoto'z_blog Atom">
+
+
+
+
+
+<meta name="author" content="Naoto Yamaguchi" />
+<meta name="description" content="ゲノムデータ取得" />
+<meta name="keywords" content="Bioinfo, 生物情報, NCBI">
+
+<meta property="og:site_name" content="nafoto'z_blog"/>
+<meta property="og:title" content="NCBIからゲノムデータを取得する方法"/>
+<meta property="og:description" content="ゲノムデータ取得"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://naoto-yamaguchi.github.io/site/how_to_get_genome_data_from_ncbi.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2019-02-22 00:00:00+09:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://naoto-yamaguchi.github.io/site/author/naoto-yamaguchi.html">
+<meta property="article:section" content="Bioinfo"/>
+<meta property="article:tag" content="Bioinfo"/>
+<meta property="article:tag" content="生物情報"/>
+<meta property="article:tag" content="NCBI"/>
+<meta property="og:image" content="">
+
+  <title>nafoto'z_blog &ndash; NCBIからゲノムデータを取得する方法</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://naoto-yamaguchi.github.io/site">
+        <img src="https://naoto-yamaguchi.github.io/site/theme/img/profile.png" alt="" title="">
+      </a>
+      <h1><a href="https://naoto-yamaguchi.github.io/site"></a></h1>
+
+
+      <nav>
+        <ul class="list">
+
+          <li><a href="" target="_blank">Home</a></li>
+          <li><a href="http://twitter.com/nafoto_z" target="_blank">Twitter</a></li>
+          <li><a href="http://tatekaetaro.work/" target="_blank">立替たろう</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-You can add links in your config file" href="#" target="_blank"><i class="fa fa-You can add links in your config file"></i></a></li>
+        <li><a class="sc-Another social link" href="#" target="_blank"><i class="fa fa-Another social link"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="how_to_get_genome_data_from_ncbi">NCBIからゲノムデータを取得する方法</h1>
+    <p>
+          Posted on 金 22 2月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/bioinfo.html">Bioinfo</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <h3>動機</h3>
+<p>NCBI からゲノムデータを取ってきたい時どうすれば良いかわからなかった。ftp を知らなかったけど、ダウンロードできました！</p>
+<h3>参考</h3>
+<p>サムネイル画像は<a href="https://en.wikipedia.org/wiki/National_Center_for_Biotechnology_Information">こちら</a>より引用</p>
+<h3>Step1: 取得したいデータの ftp パスを手に入れる</h3>
+<p>NCBI にどういうデータがどういう風に  あるかよくわかっていませんが、とりあえず自分がやった範囲では、ftp パスを用いて、圧縮された fna ファイルを  ダウンロードし、解凍しました。(解凍せずに中身を見ようとして、文字コードエラーが出たので注意！)
+解凍せずに扱おうとしたところ、</p>
+<div class="highlight"><pre><span></span>UnicodeDecodeError: &#39;utf-8&#39; codec can&#39;t decode byte 0x8b in position 1
+</pre></div>
+
+
+<p>というエラーとお友達になれました。</p>
+<p>zip ファイルの解凍は、</p>
+<div class="highlight"><pre><span></span>$ gunzip
+</pre></div>
+
+
+<p>でできました。</p>
+<p>流れとしては、例えば、~/data/に GCF_000010525.1.fna.gz というファイル名でダウンロードする場合、</p>
+<div class="highlight"><pre><span></span>$ wget -O ~/data/GCF_000010525.1.fna.gz ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/010/525/GCF_000010525.1_ASM1052v1/GCF_000010525.1_ASM1052v1_cds_from_genomic.fna.gz
+$ gunzip
+</pre></div>
+
+
+<p>これで GCF_000010525.1.fna ファイルを見たり読み込ませたりして解析に用いることができます！</p>
+<p>自分はこれしかやったことがないので、他にも試してみて、追記したいと思います。</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://naoto-yamaguchi.github.io/site/tag/bioinfo.html">Bioinfo</a>
+      <a href="https://naoto-yamaguchi.github.io/site/tag/sheng-wu-qing-bao.html">生物情報</a>
+      <a href="https://naoto-yamaguchi.github.io/site/tag/ncbi.html">NCBI</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " nafoto'z_blog ",
+  "url" : "https://naoto-yamaguchi.github.io/site",
+  "image": "",
+  "description": ""
+}
+</script>
+
+</body>
+</html>
