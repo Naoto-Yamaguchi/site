@@ -4,7 +4,7 @@ Category: 細胞農業
 Tags: 細胞農業, 記事翻訳, 研究, 翻訳
 Slug: cell_based_meat_research_projects
 Authors: Naoto Yamaguchi
-Summary: 培養肉研究プロジェクト紹介の英語記事翻訳<br><img src="/images/cell_based_meat_grant_programs.png">
+Summary: 培養肉研究プロジェクト紹介の英語記事翻訳<br><img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875522300_cell_based_meat_grant_programs.png">
 
 # 目次 (Table of Contents)
   * 紹介
