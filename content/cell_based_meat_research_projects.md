@@ -4,7 +4,7 @@ Category: 細胞農業
 Tags: 細胞農業, 記事翻訳, 研究, 翻訳
 Slug: cell_based_meat_research_projects
 Authors: Naoto Yamaguchi
-Summary: 培養肉研究プロジェクト紹介の英語記事翻訳
+Summary: 培養肉研究プロジェクト紹介の英語記事翻訳<br><img src="/images/cell_based_meat_grant_programs.png">
 
 # 目次 (Table of Contents)
   * 紹介
@@ -32,9 +32,10 @@ Thank GFI for allowing me to translate this article and post it on my blog.
 自分は、細胞農業に興味を持ち、DIYバイオ、Shojinmeat Projectの一環として、自宅で細胞培養の実験をおこなっています。
 日本ではShojinmeat Projectを中心として、DIYバイオの取り組みは海外と比べ盛んですが、研究としてやられているのは少ないのではと思っていました。今後重要性が増し分野として拡大していく細胞農業へ向けた研究する人が少ない中、自分が取り組んでいきたいなと考えています。そこでまず現状どういう研究がなされているか人工培養肉実現に向けた研究課題は何か、について知っておくことは重要だと思い、GFIのGrant Programで支援されているアカデミックな研究プロジェクトについての記事があったので、詳しく読み、訳してみることにしました。
 
-<br>
+<br><br>
+
 ---
-<br>
+
 ## 翻訳内容(contents)
 2月に、私たちはGFIで初開催の、重要な植物性の肉もしくは細胞培養肉研究に対する支援金プログラムのコンペの勝者を発表しました。14の採択された研究プロジェクトが現在進行中です。
 
