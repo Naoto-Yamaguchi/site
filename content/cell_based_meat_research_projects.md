@@ -113,8 +113,10 @@ replenish ... 補充する
 
 ## 関連
 その他の関連記事
-[Good Food Instituteのgrand programのwinnters](https://www.gfi.org/researchgrants)
+[The winners of Good Food Institute Grand Program](https://www.gfi.org/researchgrants)
+
 [Plant-Based Research Projects](https://www.gfi.org/gfi-research-program-update-part-1-introduction)
+
 [Cell-Based Research Projects](https://www.gfi.org/gfideas-food-financials)
 
 またGFI主催のカンファレンスが9月にSFであります。
