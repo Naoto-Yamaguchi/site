@@ -5,6 +5,8 @@ from __future__ import unicode_literals
 AUTHOR = 'Naoto Yamaguchi'
 SITENAME = "nafoto'z_blog"
 SITEURL = ''
+SITELOGO = SITEURL + '/images/profile_dubai.jpg'
+FAVICON = SITEURL + '/images/favicon_dna.ico'
 
 PATH = 'content'
 

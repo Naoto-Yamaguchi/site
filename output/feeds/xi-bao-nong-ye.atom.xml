@@ -1,62 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog - 細胞農業</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/xi-bao-nong-ye.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-06-01T00:00:00+09:00</updated><entry><title>細胞農業に興味がある理由(The reason why I'm interested in cellular agriculture)</title><link href="https://naoto-yamaguchi.github.io/site/cellular%20agriculture.html" rel="alternate"></link><published>2019-06-01T00:00:00+09:00</published><updated>2019-06-01T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-01:/site/cellular agriculture.html</id><summary type="html">&lt;p&gt;細胞農業について&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
-&lt;p&gt;自分の興味があるプロジェクトについて、英語で記述する機会がありました。
-そこで他人に見せることを意識しながら、自分が興味ある学問分野について書いてみました。
-全ての人&lt;/p&gt;
-&lt;h1&gt;参考&lt;/h1&gt;
-&lt;h1&gt;目次&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog - 細胞農業</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/xi-bao-nong-ye.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-06-07T00:00:00+09:00</updated><entry><title>記事翻訳 ~GFI Research Grants Update: Introduction to Cell-Based Meat Research Projects~</title><link href="https://naoto-yamaguchi.github.io/site/cell_based_meat_research_projects.html" rel="alternate"></link><published>2019-06-07T00:00:00+09:00</published><updated>2019-06-07T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-07:/site/cell_based_meat_research_projects.html</id><summary type="html">&lt;p&gt;培養肉研究プロジェクト紹介の英語記事翻訳&lt;/p&gt;</summary><content type="html">&lt;h1&gt;目次 (Table of Contents)&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;日本語&lt;ul&gt;
-&lt;li&gt;&lt;a href="#what_is_ca_ja"&gt;細胞農業とは&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#why_ca_interests_me_ja"&gt;細胞農業に興味がある理由&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;きっかけ&lt;/li&gt;
+&lt;li&gt;紹介&lt;/li&gt;
+&lt;li&gt;動機、目的&lt;/li&gt;
+&lt;li&gt;翻訳内容&lt;ul&gt;
+&lt;li&gt;細胞培養による肉生産の基本&lt;/li&gt;
+&lt;li&gt;細胞株開発&lt;/li&gt;
+&lt;li&gt;細胞培地&lt;/li&gt;
+&lt;li&gt;足場と構造&lt;/li&gt;
+&lt;li&gt;培養器とバイオプロセス&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;英単語&lt;/li&gt;
+&lt;li&gt;感想、終わりに&lt;/li&gt;
+&lt;li&gt;関連&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;In Eglish&lt;ul&gt;
-&lt;li&gt;What is cellular agriculture?&lt;/li&gt;
-&lt;li&gt;The reason why I'm interested in cellular agriculture&lt;ul&gt;
-&lt;li&gt;Solution&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div id=what_is_ca_ja&gt;&lt;/div&gt;
-
-&lt;h2&gt;細胞農業とは&lt;/h2&gt;
-&lt;p&gt;&lt;div id=why_ca_interests_me_ja&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;h2&gt;細胞農業に興味がある理由&lt;/h2&gt;
-&lt;h3&gt;きっかけ&lt;/h3&gt;
-&lt;p&gt;私がSustainabilityに興味を持ったきっかけは、農業に興味がある友達に勧められた、Cowspiracyというドキュメンタリーでした。このドキュメンタリーは、畜産業が持続可能ではないことを主張したものです。
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2&gt;紹介(introduction)&lt;/h2&gt;
+&lt;p&gt;本記事は、&lt;a href="https://www.gfi.org/gfi-research-grants-update-introduction-to?utm_source=social&amp;amp;utm_medium=twitter&amp;amp;utm_campaign=gfi-research-grants-update-introduction-to"&gt;こちら&lt;/a&gt;の記事の翻訳です。
+Good Food Instituteから許可を得て、翻訳、掲載をしています。&lt;/p&gt;
+&lt;p&gt;Thank GFI for allowing me to translate this article and post it on my blog.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2&gt;動機、目的(motivation, purpose)&lt;/h2&gt;
+&lt;p&gt;自分は、細胞農業に興味を持ち、DIYバイオ、Shojinmeat Projectの一環として、自宅で細胞培養の実験をおこなっています。
+日本ではShojinmeat Projectを中心として、DIYバイオの取り組みは海外と比べ盛んですが、研究としてやられているのは少ないのではと思っていました。今後重要性が増し分野として拡大していく細胞農業へ向けた研究する人が少ない中、自分が取り組んでいきたいなと考えています。そこでまず現状どういう研究がなされているか人工培養肉実現に向けた研究課題は何か、について知っておくことは重要だと思い、GFIのGrant Programで支援されているアカデミックな研究プロジェクトについての記事があったので、詳しく読み、訳してみることにしました。&lt;/p&gt;
+&lt;h2&gt;&lt;br&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2&gt;翻訳内容(contents)&lt;/h2&gt;
+&lt;p&gt;2月に、私たちはGFIで初開催の、重要な植物性の肉もしくは細胞培養肉研究に対する支援金プログラムのコンペの勝者を発表しました。14の採択された研究プロジェクトが現在進行中です。&lt;/p&gt;
+&lt;h3&gt;細胞培養による肉生産の基本&lt;/h3&gt;
+&lt;p&gt;動物細胞は、筋肉細胞、脂肪細胞、結合組織細胞（線維芽細胞）からなる筋組織です。動物から得た1つの細胞から初めて、私たちは数千キロの肉を、動物を虐殺せずに生産することができます。この細胞培養による肉は、本物の動物の肉であり、従来の肉よりも効率的に生産されます。&lt;/p&gt;
+&lt;p&gt;始めの小さな細胞は、それらが成長し複製に必要な栄養と水によって育てられます。この（細胞にとっての）食べ物は、細胞培地と呼ばれます。細胞が育つこの環境を変えることで、肉を構成する筋肉細胞、脂肪細胞、結合組織細胞などへの分化を誘導することができます。細胞が適した3次元構造をどのように組織するかの指令を細胞に与えるために、それを支える仕組み（もしくは足場）が追加されます。これらの操作は全て培養器（バイオリアクターとも呼ばれる）の中でおこなわれます。&lt;/p&gt;
+&lt;p&gt;細胞培養による肉の生産を目指すこの産業は、科学的知識や、細胞株、培地、足場、培養器を扱う他の産業によって培われた技術発展に恩恵を受けています。しかし、2つの、重要な要素である、コストと規模が、新たな技術的な挑戦として突きつけられています。私たち(GFI)が投資した6つのプロジェクトは、大規模、低価格の細胞培養肉生産を見据えて重要な新しい技術的課題の解決を目指しています。&lt;/p&gt;
+&lt;p&gt;ここでは、各プロジェクトの大まかなゴールを簡単に示すとともに、彼らが商業規模での細胞培養肉生産をどのようにしてより経済的で効率的なものにしていくかを簡単に紹介します。&lt;/p&gt;
+&lt;h3&gt;細胞株開発&lt;/h3&gt;
+&lt;p&gt;アカデミックの研究室で細胞培養肉研究に取り組んでいるのはほとんどありません。この分野での研究を遂行する上での潜在的な課題は、培養の始めとなる、一般的に食べ物として消費される動物（例えば、哺乳類の肝臓や家禽）の細胞株を手に入れなくてはならないということです。多くの動物種の培養に適した細胞株は利用可能ではありません。そのため、ほどんどの学術的な細胞培養肉研究は、細胞株の作製に時間と努力、リソースを費やすことから始まります。この分野に取り組む研究が増えるに連れて、各々の研究室が自ら細胞株を作製するのはとても非効率的になるでしょう。細胞株のリポジトリが標準化された手続きによって作製され、それらの細胞株がよく特徴付けられることを保証することで、これらの細胞株を使うこれからの研究開発は、研究室間や実験間に生じるばらつきを抑えることができるでしょう。&lt;/p&gt;
+&lt;p&gt;Gareth Sullivani（オスロ大学、ノルウェー）は冷凍農場の基礎を提供する、包括的な線維芽細胞（結合組織細胞）のライブラリを作製しています。最終的には、これらの線維芽細胞はiPS細胞の生産に必要なもののリソースとして役立ちます。
+iPS細胞は大人の組織から取られ、何度も分裂できるような状態にリプログラミングされた細胞です。iPS細胞は、体内の成熟した全ての種類の細胞に分化する能力を持っており、筋肉細胞、脂肪細胞、血球、線維芽細胞などになることができます（これらの種類の細胞は細胞培養肉において非常に重要です）。
+Sullivan博士の冷凍農場は、ますます拡大する細胞株のリポジトリです。異なる種や幅広い品種からなる細胞株を利用可能にすることで、細胞培養肉業界における洞察に満ちた基礎研究を可能にします。&lt;/p&gt;
+&lt;h3&gt;細胞培地&lt;/h3&gt;
+&lt;p&gt;細胞培地は、ビタミン、ミネラル、アミノ酸、炭水化物、液体、成長因子など多くの成分からなります。（成長因子は細胞分裂や生育、分化や生存、その他重要な細胞機能を促進するシグナルタンパク質です。）細胞は、増殖し分化するためにこれらの栄養素の継続的な供給を必要とします。しかし、細胞培地は現在非常に高価で、大規模な細胞培養肉生産の低コスト化に向けた初めの要素の1つとなると期待されています。これは主に成長因子が高価であることが原因です。&lt;/p&gt;
+&lt;p&gt;Peter Stogios（トロント大学、カナダ）はこの問題に取り組んでいます。数十種類の生物から成長因子タンパク質をスクリーニングし、それらの構造や機能を慎重に分析することにより、Stogios博士と彼のチームは、動物由来でなく、現状の成長因子よりも低コストで上手く機能する新しい成長因子を作製しようとしています。これらの新しい成長因子は細胞培養肉生産の大規模化を加速する魅力的な道具になるでしょう。&lt;/p&gt;
+&lt;h3&gt;足場と構造&lt;/h3&gt;
+&lt;p&gt;肉は、牛のひき肉から、鶏の胸肉、豚の切り身まで様々な形やサイズからなります。細胞培養肉産業が直面する他の課題は、どのようにして、分化した細胞の集まりを従来の動物肉のような引き締まったものにするかということです。いくつかの細胞培養肉企業はすでに異なる牛ひき肉製品の生産と味のテストに成功しています。現在の目標は、ステーキのような厚切り肉のスケーラブルな生産方法を確立することです。&lt;/p&gt;
+&lt;p&gt;Marcelle Machluf（テクニオンイスラエル工科大学、イスラエル）とAmy Rowat（UCLA、アメリカ）の両者は、より巨大な3次元の細胞培養肉構造の生産を助ける足場技術の開発に取り組んでいます。Machluf博士と彼女の共同実験者は、小さくで食べられるマイクロキャリアという足場を作製しています。これらのマイクロキャリアは、細胞を「積み木」のように組織し、アレンジを加えることで厚切り肉の作製することができます。この開発中の技術は、低コストで簡単に大規模化することができます。興味深いことに、このプロセスは、例えば、ミンチの細胞培養肉から鶏胸肉の3次元の切り身まで、幅広い製品に利用可能です。これは、細胞培養肉企業は、同じ「積み木」を使って幅広い製品を作ることが可能であることを示しています。&lt;/p&gt;
+&lt;p&gt;Rowatj博士のチームは、繊維のような足場を、様々な剛性度合いの領域によって作成しています。この足場は、細胞を肉のような繊維になるように配置するのを助け、柔軟性と剛性のバラエティーは、筋肉と脂肪が共存することを促進します。脂肪細胞と筋肉細胞が点在していることは、細胞培養ステーキが高い忠実性（再現度合い）を達成するにの重要です。Rowatの研究は植物性の肉と、細胞培養肉の世界の混合から生じるシナジーの素晴らしい例です。藻類と果物から生じる足場のための物質から始めるという彼女の選択は、生体適合性を証明し、環境にも優しいものです！&lt;/p&gt;
+&lt;h3&gt;培養器とバイオプロセス&lt;/h3&gt;
+&lt;p&gt;培養器は、細胞、細胞培地、さらには他の必要な足場構造をを入れておくデバイスです。（商業規模では、これらはビール醸造所で見られるビールの醸造タンクに似ています。）培養器は、細胞培養肉の開発の「バイオプロセス」、動物細胞が肉をつくるために成長し、収穫されるために本質的に必要な活動、を助けます。&lt;/p&gt;
+&lt;p&gt;Ivana Gadjanski（バイオセンスインスティチュート・ノヴィ・サド大学、セルビア）と彼女の同僚たちは、細胞培養肉生産において培養器の中の環境をモニタリングする低コストのセンサーを開発しています。このセンサーは、培養器の中の細胞の成長や培地の組成のリアルタイムデータを提供します。この情報は、細胞培地やその成分の再利用を可能にします。例えば、センサーは、（アンモニアのような）代謝産物がいつフィルターを通して除去されるべきかについての決断を助けます。また、（糖のような）栄養分がいつ使い切られ、いつ補充されるべきかについての決断も助けます。Gadjanskiのチームによって開発されたこのセンサー技術は、生産規模における効率性の向上と、コスト削減に直接的に繋がります。&lt;/p&gt;
+&lt;p&gt;すでに述べたように、コストと規模という2つの特徴が、細胞培養肉生産が現代の既存の生体医学業界と大きく異なる点です。Mariana Petronela(Petra)Hanga（アストン大学、イギリス）は、細胞培養肉の商業化におけるボトルネックの解消に取り組んでいます。Hanga博士の研究では、筋肉細胞と脂肪細胞を培地の中で一緒に信頼に足る大規模化をするバイオプロセスを開発します。作製されたプロトコルは、筋肉細胞と脂肪細胞の両方の質を保ちつつ最適化された細胞の成長のバランスを保ちます。
+コストの解析することで、どのようにして細胞培養肉生産コストを最小化するかという提言をこのチームがつくることに繋がるでしょう。&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;
+このようにして、これらの6つのプロジェクトは細胞培養肉産業が直面している重要な技術的課題に取り組んでいます。これらの研究者達はは、その研究内容と結果を私たち皆と共有することに尽力します。私たちは、これらのプロジェクトが、手頃な価格でハイクオリティな細胞培養肉を世界中の消費者に届けることを目指す、より革新的な研究開発を加速させるのを待ちきれません。&lt;/p&gt;
+&lt;p&gt;今後数カ月にわたって、GFIブログ読者には、これらのプロジェクトとそれに取り組む研究者の詳細を紹介していきます。もし、2018年の支援金受賞者に直接会いたいのであれば、9月に開催される&lt;a href="https://goodfoodconference.com/"&gt;2019 Good Food Conference&lt;/a&gt;に是非参加登録してください！&lt;/p&gt;
+&lt;p&gt;記事の翻訳はここまで&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h1&gt;英単語&lt;/h1&gt;
+&lt;p&gt;sinewy ... 頑丈な、引き締まった、筋骨たくましい&lt;/p&gt;
+&lt;p&gt;building block ... 積み木&lt;/p&gt;
+&lt;p&gt;stiffness ... 堅いこと、曲げや捻りに強い、剛性&lt;/p&gt;
+&lt;p&gt;intersperse ... 散在する、点在する&lt;/p&gt;
+&lt;p&gt;fidelity ... 忠実（度合い）&lt;/p&gt;
+&lt;p&gt;brewery ... 醸造所&lt;/p&gt;
+&lt;p&gt;filter out ... 除去する&lt;/p&gt;
+&lt;p&gt;replenish ... 補充する&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2&gt;感想、おわりに&lt;/h2&gt;
+&lt;p&gt;自分の研究分野を選択する上で非常に参考になりました。短い文章で、シンプルな英語で適切にまとめられており、人工培養肉生産における研究課題を俯瞰できたと思います。
+今後、各プロジェクトの紹介記事も出るようで楽しみです。そちらも可能であれば翻訳していきたいと思います！&lt;/p&gt;
+&lt;h2&gt;関連&lt;/h2&gt;
+&lt;p&gt;その他の関連記事
+&lt;a href="https://www.gfi.org/researchgrants"&gt;Good Food Instituteのgrand programのwinnters&lt;/a&gt;
+&lt;a href="https://www.gfi.org/gfi-research-program-update-part-1-introduction"&gt;Plant-Based Research Projects&lt;/a&gt;
+&lt;a href="https://www.gfi.org/gfideas-food-financials"&gt;Cell-Based Research Projects&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;またGFI主催のカンファレンスが9月にSFであります。
+&lt;a href="https://goodfoodconference.com/"&gt;The Good Food Conference&lt;/a&gt;
+参加を熱望しており、予定調整中です。一緒に行く人がいたら行きましょう(笑）。&lt;/p&gt;</content><category term="細胞農業"></category><category term="記事翻訳"></category><category term="研究"></category><category term="翻訳"></category></entry><entry><title>細胞農業に興味がある理由(The reason why I'm interested in cellular agriculture)</title><link href="https://naoto-yamaguchi.github.io/site/cellular_agriculture.html" rel="alternate"></link><published>2019-06-01T00:00:00+09:00</published><updated>2019-06-01T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-01:/site/cellular_agriculture.html</id><summary type="html">&lt;p&gt;細胞農業について&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
+&lt;p&gt;自分の興味があるプロジェクトについて、英語で記述する機会がありました。
+そこで他人に見せることを意識しながら、自分が興味ある学問分野について書いてみました。チェックをまだ受けておらず、きちんと修正していない文なので、間違い等あるかもしれませんが、ご容赦下さい。I appriciate if you could correct me if I am wrong.
+全ての人&lt;/p&gt;
+&lt;h1&gt;細胞農業に興味を持った理由&lt;/h1&gt;
+&lt;p&gt;私が細胞農業に興味を持ったきっかけは、農業に興味がある友達に勧められた、Cowspiracyというドキュメンタリーでした。このドキュメンタリーは、畜産業が持続可能ではないことを主張したものです。
 国連が発表している人口統計によると、ほぼ確実に2050年には90億人を越えると言われており、これらの人を養う食糧生産方法の確立の必要性が声高に叫ばれています。中でも食肉の需要は高まる一方です。その一方で、現在の畜産業のあり方は持続可能ではなく、このままでは、将来の食料需要を満たすことはできません。従来の食肉生産方法では、牛肉1kgの生産に約10kgもの穀物を必要としており、エネルギー変換効率は悪く、生産に大量の飼料としての穀物と水や土地を必要とします。現状の畜産業の生産拡大には森林伐採等による土地の拡大を必要としますが、これには限りがあります。
 そのドキュメンタリーを通して、畜産業が持続可能でないことを知りました。また、環境的な要因の他にも、家畜の扱い方等倫理的な側面での問題も指摘されています。&lt;/p&gt;
 &lt;p&gt;現在、それらの食糧・環境・倫理問題の1つの解決策として細胞農業が注目されています。
 自分は兼ねてから人類史にインパクトを与え、これまでの価値観を大きく変えるような取り組みに関わりたいと考えていましたが、自分が取り組むべきテーマはこれなのではないかと考えています。
-自分の専門性を生かせて、持続可能な地球を実現するプロジェクトとして細胞農業に非常に興味があり、これにより持続可能性に取り組めるのではないかと考えています。
-私は、地球の持続可能性に対する問題意識を人一倍持っており、sustainabilityに関するプロジェクトへの参加を強く希望します。&lt;/p&gt;
-&lt;p&gt;The reason I am interested in sustainablility is because I watched the documentary, called "Cowspiracy", which a friend of mine who is interested in agriculture recommended me to watch. This movie persists that animal agriculture is not sustainable.
+自分の専門性を生かせて、持続可能な地球を実現するプロジェクトとして細胞農業に非常に興味があり、これにより持続可能性に取り組めるのではないかと考えています。&lt;/p&gt;
+&lt;p&gt;The reason I got interested in cellular agriculture is because I watched the documentary, called "Cowspiracy", which a friend of mine who is interested in agriculture recommended me to watch. This movie persists that animal agriculture is not sustainable.
 According to demographic by the United Nations, world population projected to reach 9.8 billion in 2050 and food production feeding increasing world population is required. Especially, global meat consumption continues to rise. However, animal agriculture now is not sustainable and cannot meet the needs of future demand for food because their energy conversion efficiency is so bad that they require a lot of crops, water and lands, which are limited on our earth.
 Through the documentary, I understood that animal agriculture is not sustainable and there are other problems related to ethical issues.&lt;/p&gt;
 &lt;p&gt;In order to solve these issues, cellular agriculture is recently gathering attention.
 I have been hoping to get involved in the projects which have huge impact on human history and their way of thinking. I feel cellular agriculture is the subject that I need to pursue.
-In this topic, I wiil be able to make use of my specializationn and tackle sustainability issues.
-I have awareness of sustainability issues and strongly hope to join the projects about sustainability.&lt;/p&gt;
-&lt;p&gt;現在の畜産業はsustainableではなく、&lt;/p&gt;
-&lt;p&gt;The reason why I got interested in global health is that I read the book by Yuval Noah H, "Homo Deus".
-In this book, "For thousand years, famine, plague, and war were always at the top of the human agenda, but in the last few decades, we have managed to rein in them. Of course, these problems have not yet completely solved, but they have been transformed from incomprehensible and uncontrollable forces of nature into manageable challenges."
-While human have almost solved famine, for the first time in history, more people die today from eating too much than from eating too little. The most obvious examples of this are diabetes and obesity, which I think is a stupid situation.
-Type 2 diabetes and obesity is sometimes due to genetic factor, but basically due to lifestyle. I guess the reformation of education and culture may be required to tackle lifestyle diseases. 
-Especially, poor people in developed countries find it hard to avoid having fast food as daily consumption, which may lead to high diabetes rates. I think this is a big problem and that is the reason why I would like to address global health issues.&lt;/p&gt;
-&lt;p&gt;global healthに興味がある理由
-サピエンス全史という本を読んだことがきっかけです。
-この本では人間は、この数千年で兼ねてから大きな問題であった、飢餓、疫病、戦争という人類の課題が解決されつつあることを示し、新たな課題へと目を向けさせています。
-人類は、飢餓を解決してきた一方で、現代において飢餓で死ぬ人よりと食べ過ぎで死ぬ人の方が多い、という現状があります。このもっとも顕著な例が糖尿病と肥満ですが、
-私はこれは明らかに馬鹿げた状況であると考えています。
-糖尿病や肥満は、遺伝的な要因によることもありますが、基本的には生活習慣によるもので、治療法の開発はもちろんですが、根本的には、教育的、文化的側面から変えていかなくてはならないと考えています。
-さらに、所得や地域によっては、糖尿病を誘発するような食生活を避けられない状態になっており、強い問題意識を感じています。特に先進国の貧困層などは、日常的な食事としてファストフードを避けることが金銭的に困難な状況になっており、この状況を社会システムや教育を変えることで、解決に導けるのではないかと考えています。&lt;/p&gt;
-&lt;p&gt;特に&lt;/p&gt;
-&lt;p&gt;また
-ナウルの衝撃
-間違った食生活が蔓延ることで、社会を壊す恐れがある。&lt;/p&gt;</content><category term="好きなもの"></category><category term="生物"></category><category term="細胞農業"></category></entry></feed>
+In this topic, I wiil be able to make use of my specialization and tackle sustainability issues.&lt;/p&gt;
+&lt;p&gt;TBE...&lt;/p&gt;</content><category term="好きなもの"></category><category term="生物"></category><category term="細胞農業"></category></entry></feed>

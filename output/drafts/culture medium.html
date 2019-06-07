@@ -24,18 +24,26 @@
 
 
 
-    <meta name="author" content="Naoto Yamaguchi" />
-    <meta name="description" content="" />
+<meta name="author" content="Naoto Yamaguchi" />
+<meta name="description" content="培養液について調べてみた。" />
+<meta name="keywords" content="DIY, Shojinmeat, cell-based-meat">
+
 <meta property="og:site_name" content="nafoto'z_blog"/>
-<meta property="og:type" content="blog"/>
-<meta property="og:title" content="nafoto'z_blog"/>
-<meta property="og:description" content=""/>
+<meta property="og:title" content="アセンブリメモ"/>
+<meta property="og:description" content="培養液について調べてみた。"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="https://naoto-yamaguchi.github.io/site"/>
+<meta property="og:url" content="https://naoto-yamaguchi.github.io/site/drafts/culture medium.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2019-06-06 00:00:00+09:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://naoto-yamaguchi.github.io/site/author/naoto-yamaguchi.html">
+<meta property="article:section" content="生物学"/>
+<meta property="article:tag" content="DIY"/>
+<meta property="article:tag" content="Shojinmeat"/>
+<meta property="article:tag" content="cell-based-meat"/>
 <meta property="og:image" content="/images/profile_dubai.jpg">
 
-  <title>nafoto'z_blog &ndash;     Category SSH
-</title>
+  <title>nafoto'z_blog &ndash; アセンブリメモ</title>
 
 </head>
 <body>
@@ -67,33 +75,58 @@
   <main>
 
 
-
-
-<article>
+<article class="single">
   <header>
-    <h2><a href="https://naoto-yamaguchi.github.io/site/ssh_port_forward.html#ssh_port_forward">SSHのポートフォワード（トンネリング）とは？</a></h2>
+      
+    <h1 id="culture medium">アセンブリメモ</h1>
     <p>
-          Posted on 日 31 3月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/ssh.html">SSH</a>
+          Posted on 木 06 6月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/sheng-wu-xue.html">生物学</a>
 
 
-          &#8226;     Tagged with
-
-              <a href="https://naoto-yamaguchi.github.io/site/tag/ssh.html">SSH</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/portforward.html">portforward</a>
     </p>
   </header>
+
+
   <div>
-      <p>SSHポートフォーワードとは（未完）<br><img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630562939_port_forwarding.png"></p>
-      <br>
-      <a class="btn" href="https://naoto-yamaguchi.github.io/site/ssh_port_forward.html#ssh_port_forward">    Continue reading
-</a>
+    <h1>動機</h1>
+<p>実際に培養を始めるにあたって、培養液についてきちんとしっておかないとと思ったので。</p>
+<h1>参考</h1>
+<h1>レジスタ</h1>
+<ul>
+<li>rsp: スタックポインタ<ul>
+<li>スタックトップのメモリアドレス</li>
+<li>push命令でデクリメント、poo命令でインクリメントされる。</li>
+</ul>
+</li>
+<li>rbp: ベースポインタ<ul>
+<li>関数内においてスタック領域を扱う処理の基準となるメモリアドレス。
+関数の先頭で次の処理を行う。</li>
+</ul>
+</li>
+<li>呼び出し元のrbpをスタックにpushする</li>
+<li>rspをrbpに代入する</li>
+</ul>
+<p>関数内部では、rbpを基準にしてスタック領域を扱う。</p>
+<p>関数の最後で次の処理を行う。
+1. rbpをrspに代入
+2. </p>
+<p>グリーンダカラの成分</p>
+<h1>今後</h1>
+<p>RedBullでもできる？</p>
   </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://naoto-yamaguchi.github.io/site/tag/diy.html">DIY</a>
+      <a href="https://naoto-yamaguchi.github.io/site/tag/shojinmeat.html">Shojinmeat</a>
+      <a href="https://naoto-yamaguchi.github.io/site/tag/cell-based-meat.html">cell-based-meat</a>
+    </p>
+  </div>
+
+
+
+
+
 </article>
-
-  <div class="pagination">
-  </div>
-
-
-
 
     <footer>
 <p>&copy;  </p>

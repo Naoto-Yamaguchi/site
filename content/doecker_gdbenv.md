@@ -11,9 +11,9 @@ Summary: Dockerでgdb環境を構築した備忘録<br><img src="https://paper-a
 学校の課題で、dえC++と機械語の命令を比較しながら、メモリアクセスを少なくし、実行クロック数の少ない命令で目的の計算をすることでという速いアルゴリズムを設計できるようになろう！というものがありました。そこで、gdbデバッガで、機械語リストを出力させるということをやったのですが、Mac OS Sierraでは、gdbコード署名用の証明書の作成が必要とのことで、面倒そうでした。そこで、DockerでCentOSコンテナを立てて、gdb環境を整えることで、その代わりとすることにしました！
 
 # 参考
+
+[DockerをMacOSにinstall](https://qiita.com/kurkuru/items/127fa99ef5b2f0288b81)
 DockerでCentOSコンテナを立ち上げる
-
-
 
 [CentOSにvimをインストール](https://qiita.com/muniere/items/0569d05d470c5d3dc51b)
 
@@ -107,6 +107,9 @@ $ make
 $ make install
 ```
 
+必要があれば、[こちら](https://qiita.com/meio/items/08143eacd174ac0f7bd5)を参考に、日本語文字化けしないように、`~/.vimrc`の設定をしておきましょう。
+
+
 # CentOSにg++, debuginfoをインストール
 これで、vimが使えるので、C++ファイルの作成をしました。コンパイルしようとしたところ、g++をインストールしていないことに気がついたので、
 ```
@@ -194,3 +197,40 @@ $ docker run --cap-add=SYS_PTRACE --security-opt="seccomp=unconfined" --name gdb
 $ docker exec -it gdbenv /bin/bash
 ```
 このようすることで、うまくできました。
+
+
+# このimagesをDocker Hubにpushする
+[これ](https://qiita.com/umi/items/d4b5a68263ad0444693b)を参考に
+[Docker Hub](https://hub.docker.com/explore/)にアカウント登録して、
+そのアカウントで、ターミナルからログイン
+```
+$ docker login
+Username: nyamaguchi
+Password: 
+```
+
+pushしたいイメージに、`docker tag` コマンドで`<アカウント名><リポジトリ名>:<タグ名>` というタグを付加。
+```
+$ docker images                                                                          13:34:35
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+gdbenv              latest              c7e81afda91c        27 hours ago        1.34GB
+$ docker tag c7e81afda91c nyamaguchi/gdbenv:latest
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+gdbenv              latest              c7e81afda91c        27 hours ago        1.34GB
+nyamaguchi/gdbenv   latest              c7e81afda91c        27 hours ago        1.34GB
+```
+これをリモートリポジトリへとpush
+```
+$ docker push nyamaguchi/gdbenv:latest
+```
+
+# Docker Hubからpullする
+centosにgdb, vim, g++をinstallしたこのイメージを私がDocker Hubのパブリックリポジトリにpushしたので、`docker pull`で自分のローカル環境に持ってくることができます。
+```
+$ docker pull nyamaguchi/gdbenv
+```
+でこのimageでも利用可能になります。
+ほぼ使い道ないかもしれませんが、もしよかったら使ってみてください。
+
+`docker search gdbenv`で検索できるはずですが、なぜか見つかりませんでした。

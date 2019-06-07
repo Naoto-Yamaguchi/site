@@ -5,7 +5,6 @@ Tags: 好きなもの, 嗜好
 Slug: recommendation
 Authors: Naoto Yamaguchi
 Summary: おすすめ集、好きなもの
-e
 
 
 # 動機、対象

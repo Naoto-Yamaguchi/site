@@ -1,32 +1,41 @@
 Title: 記事翻訳 ~GFI Research Grants Update: Introduction to Cell-Based Meat Research Projects~
-Date: 2019-06-02
+Date: 2019-06-07
 Category: 細胞農業
 Tags: 細胞農業, 記事翻訳, 研究, 翻訳
 Slug: cell_based_meat_research_projects
 Authors: Naoto Yamaguchi
 Summary: 培養肉研究プロジェクト紹介の英語記事翻訳
-Status: draft
 
-# 内容
+# 目次 (Table of Contents)
+  * 紹介
+  * 動機、目的
+  * 翻訳内容
+    * 細胞培養による肉生産の基本
+    * 細胞株開発
+    * 細胞培地
+    * 足場と構造
+    * 培養器とバイオプロセス
+  * 英単語
+  * 感想、終わりに
+  * 関連
 
+<br>
+## 紹介(introduction)
 本記事は、[こちら](https://www.gfi.org/gfi-research-grants-update-introduction-to?utm_source=social&utm_medium=twitter&utm_campaign=gfi-research-grants-update-introduction-to)の記事の翻訳です。
-許可は得ていないので、まだ公開しません。許可取るかしたいです。とりあえずブログ整えよう。
-細胞農業の情報収集、発信をしていこう。
+Good Food Instituteから許可を得て、翻訳、掲載をしています。
+
+Thank GFI for allowing me to translate this article and post it on my blog.
 
 
-[Good Food Instituteのgrand programのwinnters](https://www.gfi.org/researchgrants)
-[Plant-Based Research Projects](https://www.gfi.org/gfi-research-program-update-part-1-introduction)
-[Cell-Based Research Projects](https://www.gfi.org/gfideas-food-financials)
+<br>
+## 動機、目的(motivation, purpose)
+自分は、細胞農業に興味を持ち、DIYバイオ、Shojinmeat Projectの一環として、自宅で細胞培養の実験をおこなっています。
+日本ではShojinmeat Projectを中心として、DIYバイオの取り組みは海外と比べ盛んですが、研究としてやられているのは少ないのではと思っていました。今後重要性が増し分野として拡大していく細胞農業へ向けた研究する人が少ない中、自分が取り組んでいきたいなと考えています。そこでまず現状どういう研究がなされているか人工培養肉実現に向けた研究課題は何か、について知っておくことは重要だと思い、GFIのGrant Programで支援されているアカデミックな研究プロジェクトについての記事があったので、詳しく読み、訳してみることにしました。
 
-[The Good Food Conference](https://goodfoodconference.com/)
-ヤベェめっちゃ参加したい。
-
-# 動機、目的
-
-Cell-based meatにおける研究課題は何かについて知ること。日本のShojinmeat Projectでは、DIYバイオの取り組みは盛んであるが、研究としてやられているのは少ないのではと思ったので、自分がやるべきかなと感じた。とりあえずどういう分野が大事か、日本にどれくらいいるか調べる。
-
-
-# 翻訳内容
+<br>
+---
+<br>
+## 翻訳内容(contents)
 2月に、私たちはGFIで初開催の、重要な植物性の肉もしくは細胞培養肉研究に対する支援金プログラムのコンペの勝者を発表しました。14の採択された研究プロジェクトが現在進行中です。
 
 ### 細胞培養による肉生産の基本
@@ -64,23 +73,49 @@ Rowatj博士のチームは、繊維のような足場を、様々な剛性度�
 Ivana Gadjanski（バイオセンスインスティチュート・ノヴィ・サド大学、セルビア）と彼女の同僚たちは、細胞培養肉生産において培養器の中の環境をモニタリングする低コストのセンサーを開発しています。このセンサーは、培養器の中の細胞の成長や培地の組成のリアルタイムデータを提供します。この情報は、細胞培地やその成分の再利用を可能にします。例えば、センサーは、（アンモニアのような）代謝産物がいつフィルターを通して除去されるべきかについての決断を助けます。また、（糖のような）栄養分がいつ使い切られ、いつ補充されるべきかについての決断も助けます。Gadjanskiのチームによって開発されたこのセンサー技術は、生産規模における効率性の向上と、コスト削減に直接的に繋がります。
 
 すでに述べたように、コストと規模という2つの特徴が、細胞培養肉生産が現代の既存の生体医学業界と大きく異なる点です。Mariana Petronela(Petra)Hanga（アストン大学、イギリス）は、細胞培養肉の商業化におけるボトルネックの解消に取り組んでいます。Hanga博士の研究では、筋肉細胞と脂肪細胞を培地の中で一緒に信頼に足る大規模化をするバイオプロセスを開発します。作製されたプロトコルは、筋肉細胞と脂肪細胞の両方の質を保ちつつ最適化された細胞の成長のバランスを保ちます。
-コストの解析することで、どのようにして細胞培養肉生産コストを最小化するかという提言をこのチームが                                  つくることになるでしょう。
-#todo
+コストの解析することで、どのようにして細胞培養肉生産コストを最小化するかという提言をこのチームがつくることに繋がるでしょう。
 
+<br><br>
 このようにして、これらの6つのプロジェクトは細胞培養肉産業が直面している重要な技術的課題に取り組んでいます。これらの研究者達はは、その研究内容と結果を私たち皆と共有することに尽力します。私たちは、これらのプロジェクトが、手頃な価格でハイクオリティな細胞培養肉を世界中の消費者に届けることを目指す、より革新的な研究開発を加速させるのを待ちきれません。
 
-今後数カ月にわたって、GFIブログ読者には、これらのプロジェクトとそれに取り組む研究者の詳細を紹介していきます。もし、2018年の支援金受賞者に直接会いたいのであれば、9月に開催される2019 Good Food Conferenceに是非参加登録してください！
+今後数カ月にわたって、GFIブログ読者には、これらのプロジェクトとそれに取り組む研究者の詳細を紹介していきます。もし、2018年の支援金受賞者に直接会いたいのであれば、9月に開催される[2019 Good Food Conference](https://goodfoodconference.com/)に是非参加登録してください！
 
 
-## 感想
-自分の研究分野を選択する上で非常に参考になりました。短い文章で、シンプルな英語で適切にまとめられており、
+記事の翻訳はここまで
 
+---
 
+<br><br>
+# 英単語
 sinewy ... 頑丈な、引き締まった、筋骨たくましい
+
 building block ... 積み木
+
 stiffness ... 堅いこと、曲げや捻りに強い、剛性
+
 intersperse ... 散在する、点在する
+
 fidelity ... 忠実（度合い）
+
 brewery ... 醸造所
+
 filter out ... 除去する
+
+
 replenish ... 補充する
+
+<br>
+## 感想、おわりに
+自分の研究分野を選択する上で非常に参考になりました。短い文章で、シンプルな英語で適切にまとめられており、人工培養肉生産における研究課題を俯瞰できたと思います。
+今後、各プロジェクトの紹介記事も出るようで楽しみです。そちらも可能であれば翻訳していきたいと思います！
+
+
+## 関連
+その他の関連記事
+[Good Food Instituteのgrand programのwinnters](https://www.gfi.org/researchgrants)
+[Plant-Based Research Projects](https://www.gfi.org/gfi-research-program-update-part-1-introduction)
+[Cell-Based Research Projects](https://www.gfi.org/gfideas-food-financials)
+
+またGFI主催のカンファレンスが9月にSFであります。
+[The Good Food Conference](https://goodfoodconference.com/)
+参加を熱望しており、予定調整中です。一緒に行く人がいたら行きましょう(笑）。

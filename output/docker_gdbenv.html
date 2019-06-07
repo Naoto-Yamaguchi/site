@@ -19,6 +19,8 @@
     <link href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="nafoto'z_blog Atom">
 
 
+    <link rel="shortcut icon" href="/images/favicon_dna.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon_dna.ico" type="image/x-icon">
 
 
 
@@ -38,7 +40,7 @@
 <meta property="article:section" content="Docker"/>
 <meta property="article:tag" content="Docker"/>
 <meta property="article:tag" content="Programming"/>
-<meta property="og:image" content="">
+<meta property="og:image" content="/images/profile_dubai.jpg">
 
   <title>nafoto'z_blog &ndash; Dockerでgdb環境構築</title>
 
@@ -47,7 +49,7 @@
   <aside>
     <div>
       <a href="https://naoto-yamaguchi.github.io/site">
-        <img src="https://naoto-yamaguchi.github.io/site/theme/img/profile.png" alt="" title="">
+        <img src="/images/profile_dubai.jpg" alt="" title="">
       </a>
       <h1><a href="https://naoto-yamaguchi.github.io/site"></a></h1>
 
@@ -88,7 +90,8 @@
     <h1>動機対象</h1>
 <p>学校の課題で、dえC++と機械語の命令を比較しながら、メモリアクセスを少なくし、実行クロック数の少ない命令で目的の計算をすることでという速いアルゴリズムを設計できるようになろう！というものがありました。そこで、gdbデバッガで、機械語リストを出力させるということをやったのですが、Mac OS Sierraでは、gdbコード署名用の証明書の作成が必要とのことで、面倒そうでした。そこで、DockerでCentOSコンテナを立てて、gdb環境を整えることで、その代わりとすることにしました！</p>
 <h1>参考</h1>
-<p>DockerでCentOSコンテナを立ち上げる</p>
+<p><a href="https://qiita.com/kurkuru/items/127fa99ef5b2f0288b81">DockerをMacOSにinstall</a>
+DockerでCentOSコンテナを立ち上げる</p>
 <p><a href="https://qiita.com/muniere/items/0569d05d470c5d3dc51b">CentOSにvimをインストール</a></p>
 <p><a href="https://qiita.com/SOJO/items/9d6a65f3da941c49da36">こちら</a>も参考になる</p>
 <p>この途中、<code>./configure</code>のところで、
@@ -189,6 +192,7 @@ $ make install
 </pre></div>
 
 
+<p>必要があれば、<a href="https://qiita.com/meio/items/08143eacd174ac0f7bd5">こちら</a>を参考に、日本語文字化けしないように、<code>~/.vimrc</code>の設定をしておきましょう。</p>
 <h1>CentOSにg++, debuginfoをインストール</h1>
 <p>これで、vimが使えるので、C++ファイルの作成をしました。コンパイルしようとしたところ、g++をインストールしていないことに気がついたので、</p>
 <div class="highlight"><pre><span></span>$ yum install gcc-c++
@@ -278,6 +282,42 @@ $ docker <span class="nb">exec</span> -it gdbenv /bin/bash
 
 
 <p>このようすることで、うまくできました。</p>
+<h1>このimagesをDocker Hubにpushする</h1>
+<p><a href="https://qiita.com/umi/items/d4b5a68263ad0444693b">これ</a>を参考に
+<a href="https://hub.docker.com/explore/">Docker Hub</a>にアカウント登録して、
+そのアカウントで、ターミナルからログイン</p>
+<div class="highlight"><pre><span></span>$ docker login
+Username: nyamaguchi
+Password: 
+</pre></div>
+
+
+<p>pushしたいイメージに、<code>docker tag</code> コマンドで<code>&lt;アカウント名&gt;&lt;リポジトリ名&gt;:&lt;タグ名&gt;</code> というタグを付加。</p>
+<div class="highlight"><pre><span></span>$ docker images                                                                          <span class="m">13</span>:34:35
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+gdbenv              latest              c7e81afda91c        <span class="m">27</span> hours ago        <span class="m">1</span>.34GB
+$ docker tag c7e81afda91c nyamaguchi/gdbenv:latest
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+gdbenv              latest              c7e81afda91c        <span class="m">27</span> hours ago        <span class="m">1</span>.34GB
+nyamaguchi/gdbenv   latest              c7e81afda91c        <span class="m">27</span> hours ago        <span class="m">1</span>.34GB
+</pre></div>
+
+
+<p>これをリモートリポジトリへとpush</p>
+<div class="highlight"><pre><span></span>$ docker push nyamaguchi/gdbenv:latest
+</pre></div>
+
+
+<h1>Docker Hubからpullする</h1>
+<p>centosにgdb, vim, g++をinstallしたこのイメージを私がDocker Hubのパブリックリポジトリにpushしたので、<code>docker pull</code>で自分のローカル環境に持ってくることができます。</p>
+<div class="highlight"><pre><span></span>$ docker pull nyamaguchi/gdbenv
+</pre></div>
+
+
+<p>でこのimageでも利用可能になります。
+ほぼ使い道ないかもしれませんが、もしよかったら使ってみてください。</p>
+<p><code>docker search gdbenv</code>で検索できるはずですが、なぜか見つかりませんでした。</p>
   </div>
   <div class="tag-cloud">
     <p>
@@ -307,7 +347,7 @@ $ docker <span class="nb">exec</span> -it gdbenv /bin/bash
   "@type" : "Blog",
   "name": " nafoto'z_blog ",
   "url" : "https://naoto-yamaguchi.github.io/site",
-  "image": "",
+  "image": "/images/profile_dubai.jpg",
   "description": ""
 }
 </script>
