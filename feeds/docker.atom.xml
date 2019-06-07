@@ -2,7 +2,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog - Docker</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/docker.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-06-05T00:00:00+09:00</updated><entry><title>Dockerでgdb環境構築</title><link href="https://naoto-yamaguchi.github.io/site/docker_gdbenv.html" rel="alternate"></link><published>2019-06-05T00:00:00+09:00</published><updated>2019-06-05T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-05:/site/docker_gdbenv.html</id><summary type="html">&lt;p&gt;Dockerでgdb環境を構築した備忘録&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559697621860_docker.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機対象&lt;/h1&gt;
 &lt;p&gt;学校の課題で、dえC++と機械語の命令を比較しながら、メモリアクセスを少なくし、実行クロック数の少ない命令で目的の計算をすることでという速いアルゴリズムを設計できるようになろう！というものがありました。そこで、gdbデバッガで、機械語リストを出力させるということをやったのですが、Mac OS Sierraでは、gdbコード署名用の証明書の作成が必要とのことで、面倒そうでした。そこで、DockerでCentOSコンテナを立てて、gdb環境を整えることで、その代わりとすることにしました！&lt;/p&gt;
 &lt;h1&gt;参考&lt;/h1&gt;
-&lt;p&gt;DockerでCentOSコンテナを立ち上げる&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://qiita.com/kurkuru/items/127fa99ef5b2f0288b81"&gt;DockerをMacOSにinstall&lt;/a&gt;
+DockerでCentOSコンテナを立ち上げる&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://qiita.com/muniere/items/0569d05d470c5d3dc51b"&gt;CentOSにvimをインストール&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://qiita.com/SOJO/items/9d6a65f3da941c49da36"&gt;こちら&lt;/a&gt;も参考になる&lt;/p&gt;
 &lt;p&gt;この途中、&lt;code&gt;./configure&lt;/code&gt;のところで、
@@ -103,6 +104,7 @@ $ make install
 &lt;/pre&gt;&lt;/div&gt;
 
 
+&lt;p&gt;必要があれば、&lt;a href="https://qiita.com/meio/items/08143eacd174ac0f7bd5"&gt;こちら&lt;/a&gt;を参考に、日本語文字化けしないように、&lt;code&gt;~/.vimrc&lt;/code&gt;の設定をしておきましょう。&lt;/p&gt;
 &lt;h1&gt;CentOSにg++, debuginfoをインストール&lt;/h1&gt;
 &lt;p&gt;これで、vimが使えるので、C++ファイルの作成をしました。コンパイルしようとしたところ、g++をインストールしていないことに気がついたので、&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ yum install gcc-c++
@@ -191,4 +193,40 @@ $ docker &lt;span class="nb"&gt;exec&lt;/span&gt; -it gdbenv /bin/bash
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;このようすることで、うまくできました。&lt;/p&gt;</content><category term="Docker"></category><category term="Programming"></category></entry></feed>
+&lt;p&gt;このようすることで、うまくできました。&lt;/p&gt;
+&lt;h1&gt;このimagesをDocker Hubにpushする&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://qiita.com/umi/items/d4b5a68263ad0444693b"&gt;これ&lt;/a&gt;を参考に
+&lt;a href="https://hub.docker.com/explore/"&gt;Docker Hub&lt;/a&gt;にアカウント登録して、
+そのアカウントで、ターミナルからログイン&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ docker login
+Username: nyamaguchi
+Password: 
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;pushしたいイメージに、&lt;code&gt;docker tag&lt;/code&gt; コマンドで&lt;code&gt;&amp;lt;アカウント名&amp;gt;&amp;lt;リポジトリ名&amp;gt;:&amp;lt;タグ名&amp;gt;&lt;/code&gt; というタグを付加。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ docker images                                                                          &lt;span class="m"&gt;13&lt;/span&gt;:34:35
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+gdbenv              latest              c7e81afda91c        &lt;span class="m"&gt;27&lt;/span&gt; hours ago        &lt;span class="m"&gt;1&lt;/span&gt;.34GB
+$ docker tag c7e81afda91c nyamaguchi/gdbenv:latest
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+gdbenv              latest              c7e81afda91c        &lt;span class="m"&gt;27&lt;/span&gt; hours ago        &lt;span class="m"&gt;1&lt;/span&gt;.34GB
+nyamaguchi/gdbenv   latest              c7e81afda91c        &lt;span class="m"&gt;27&lt;/span&gt; hours ago        &lt;span class="m"&gt;1&lt;/span&gt;.34GB
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;これをリモートリポジトリへとpush&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ docker push nyamaguchi/gdbenv:latest
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Docker Hubからpullする&lt;/h1&gt;
+&lt;p&gt;centosにgdb, vim, g++をinstallしたこのイメージを私がDocker Hubのパブリックリポジトリにpushしたので、&lt;code&gt;docker pull&lt;/code&gt;で自分のローカル環境に持ってくることができます。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ docker pull nyamaguchi/gdbenv
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;でこのimageでも利用可能になります。
+ほぼ使い道ないかもしれませんが、もしよかったら使ってみてください。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;docker search gdbenv&lt;/code&gt;で検索できるはずですが、なぜか見つかりませんでした。&lt;/p&gt;</content><category term="Docker"></category><category term="Programming"></category></entry></feed>

@@ -1,29 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog - 生物学</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/sheng-wu-xue.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-05-31T00:00:00+09:00</updated><entry><title>がん</title><link href="https://naoto-yamaguchi.github.io/site/cancer.html" rel="alternate"></link><published>2019-05-31T00:00:00+09:00</published><updated>2019-05-31T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-05-31:/site/cancer.html</id><summary type="html">&lt;p&gt;がんの仕組みの解説&lt;/p&gt;</summary><content type="html">&lt;h2&gt;最初の投稿です。&lt;/h2&gt;
-&lt;p&gt;Hello &lt;strong&gt;world!&lt;/strong&gt;. My name is &lt;em&gt;SAIRA&lt;/em&gt; from Japan.&lt;/p&gt;
-&lt;h3&gt;表を挿入&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;テスト 1&lt;/th&gt;
-&lt;th&gt;テスト 2&lt;/th&gt;
-&lt;th&gt;テスト 3&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;テスト&lt;/td&gt;
-&lt;td&gt;テスト&lt;/td&gt;
-&lt;td&gt;テスト&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3&gt;シンタックスハイライト&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;hello world!&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h1&gt;がん&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog - 生物学</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/sheng-wu-xue.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-05-31T00:00:00+09:00</updated><entry><title>がん</title><link href="https://naoto-yamaguchi.github.io/site/cancer.html" rel="alternate"></link><published>2019-05-31T00:00:00+09:00</published><updated>2019-05-31T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-05-31:/site/cancer.html</id><summary type="html">&lt;p&gt;がんの仕組みの解説&lt;/p&gt;</summary><content type="html">&lt;h1&gt;がん&lt;/h1&gt;
 &lt;p&gt;がんは、細胞制御機構に異常が発生することでおこる病気です。現代では、5 人に 1 人ががんで命を失いますが、がんを研究で扱う理由は命を救うだけにとどまりません。がんの原因を調べることで、細胞制御機構の解明が進み、細胞生物学の基礎となるのです。我々多細胞生物の体の中では、数多くの細胞が協調して働くことで、多細胞としての個体が正常に生きることができます。しかし、この協調を乱すような細胞が生まれると、細胞社会の秩序を壊し、正常に生きることができなくなります。この協調を壊しうる細胞は、各細胞での塩基配列の変異により、毎日我々の体の中で生じていますが、それを修復する機構によって、秩序が保たれているのです。この修復する機構が壊れたり、変異が入った異常な細胞（秩序を満たす細胞）がとめどなく増殖できるようになると、我々の体の中の細胞社会の秩序を乱し、破壊に導いていくのです。&lt;/p&gt;
 &lt;p&gt;ではどういう仕組みで、するのでしょうか？&lt;/p&gt;
 &lt;h1&gt;動機対象&lt;/h1&gt;
