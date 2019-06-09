@@ -4,7 +4,7 @@ Category: Python
 Tags: Python SSh
 Slug: remote_jupyternotebook
 Authors: Naoto Yamaguchi
-Summary: Jupyter Notebook利用の備忘録<img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630601567_jupyter.png">
+Summary: Jupyter Notebook利用の備忘録<br><img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630601567_jupyter.png">
 
 ### 動機
 

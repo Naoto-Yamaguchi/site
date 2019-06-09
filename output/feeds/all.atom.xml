@@ -364,7 +364,32 @@ nyamaguchi/gdbenv   latest              c7e81afda91c        &lt;span class="m"&g
 
 &lt;p&gt;でこのimageでも利用可能になります。
 ほぼ使い道ないかもしれませんが、もしよかったら使ってみてください。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;docker search gdbenv&lt;/code&gt;で検索できるはずですが、なぜか見つかりませんでした。&lt;/p&gt;</content><category term="Docker"></category><category term="Programming"></category></entry><entry><title>細胞農業に興味がある理由(The reason why I'm interested in cellular agriculture)</title><link href="https://naoto-yamaguchi.github.io/site/cellular_agriculture.html" rel="alternate"></link><published>2019-06-01T00:00:00+09:00</published><updated>2019-06-01T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-01:/site/cellular_agriculture.html</id><summary type="html">&lt;p&gt;細胞農業について&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;docker search gdbenv&lt;/code&gt;で検索できるはずですが、なぜか見つかりませんでした。&lt;/p&gt;
+&lt;h1&gt;C++の標準ライブラリのdebugのための環境構築&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://doss.eidos.ic.i.u-tokyo.ac.jp/html/gdb_step_into_libraries.html"&gt;やり方&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;https://superuser.com/questions/159310/bash-line-7-dpkg-command-not-found-said-centos&lt;/p&gt;
+&lt;p&gt;These steps worked for me on CentOS 7:&lt;/p&gt;
+&lt;p&gt;Install epel using the following command: sudo yum -y install epel-release
+Refresh repo by typing the following commad: sudo yum repolist
+Install the dpkg rpm packages: sudo yum install dpkg-devel dpkg-dev
+For more information: http://www.cyberciti.biz/faq/installing-rhel-epel-repo-on-centos-redhat-7-x/&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;実行ファイルを実行した時に使うであろう、ファイルを表示
+$ ldd 04
+
+あるファイルを提供しているパッケージ名を表示
+$ dpkg -S /lib/x86_64-linux-gnu/libc.so.6
+やったけど、
+dpkg-query: no path found matching pattern
+
+見つからないのは、そのパッケージ自体がインストールされていないのが原因か。
+え、じゃあcのファイルはどうしてる？
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;ヘッダーファイルは、&lt;code&gt;.user/include/stdio.h&lt;/code&gt;から見られる。
+https://qiita.com/DQNEO/items/4e5c2eca2761ec08b922&lt;/p&gt;
+&lt;p&gt;ヘッダーファイルの実態は、glibにある
+https://qiita.com/kure/items/d88b5b81efe38ead0ea2&lt;/p&gt;</content><category term="Docker"></category><category term="Programming"></category></entry><entry><title>細胞農業に興味がある理由(The reason why I'm interested in cellular agriculture)</title><link href="https://naoto-yamaguchi.github.io/site/cellular_agriculture.html" rel="alternate"></link><published>2019-06-01T00:00:00+09:00</published><updated>2019-06-01T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-01:/site/cellular_agriculture.html</id><summary type="html">&lt;p&gt;細胞農業について&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
 &lt;p&gt;自分の興味があるプロジェクトについて、英語で記述する機会がありました。
 そこで他人に見せることを意識しながら、自分が興味ある学問分野について書いてみました。チェックをまだ受けておらず、きちんと修正していない文なので、間違い等あるかもしれませんが、ご容赦下さい。I appriciate if you could correct me if I am wrong.
 全ての人&lt;/p&gt;
@@ -1100,33 +1125,61 @@ tmux ってなに
 
 abci-gate した状態で
 [~] scp -r -P 10022 [送りたいディレクトリ][usrname]@localhost:[送り先のディレクトリ]
-でできた --&gt;</content><category term="SSH"></category><category term="portforward"></category></entry><entry><title>私のおすすめのものたち</title><link href="https://naoto-yamaguchi.github.io/site/recommendation.html" rel="alternate"></link><published>2019-02-24T00:00:00+09:00</published><updated>2019-02-24T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-24:/site/recommendation.html</id><summary type="html">&lt;p&gt;おすすめ集、好きなもの&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
+でできた --&gt;</content><category term="SSH"></category><category term="portforward"></category></entry><entry><title>感想~勉強の哲学：千葉雅也~</title><link href="https://naoto-yamaguchi.github.io/site/the_philosophy_of_study.html" rel="alternate"></link><published>2019-03-21T00:00:00+09:00</published><updated>2019-03-21T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-03-21:/site/the_philosophy_of_study.html</id><summary type="html">&lt;p&gt;勉強の哲学を読んで考えたこと&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
+&lt;p&gt;割と前に読んだ本なのだけど、振り返る価値のある本だと思ってたので書いてみます。
+とりあえず昔のメモを載せておきます。&lt;/p&gt;
+&lt;h1&gt;以下メモ&lt;/h1&gt;
+&lt;p&gt;東大京大生に最も読まれている本らしい。確かそんな帯をどこかで見て、割と引っかかっていた。その時はなんとなくバカにしていた覚えがある。ただいつかふと思い出し、いつのまにか予約していた。馬田さんの影響もある疑惑。&lt;/p&gt;
+&lt;p&gt;一言感想: 
+今までの自分の勉強の仕方、というか勉強に対する姿勢が間違っていなかったことを知れた一冊。逆に自分が割と感じていたことを見事に言語化していて凄いと思った。また難しい言葉を使っているが、その言葉を使う前に意味を説明し、何度も同じ文脈で繰り返し用いられるので、理解しやすくスッと頭に入ってきた。意外や意外読みやすい。全体として夢中で読めて良い本だった。&lt;/p&gt;
+&lt;p&gt;哲学の専門家が書いただけあってしっかりしていた。中でも読書の仕方について述べている部分は興味深く実践できるのが良いと思った。&lt;/p&gt;
+&lt;p&gt;本書で述べる勉強への基本姿勢は、「比較の中断」である。
+「こうした決断主義は、無批判に何かを信じ込んだ状態であるため、避けるべきである。そこで、絶対性を求めず、相対　的に複数の選択肢を比較し続けるというユーモア的な方法へと向かうーーー比較を続ける途中で中断し、ベターな結論を仮固定し、また比較を再開するのである。これが勉強のプロセスにおいて基本姿勢である。」&lt;/p&gt;
+&lt;p&gt;結論として内容が後ろにまとめられていた部分があり、それを写真に撮り載せようと思っていたが、図書館で爆睡してしまい、撮り忘れた。
+もう一度くらい借りて読んでみるかー
+→再度読んでみました。&lt;/p&gt;
+&lt;p&gt;入門書、専門書、準専門書
+読書は完璧にできない&lt;/p&gt;</content><category term="Book"></category></entry><entry><title>私のおすすめのもの、好きなもの</title><link href="https://naoto-yamaguchi.github.io/site/recommendation.html" rel="alternate"></link><published>2019-02-24T00:00:00+09:00</published><updated>2019-02-24T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-24:/site/recommendation.html</id><summary type="html">&lt;p&gt;おすすめ集、好きなもの&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
 &lt;p&gt;人のおすすめを聞いて自分の興味の幅が広がったり、新たな発見をすることがあったので。
 現状適当ですが、随時載せていきます。&lt;/p&gt;
 &lt;h1&gt;参考&lt;/h1&gt;
 &lt;h1&gt;目次&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;おすすめの本&lt;ul&gt;
+&lt;li&gt;好きな本（小説は除く）&lt;ul&gt;
 &lt;li&gt;サピエンス全史&lt;/li&gt;
 &lt;li&gt;ホモデウス&lt;/li&gt;
 &lt;li&gt;史上最強の哲学入門&lt;/li&gt;
 &lt;li&gt;勉強の哲学&lt;/li&gt;
 &lt;li&gt;愛するということ&lt;/li&gt;
+&lt;li&gt;Zero to One&lt;/li&gt;
+&lt;li&gt;武器としての決断思考&lt;/li&gt;
+&lt;li&gt;お金2.0&lt;/li&gt;
+&lt;li&gt;残酷すぎる成功法則&lt;/li&gt;
+&lt;li&gt;アメリカ黒人の歴史&lt;/li&gt;
+&lt;li&gt;面白くて眠れなくなるシリーズ&lt;/li&gt;
+&lt;li&gt;エピゲノムと生命&lt;/li&gt;
+&lt;li&gt;嫌われる技術&lt;/li&gt;
+&lt;li&gt;アイデア大全（読書猿さんおすすめ）&lt;/li&gt;
+&lt;li&gt;マギーキッチンサイエンス（読み途中）&lt;/li&gt;
+&lt;li&gt;Cooking for geeks (読み途中)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;おすすめの英語&lt;ul&gt;
+&lt;li&gt;好きな映画（追記します）&lt;ul&gt;
 &lt;li&gt;イミテーションゲーム&lt;/li&gt;
 &lt;li&gt;Begin Again&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;きっとうまくいく&lt;/li&gt;
+&lt;li&gt;容疑者Xの献身&lt;/li&gt;
+&lt;li&gt;ゴールデンスランバー&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;おすすめのドラマ&lt;ul&gt;
+&lt;li&gt;好きなドラマ&lt;ul&gt;
 &lt;li&gt;glee&lt;/li&gt;
 &lt;li&gt;the big bang theory&lt;/li&gt;
 &lt;li&gt;逃げるは恥だが役に立つ&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;おすすめの(MarkDown)エディタ&lt;ul&gt;
+&lt;li&gt;好きな(MarkDown)エディタ&lt;ul&gt;
+&lt;li&gt;vim&lt;/li&gt;
 &lt;li&gt;Dropbox Paper&lt;/li&gt;
 &lt;li&gt;VScode&lt;/li&gt;
 &lt;/ul&gt;
@@ -1136,22 +1189,24 @@ abci-gate した状態で
 &lt;li&gt;Pelican&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;おすすめの国、街&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;おすすめのアプリ&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Nuzzle&lt;/li&gt;
+&lt;li&gt;好きな小説家&lt;ul&gt;
+&lt;li&gt;東野圭吾&lt;/li&gt;
+&lt;li&gt;伊坂幸太郎&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;おすすめのサイト&lt;/p&gt;
-&lt;ul&gt;
+&lt;li&gt;おすすめの国、街&lt;/li&gt;
+&lt;li&gt;おすすめのアプリ&lt;ul&gt;
+&lt;li&gt;Nuzzle&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;おすすめのサイト&lt;ul&gt;
 &lt;li&gt;Golden&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="好きなもの"></category><category term="嗜好"></category></entry><entry><title>NCBIからゲノムデータを取得する方法</title><link href="https://naoto-yamaguchi.github.io/site/how_to_get_genome_data_from_ncbi.html" rel="alternate"></link><published>2019-02-22T00:00:00+09:00</published><updated>2019-02-22T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-22:/site/how_to_get_genome_data_from_ncbi.html</id><summary type="html">&lt;p&gt;ゲノムデータ取得&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630593492_ncbi.png" width=150 height=150&gt;&lt;/p&gt;</summary><content type="html">&lt;h3&gt;動機&lt;/h3&gt;
+&lt;/ul&gt;
+&lt;p&gt;みなさんのオススメのもの、好きなもの是非教えてください！！
+超募集中@nafoto_z&lt;/p&gt;</content><category term="好きなもの"></category><category term="嗜好"></category></entry><entry><title>NCBIからゲノムデータを取得する方法</title><link href="https://naoto-yamaguchi.github.io/site/how_to_get_genome_data_from_ncbi.html" rel="alternate"></link><published>2019-02-22T00:00:00+09:00</published><updated>2019-02-22T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-22:/site/how_to_get_genome_data_from_ncbi.html</id><summary type="html">&lt;p&gt;ゲノムデータ取得&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630593492_ncbi.png" width=150 height=150&gt;&lt;/p&gt;</summary><content type="html">&lt;h3&gt;動機&lt;/h3&gt;
 &lt;p&gt;NCBI からゲノムデータを取ってきたい時どうすれば良いかわからなかった。ftp を知らなかったけど、ダウンロードできました！&lt;/p&gt;
 &lt;h3&gt;参考&lt;/h3&gt;
 &lt;p&gt;サムネイル画像は&lt;a href="https://en.wikipedia.org/wiki/National_Center_for_Biotechnology_Information"&gt;こちら&lt;/a&gt;より引用&lt;/p&gt;
@@ -1176,7 +1231,7 @@ $ gunzip
 
 
 &lt;p&gt;これで GCF_000010525.1.fna ファイルを見たり読み込ませたりして解析に用いることができます！&lt;/p&gt;
-&lt;p&gt;自分はこれしかやったことがないので、他にも試してみて、追記したいと思います。&lt;/p&gt;</content><category term="Bioinfo"></category><category term="生物情報"></category><category term="NCBI"></category></entry><entry><title>Jupyter Notebookをリモートサーバーで利用し、ローカルのブラウザで確認する"</title><link href="https://naoto-yamaguchi.github.io/site/remote_jupyternotebook.html" rel="alternate"></link><published>2019-02-20T00:00:00+09:00</published><updated>2019-02-20T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-20:/site/remote_jupyternotebook.html</id><summary type="html">&lt;p&gt;Jupyter Notebook利用の備忘録&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630601567_jupyter.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h3&gt;動機&lt;/h3&gt;
+&lt;p&gt;自分はこれしかやったことがないので、他にも試してみて、追記したいと思います。&lt;/p&gt;</content><category term="Bioinfo"></category><category term="生物情報"></category><category term="NCBI"></category></entry><entry><title>Jupyter Notebookをリモートサーバーで利用し、ローカルのブラウザで確認する"</title><link href="https://naoto-yamaguchi.github.io/site/remote_jupyternotebook.html" rel="alternate"></link><published>2019-02-20T00:00:00+09:00</published><updated>2019-02-20T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-20:/site/remote_jupyternotebook.html</id><summary type="html">&lt;p&gt;Jupyter Notebook利用の備忘録&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630601567_jupyter.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h3&gt;動機&lt;/h3&gt;
 &lt;p&gt;データ分析で大量のデータを扱う際、ローカルの  コンピューターではなく  リモートサーバーにダウンロードなどを行うことがありました。そのデータを分析するために、Jupyter Notebook を利用したかったのですが、 ローカルで使えるだけではデータを参照できないので、データがおかれているリモートサーバーで  使えるようにする必要がありました。やりたいことは以下のような感じです。
 http://starpentagon.net/analytics/remote_jupyter_notebook/&lt;/p&gt;
 &lt;h3&gt;参考&lt;/h3&gt;
