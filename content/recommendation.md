@@ -16,9 +16,9 @@ Summary: おすすめ集、好きなもの
 # 目次
 
 * 好きな本（小説は除く）
-    * サピエンス全史
-    * ホモデウス
-    * 史上最強の哲学入門
+    * サピエンス全史（超おすすめ）
+    * ホモデウス（絶対読むべき）
+    * 史上最強の哲学入門（わかりやすく哲学を紹介）
     * 勉強の哲学
     * 愛するということ
     * Zero to One
@@ -46,19 +46,26 @@ Summary: おすすめ集、好きなもの
     * vim
     * Dropbox Paper
     * VScode
+* おすすめのYouTubeチャンネル
+    * Cultured Meat Future Food Show (細胞農業)
+    * [Kurzgesagt - In a Nutshell](https://www.youtube.com/user/Kurzgesagt) (様々な学術分野をわかりやすく)
+    * MinuteEarth (様々な話題をわかりやすく)
+    * Linguamarina (英語チャンネル)
+    * Sarada Herke (離散数学、グラフ理論)
 * おすすめのSSG(静的サイトジェネレーター)
     * Hugo
-    * Pelican
+    * Pelican（このサイトもこれで作成）
 * 好きな小説家
     * 東野圭吾
     * 伊坂幸太郎
 * おすすめの国、街
 * おすすめのアプリ
     * Nuzzle
-    * 
+    * ...
 * おすすめのサイト
     * Golden
 
 みなさんのオススメのもの、好きなもの是非教えてください！！
 超募集中@nafoto_z
 
+リンクとかはそのうち貼ります。

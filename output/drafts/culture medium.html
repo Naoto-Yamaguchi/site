@@ -113,6 +113,42 @@
 <p>グリーンダカラの成分</p>
 <h1>今後</h1>
 <p>RedBullでもできる？</p>
+<h1>C++の標準ライブラリのdebugのための環境構築</h1>
+<p><a href="https://doss.eidos.ic.i.u-tokyo.ac.jp/html/gdb_step_into_libraries.html">やり方</a></p>
+<p>https://superuser.com/questions/159310/bash-line-7-dpkg-command-not-found-said-centos</p>
+<p>These steps worked for me on CentOS 7:</p>
+<p>Install epel using the following command: sudo yum -y install epel-release
+Refresh repo by typing the following commad: sudo yum repolist
+Install the dpkg rpm packages: sudo yum install dpkg-devel dpkg-dev
+For more information: http://www.cyberciti.biz/faq/installing-rhel-epel-repo-on-centos-redhat-7-x/</p>
+<div class="highlight"><pre><span></span>実行ファイルを実行した時に使うであろう、ファイルを表示
+$ ldd 04
+
+あるファイルを提供しているパッケージ名を表示
+$ dpkg -S /lib/x86_64-linux-gnu/libc.so.6
+やったけど、
+dpkg-query: no path found matching pattern
+
+見つからないのは、そのパッケージ自体がインストールされていないのが原因か。
+え、じゃあcのファイルはどうしてる？
+</pre></div>
+
+
+<p>インストール
+<a href="https://superuser.com/questions/159310/bash-line-7-dpkg-command-not-found-said-centos">Stack Overflow</a>
+1. Install epel using the following command: sudo yum -y install epel-release
+2. Refresh repo by typing the following commad: sudo yum repolist
+3. Install the dpkg rpm packages: sudo yum install dpkg-devel dpkg-dev</p>
+<p>ヘッダーファイルは、<code>.user/include/stdio.h</code>から見られる。
+https://qiita.com/DQNEO/items/4e5c2eca2761ec08b922</p>
+<p>ヘッダーファイルの実態は、glibにある
+https://qiita.com/kure/items/d88b5b81efe38ead0ea2</p>
+<p><a href="https://doss.eidos.ic.i.u-tokyo.ac.jp/html/gdb_step_into_libraries.html">自分がコンパイルしていないライブラリの中をGDBで追跡する</a></p>
+<p><a href="https://codeday.me/jp/qa/20190307/327856.html">assembly – gdbを使って逆アセンブルされたライブラリをデバッグする</a></p>
+<p><a href="https://www.atmarkit.co.jp/ait/articles/1703/01/news167_3.html">「Hello World！」の主役printf()の内部動作をデバッガGDBで追う (3/3)</a></p>
+<p><a href="https://qiita.com/tobira-code/items/75d3034aed8bb9828981">x86-64プロセッサのスタックを理解する</a></p>
+<p><code>I get “dpkg-query: no path found matching pattern” How to solve this?</code>
+これは普通にパッケージがなかったから。</p>
   </div>
   <div class="tag-cloud">
     <p>

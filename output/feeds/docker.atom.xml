@@ -229,29 +229,4 @@ nyamaguchi/gdbenv   latest              c7e81afda91c        &lt;span class="m"&g
 
 &lt;p&gt;でこのimageでも利用可能になります。
 ほぼ使い道ないかもしれませんが、もしよかったら使ってみてください。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;docker search gdbenv&lt;/code&gt;で検索できるはずですが、なぜか見つかりませんでした。&lt;/p&gt;
-&lt;h1&gt;C++の標準ライブラリのdebugのための環境構築&lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://doss.eidos.ic.i.u-tokyo.ac.jp/html/gdb_step_into_libraries.html"&gt;やり方&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;https://superuser.com/questions/159310/bash-line-7-dpkg-command-not-found-said-centos&lt;/p&gt;
-&lt;p&gt;These steps worked for me on CentOS 7:&lt;/p&gt;
-&lt;p&gt;Install epel using the following command: sudo yum -y install epel-release
-Refresh repo by typing the following commad: sudo yum repolist
-Install the dpkg rpm packages: sudo yum install dpkg-devel dpkg-dev
-For more information: http://www.cyberciti.biz/faq/installing-rhel-epel-repo-on-centos-redhat-7-x/&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;実行ファイルを実行した時に使うであろう、ファイルを表示
-$ ldd 04
-
-あるファイルを提供しているパッケージ名を表示
-$ dpkg -S /lib/x86_64-linux-gnu/libc.so.6
-やったけど、
-dpkg-query: no path found matching pattern
-
-見つからないのは、そのパッケージ自体がインストールされていないのが原因か。
-え、じゃあcのファイルはどうしてる？
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;ヘッダーファイルは、&lt;code&gt;.user/include/stdio.h&lt;/code&gt;から見られる。
-https://qiita.com/DQNEO/items/4e5c2eca2761ec08b922&lt;/p&gt;
-&lt;p&gt;ヘッダーファイルの実態は、glibにある
-https://qiita.com/kure/items/d88b5b81efe38ead0ea2&lt;/p&gt;</content><category term="Docker"></category><category term="Programming"></category></entry></feed>
+&lt;p&gt;&lt;code&gt;docker search gdbenv&lt;/code&gt;で検索できるはずですが、なぜか見つかりませんでした。&lt;/p&gt;</content><category term="Docker"></category><category term="Programming"></category></entry></feed>
