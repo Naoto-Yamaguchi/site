@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-06-07T00:00:00+09:00</updated><entry><title>記事翻訳 ~GFI Research Grants Update: Introduction to Cell-Based Meat Research Projects~</title><link href="https://naoto-yamaguchi.github.io/site/cell_based_meat_research_projects.html" rel="alternate"></link><published>2019-06-07T00:00:00+09:00</published><updated>2019-06-07T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-07:/site/cell_based_meat_research_projects.html</id><summary type="html">&lt;p&gt;培養肉研究プロジェクト紹介の英語記事翻訳&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875522300_cell_based_meat_grant_programs.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h1&gt;目次 (Table of Contents)&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-06-20T00:00:00+09:00</updated><entry><title>細胞農業について知りたかったら。情報源は...(if you would like to know about cellular agriculture)</title><link href="https://naoto-yamaguchi.github.io/site/cellular_agriculture.html" rel="alternate"></link><published>2019-06-20T00:00:00+09:00</published><updated>2019-06-20T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-20:/site/cellular_agriculture.html</id><summary type="html">&lt;p&gt;細胞農業について&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
+&lt;p&gt;自分の情報収集源についてのまとめ
+細胞農業についてより知ってもらうため&lt;/p&gt;
+&lt;h1&gt;Articles&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://bit.ly/2KYuwcI"&gt;5分でわかる細胞農業&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Podcast&lt;/h1&gt;
+&lt;p&gt;Cultured meat and future food show
+GFI blog&lt;/p&gt;</content><category term="好きなもの"></category><category term="生物"></category><category term="細胞農業"></category></entry><entry><title>細胞農業について知りたかったら。情報源は...(if you would like to know about cellular agriculture)</title><link href="https://naoto-yamaguchi.github.io/site/cellular_agriculture.html" rel="alternate"></link><published>2019-06-20T00:00:00+09:00</published><updated>2019-06-20T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-20:/site/cellular_agriculture.html</id><summary type="html">&lt;p&gt;細胞農業について&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
+&lt;p&gt;自分の情報収集源についてのまとめ
+細胞農業についてより知ってもらうため&lt;/p&gt;
+&lt;h1&gt;Articles&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://bit.ly/2KYuwcI"&gt;5分でわかる細胞農業&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Podcast&lt;/h1&gt;
+&lt;p&gt;Cultured meat and future food show
+GFI blog&lt;/p&gt;</content><category term="好きなもの"></category><category term="生物"></category><category term="細胞農業"></category></entry><entry><title>記事翻訳 ~GFI Research Grants Update: Introduction to Cell-Based Meat Research Projects~</title><link href="https://naoto-yamaguchi.github.io/site/cell_based_meat_research_projects.html" rel="alternate"></link><published>2019-06-07T00:00:00+09:00</published><updated>2019-06-07T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-07:/site/cell_based_meat_research_projects.html</id><summary type="html">&lt;p&gt;培養肉研究プロジェクト紹介の英語記事翻訳&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875522300_cell_based_meat_grant_programs.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h1&gt;目次 (Table of Contents)&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;紹介&lt;/li&gt;
 &lt;li&gt;動機、目的&lt;/li&gt;
@@ -388,17 +402,60 @@ nyamaguchi/gdbenv   latest              c7e81afda91c        &lt;span class="m"&g
 全ての人&lt;/p&gt;
 &lt;h1&gt;細胞農業に興味を持った理由&lt;/h1&gt;
 &lt;p&gt;私が細胞農業に興味を持ったきっかけは、農業に興味がある友達に勧められた、Cowspiracyというドキュメンタリーでした。このドキュメンタリーは、畜産業が持続可能ではないことを主張したものです。
-国連が発表している人口統計によると、ほぼ確実に2050年には90億人を越えると言われており、これらの人を養う食糧生産方法の確立の必要性が声高に叫ばれています。中でも食肉の需要は高まる一方です。その一方で、現在の畜産業のあり方は持続可能ではなく、このままでは、将来の食料需要を満たすことはできません。従来の食肉生産方法では、牛肉1kgの生産に約10kgもの穀物を必要としており、エネルギー変換効率は悪く、生産に大量の飼料としての穀物と水や土地を必要とします。現状の畜産業の生産拡大には森林伐採等による土地の拡大を必要としますが、これには限りがあります。
-そのドキュメンタリーを通して、畜産業が持続可能でないことを知りました。また、環境的な要因の他にも、家畜の扱い方等倫理的な側面での問題も指摘されています。&lt;/p&gt;
+国連が発表している人口統計によると、ほぼ確実に2050年には98億人に達すると言われており、これらの増え続ける人々を養う食糧生産方法の確立の必要性が声高に叫ばれています。中でも食肉の需要は高まる一方です。その一方で、現在の畜産業のあり方は持続可能ではなく、このままでは、将来の食料需要を満たすことはできません。なぜなら従来の食肉生産方法では、例えば牛肉1kgの生産に約10kgもの穀物を必要としており、エネルギー変換効率は悪く、生産に大量の飼料としての穀物と水や土地を必要とします。しかしこれの地球の資源には限りがあります。
+そのドキュメンタリーを通して、私は畜産業が持続可能でないことを知りました。また、環境的な要因の他にも、家畜の扱い方等倫理的な側面での問題も指摘されていることを知りました。&lt;/p&gt;
 &lt;p&gt;現在、それらの食糧・環境・倫理問題の1つの解決策として細胞農業が注目されています。
-自分は兼ねてから人類史にインパクトを与え、これまでの価値観を大きく変えるような取り組みに関わりたいと考えていましたが、自分が取り組むべきテーマはこれなのではないかと考えています。
-自分の専門性を生かせて、持続可能な地球を実現するプロジェクトとして細胞農業に非常に興味があり、これにより持続可能性に取り組めるのではないかと考えています。&lt;/p&gt;
-&lt;p&gt;The reason I got interested in cellular agriculture is because I watched the documentary, called "Cowspiracy", which a friend of mine who is interested in agriculture recommended me to watch. This movie persists that animal agriculture is not sustainable.
-According to demographic by the United Nations, world population projected to reach 9.8 billion in 2050 and food production feeding increasing world population is required. Especially, global meat consumption continues to rise. However, animal agriculture now is not sustainable and cannot meet the needs of future demand for food because their energy conversion efficiency is so bad that they require a lot of crops, water and lands, which are limited on our earth.
-Through the documentary, I understood that animal agriculture is not sustainable and there are other problems related to ethical issues.&lt;/p&gt;
-&lt;p&gt;In order to solve these issues, cellular agriculture is recently gathering attention.
-I have been hoping to get involved in the projects which have huge impact on human history and their way of thinking. I feel cellular agriculture is the subject that I need to pursue.
-In this topic, I wiil be able to make use of my specialization and tackle sustainability issues.&lt;/p&gt;
+自分は兼ねてから、人類史にインパクトを与え、これまでの人間の価値観を大きく変えるような取り組みに関わりたいと考えていましたが、このドキュメンタリーを見て、様々なことを調べていく内に、自分が現在取り組むべきテーマはこれなのではないかと考えるようになりました。それには、主に以下の3つの理由があります。
+1. 社会に大きなインパクトを与え、社会に貢献できる。細胞農業というのは、細胞を培養することで、食料を生産する方法で、今までの人間の食糧供給方法である、狩猟、飼育、栽培、醸造、合成に継ぐ第6の大きな食糧供給方法になり得るポテンシャルを秘めています。
+2. 自分の専門性を生かせる。私の専門はバイオインフォマティクスですが、この細胞農業には大きく貢献できると思っています。再生医療にも
+3. 動物を殺さなくてよくなる。サピエンス全史という本を読むと、いかに現在というのが当たり前ではないかということが理解できます。現代は、人間至上主義の世界で、
+自分で作れないものは理解したとは言えない
+私は、肉が大好きですし、日々の生活で口にしています。その一方で、動物を殺して
+だからと言っていきなりベジタリアン生活をするかと言われればそこまですることはできません。（環境によっては続けることは可能だと感じた）
+4. 近年激しく見られるヴィーガニズムと反ヴィーガニズムの論争に終止符を打つことができる可能性がある。
+Twitter等でのやりとりを度々目にして悲しくなるのですが、あまりにお互いの立場に対する誹謗中傷が多いです。
+根本的な価値観が違う中、無意味な誹謗中傷を無くし、肉を食べたい人は気兼ねなく肉を食べ続けられ、現在の動物愛護の観点からヴィーガンになっている方々も肉食を安心してみていられる、持続可能な世の中を作りたいと考えています。&lt;/p&gt;
+&lt;p&gt;これは個人的な意見でして、
+私が所属するShojinmeat Projectでは、&lt;/p&gt;
+&lt;p&gt;自分の専門性を生かせて、持続可能な地球を実現するプロジェクトとして細胞農業に非常に興味があり、これにより持続可能性に取り組めるのではないかと考えています。&lt;/p&gt;
+&lt;p&gt;このブログでは、細胞農業の可能性とその価値と正しい理解を広めることで、細胞農業の普及に貢献できればと考えています。&lt;/p&gt;
+&lt;p&gt;The reason why I got interested in cellular agriculture is that I watched the documentary film, called "Cowspiracy", which a friend of mine interested in agriculture recommended me to watch. This movie persists that animal agriculture is not sustainable.
+According to demographic chart by the United Nations, the world population projected to reach 9.8 billion in 2050 and food production, feeding increasing world population is required. Especially, global meat consumption will continues to rise. However, animal agriculture now is not sustainable and cannot meet the needs of future demand for food because their energy conversion efficiency rate is so low that they require a lot of crops, water, and lands, which are limited on our earth, for example, 1 kg of beef requires about 10 kg of crops.
+Through the film, I understood that not only animal agriculture is unsustainable but there are other problems related to ethical issues.&lt;/p&gt;
+&lt;p&gt;In order to solve these issues such as food crisis, environmental and ethical issues, cellular agriculture is recently gathering attention.
+I have been hoping to be engaged in the projects which have a huge impact on human history and their way of thinking. As I did some research about cellular agriculture, I came to feel cellular agriculture is the subject that I need to pursue. The main reasons are three followings I mention below. &lt;/p&gt;
+&lt;p&gt;If cellular agriculture technology develops, most people will eat beef, pork, chicken and fish meat made from animal cells in a laboratory, which is an innovative change in a way people eat.
+In this topic, I will be able to make use of my specialization and tackle sustainability issues.&lt;/p&gt;
+&lt;p&gt;TBE...&lt;/p&gt;</content><category term="好きなもの"></category><category term="生物"></category><category term="細胞農業"></category></entry><entry><title>細胞農業に興味がある理由(The reason why I'm interested in cellular agriculture)</title><link href="https://naoto-yamaguchi.github.io/site/cellular_agriculture.html" rel="alternate"></link><published>2019-06-01T00:00:00+09:00</published><updated>2019-06-01T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-01:/site/cellular_agriculture.html</id><summary type="html">&lt;p&gt;細胞農業について&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
+&lt;p&gt;自分の興味があるプロジェクトについて、英語で記述する機会がありました。
+そこで他人に見せることを意識しながら、自分が興味ある学問分野について書いてみました。チェックをまだ受けておらず、きちんと修正していない文なので、間違い等あるかもしれませんが、ご容赦下さい。I appriciate if you could correct me if I am wrong.
+全ての人&lt;/p&gt;
+&lt;h1&gt;細胞農業に興味を持った理由&lt;/h1&gt;
+&lt;p&gt;私が細胞農業に興味を持ったきっかけは、農業に興味がある友達に勧められた、Cowspiracyというドキュメンタリーでした。このドキュメンタリーは、畜産業が持続可能ではないことを主張したものです。
+国連が発表している人口統計によると、ほぼ確実に2050年には98億人に達すると言われており、これらの増え続ける人々を養う食糧生産方法の確立の必要性が声高に叫ばれています。中でも食肉の需要は高まる一方です。その一方で、現在の畜産業のあり方は持続可能ではなく、このままでは、将来の食料需要を満たすことはできません。なぜなら従来の食肉生産方法では、例えば牛肉1kgの生産に約10kgもの穀物を必要としており、エネルギー変換効率は悪く、生産に大量の飼料としての穀物と水や土地を必要とします。しかしこれの地球の資源には限りがあります。
+そのドキュメンタリーを通して、私は畜産業が持続可能でないことを知りました。また、環境的な要因の他にも、家畜の扱い方等倫理的な側面での問題も指摘されていることを知りました。&lt;/p&gt;
+&lt;p&gt;現在、それらの食糧・環境・倫理問題の1つの解決策として細胞農業が注目されています。
+自分は兼ねてから、人類史にインパクトを与え、これまでの人間の価値観を大きく変えるような取り組みに関わりたいと考えていましたが、このドキュメンタリーを見て、様々なことを調べていく内に、自分が現在取り組むべきテーマはこれなのではないかと考えるようになりました。それには、主に以下の3つの理由があります。
+1. 社会に大きなインパクトを与え、社会に貢献できる。細胞農業というのは、細胞を培養することで、食料を生産する方法で、今までの人間の食糧供給方法である、狩猟、飼育、栽培、醸造、合成に継ぐ第6の大きな食糧供給方法になり得るポテンシャルを秘めています。
+2. 自分の専門性を生かせる。私の専門はバイオインフォマティクスですが、この細胞農業には大きく貢献できると思っています。再生医療にも
+3. 動物を殺さなくてよくなる。サピエンス全史という本を読むと、いかに現在というのが当たり前ではないかということが理解できます。現代は、人間至上主義の世界で、
+自分で作れないものは理解したとは言えない
+私は、肉が大好きですし、日々の生活で口にしています。その一方で、動物を殺して
+だからと言っていきなりベジタリアン生活をするかと言われればそこまですることはできません。（環境によっては続けることは可能だと感じた）
+4. 近年激しく見られるヴィーガニズムと反ヴィーガニズムの論争に終止符を打つことができる可能性がある。
+Twitter等でのやりとりを度々目にして悲しくなるのですが、あまりにお互いの立場に対する誹謗中傷が多いです。
+根本的な価値観が違う中、無意味な誹謗中傷を無くし、肉を食べたい人は気兼ねなく肉を食べ続けられ、現在の動物愛護の観点からヴィーガンになっている方々も肉食を安心してみていられる、持続可能な世の中を作りたいと考えています。&lt;/p&gt;
+&lt;p&gt;これは個人的な意見でして、
+私が所属するShojinmeat Projectでは、&lt;/p&gt;
+&lt;p&gt;自分の専門性を生かせて、持続可能な地球を実現するプロジェクトとして細胞農業に非常に興味があり、これにより持続可能性に取り組めるのではないかと考えています。&lt;/p&gt;
+&lt;p&gt;このブログでは、細胞農業の可能性とその価値と正しい理解を広めることで、細胞農業の普及に貢献できればと考えています。&lt;/p&gt;
+&lt;p&gt;The reason why I got interested in cellular agriculture is that I watched the documentary film, called "Cowspiracy", which a friend of mine interested in agriculture recommended me to watch. This movie persists that animal agriculture is not sustainable.
+According to demographic chart by the United Nations, the world population projected to reach 9.8 billion in 2050 and food production, feeding increasing world population is required. Especially, global meat consumption will continues to rise. However, animal agriculture now is not sustainable and cannot meet the needs of future demand for food because their energy conversion efficiency rate is so low that they require a lot of crops, water, and lands, which are limited on our earth, for example, 1 kg of beef requires about 10 kg of crops.
+Through the film, I understood that not only animal agriculture is unsustainable but there are other problems related to ethical issues.&lt;/p&gt;
+&lt;p&gt;In order to solve these issues such as food crisis, environmental and ethical issues, cellular agriculture is recently gathering attention.
+I have been hoping to be engaged in the projects which have a huge impact on human history and their way of thinking. As I did some research about cellular agriculture, I came to feel cellular agriculture is the subject that I need to pursue. The main reasons are three followings I mention below. &lt;/p&gt;
+&lt;p&gt;If cellular agriculture technology develops, most people will eat beef, pork, chicken and fish meat made from animal cells in a laboratory, which is an innovative change in a way people eat.
+In this topic, I will be able to make use of my specialization and tackle sustainability issues.&lt;/p&gt;
 &lt;p&gt;TBE...&lt;/p&gt;</content><category term="好きなもの"></category><category term="生物"></category><category term="細胞農業"></category></entry><entry><title>がん</title><link href="https://naoto-yamaguchi.github.io/site/cancer.html" rel="alternate"></link><published>2019-05-31T00:00:00+09:00</published><updated>2019-05-31T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-05-31:/site/cancer.html</id><summary type="html">&lt;p&gt;がんの仕組みの解説&lt;/p&gt;</summary><content type="html">&lt;h1&gt;がん&lt;/h1&gt;
 &lt;p&gt;がんは、細胞制御機構に異常が発生することでおこる病気です。現代では、5 人に 1 人ががんで命を失いますが、がんを研究で扱う理由は命を救うだけにとどまりません。がんの原因を調べることで、細胞制御機構の解明が進み、細胞生物学の基礎となるのです。我々多細胞生物の体の中では、数多くの細胞が協調して働くことで、多細胞としての個体が正常に生きることができます。しかし、この協調を乱すような細胞が生まれると、細胞社会の秩序を壊し、正常に生きることができなくなります。この協調を壊しうる細胞は、各細胞での塩基配列の変異により、毎日我々の体の中で生じていますが、それを修復する機構によって、秩序が保たれているのです。この修復する機構が壊れたり、変異が入った異常な細胞（秩序を満たす細胞）がとめどなく増殖できるようになると、我々の体の中の細胞社会の秩序を乱し、破壊に導いていくのです。&lt;/p&gt;
 &lt;p&gt;ではどういう仕組みで、するのでしょうか？&lt;/p&gt;
