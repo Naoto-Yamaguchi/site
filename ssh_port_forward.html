@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="nafoto'z_blog Atom">
+
+
+    <link rel="shortcut icon" href="/images/favicon_dna.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon_dna.ico" type="image/x-icon">
+
+
+
+<meta name="author" content="Naoto Yamaguchi" />
+<meta name="description" content="SSHポートフォーワードとは（未完）" />
+<meta name="keywords" content="SSH, portforward">
+
+<meta property="og:site_name" content="nafoto'z_blog"/>
+<meta property="og:title" content="SSHのポートフォワード（トンネリング）とは？"/>
+<meta property="og:description" content="SSHポートフォーワードとは（未完）"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://naoto-yamaguchi.github.io/site/ssh_port_forward.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2019-03-31 00:00:00+09:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://naoto-yamaguchi.github.io/site/author/naoto-yamaguchi.html">
+<meta property="article:section" content="SSH"/>
+<meta property="article:tag" content="SSH"/>
+<meta property="article:tag" content="portforward"/>
+<meta property="og:image" content="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875512584_profile_dubai.jpg">
+
+  <title>nafoto'z_blog &ndash; SSHのポートフォワード（トンネリング）とは？</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://naoto-yamaguchi.github.io/site">
+        <img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875512584_profile_dubai.jpg" alt="" title="">
+      </a>
+      <h1><a href="https://naoto-yamaguchi.github.io/site"></a></h1>
+
+
+      <nav>
+        <ul class="list">
+
+          <li><a href="" target="_blank">Home</a></li>
+          <li><a href="http://twitter.com/nafoto_z" target="_blank">Twitter</a></li>
+          <li><a href="http://tatekaetaro.work/" target="_blank">立替たろう</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-You can add links in your config file" href="#" target="_blank"><i class="fa fa-You can add links in your config file"></i></a></li>
+        <li><a class="sc-Another social link" href="#" target="_blank"><i class="fa fa-Another social link"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="ssh_port_forward">SSHのポートフォワード（トンネリング）とは？</h1>
+    <p>
+          Posted on 日 31 3月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/ssh.html">SSH</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <h3>動機</h3>
+<p>SSH ポートフォワードを使っていた時に、SCP でファイルを送信したかったため。</p>
+<h3>参考</h3>
+<p>サムネイル画像は<a href="https://cookbook.fortinet.com/port-forwarding-60/">こちら</a>より引用</p>
+<p><a href="https://www.clear-code.com/blog/2014/9/12.html">SSH ポートフォワード（トンネリング）を使って、遠隔地から LAN 内のコンピュータにログインする</a>
+<a href="https://www.turbolinux.co.jp/products/server/11s/user_guide/x9016.html">Turbolinux 11 Server: ユーザーガイド 第 21 章 SSH（Secure SHell）サーバー</a></p>
+<h3>SSH ポートフォワードとは？</h3>
+<blockquote>
+<p>ある特定のコンピュータの特定のポート番号に対して送られる通信内容を、別のコンピュータの特定のポート番号への接続として転送すること。インターネットと LAN の間でルーターは日常的にこれをこなしているが、SSH のポートフォワード機能を使うと、様々な設定でポートフォワードをすることができる。</p>
+</blockquote>
+<p>今回は、ある LAN の中にある PC から別の LAN の中にある PC に SSH 接続しており、そのコンピュータ間でファイル転送をおこないたいというモチベーションがありました。</p>
+<ul>
+<li>インターネット上の中継サーバを使う方法</li>
+<li>LAN 内の中継サーバを使う方法</li>
+</ul>
+<p>の 2 通りがあります。</p>
+<h3>実際にやってみた</h3>
+<p>すみません、まとめたら載せます。</p>
+<!-- zsh: no matches found
+[ss](http://d.hatena.ne.jp/eitya/20110707/1310023383)
+[]https://shirusu-ni-tarazu.hatenablog.jp/entry/2013/01/18/034233
+全然関係ないところでエラー
+
+[](https://qiita.com/kyrya/items/121fc54ae4c9c10c0e8b)
+を参考に
+`scp -o 'ProxyCommand ssh aca10555ym@as.abci.ai nc %h %p' lstm_human_antigen.ipynb aca10555ym@es:/groups2/gca50068/yamaguchi`
+やってみたけど、
+sh_exchange_identification ってエラー
+[](https://qiita.com/uutarou10/items/f8391965adc6b4c312d1)
+そもそも IP アドレスが違う説確認する
+
+tmux ってなに
+
+abci-gate した状態で
+[~] scp -r -P 10022 [送りたいディレクトリ][usrname]@localhost:[送り先のディレクトリ]
+でできた -->
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://naoto-yamaguchi.github.io/site/tag/ssh.html">SSH</a>
+      <a href="https://naoto-yamaguchi.github.io/site/tag/portforward.html">portforward</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " nafoto'z_blog ",
+  "url" : "https://naoto-yamaguchi.github.io/site",
+  "image": "https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875512584_profile_dubai.jpg",
+  "description": ""
+}
+</script>
+
+</body>
+</html>
