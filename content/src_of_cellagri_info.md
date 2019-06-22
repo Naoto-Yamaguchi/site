@@ -2,7 +2,7 @@ Title: 細胞農業について知りたかったら。情報源は...(if you wo
 Date: 2019-06-20
 Category: 細胞農業
 Tags: 好きなもの, 生物, 細胞農業
-Slug: cellular_agriculture
+Slug: src_of_cellular_agriculture
 Authors: Naoto Yamaguchi
 Summary: 細胞農業について
 
