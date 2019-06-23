@@ -2,7 +2,7 @@ Title: 私のおすすめのもの、好きなもの
 Date: 2019-02-24
 Category: 嗜好
 Tags: 好きなもの, 嗜好
-Slug: recommendation
+Slug: my_favorites
 Authors: Naoto Yamaguchi
 Summary: おすすめ集、好きなもの
 

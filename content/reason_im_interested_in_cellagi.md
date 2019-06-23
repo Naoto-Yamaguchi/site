@@ -2,7 +2,7 @@ Title: 細胞農業に興味がある理由(The reason why I'm interested in cel
 Date: 2019-06-01
 Category: 細胞農業
 Tags: 好きなもの, 生物, 細胞農業
-Slug: cellular_agriculture
+Slug: interest_in_cellular_agriculture
 Authors: Naoto Yamaguchi
 Summary: 細胞農業について
 

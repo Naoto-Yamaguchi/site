@@ -41,3 +41,6 @@ PLUGINS = ['render_math']
 
 #PLUGIN_PATH = ['../pelican-plugins']
 #PLUGINS = ['render_math']
+
+ARTICLE_URL = '{slug}.html'
+ARTICLE_SAVE_AS = '{slug}.html'
