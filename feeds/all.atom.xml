@@ -1,5 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-06-07T00:00:00+09:00</updated><entry><title>記事翻訳 ~GFI Research Grants Update: Introduction to Cell-Based Meat Research Projects~</title><link href="https://naoto-yamaguchi.github.io/site/cell_based_meat_research_projects.html" rel="alternate"></link><published>2019-06-07T00:00:00+09:00</published><updated>2019-06-07T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-07:/site/cell_based_meat_research_projects.html</id><summary type="html">&lt;p&gt;培養肉研究プロジェクト紹介の英語記事翻訳&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875522300_cell_based_meat_grant_programs.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h1&gt;目次 (Table of Contents)&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-06-24T00:00:00+09:00</updated><entry><title>OpenMPによる並列処理メモ</title><link href="https://naoto-yamaguchi.github.io/site/openmp.html" rel="alternate"></link><published>2019-06-24T00:00:00+09:00</published><updated>2019-06-24T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-24:/site/openmp.html</id><summary type="html">&lt;p&gt;OpenMP環境構築、コマンド等&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
+&lt;p&gt;OpenMPを用いた並列コンピューティングの実装課題に取り組む際に、環境構築がよくわからなかったこと、また、OpenMPを使う際に、スレッド数やプロセス数についてよくわからないことがあったので、軽くわかったことを書いてみました。
+また、OpenMPの並列化の際、いくつのスレッドが立っているのか、いくつのコアを使っているのかを調べる必要があったためです。&lt;/p&gt;
+&lt;h1&gt;OpenMP環境構築&lt;/h1&gt;
+&lt;p&gt;環境構築方法は基本、そのマシンによって異なります。私のMacbookでできた方法を記載しています。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;gcc4.9以上じゃないとopenmpは使えない模様
+$ brew install llvm
+(llvmはコンパイラ基盤らしい）
+$ open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg
+でできると言われたが、これはfile does not existとなり、/Library/Developer/CommandLineTools/以下にはPackagesというディレクトリがなかった。
+そのため、一旦これはやめて、
+$ brew reinstall gcc
+$ brew install gcc49
+で
+$ g++-4.9 -std=c++11 -fopenmp &amp;lt;ファイル名&amp;gt;.cpp
+とすればできた
+環境は個々人によるので、これでできるかはわかりません
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;thread数、process数、コア数を調べる、ハイパースレッティング&lt;/h1&gt;
+&lt;p&gt;CPU型番はこのコマンドで調べられる
+こちらを参考にした。
+http://no213015e.hatenablog.com/entry/2018/02/07/223914&lt;/p&gt;
+&lt;p&gt;$｀sysctl machdep.cpu.brand_string｀
+｀machdep.cpu.brand_string: Intel(R) Core(TM) i5-6360U CPU @ 2.00GHz｀ 
+これで、検索エンジンで「Intel Core i5-6360U」などと調べると、そのプロセッサの情報を見ることができます。今回は&lt;a href="https://ark.intel.com/content/www/jp/ja/ark/products/91156/intel-core-i5-6360u-processor-4m-cache-up-to-3-10-ghz.html"&gt;こちら&lt;/a&gt;を参考にしました。
+そのプロセッサの情報に、メモリの種類という項目があり、3種類程しか載っておらず、最大メモリ帯域も決まった値が記載されていました。私は、メモリとプロセッサは独立に決められると思っていたのですが、プロセッサに合うメモリというのがある程度決まっていて、そのスペックもほぼ決まっているのでしょうか。そのプロセッサが対応できるメモリの種類、サイズ、転送速度を記載しているという認識で良いのでしょうか。ここは、まだ自分が理解できていない部分です。&lt;/p&gt;
+&lt;h1&gt;コマンド&lt;/h1&gt;
+&lt;p&gt;以下のコマンドで、ハードウェアの情報の一部を見ることができます。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ system_profiler SPHardwareDataType
+Hardware:
+
+    Hardware Overview:
+
+      Model Name: MacBook Pro
+      Model Identifier: MacBookPro13,1
+      Processor Name: Intel Core i5
+      Processor Speed: &lt;span class="m"&gt;2&lt;/span&gt; GHz
+      Number of Processors: &lt;span class="m"&gt;1&lt;/span&gt;
+      Total Number of Cores: &lt;span class="m"&gt;2&lt;/span&gt;
+      L2 Cache &lt;span class="o"&gt;(&lt;/span&gt;per Core&lt;span class="o"&gt;)&lt;/span&gt;: &lt;span class="m"&gt;256&lt;/span&gt; KB
+      L3 Cache: &lt;span class="m"&gt;4&lt;/span&gt; MB
+      Memory: &lt;span class="m"&gt;8&lt;/span&gt; GB
+      Boot ROM Version: MBP131.0205.B11
+      SMC Version &lt;span class="o"&gt;(&lt;/span&gt;system&lt;span class="o"&gt;)&lt;/span&gt;: &lt;span class="m"&gt;2&lt;/span&gt;.36f96
+      Serial Number &lt;span class="o"&gt;(&lt;/span&gt;system&lt;span class="o"&gt;)&lt;/span&gt;: C02TJ0Q7GVC8
+      Hardware UUID: 0B84C404-0239-5964-883A-B5BBB085C4C7
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;また、物理CPUのMAX数&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sysctl -n hw.physicalcpu_max             
+&lt;span class="m"&gt;2&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;論理CPUのMAX数も見ることができます。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sysctl -n hw.logicalcpu_max
+&lt;span class="m"&gt;4&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;これらからわかることは、このMacbookには1つのプロセッサー(四角いチップ)があり、その中に2つのコアが入っていて（これは物理的なコア）、各コアが仮想的に2コアとして動くことで、最大論理コア数は4になっているということです。&lt;/p&gt;
+&lt;p&gt;なぜ、こういうことを調べたかというと、
+MacBookの「このMacについて」を調べたり、ネットで型番を調べても、コア数は2という記載だったのにも関わらず、OpenMPを用いたプログラムで、&lt;code&gt;omp_get_num_procs()&lt;/code&gt;というコア数を返してくれる関数を実行した際の返り値が、4であったことに疑問を持ったためです。
+これはCPUのハイパースレッティングにより、1つのコアを擬似的に2つにすることで、プログラム側からは4つのコアがあるように見えていたためだと考えられます。&lt;/p&gt;</content><category term="Programming"></category><category term="C"></category></entry><entry><title>英作文をしていて気がついたこと(What I realized when I write an essay)</title><link href="https://naoto-yamaguchi.github.io/site/what_i_found_when_i_write_an_essay.html" rel="alternate"></link><published>2019-06-21T00:00:00+09:00</published><updated>2019-06-21T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-21:/site/what_i_found_when_i_write_an_essay.html</id><summary type="html">&lt;p&gt;英作文をしていて気がついたこと&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
+&lt;p&gt;ごく最近ですが、定期的に英文を書いて添削してもらうことを始めました。理由は英語でのライティングスキルを高めたかったからです。やはり定期的に英語でのアウトプットは非常に重要だと感じ、兼ねてからやってみたいと思っていた、英文添削サービスを受け始めてみることにしました。
+私は、少しインターネットで英文添削サービスを検索して&lt;a href="https://idiy.biz/"&gt;IDIY&lt;/a&gt;というサービスを使ってみることにしました。もっと色々なサービスを比較してもよかったですが、比較することに時間を費やして英文添削を延ばし延ばしにしてしまうのは良くないし、すぐに始めるべきだ！と思ったので、調査もそこそこに（いつもこういうのは納得するまで調べてしまう）、評価もそこそこ良さそうで、安価なIDIYを使ってみることにしました。
+添削サービスは一長一短あると思いますし、人によって適したものは異なるので、軽く調べて自分に合うのを選ぶと良いと思います。ただ調べるのに時間をかけすぎるのは、本末転倒で,参考書マニアになった受験生（いつしかの私）みたいになるので要注意です。実際、英文添削サービスやオンライン英会話のサービスは、初回無料体験のようなものが多く、それを使えばサービスの質を体感できるばかりか、実際に英作文や会話をする機会を得られるので、まずサービスを使ってみるのが一番かと思います。個人的にはIDIYが今のところ良いので、自分は英文添削サービスについては、IDIYしか使ったことがありませんが（無料のGrammerlyは使っている）、オンライン英会話はDMMやCamblyなどを無料体験で使ってみてサービスがどんな感じか掴めたのでおすすめです。&lt;/p&gt;
+&lt;p&gt;今のところ、こちらのブログに載せている英文は、全てIDIYの添削を受けたものです。一度添削してもらうと安心してブログにも載せられるし、ブログに載せたい内容を英作文のお題にすると、お題はおそらく尽きることがないのでおすすめです（続けることが難しく、最も大事なことの1つですが）。&lt;/p&gt;
+&lt;p&gt;英文添削を受けてみたいという方、文章を書くことに関する考え方に興味がある方、暇な人、などが主な対象です。&lt;/p&gt;
+&lt;h1&gt;What I realized when I write an essay&lt;/h1&gt;
+&lt;p&gt;What I realized when I write an essay in English is that the biggest challenge is not the language itself, but how I organise the structure of a sentence.
+Many people may think that writing in English is challenging, because they have to do it without using their mother tongue.
+However, when I write an essay in English , I find that I take more time to think about the content, and the reasons to support my opinion, than to choose expressions.
+If you have clear thoughts about the topic and composition of your essay, it is much easier to write in English.
+Thus, if you would like to improve your English writing skills, you should be familiar with a wide variety of topics, have a clear and well-organized opinion about them, and be able to explain them simply in your native language; this may be a good shortcut to improvement.&lt;/p&gt;
+&lt;h1&gt;英作文をしていて気がついたこと&lt;/h1&gt;
+&lt;p&gt;英語の文章をいくつか書いていく中で、英語で文章を書くことの難しさは、英語表現ではなく、その文章構成にあることに気がつきました。もちろんこれは人によるので、一般に言えることではないかもしれません。
+ただ、普通に考えて、日本語で書けない文章を英語でかけるわけではありません。自分が書くトピックに対して自分の頭の中が整理されていなければ、英語であろうと日本語であろうと相手に伝わる文章を書くことは非常に難しいです。逆に、頭の中でよく整理されたシンプルにまとまっていれば、それを日本語であろと英語であろうと、そのまま書けばわかりやすく伝わりやすい文章が書けるはずです。自分は英文を書くとき、慣れたトピックは比較的スラスラかけましたが、普段考えたこともないようなお題に対しては、すぐにキーボードを打つ手（もしくは筆）が止まってしまいました。
+これはある程度簡単な表現は英語でも書けることが前提ですが、そういう簡単でシンプルな表現でも書けて、かつ説得力のある文章になるように、上手く文を構成できれば難しい表現を使う必要はないのではないかと思いました。
+だからこそ、様々なトピックに対して、よく整理された(well-organized)な考えを持っておきたいと思いました。どうしても知らない内容は当然あると思うので、その際は、いかにシンプルに主張を整理していくかが大事で、それには訓練が必要そうです...&lt;/p&gt;
+&lt;p&gt;英作文以前に、文章自体を構成することに悩んだので、&lt;a href="https://www.amazon.co.jp/%E8%80%83%E3%81%88%E3%82%8B%E6%8A%80%E8%A1%93%E3%83%BB%E6%9B%B8%E3%81%8F%E6%8A%80%E8%A1%93%E2%80%95%E5%95%8F%E9%A1%8C%E8%A7%A3%E6%B1%BA%E5%8A%9B%E3%82%92%E4%BC%B8%E3%81%B0%E3%81%99%E3%83%94%E3%83%A9%E3%83%9F%E3%83%83%E3%83%89%E5%8E%9F%E5%89%87-%E3%83%90%E3%83%BC%E3%83%90%E3%83%A9-%E3%83%9F%E3%83%B3%E3%83%88/dp/4478490279"&gt;「考える技術・核技術」&lt;/a&gt;という本を読んでみました。文章を書く目的である、「主張」に対して、ピラミッド構造で要素を展開していくことの重要性とその実践について書かれています。まだ半分ほどしか読んでいませんが、わかりやすく書くためのアイデアが詰まっているのでおすすめです。&lt;/p&gt;</content><category term="Essay 気がついたこと"></category></entry><entry><title>記事翻訳 ~GFI Research Grants Update: Introduction to Cell-Based Meat Research Projects~</title><link href="https://naoto-yamaguchi.github.io/site/cell_based_meat_research_projects.html" rel="alternate"></link><published>2019-06-07T00:00:00+09:00</published><updated>2019-06-07T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-07:/site/cell_based_meat_research_projects.html</id><summary type="html">&lt;p&gt;培養肉研究プロジェクト紹介の英語記事翻訳&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875522300_cell_based_meat_grant_programs.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h1&gt;目次 (Table of Contents)&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;紹介&lt;/li&gt;
 &lt;li&gt;動機、目的&lt;/li&gt;
