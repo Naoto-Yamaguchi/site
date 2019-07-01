@@ -23,18 +23,25 @@
 
 
 
-    <meta name="author" content="Naoto Yamaguchi" />
-    <meta name="description" content="" />
+<meta name="author" content="Naoto Yamaguchi" />
+<meta name="description" content="Macに勝手に騙されてました。" />
+<meta name="keywords" content="Programming, C">
+
 <meta property="og:site_name" content="nafoto'z_blog"/>
-<meta property="og:type" content="blog"/>
-<meta property="og:title" content="nafoto'z_blog"/>
-<meta property="og:description" content=""/>
+<meta property="og:title" content="MacOSで使っていたGCCはGCCではなかった話（他のコマンドもまた然り）"/>
+<meta property="og:description" content="Macに勝手に騙されてました。"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content=""/>
+<meta property="og:url" content="/drafts/gcc_on_mac.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2019-06-24 00:00:00+09:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="/author/naoto-yamaguchi.html">
+<meta property="article:section" content="Programming"/>
+<meta property="article:tag" content="Programming"/>
+<meta property="article:tag" content="C"/>
 <meta property="og:image" content="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875512584_profile_dubai.jpg">
 
-  <title>nafoto'z_blog &ndash;     Tag 翻訳
-</title>
+  <title>nafoto'z_blog &ndash; MacOSで使っていたGCCはGCCではなかった話（他のコマンドもまた然り）</title>
 
 </head>
 <body>
@@ -66,33 +73,34 @@
   <main>
 
 
-
-
-<article>
+<article class="single">
   <header>
-    <h2><a href="/cell_based_meat_research_projects.html#cell_based_meat_research_projects">記事翻訳 ~GFI Research Grants Update: Introduction to Cell-Based Meat Research Projects~</a></h2>
+      
+    <h1 id="gcc_on_mac">MacOSで使っていたGCCはGCCではなかった話（他のコマンドもまた然り）</h1>
     <p>
-          Posted on 金 07 6月 2019 in <a href="/category/xi-bao-nong-ye.html">細胞農業</a>
+          Posted on 月 24 6月 2019 in <a href="/category/programming.html">Programming</a>
 
 
-          &#8226;     Tagged with
-
-              <a href="/tag/xi-bao-nong-ye.html">細胞農業</a>,              <a href="/tag/ji-shi-fan-yi.html">記事翻訳</a>,              <a href="/tag/yan-jiu.html">研究</a>,              <a href="/tag/fan-yi.html">翻訳</a>
     </p>
   </header>
+
+
   <div>
-      <p>培養肉研究プロジェクト紹介の英語記事翻訳<br><img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875522300_cell_based_meat_grant_programs.png"></p>
-      <br>
-      <a class="btn" href="/cell_based_meat_research_projects.html#cell_based_meat_research_projects">    Continue reading
-</a>
+    <h1>動機</h1>
+<p>あるプログラムの実行時間を計測するには、timeコマンドが良いということで、<code>time 実行ファイル名</code>のような形で、実行時間計測をおこなっていたのですが、出てくる表示が、timeコマンドの使い方を説明している記事とは異なることに気がつきました。具体的には以下の通りです。</p>
   </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/programming.html">Programming</a>
+      <a href="/tag/c.html">C</a>
+    </p>
+  </div>
+
+
+
+
+
 </article>
-
-  <div class="pagination">
-  </div>
-
-
-
 
     <footer>
 <p>&copy;  </p>

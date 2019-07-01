@@ -1,4 +1,3 @@
-
 Title: 英作文をしていて気がついたこと(What I realized when I write an essay)
 Date: 2019-06-21
 Category: Essay
