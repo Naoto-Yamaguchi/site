@@ -2,7 +2,7 @@ Title: 細胞農業に取り組むスタートアップまとめ
 Date: 2019-06-07
 Category: 細胞農業
 Tags: 細胞農業, 記事翻訳, 研究, 翻訳
-Slug: cell_based_meat_research_projects
+Slug: startups_in_cellular_agriculture
 Authors: Naoto Yamaguchi
 Summary: 細胞農業に取り組むスタートアップまとめ
 

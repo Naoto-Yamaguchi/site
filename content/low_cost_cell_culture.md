@@ -2,7 +2,7 @@ Title: 自宅での安価な細胞培養方法の簡易まとめ
 Date: 2019-06-07
 Category: 細胞農業
 Tags: 細胞農業, 記事翻訳, 研究, 翻訳
-Slug: cell_based_meat_research_projects
+Slug: low_cost_cell_culture
 Authors: Naoto Yamaguchi
 Summary: 自宅での安価に細胞を培養する方法を軽くまとめました
 

@@ -2,7 +2,7 @@ Title: バイオインフォマティクスで使う（かもしれない）シ�
 Date: 2019-06-06
 Category: Bioinformatics
 Tags: Bioinformatics, Sequence
-Slug: bioinfo databases
+Slug: bioinfo_sequence
 Authors: Naoto Yamaguchi
 Summary: バイオインフォマティクスで使うデータベースをまとめてみた
 Status: draft

@@ -2,7 +2,7 @@ Title: バイオインフォマティクスで使う（かもしれない）デ�
 Date: 2019-06-06
 Category: Bioinformatics
 Tags: Bioinformatics, Database
-Slug: bioinfo databases
+Slug: bioinfo_databases
 Authors: Naoto Yamaguchi
 Summary: バイオインフォマティクスで使うデータベースをまとめてみた
 Status: draft

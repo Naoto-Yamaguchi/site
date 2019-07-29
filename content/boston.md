@@ -2,7 +2,7 @@ Title: バイオインフォマティクスで使う（かもしれない）シ�
 Date: 2019-06-06
 Category: Bioinformatics
 Tags: Bioinformatics, Sequence
-Slug: bioinfo databases
+Slug: boston
 Authors: Naoto Yamaguchi
 Summary: バイオインフォマティクスで使うデータベースをまとめてみた
 Status: draft
@@ -59,7 +59,7 @@ SIM $45。絶対先に買っていくべき
 BioもChemもEngineering意識が強め。FundamentalなScienceに取り組む人はあまり来ていなかった印象
 * 学生は学部生3年がかなり多かった。会って話した人の8割が学部3年。他も4年、だいたい同い年。
 * オーストリアは高校が5年で、よくわからない学位をとって、そっから大学入る。だからImperial College Londonの同い年が、まだ1年
-* Economicsか何かをやって、学部出てから、サイエンスやろうと思って、ETHにBiologyで入ったドイツ人、同じ3年だけど、年上
+* Economicsか何かをやって、学部出てから、サイエンスやろうと思って、ETHにBiologyで入ったドイツ人、同じ3年だけど、年上j
 
 * 夜の電車の間隔が大きくて帰るのが遅くなる。10分間隔くらい
 * 22時もまだ明るめ
