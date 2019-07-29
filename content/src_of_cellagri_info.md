@@ -19,3 +19,7 @@ Status: draft
 # Podcast
 Cultured meat and future food show
 GFI blog
+
+# WebSite
+[Robert Yaman](https://www.robertyaman.com/about)
+動物愛護家。YouTubeのソフトウェアエンジニアをやめて、Cellular Agricultureの分野へ。サイトにまとまっている情報がえぐい。
