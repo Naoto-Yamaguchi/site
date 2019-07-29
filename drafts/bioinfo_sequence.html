@@ -25,25 +25,24 @@
 
 
 <meta name="author" content="Naoto Yamaguchi" />
-<meta name="description" content="細胞農業について" />
-<meta name="keywords" content="好きなもの, 生物, 細胞農業">
+<meta name="description" content="バイオインフォマティクスで使うデータベースをまとめてみた" />
+<meta name="keywords" content="Bioinformatics, Sequence">
 
 <meta property="og:site_name" content="nafoto'z_blog"/>
-<meta property="og:title" content="細胞農業について知りたかったら。情報源は...(if you would like to know about cellular agriculture)"/>
-<meta property="og:description" content="細胞農業について"/>
+<meta property="og:title" content="バイオインフォマティクスで使う（かもしれない）シークエンスまとめ"/>
+<meta property="og:description" content="バイオインフォマティクスで使うデータベースをまとめてみた"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="https://naoto-yamaguchi.github.io/site/drafts/src_of_cellagri_info.html"/>
+<meta property="og:url" content="https://naoto-yamaguchi.github.io/site/drafts/bioinfo_sequence.html"/>
 <meta property="og:type" content="article"/>
-<meta property="article:published_time" content="2019-06-20 00:00:00+09:00"/>
+<meta property="article:published_time" content="2019-06-06 00:00:00+09:00"/>
 <meta property="article:modified_time" content=""/>
 <meta property="article:author" content="https://naoto-yamaguchi.github.io/site/author/naoto-yamaguchi.html">
-<meta property="article:section" content="細胞農業"/>
-<meta property="article:tag" content="好きなもの"/>
-<meta property="article:tag" content="生物"/>
-<meta property="article:tag" content="細胞農業"/>
+<meta property="article:section" content="Bioinformatics"/>
+<meta property="article:tag" content="Bioinformatics"/>
+<meta property="article:tag" content="Sequence"/>
 <meta property="og:image" content="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875512584_profile_dubai.jpg">
 
-  <title>nafoto'z_blog &ndash; 細胞農業について知りたかったら。情報源は...(if you would like to know about cellular agriculture)</title>
+  <title>nafoto'z_blog &ndash; バイオインフォマティクスで使う（かもしれない）シークエンスまとめ</title>
 
 </head>
 <body>
@@ -78,9 +77,9 @@
 <article class="single">
   <header>
       
-    <h1 id="src_of_cellagri_info">細胞農業について知りたかったら。情報源は...(if you would like to know about cellular agriculture)</h1>
+    <h1 id="bioinfo_sequence">バイオインフォマティクスで使う（かもしれない）シークエンスまとめ</h1>
     <p>
-          Posted on 木 20 6月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/xi-bao-nong-ye.html">細胞農業</a>
+          Posted on 木 06 6月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/bioinformatics.html">Bioinformatics</a>
 
 
     </p>
@@ -88,23 +87,56 @@
 
 
   <div>
-    <h1>動機、対象</h1>
-<p>自分の情報収集源についてのまとめ
-細胞農業についてより知ってもらうため</p>
-<h1>Articles</h1>
-<p><a href="https://bit.ly/2KYuwcI">5分でわかる細胞農業</a></p>
-<h1>Podcast</h1>
-<p>Cultured meat and future food show
-GFI blog</p>
-<h1>WebSite</h1>
-<p><a href="https://www.robertyaman.com/about">Robert Yaman</a>
-動物愛護家。YouTubeのソフトウェアエンジニアをやめて、Cellular Agricultureの分野へ。サイトにまとまっている情報がえぐい。</p>
+    <h1>動機</h1>
+<p>様々なseqが出てきて混乱してきたのと、どういうシークエンス方法があってそれによって何を解析できるかを知っておくことは重要だと考えた</p>
+<h1>何を読むか</h1>
+<ul>
+<li>
+<p>DNA-seq
+こういう風には呼ばないと思いますが</p>
+<ul>
+<li>Deep-seq
+    何回も繰り返して読む</li>
+</ul>
+</li>
+<li>
+<p>RNA-seq
+mRNAをcDNAにして相補鎖を合成。PCRで増幅して読む。発現量がわかる。
+RPKMとかの指標を用いて発現量を定量化する。</p>
+</li>
+<li>
+<p>ChIP-seq
+ある注目しているタンパク質がゲノムのどの部分に結合しているかを解析。注目しているタンパク質に対する抗体を用意する必要がある。DNAに結合しているタンパク質のゲノム上の位置を正確に知ることができ、例えばヒストンの結合密度を測ることで、ゲノムのどこがヘテロクロマチンで、どこがユークロマチンになっているかわかる(?)
+須谷先生の例がわかりやすいが、日本列島からてんとう虫を見つけるようなもの。</p>
+</li>
+<li>
+<p>ATAC-seq
+ChIP-seqの簡易版。操作が簡単らしく、最近流行りで、データ量も増えているらしい。</p>
+</li>
+</ul>
+<p>メチル化修飾
+エピゲノム解析は？</p>
+<h1>何で読むか</h1>
+<ul>
+<li>
+<p>ショートリードシーケンサ</p>
+<ul>
+<li>illumina</li>
+</ul>
+</li>
+<li>
+<p>ロングリードシーケンサ</p>
+<ul>
+<li>PacBio</li>
+<li>Oxford Nanopore</li>
+</ul>
+</li>
+</ul>
   </div>
   <div class="tag-cloud">
     <p>
-      <a href="https://naoto-yamaguchi.github.io/site/tag/hao-kinamono.html">好きなもの</a>
-      <a href="https://naoto-yamaguchi.github.io/site/tag/sheng-wu.html">生物</a>
-      <a href="https://naoto-yamaguchi.github.io/site/tag/xi-bao-nong-ye.html">細胞農業</a>
+      <a href="https://naoto-yamaguchi.github.io/site/tag/bioinformatics.html">Bioinformatics</a>
+      <a href="https://naoto-yamaguchi.github.io/site/tag/sequence.html">Sequence</a>
     </p>
   </div>
 
