@@ -1,32 +1,338 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-07-08T00:00:00+09:00</updated><entry><title>Pythonメモ</title><link href="https://naoto-yamaguchi.github.io/site/python_memo.html" rel="alternate"></link><published>2019-07-08T00:00:00+09:00</published><updated>2019-07-08T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-07-08:/site/python_memo.html</id><summary type="html">&lt;p&gt;pythonメモ&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Matplotlibで複数(2つ)のグラフを描画 (draw multiple graphs using matplotlib)&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://qiita.com/supersaiakujin/items/543053ca4610437112df"&gt;[Python]Matplotlibで複数のグラフを描画する方法&lt;/a&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;plt&lt;/span&gt;
-&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-09-13T00:00:00+09:00</updated><entry><title>サッカー観戦あれこれ@プレミア,リーガ,エールディビジ</title><link href="https://naoto-yamaguchi.github.io/site/tj_2019_football.html" rel="alternate"></link><published>2019-09-13T00:00:00+09:00</published><updated>2019-09-13T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-09-13:/site/tj_2019_football.html</id><summary type="html">&lt;p&gt;欧州サッカー半端ないって！！！！&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
+&lt;h1&gt;目次&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;観戦した試合&lt;ul&gt;
+&lt;li&gt;(1) 2019.08.10 WestHam vs ManchesterCity @London Stadium (0-5)&lt;/li&gt;
+&lt;li&gt;(2) 2019.08.10 TottenhamHotSpurs vs AstonVilla @TottenhamHotSpur Stadium (3-1)&lt;/li&gt;
+&lt;li&gt;(3) 2019.08.17 Arsenal vs Burnley @Emirates Stadium (2-1)&lt;/li&gt;
+&lt;li&gt;(4) 2019.08.25 FC Utrecht vs VVV Venlo (1-2)&lt;/li&gt;
+&lt;li&gt;(5) 2019.09.01 17:00 Valencia vs Mallorca @Mestalla Stadium (0-2)&lt;/li&gt;
+&lt;li&gt;(6) 2019.09.01 21:00 Vilarreal vs Real Madrid @ (2-2)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;チケットの取り方&lt;ul&gt;
+&lt;li&gt;そんなに難しくない。全てOfficial Siteから購入可能。&lt;/li&gt;
+&lt;li&gt;よほど人気の試合以外公式サイトで買える。アウェーの席を取るのは難しい。Viagoなど代理店もあるが自分は利用しなかった。Viagoを利用して、(6)の試合のチケットを購入した人には会ったので、正しくやればきちんと手に入る模様。ただて手数料がかかる。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;感想&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;各国のフットボール、ファンの違い&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;持ち込みできないもの
+なぜかペットボトルの蓋はダメ
+荷物検査の効率の悪さ&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Travel Journal"></category><category term="Football"></category></entry><entry><title>6,7月の振り返り</title><link href="https://naoto-yamaguchi.github.io/site/diary_1907.html" rel="alternate"></link><published>2019-09-11T00:00:00+09:00</published><updated>2019-09-11T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-09-11:/site/diary_1907.html</id><summary type="html">&lt;p&gt;7月の振り返り&lt;/p&gt;</summary><content type="html">&lt;h1&gt;6月やったこと&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;CL決勝テレビで観戦 (Liverpool vs Tottenham: 2-1)&lt;ul&gt;
+&lt;li&gt;バーでの中継を見ていたが、リアルタイムより少し遅れて放送されていた。隣のおじさんがTwitterで速報を見て、「あ、点入ったらしいよ」とか言って台無しに。さすがにそれはひどいと思った。(思い出すと怒りが湧いてくるので忘れることにします)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;家族で国立劇場で歌舞伎を見た&lt;ul&gt;
+&lt;li&gt;歌舞伎教室みたいなものだったからか、歌舞伎の前に舞台や話の解説やSNSタイムがあったりと、初心者にも配慮されていた。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;とにかく課題に追われていた。実験レポートが特に大変でした。&lt;/li&gt;
+&lt;li&gt;06/29に横浜Fマリノス vs FC東京 @味の素スタジアム 観戦。久保建英の引退セレモニーを見られた。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;7月やったこと&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;試験勉強頑張った&lt;ul&gt;
+&lt;li&gt;徹夜の日々でした&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;試験真っ只中に、New Harvest 2019に参加&lt;ul&gt;
+&lt;li&gt;New Harvest 2019用ポスターも作った&lt;/li&gt;
+&lt;li&gt;詳しい記事はこちら。最高でした。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;隅田川花火大会をみんなで鑑賞&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Diary"></category></entry><entry><title>8月の振り返り</title><link href="https://naoto-yamaguchi.github.io/site/diary_1908.html" rel="alternate"></link><published>2019-09-11T00:00:00+09:00</published><updated>2019-09-11T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-09-11:/site/diary_1908.html</id><summary type="html">&lt;p&gt;8月の振り返り&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;/p&gt;
+&lt;h1&gt;やったこと&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;富士山ご来光&lt;/li&gt;
+&lt;li&gt;友達と食事&lt;/li&gt;
+&lt;li&gt;1ヶ月間の旅行（詳しくは旅行記)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;新しく知ったこと(どうでも良い編)&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;玉ねぎを炒めると甘くなるのは、辛味の元となる硫黄化合物が分解されると同時に細胞壁が破壊されて細胞内から糖分が出てくるから&lt;/li&gt;
+&lt;li&gt;ローマ建築の中の吹き抜けをアトリウムと言う&lt;/li&gt;
+&lt;li&gt;サッカーチームのFCバルセロナの創設者は、スイス人。チームカラーのblaugrana (blue and garnet)は、そのスイス人の地元チームのバーゼルの色を使ったという説が有力。（カンプノウでの展示）&lt;/li&gt;
+&lt;li&gt;スペインは1920-1970年くらいまで独裁国家で、カタルーニャ語は禁止されていた。そのため、その時代のFC Barcelona(カタルーニャ語でFootball Club)は、C de F Barcelona (スペイン語でClub de Football)と呼ばれ、優勝カップでもその名前が刻まれている。&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Diary"></category></entry><entry><title>バレンシア,メスタージャスタジアム,久保選手,ビジャレアル,エスタディオデラセラミカ,スペイン人の優しさ</title><link href="https://naoto-yamaguchi.github.io/site/tj_2019_valencia_villareal.html" rel="alternate"></link><published>2019-09-02T00:00:00+09:00</published><updated>2019-09-02T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-09-02:/site/tj_2019_valencia_villareal.html</id><summary type="html">&lt;p&gt;バレンシア,ビジャレアルでのリーガ観戦記。久保建英選手のリーガデビュー！&lt;/p&gt;</summary><content type="html">&lt;h1&gt;旅行日程&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;バレンシア,メスタージャスタジアムで、Valencia vs Marollcaの観戦。久保くんのベンチ入りが発表されたため急遽チケット購入。&lt;/li&gt;
+&lt;li&gt;ビジャレアル,エスタディオセラミカで、Vilarreal vs Real Madridの観戦。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;全然自覚していなかったが、バレンシアとバルセロナは割と遠く、新幹線的なもので2,3時間かかる。東京と名古屋くらいの感覚(?)。サッカーの試合を見に行くためだけに東京名古屋を往復するなんて日本ではやらないと思う...新幹線的なのでそれなりに本数があると思っていたら、Google Mapによると、自分がバルセロナに着いた時点で乗れる一番早い列車のバレンシア到着時刻が18:30頃!!これではチケットを買ったにも関わらず試合が見られない!!と焦り、バスやタクシー,BlaBlaCarなど他の交通手段を探すも見つからず、とりあえず空港のインフォメーションセンターへ。するとお姉さんが優しく対応してくれて、Google Mapや自分では見つけられなかった、Renfe(新幹線的なもの)のチケットを見つけてくれた!到着は18:00前で着くのは前半が終わる頃になってしまうが仕方ない、久保くんが出場するとしても後半だろうし折角チケットも買いメスタージャスタジアムに行けないのも悲しいと思い、その場で購入させてもらうことに。説明を受けてスマホの画面で買おうとしたら自分のスマホのブラウザではRenfeのサイトでの購入ができず...すると代わりにお姉さんがカウンターのパソコンでできると言ってくれて、無事購入。チケットの印刷までしてくれた!(メールアドレス先にe-ticketが届くのでなくても大丈夫)
+しかもターミナル間の無料シャトルバス、Renfeの出発駅のBarcelona Santsまでの行き方まで丁寧に教えてくれた。終始笑顔でにこやかに対応してくれた彼女には感謝しかありません。片言のスペイン語に喜んでくれたのが嬉しかった...&lt;/p&gt;
+&lt;p&gt;空港からBarcelona Santsまで電車で移動。チケットを買ったものの、どの電車が正しいかわからなかったが駅員さんは快く教えてくれた。
+電車内で荷物を整理しているとおじさんが僕の肩を叩いてきて、僕のポケットを指して「見てるぞ」のジェスチャー。ポケットから財布が出ていて、盗まれそうで危ないぞと忠告してくれた。一時的な荷物整理で注意散漫になっていた上、長い旅行の末で油断気味になっていたので、バルセロナではスリに注意しろと気を引き締めてくれた。&lt;/p&gt;
+&lt;p&gt;Barcelona Sants駅では昼飯にマクドナルド。人多すぎやろ。FC Barcelona Official Shopも駅構内にありびっくり(空港にもあった)。
+Renfeのプラットフォーム行きの列に並ぼうとしたけど、違ってたら怖いなと思い前の人に確認するとあっているぽかった。その人はバルセロナからバレンシアに行く途中にあるCastelloに行くようだったのでこれはVilarreal vs Real Madridを観るのかなと思い聞いてみると大当たり。カタール在住のお医者さんでレアルマドリードのファンなんだとか。ちょっとした会話を楽しんだ後、新幹線は指定席だったのでお別れすることに。とても人あたりの良い人だった。あー連絡先交換しておけばよかったー
+自分はビジャレアルホームに座るので、ビジャレアルを応援するし、&lt;/p&gt;
+&lt;p&gt;Renfeは日本の新幹線のようで、普通に快適であった。ちゃんと電源があって安心でした。隣のおじちゃんは、足元の足置きの使い方を教えてくれて優しかった一方、隣に座っている間ずっとTinderやってた(おい笑。メッセージ送ってニヤニヤしてたし。おい)。席に座っていない間は、新幹線の中にあるバーみたいなところでバーのお姉ちゃんをナンパしているっぽかった...(遠巻きに見てただけなのでわからないけど)&lt;/p&gt;
+&lt;p&gt;ついにValenciaに到着！乗り換えも急がねばと急いでメスタージャスタジアムへ!とにかく急いでチケットを買おうと思うも、いくら分買えば良いかもよくわからず後ろに並んでいたおじさんに聞いてみた。これまた優しく教えてくれて無事購入。予定の電車にも乗れた。&lt;/p&gt;
+&lt;p&gt;最寄駅について地下から地上に上がりメスタージャスタジアムを見たときはもう感動。。。応援歌が聞こえてきてはやる気持ちを抑えながら、急いで自分のゲートへ。しかしハーフタイムだからか自分のゲートが空いてない...誰かが一瞬出てくる際にドアが空いたので、中にいる警備員にチケットを見せて入りたいというジェスチャーを見せるも即却下。なんでや。そこで近くにいるオヤジ2人組に聞くと、なんならそこから入れやみたいな感じで隣を勧められ入ってみた。&lt;/p&gt;
+&lt;p&gt;バルセロナに到着→17:00からのバレンシアの試合&lt;/p&gt;</content><category term="Travel Journal"></category></entry><entry><title>New Harvest 2019 参加レポート</title><link href="https://naoto-yamaguchi.github.io/site/newharvest2019.html" rel="alternate"></link><published>2019-07-21T00:00:00+09:00</published><updated>2019-07-21T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-07-21:/site/newharvest2019.html</id><summary type="html">&lt;p&gt;New Harvest 2019 @ MIT Media Labに参加しポスター発表してきました!!&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;img src="./images/new_harvest_2019.png" width="30%" height="30%"&gt;&lt;/p&gt;</summary><content type="html">&lt;h1&gt;目次&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#motivation"&gt;概要、動機&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#about1"&gt;New Harvestとは？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#about2"&gt;New Harvest 2019&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;展示内容&lt;/li&gt;
+&lt;li&gt;Shojinmeat Projectの発表&lt;ul&gt;
+&lt;li&gt;内容&lt;/li&gt;
+&lt;li&gt;評判&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;参加者の様子&lt;/li&gt;
+&lt;li&gt;個人的な感想&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#thoughts"&gt;感想&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;細胞農業の最先端に触れられる&lt;/li&gt;
+&lt;li&gt;コミュニティの一員となり、多くの仲間と知り合うことができる&lt;/li&gt;
+&lt;li&gt;世界の動向を肌で感じられる&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#off_topic"&gt;余談　〜ボストンの植物性フード事情〜&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#to_close"&gt;最後に&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;お誘い&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id="motivation"&gt;
 
-&lt;span class="c1"&gt;# create a sample data&lt;/span&gt;
-&lt;span class="n"&gt;t&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="kp"&gt;linspace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pi&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pi&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;x1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="kp"&gt;sin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;x2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="kp"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+# 概要、動機
 
-&lt;span class="n"&gt;fig&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;axL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;axR&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;subplots&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ncols&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;figsize&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/div&gt;
 
-&lt;span class="n"&gt;axL&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;linewidth&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;axL&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_title&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;sin&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;axL&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_xlabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;t&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;axL&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_ylabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;x&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;axL&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_xlim&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pi&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pi&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;axL&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;grid&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;p&gt;細胞農業分野の中心的な組織であるNPO法人 New Harvest という団体が主催する年1回のイベントNew Harvest 2019がアメリカ,ボストンのMIT Media Labで開催されました。私は、そのイベントにShojinmeat Projectの代表として参加し、Shojinmeat Projectの研究や活動内容をまとめたポスター発表をおこないました。New Harvest 2019のイベント内容を中心に、ボストンで過ごした非常に充実した数日間の様子をお伝えできればと思います。&lt;/p&gt;
+&lt;p&gt;そもそも細胞農業という分野は比較的新しく、将来重要になる分野であるにも関わらずあまり知られておらず、このNew Harvest 2019というイベントに参加していた日本人は数名であったので、その様子をお伝えし、多くの人に興味を持ってもらえればと思いました。&lt;/p&gt;
+&lt;div id="about1"&gt;
 
-&lt;span class="n"&gt;axR&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;linewidth&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;axR&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_title&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;cos&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;axR&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_xlabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;t&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;axR&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_ylabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;x&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;axR&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_xlim&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pi&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pi&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;axR&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;grid&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+# New Harvestとは？
 
-&lt;span class="n"&gt;fig&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;show&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</content><category term="Python"></category><category term="Programming"></category><category term="memo"></category></entry><entry><title>OpenMPによる並列処理メモ</title><link href="https://naoto-yamaguchi.github.io/site/openmp.html" rel="alternate"></link><published>2019-06-24T00:00:00+09:00</published><updated>2019-06-24T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-24:/site/openmp.html</id><summary type="html">&lt;p&gt;OpenMP環境構築、コマンド等&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src="./images/new_harvest.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.new-harvest.org/"&gt;New Harvest&lt;/a&gt;は、アメリカのニューヨークとボストンを拠点とした、細胞農業を推進するNPO団体です。主に、ファンドとしての働きを持っていて、投資家などからお金を集め、細胞農業分野の発展のために産業界や学術界にお金を投資しています。この分野は重要でありながら新しく認知度の低い分野であることから、従来の投資環境では研究費を集めにくく、それを解決しようとして立ち上がったのがNew Harvestです。驚くべきことに2004年に設立され(随分早い！)、細胞農業(cellular agriculture)という言葉を使い始めたのもNew Harvestです。そのため、細胞農業自体はこのNew Harvestと共に発展してきたと言っても過言ではないでしょう。またファンド以外にも、細胞農業業界のコミュニティ形成、正しい情報の提供と教育にも力を注いでいます。
+現在、10人弱の主要メンバーで構成されているようで、資金源は完全に投資家などからのDonationで成り立っており、フルタイムメンバーは多くないものの、New Harvestを中心としたコミュニティは非常に大きく、研究費支援をもらっている研究者など何かしらの形で関わっている人の数を入れると相当な数になると思われます。&lt;/p&gt;
+&lt;div id="about2"&gt;
+
+# New Harvest 2019
+
+&lt;/div&gt;
+
+&lt;p&gt;そんなNew Harvestが開催するイベントですから、細胞農業業界においては世界最大規模のイベントです。このイベントNew Harvest Conference は毎年開催され、2016年に &lt;a href="https://www.new-harvest.org/nh2016"&gt;第1回&lt;/a&gt; がサンフランシスコで、2017年の &lt;a href="https://www.new-harvest.org/nh2017"&gt;第2回&lt;/a&gt; はニューヨーク2018年の &lt;a href="http://2018.new-harvest.org/"&gt;第3回&lt;/a&gt; と &lt;a href="http://2019.new-harvest.org/"&gt;第4回&lt;/a&gt; となる今年の2019年はボストンのMIT Media Labといった具合にアメリカの主要都市で開催されています。ちなみに、第2回と第3回にはShojinmeat Projectの代表の羽生雄毅さんがスピーカーとして登壇しました。(その様子はこちら#todo)&lt;/p&gt;
+&lt;h2&gt;展示内容&lt;/h2&gt;
+&lt;p&gt;メインは、2,300人が収容されるホールでのプレゼンテーションやパネルディスカッション。
+&lt;img src="./images/new_harvest_2019_panel.jpg" width="50vw" height="50vh"&gt;&lt;/p&gt;
+&lt;p&gt;発表のタイトルは&lt;a href="http://2019.new-harvest.org/"&gt;New Harvest 2019のサイト&lt;/a&gt;のAgendaから、実際の様子はYoutubeの&lt;a href="https://www.youtube.com/channel/UCxq2JKQ4FNRbO73iw6FDsbw"&gt;New Harvestチャンネル&lt;/a&gt; から全て見られます(素晴らしい！！)。そのうち消されてしまうとNew Harest側からの連絡がありましたが(2019年9月現在残っている)、まだ見られるようです。自分はダウンロードしたので消されてしまった場合は欲しい方にお渡しすることも可能ですが画質が少し悪いのと音と動画がずれているのが難点です。自分も会場にいる間、聞かなかった講演もありますし(というか後で動画で見られると知ってからは、ほとんど会場の人と話していました...)、理解できなかった部分も多いのでまた見返したいと思います。
+メインホールでの発表の合間にコヒーブレイクなるものがあり、展示スペースに皆戻って展示の見学やおしゃべりを楽しんでいました。
+| 展示会場の様子 |  |
+| --- | --- |
+| &lt;img src="./images/new_harvest_2019_exhibition1.jpg"&gt; | &lt;img src="./images/new_harvest_2019_exhibition2.jpg"&gt; |&lt;/p&gt;
+&lt;p&gt;講演内容は以下のような種類のものがありました。
+* New Harvest から援助を受けて研究しているPhDやMS学生の研究発表
+* 細胞農業に関わるスタートアップ企業の取り組みの紹介
+* 細胞農業生産物に対する政府等による規制やルール作りの概観
+* 細胞農業が盛んな都市とその現状の紹介
+* 細胞農業業界でのキャリア&lt;/p&gt;
+&lt;p&gt;どれもとても興味深いものばかりでした！規制やルール作りに関しての話は個人的には全くついていけず、後で同世代の友達を話したところ、あれは難しいし、退屈だったと話していましたが...&lt;/p&gt;
+&lt;h2&gt;Shojinemeat Projectの発表&lt;/h2&gt;
+&lt;p&gt;以下の画像のポスターを、A1サイズで印刷し持っていきました。ちなみにA1サイズだとポスターケースに入れても機内持ち込みはできないことが多いです。預け荷物にしてロストバゲッジするのが怖かったので、不織布という折り畳んでも跡がつきにくい布に印刷してもらい、軽く畳んでバッグに入れて大切に持ち歩きました。&lt;/p&gt;
+&lt;p&gt;会場の展示スペースでこのポスターを貼り、見にきてくれた人にポスターの内容を説明したり、そもそもShojinmeat Projectは何をやっている組織なのかを説明したりしました。&lt;/p&gt;
+&lt;h3&gt;内容&lt;/h3&gt;
+&lt;p&gt;内容は、今までのShojinmeat Projectの取り組みをまとめて紹介したものです。Shojinmeat Projectは研究に使われる高価で手に入らないものではなく、誰でも手の届くものを使って、一般市民でも簡単に安価に自宅でできるバイオ実験の方法の開発を目指しています。
+現在は細胞農業の観点から、自宅でもできる安価な細胞培養方法の開発を進めており、今までの成果をまとめたものが以下になります。&lt;/p&gt;
+&lt;p&gt;&lt;img src="./images/new_harvest_2019_poster.png"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Basal Medium (基礎培地の代用)&lt;ul&gt;
+&lt;li&gt;研究ではDMEMという培地が用いられるのが一般的。しかし一般市民は基本的には購入できないし、比較的高価である&lt;/li&gt;
+&lt;li&gt;スポーツドリンクで代用したり、食品添加物で売られているもので1から作る方法の紹介&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Growth Factor (細胞の成長に必要な成長因子)&lt;ul&gt;
+&lt;li&gt;成長因子としてウシ血清アルブミン(FBS)が用いられているが、購入が難しい上、供給不安定で高価&lt;/li&gt;
+&lt;li&gt;卵黄による代用実験&lt;/li&gt;
+&lt;li&gt;肝臓の共培養の可能性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Antibiotics (細胞の成長を邪魔する菌を殺す抗生物質)&lt;ul&gt;
+&lt;li&gt;卵白による代用実験&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Freezing of cells (細胞凍結)&lt;ul&gt;
+&lt;li&gt;研究においてはディープフリーザーが用いられるが高価&lt;/li&gt;
+&lt;li&gt;イソプロパノールとドライアイスを組み合わせた寒剤を用いた細胞の凍結方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Centrifuging cells (遠心分離)&lt;ul&gt;
+&lt;li&gt;専用の遠心分離器が用いられるが、頑張れば扇風機でもできる！！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The value of citizen science (誰でも参加できる市民科学の価値)&lt;ul&gt;
+&lt;li&gt;独創的なアイデアが豊富に生まれる&lt;/li&gt;
+&lt;li&gt;バイオテクノロジーを身近に感じ、かつ培養肉の生産方法も完全に公開し高い透明性。一部企業が独占することで不信感を生んだ遺伝子組換え作物とは異なり、高い透明性と一般市民のコミットで、培養肉をはじめとした細胞農業が社会に受け入れられる基盤となる&lt;/li&gt;
+&lt;li&gt;Shojinmeat Projectはそれを推進している&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以上がポスターの内容です。&lt;/p&gt;
+&lt;h3&gt;評判&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;展示会場の様子&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img src="./images/new_harvest_2019_exhibition3.jpg"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="./images/new_harvest_2019_exhibition4.jpg"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img src="./images/new_harvest_2019_exhibition5.jpg"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="./images/new_harvest_2019_exhibition6.jpg"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img src="./images/new_harvest_2019_exhibition7.jpg"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src="./images/new_harvest_2019_exhibition8.jpg"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;一言で言うと、「一番大好評のポスター」(著者主観)でした。以下の写真からもわかるように、ポスターブースに来ている人たちのほとんどがShojinmeat Projectのポスターを見ています。自分が説明している時にも人が集まっていますし、自分がいない時も、同じタイミングで撮った写真(6,7枚目の青い服のおじさんが写っている2枚を比較)では、圧倒的にShojinmeat Projectのポスターの前に集まっていることがわかります。
+メインホールでプレゼンが行われている時の様子は、一番右下の写真。Shojinmeat Projectのポスターの前で止まってじっくり見ている人が多かったです。&lt;/p&gt;
+&lt;p&gt;たまたま集まっている時だけを載せているように思うかもしれませんが、自分の観測範囲では、集まり具合は圧倒的でした。&lt;/p&gt;
+&lt;p&gt;また、ある参加者には、「あなた達のポスターが一番良いって聞いたわ」と言って、見に来てくれる人もいました。
+他にも、ポスターいいねとか、デザイン良いねと褒めてくれる方もいました。
+みなさんにポスターを楽しんでもらえて非常に良かったと思います。なぜここまでポスターが人気だったのかというと、それはShojinmeat Projectの取り組みがわかりやすく、親しみやすく、非常にcoolでcrazyで面白いからだと思います。&lt;/p&gt;
+&lt;p&gt;実際、ポスターの内容に関しては、スポーツドリンクでのDMEMの代用、遠心分離機の扇風機での代用が特に人気でした。このような面白いアイデアを創出する場とてのコミュニティの重要性、バイオテクノロジーの利用の敷居を下げ、民主化することで、様々な取り組みを可能にする市民科学の可能性についても強く主張し、興味を持ってもらうことができました。
+今回のポスター発表によって改めてShojinmeat Projectの活動の価値や意義を参加者の方に知ってもらえただけでなく、自分自身でも強く感じることができました。&lt;/p&gt;
+&lt;div id="thoughts"&gt;
+
+# 感想
+
+さてこのイベント、細胞農業に興味がある私にとっては本当に貴重で、最高のイベントでした。個人的な視点から、このイベントの魅力を述べていきたいと思います。細胞農業について少しは知っているものの、まだ詳しくなく、またアカデミックな面からのアプローチにも興味がある学生からの観点です。
+個人的に良いと思ったのは以下の点です。
+
+* 細胞農業の最先端に触れられる
+* コミュニティの一員となり、多くの仲間と知り合うことができる
+* 世界の動向を肌で感じられる
+
+## 細胞農業の最先端に触れられる
+繰り返しになりますが、New Harvest 2019は細胞農業の分野で最大規模のイベントです。そのため、細胞農業分野に存在する技術的障壁に最先端で取り組む研究者や、産業応用と市場の拡大を目指すスタートアップ企業の代表者達が集まります。そんな彼らの話を、プレゼンやパネルディスカッションはもちろん、本人達に直接話を聞くこともできます。
+研究やスタートアップに取り組む人達の考え方を聞くのは非常に興味深かったですし、現在、細胞農業の最先端がどこまで到達しているのかに触れるには十分すぎる機会でした。
+
+
+## コミュニティの一員となり、多くの仲間と知り合うことができる
+このカンファレンスに参加する以前は、細胞農業に取り組む人たちは、Shojinmeat Projectのメンバーしか知りませんでしたが、本イベントを通して、多くの仲間と友達になることができました。
+
+参加者としては、
+* New Harvestのスタッフ
+* カンファレンスのボランティア学生　(細胞農業に興味のある学生が多く、学部3,4年生の学生が多かった印象。Shojinmeat EnglishのSlackチャンネルを通してNew Harvestに連絡をとり、ボランティアできることになったヨーロッパの学部生。Shojinmeatに感謝していました)
+* 細胞農業分野の研究者
+* 細胞農業やそれに関わる分野に取り組むスタートアップ企業のCEO, CTO, 社員など
+* Cell-based meatに関する本を執筆中の作家
+* 「最近自分の国でも細胞農業のスタートアップを始めたんだ！」という元気の良い30代の男性
+* 「自分も自宅で細胞培養したい！めっちゃ興味あるんだ、僕も家でできるかい？やり方押してくれ！」という熱心な男性
+* 細胞農業関係なく、「貝の培養の研究してるけど、なんかきちゃったよー。こんな応用できますみたいな感じで細胞農業にも繋がるしねー」という緩めなおじさん
+* 「私たち投資家だわ。日本のインテグリカルチャーへの投資に興味あるの。羽生さんに宜しく。名刺渡しとくわ」と的なこと言ってきた投資家
+* 畜産業界で屠殺場(?)の経営に関わる会社に携わる方
+* 調べ学習で来た韓国の4人組大学生。細胞農業について調べる学校のプロジェクトをおこない、ボストンまでの旅費を出してもらったとか！韓国ではまだ大きなコミュニティがないらしいので、僭越ながら日本のShojinmeatのようなコミュニティを作ってみたら！というアドバイスをしました。
+
+
+などなど、本当に多様な人と知り合いになることができました。
+
+また個人的には、細胞農業分野の研究者に良く話を聞き、どういったラボがあってどういうことに取り組んでいるのか、New HarvestのKate Kurgerさんには、New HarvestのFellowshipプログラムについて詳しく教えてもらいました。アカデミックな面から関わることに興味がある僕としては、研究にまつわる様々な情報を知ることができてとても幸せでした。
+
+同世代の友人も沢山できて、イギリスのImperial College LondonのチームであるMultus Mediaのメンバーとも仲良くなり、8月のロンドン旅行の際に、彼らのラボも見せてもらえることになりました。
+
+さらにさらに、シンガポールで唯一の細胞農業スタートアップであるShoki meatのKaiさんからお誘いをもらって、New Harvest 2019の翌々日に、Kaiさん主催で開催された、朝食を食べながらスタートアップアーリーステージの悩み相談会的なものに招待していただき、様々な会社のトップ(と会社関係ない人も数名)が集まって、採用の悩み、PhDを惹きつける方法、ビジョンが大切といった話をしていました。(なんで自分呼ばれたんだ笑）
+
+これはこれで非常に貴重な体験でした。Kaiさんありがとうございます。ちなみにKaiさんが日本のキャラクターである「ぐでたま」が好きで、その話で盛り上がれてよかったです。ぐでたまありがとうございます。
+またKate Kurgerさんもテラスハウスが好きで、その話でも盛り上がれてよかったです。テラスハウスありがとうございます。
+
+
+
+## 世界の動向を肌で感じられる
+上の2つと重なる部分は多いですが、やはり現地に行って、人と会い、話し、カンファレンスの熱気を感じることはとても代え難い経験でした。
+日本では感じられない細胞農業の盛り上がりを肌で感じましたし、細胞農業で生産された製品が当たり前の未来に向かって、多くの人が必死で取り組んでいる様子を目の当たりにし、これは自分も、日本も、もっと頑張っていかなくてはととてもモチベートされました。
+
+&lt;br&gt;&lt;br&gt;
+
+----
+
+&lt;br&gt;
+イベントの最後には、New Harvest 2019開催の数日前に発売されたPerfect Day Foodのanimal-free ice creamのオークションが行われました。このアイスは細胞培養技術を用いて、卵や牛乳を使わずに作られたアイスで、発売数日ですぐに完売してしまいました。特別にこのイベント用に残していたアイスがオークション形式で販売され、強者が$600で落札していました。
+そのあとは、Tufts UniversityのDavid Kaplan研究室のラボツアーに参加しました。それと並行して、近くのバーで開催された食事会が行われました。自分は、あまりにも疲れていた上、バーが激混みで座る場所はなく、大声で話さないと聞こえないくらいであったため、ラボツアーに参加した後、食事会には少しの参加で帰宅しました。
+
+&lt;div id="off_topic"&gt;
+
+# 余談 ~ボストンでの植物性のフード事情~
+
+&lt;/div&gt;
+
+New Harvset Conference以外にも、ボストン周辺の観光を楽しみました。
+Conferenceで知り合ったMITの友達に大学を案内してもらったり、植物性の肉をレストランで楽しみました。
+特に、細胞農業に興味ある方は、植物性の肉にも興味ある方が多いのではないかと思います。何かと混同されがちですが、植物性の肉は、plant-based meatと呼ばれ、エンドウ豆や大豆などの植物性のタンパク質に、ヘムなどを加えることで肉独特の風味を出しています。このplant-based meatは既にUSなどの市場で出回っており、Impossible Foods,Beyond Meatが有名なスタートアップ企業です。一方、細胞農業が取り組むのは、実際の牛や豚の細胞を抽出し、それを培養することで本物の肉(本物と呼ぶかは諸説あり)とするのが、cell-based meatです(clean meat, lab-grown meatなどとも呼ばれた)。こちらはまだ市場に出回ってはいません。
+
+今回ボストンでは、plant-based meatを買うことができたので、トライしてみました。
+MIT Media Labの近くのCloverというお店で、Impossible Sandwich
+Central駅の近くのLittle Donkeyというレストランで、Impossible burgerを食べてみました。(Impossible Burgerは裏メニューのようで、メニューには書いていませんが、店員さんに言うと注文できます)
+
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="ja" dir="ltr"&gt;Impossible foodsの植物性の肉を色々食べてみた&lt;br&gt;①サンドイッチに入ってたミンチはハーブの味付けが強すぎて微妙…&lt;br&gt;②ミートボールはトマトの味付けで美味しかった。普通にミートボール&lt;br&gt;③バーガーは、マクドナルドの普通のバーガーより歯応えも肉汁もあり肉感があって美味しい！（高いけど） &lt;a href="https://t.co/joSMfxiZke"&gt;pic.twitter.com/joSMfxiZke&lt;/a&gt;&lt;/p&gt;&amp;mdash; Naoto Yamaguchi (@nafoto_z) &lt;a href="https://twitter.com/nafoto_z/status/1152899624463687683?ref_src=twsrc%5Etfw"&gt;July 21, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+
+更に、Whole Foods Marketで売られていた、Beyond MeatのPlant based burger pattiesと、JUSTのJUST Egg(植物性の卵)も買って料理してみました。
+
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="ja" dir="ltr"&gt;【植物性の肉と卵を料理してみた】&lt;br&gt;最近上場したBeyondMeat のビヨンドバーガーとJUSTのスクランブルエッグをスーパーで買って料理してみた&lt;br&gt;&lt;br&gt;バーガーの味→焦げてよくわからない&lt;br&gt;スクランブルエッグの味→冷めてそんな美味しくない&lt;br&gt;&lt;br&gt;わかったこと→料理向いてない &lt;a href="https://t.co/uXLZjVYkTo"&gt;pic.twitter.com/uXLZjVYkTo&lt;/a&gt;&lt;/p&gt;&amp;mdash; Naoto Yamaguchi (@nafoto_z) &lt;a href="https://twitter.com/nafoto_z/status/1153247046918443014?ref_src=twsrc%5Etfw"&gt;July 22, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;div id="to_close"&gt;
+
+# 最後に
+
+&lt;/div&gt;
+
+こんなに刺激的で魅力的なイベントに参加でき、貴重な情報や仲間を得られただけでなく、とても有意義な時間を過ごすことができました。この代え難い経験を、今後の自身とShojinmeat Projectの活動に生かしていきたいと思います。
+ポスター作成等色々と助けて下さった、羽生雄貴さんをはじめとするShojinmeat Projectのメンバー、Campfireを通して、Shojinmeat Projectを支援して下さっている皆様に心から感謝します。このイベントを通して、Shojinmeat Projectの活動の意義や価値を再認識しましたし、今後も活動を発展させていき、世界へ発信し存在感を高め、更に価値を高めていければと思います。
+
+
+また社会課題の解決にも繋がり、技術的にも面白い、細胞農業に興味を持つ方が日本にももっと増えると良いなぁと思っています。
+今後もこちらのブログで情報発信していくつもりなので、是非チェックしてみて下さい。
+細胞農業業界についてまとめたので以下の記事もぜひご覧下さい！
+
+
+## お誘い
+生物系、化学系、農業系、医学系、機械系、情報系、政治系、法律系などなど(こういう括りに関わらず)の人々にも興味を持ってもらってどんどん巻き込めればと思います。
+とても新しく大きな可能性を秘めている分野だと思いますので、興味のある人は僕やShojinmeat Projectに是非ご連絡下さい！！
+
+
+
+
+
+
+
+Seren Kellさんとは
+バイオテックとソフトウェアスタートアップは違う、バイオテックの話
+ペーパースタートアップの失敗。アカデミックの重要性
+
+
+GLPを理系の学生にも進めたい理由
+PhDコースに大事になってくるのは向こうの教授とのコンタクト(らしい)です。
+絶対TOEFL
+
+
+東大新聞で出して、facebookで告知
+武さんに連絡
+Animal Rebellion
+サマースクールでのヴィーガン</content><category term="Cellular Agriculture"></category><category term="New Harvest"></category><category term="細胞農業"></category><category term="Shojinmeat Project"></category></entry><entry><title>OpenMPによる並列処理メモ</title><link href="https://naoto-yamaguchi.github.io/site/openmp.html" rel="alternate"></link><published>2019-06-24T00:00:00+09:00</published><updated>2019-06-24T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-24:/site/openmp.html</id><summary type="html">&lt;p&gt;OpenMP環境構築、コマンド等&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
 &lt;p&gt;OpenMPを用いた並列コンピューティングの実装課題に取り組む際に、環境構築がよくわからなかったこと、また、OpenMPを使う際に、スレッド数やプロセス数についてよくわからないことがあったので、軽くわかったことを書いてみました。
 また、OpenMPの並列化の際、いくつのスレッドが立っているのか、いくつのコアを使っているのかを調べる必要があったためです。&lt;/p&gt;
 &lt;h1&gt;OpenMP環境構築&lt;/h1&gt;
@@ -109,11 +415,117 @@ Thus, if you would like to improve your English writing skills, you should be fa
 ただ、普通に考えて、日本語で書けない文章を英語でかけるわけではありません。自分が書くトピックに対して自分の頭の中が整理されていなければ、英語であろうと日本語であろうと相手に伝わる文章を書くことは非常に難しいです。逆に、頭の中でよく整理されたシンプルにまとまっていれば、それを日本語であろと英語であろうと、そのまま書けばわかりやすく伝わりやすい文章が書けるはずです。自分は英文を書くとき、慣れたトピックは比較的スラスラかけましたが、普段考えたこともないようなお題に対しては、すぐにキーボードを打つ手（もしくは筆）が止まってしまいました。
 これはある程度簡単な表現は英語でも書けることが前提ですが、そういう簡単でシンプルな表現でも書けて、かつ説得力のある文章になるように、上手く文を構成できれば難しい表現を使う必要はないのではないかと思いました。
 だからこそ、様々なトピックに対して、よく整理された(well-organized)な考えを持っておきたいと思いました。どうしても知らない内容は当然あると思うので、その際は、いかにシンプルに主張を整理していくかが大事で、それには訓練が必要そうです...&lt;/p&gt;
-&lt;p&gt;英作文以前に、文章自体を構成することに悩んだので、&lt;a href="https://www.amazon.co.jp/%E8%80%83%E3%81%88%E3%82%8B%E6%8A%80%E8%A1%93%E3%83%BB%E6%9B%B8%E3%81%8F%E6%8A%80%E8%A1%93%E2%80%95%E5%95%8F%E9%A1%8C%E8%A7%A3%E6%B1%BA%E5%8A%9B%E3%82%92%E4%BC%B8%E3%81%B0%E3%81%99%E3%83%94%E3%83%A9%E3%83%9F%E3%83%83%E3%83%89%E5%8E%9F%E5%89%87-%E3%83%90%E3%83%BC%E3%83%90%E3%83%A9-%E3%83%9F%E3%83%B3%E3%83%88/dp/4478490279"&gt;「考える技術・核技術」&lt;/a&gt;という本を読んでみました。文章を書く目的である、「主張」に対して、ピラミッド構造で要素を展開していくことの重要性とその実践について書かれています。まだ半分ほどしか読んでいませんが、わかりやすく書くためのアイデアが詰まっているのでおすすめです。&lt;/p&gt;</content><category term="Essay 気がついたこと"></category></entry><entry><title>記事翻訳 ~GFI Research Grants Update: Introduction to Cell-Based Meat Research Projects~</title><link href="https://naoto-yamaguchi.github.io/site/cell_based_meat_research_projects.html" rel="alternate"></link><published>2019-06-07T00:00:00+09:00</published><updated>2019-06-07T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-07:/site/cell_based_meat_research_projects.html</id><summary type="html">&lt;p&gt;培養肉研究プロジェクト紹介の英語記事翻訳&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875522300_cell_based_meat_grant_programs.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h1&gt;目次 (Table of Contents)&lt;/h1&gt;
+&lt;p&gt;英作文以前に、文章自体を構成することに悩んだので、&lt;a href="https://www.amazon.co.jp/%E8%80%83%E3%81%88%E3%82%8B%E6%8A%80%E8%A1%93%E3%83%BB%E6%9B%B8%E3%81%8F%E6%8A%80%E8%A1%93%E2%80%95%E5%95%8F%E9%A1%8C%E8%A7%A3%E6%B1%BA%E5%8A%9B%E3%82%92%E4%BC%B8%E3%81%B0%E3%81%99%E3%83%94%E3%83%A9%E3%83%9F%E3%83%83%E3%83%89%E5%8E%9F%E5%89%87-%E3%83%90%E3%83%BC%E3%83%90%E3%83%A9-%E3%83%9F%E3%83%B3%E3%83%88/dp/4478490279"&gt;「考える技術・書く技術」&lt;/a&gt;という本を読んでみました。文章を書く目的である、「主張」に対して、ピラミッド構造で要素を展開していくことの重要性とその実践について書かれています。まだ半分ほどしか読んでいませんが、わかりやすく書くためのアイデアが詰まっているのでおすすめです。&lt;/p&gt;</content><category term="Essay 気がついたこと"></category></entry><entry><title>細胞農業について知りたかったら。情報源は...(if you would like to know about cellular agriculture)</title><link href="https://naoto-yamaguchi.github.io/site/src_of_cellagri_info.html" rel="alternate"></link><published>2019-06-20T00:00:00+09:00</published><updated>2019-06-20T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-20:/site/src_of_cellagri_info.html</id><summary type="html">&lt;p&gt;細胞農業について&lt;/p&gt;</summary><content type="html">&lt;h1&gt;目次&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;紹介&lt;/li&gt;
-&lt;li&gt;動機、目的&lt;/li&gt;
-&lt;li&gt;翻訳内容&lt;ul&gt;
+&lt;li&gt;動機、対象&lt;/li&gt;
+&lt;li&gt;細胞農業とは？&lt;/li&gt;
+&lt;li&gt;情報源のリスト&lt;ul&gt;
+&lt;li&gt;Organizations&lt;/li&gt;
+&lt;li&gt;Articles&lt;/li&gt;
+&lt;li&gt;Website&lt;/li&gt;
+&lt;li&gt;Podcast&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;動機、対象&lt;/h1&gt;
+&lt;p&gt;自分の情報収集源についてのまとめ&lt;/p&gt;
+&lt;p&gt;細胞農業についてより知ってもらうため&lt;/p&gt;
+&lt;h1&gt;細胞農業とは？&lt;/h1&gt;
+&lt;p&gt;以下のリストにも記載していますが、&lt;a href="https://medium.com/shojin-meat-japan/%E9%A3%9F%E6%96%99%E5%8D%B1%E6%A9%9F%E3%81%AE%E8%A7%A3%E6%B1%BA%E7%AD%96%E3%81%A8%E3%81%AA%E3%82%8B%E3%81%8B-5%E5%88%86%E3%81%A7%E3%82%8F%E3%81%8B%E3%82%8B-%E7%B4%B0%E8%83%9E%E8%BE%B2%E6%A5%AD-4a62d91b4fdf"&gt;5分でわかる細胞農業&lt;/a&gt;が詳しいです。
+ここで簡単にまとめると、細胞農業は、細胞を培養することによる新しい食料生産方法です。
+以下の画像は、これまたよくまとまっている資料である、&lt;a href="https://www.slideshare.net/2co/shojinmeat-project-118383433"&gt;Shojinemeat Projectが公開しているスライド&lt;/a&gt;からとったものですが、食料の生産方法には現在のところ大きく分けて5つあります。その5つに加えて、新しい6つめとなるのが、「培養」という方法です。
+培養とは、微生物あるいは多細胞生物の細胞や組織の一部を人工的な環境下で育てることであり(Wikipedia-培養)、生物や医学、農学、薬学研究において用いられています。
+&lt;img src="./images/new_food_production_method.png"&gt;&lt;/p&gt;
+&lt;p&gt;では何を培養するのかというと、例えば、動物の筋肉細胞です。生物の体は様々な種類の細胞でできています。培地という生物の体内の環境をもしたような化合物を用いて、育て、増やすことができます。
+肝臓細胞を育てれば肝臓になるし&lt;/p&gt;
+&lt;p&gt;現在のアイデアとしては、牛や豚の筋肉や脂肪細胞を培養して、うまく組み合わせ、我々が現在食べている肉の代わりを作るというものがあります。それ以外にも、エビなどの魚介類の細胞も培養して刺身を作るというものがあります。&lt;/p&gt;
+&lt;p&gt;詳しい説明については、以下の情報源を色々と読むことが一番です。&lt;/p&gt;
+&lt;p&gt;こちらの記事も参考になるかと思います。&lt;/p&gt;
+&lt;h1&gt;細胞農業の情報源のリスト (Resources)&lt;/h1&gt;
+&lt;h2&gt;Organizations&lt;/h2&gt;
+&lt;p&gt;細胞農業に取り組む組織は沢山あります。
+* &lt;a href="https://www.new-harvest.org"&gt;New Harvest&lt;/a&gt;
+* &lt;a href="https://www.gfi.org/"&gt;Good Food Institute&lt;/a&gt;
+* &lt;a href="https://www.cell.ag/"&gt;CellAgri&lt;/a&gt;
+* &lt;a href=""&gt;Shojinmeat Project&lt;/a&gt;
+* 日本細胞農業協会 (coming soon!)
+&lt;!-- http://cellagri.org/ --&gt;&lt;/p&gt;
+&lt;h2&gt;Articles, Materials&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://medium.com/shojin-meat-japan/%E9%A3%9F%E6%96%99%E5%8D%B1%E6%A9%9F%E3%81%AE%E8%A7%A3%E6%B1%BA%E7%AD%96%E3%81%A8%E3%81%AA%E3%82%8B%E3%81%8B-5%E5%88%86%E3%81%A7%E3%82%8F%E3%81%8B%E3%82%8B-%E7%B4%B0%E8%83%9E%E8%BE%B2%E6%A5%AD-4a62d91b4fdf"&gt;5分でわかる細胞農業&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;まず読むとしたらこちらをお勧めします&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://cellagri.mykajabi.com/ebook"&gt;CELLULAR AGRICULTURE EBOOK&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;SlideShare&lt;/h2&gt;
+&lt;p&gt;日本語の情報としては、Shojenmeat Projectが出しているスライドが一番でしょう
+* &lt;a href="https://www.slideshare.net/2co/presentations"&gt;Shojinmeat Project Slideshare&lt;/a&gt;
+* &lt;a href="https://www.slideshare.net/YukiHanyu?utm_campaign=profiletracking&amp;amp;utm_medium=sssite&amp;amp;utm_source=ssslideview"&gt;羽生さんのSlideshare&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;WebSite&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://zacmayu.hatenablog.com/"&gt;るるまゆの実験ノート&lt;/a&gt;    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Shojinemeat Projectのメンバーでもある、るるまゆさんの実験記録を中心としたはてなブログです。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.robertyaman.com/about"&gt;Robert Yaman&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;動物愛護家。YouTubeのソフトウェアエンジニアをやめて、Cellular Agricultureの分野へ。サイトにまとまっている情報がえぐい。会社のリストや特許情報など&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.new-harvest.org/about"&gt;New HarvestのAbout&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.gfi.org/blog"&gt;Good Food Instituteのブログ&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.cell.ag/articles"&gt;CellAgriのブログとNewsletter&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://golden.com/wiki/Cluster%3A_Cell-based_and_plant-based_meat"&gt;Golden&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;最新情報とスタートアップに強い新時代のWikipedia&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://jp.techcrunch.com/2019/05/05/2019-04-30-golden-launch/"&gt;TechCrunchの紹介記事&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;新しいテクノロジーの情報が詰まっている。自分の興味のあるSynthetic BiologyもStem Cell Technologyもあり読んでいて楽しい。&lt;/li&gt;
+&lt;li&gt;これからさらに充実していくことが期待される&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Podcast&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://futurefoodshow.com/"&gt;Cultured Meat and Future Food&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Cell-based meatやPlant-based meatをはじめとした未来の食に関わる人たちのインタビューpodcast。HostのAlexさんが良い声。おすすめ。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Papers&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="www.sciencedirect.com/science/article/pii/S0924224417303400"&gt;Stephens N Di Silvio L Dunsford I Ellis M Glencross A Sexton A. (2018) Bringing cultured meat to market: Technical, socio-political, and regulatory challenges in cellular agriculture. &lt;em&gt;Trends in Food Science &amp;amp; Technology&lt;/em&gt; ,2018 vol: 78 pp: 155-166&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;細胞農業に関するレビュー論文。まとめ記事はこちら。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="www.sciencedirect.com/science/article/pii/S1369703X1830024X?via%3Dihub"&gt;Specht E Welch D Rees Clayton E Lagally C. Opportunities for applying biomedical production and manufacturing methods to the development of the clean meat industry. &lt;em&gt;Biochemical Engineering Journal&lt;/em&gt; ,2018 vol: 132 pp: 161-168&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;畜産業と肉の消費量を減らすことについて&lt;/h2&gt;
+&lt;p&gt;以下にあげるのはほんの一部です。
+* &lt;a href="http://www.cowspiracy.com/"&gt;Cowspiracy&lt;/a&gt;
+* &lt;a href="https://www.youtube.com/watch?v=NxvQPzrg2Wg&amp;amp;t=1s"&gt;Kurzgesaght - In a Nutshell&lt;/a&gt;&lt;/p&gt;</content><category term="好きなもの"></category><category term="生物"></category><category term="細胞農業"></category><category term="Cellular Agriculture"></category></entry><entry><title>記事翻訳 ~GFI Research Grants Update: Introduction to Cell-Based Meat Research Projects~</title><link href="https://naoto-yamaguchi.github.io/site/cell_based_meat_research_projects.html" rel="alternate"></link><published>2019-06-07T00:00:00+09:00</published><updated>2019-06-07T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-07:/site/cell_based_meat_research_projects.html</id><summary type="html">&lt;p&gt;培養肉研究プロジェクト紹介の英語記事翻訳&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875522300_cell_based_meat_grant_programs.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;目次 (Table of Contents)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#introduction"&gt;紹介&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#motivation"&gt;動機、目的&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#contents"&gt;翻訳内容&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;細胞培養による肉生産の基本&lt;/li&gt;
 &lt;li&gt;細胞株開発&lt;/li&gt;
 &lt;li&gt;細胞培地&lt;/li&gt;
@@ -121,23 +533,33 @@ Thus, if you would like to improve your English writing skills, you should be fa
 &lt;li&gt;培養器とバイオプロセス&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;英単語&lt;/li&gt;
-&lt;li&gt;感想、終わりに&lt;/li&gt;
-&lt;li&gt;関連&lt;/li&gt;
+&lt;li&gt;&lt;a href="#words"&gt;英単語&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#thoughts"&gt;感想、終わりに&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#links"&gt;関連&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;
+&lt;div id="introduction"&gt;&lt;/p&gt;
 &lt;h2&gt;紹介(introduction)&lt;/h2&gt;
+&lt;/div&gt;
+
 &lt;p&gt;本記事は、&lt;a href="https://www.gfi.org/gfi-research-grants-update-introduction-to?utm_source=social&amp;amp;utm_medium=twitter&amp;amp;utm_campaign=gfi-research-grants-update-introduction-to"&gt;こちら&lt;/a&gt;の記事の翻訳です。
 Good Food Instituteから許可を得て、翻訳、掲載をしています。&lt;/p&gt;
 &lt;p&gt;Thank GFI for allowing me to translate this article and post it on my blog.&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;
+&lt;div id="motivation"&gt;&lt;/p&gt;
 &lt;h2&gt;動機、目的(motivation, purpose)&lt;/h2&gt;
+&lt;/div&gt;
+
 &lt;p&gt;自分は、細胞農業に興味を持ち、DIYバイオ、Shojinmeat Projectの一環として、自宅で細胞培養の実験をおこなっています。
 日本ではShojinmeat Projectを中心として、DIYバイオの取り組みは海外と比べ盛んですが、研究としてやられているのは少ないのではと思っていました。今後重要性が増し分野として拡大していく細胞農業へ向けた研究する人が少ない中、自分が取り組んでいきたいなと考えています。そこでまず現状どういう研究がなされているか人工培養肉実現に向けた研究課題は何か、について知っておくことは重要だと思い、GFIのGrant Programで支援されているアカデミックな研究プロジェクトについての記事があったので、詳しく読み、訳してみることにしました。&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;hr&gt;
+&lt;div id="contents"&gt;
+
 &lt;h2&gt;翻訳内容(contents)&lt;/h2&gt;
 &lt;p&gt;2月に、私たちはGFIで初開催の、重要な植物性の肉もしくは細胞培養肉研究に対する支援金プログラムのコンペの勝者を発表しました。14の採択された研究プロジェクトが現在進行中です。&lt;/p&gt;
+&lt;/div&gt;
+
 &lt;h3&gt;細胞培養による肉生産の基本&lt;/h3&gt;
 &lt;p&gt;動物細胞は、筋肉細胞、脂肪細胞、結合組織細胞（線維芽細胞）からなる筋組織です。動物から得た1つの細胞から初めて、私たちは数千キロの肉を、動物を虐殺せずに生産することができます。この細胞培養による肉は、本物の動物の肉であり、従来の肉よりも効率的に生産されます。&lt;/p&gt;
 &lt;p&gt;始めの小さな細胞は、それらが成長し複製に必要な栄養と水によって育てられます。この（細胞にとっての）食べ物は、細胞培地と呼ばれます。細胞が育つこの環境を変えることで、肉を構成する筋肉細胞、脂肪細胞、結合組織細胞などへの分化を誘導することができます。細胞が適した3次元構造をどのように組織するかの指令を細胞に与えるために、それを支える仕組み（もしくは足場）が追加されます。これらの操作は全て培養器（バイオリアクターとも呼ばれる）の中でおこなわれます。&lt;/p&gt;
@@ -145,7 +567,7 @@ Good Food Instituteから許可を得て、翻訳、掲載をしています。&
 &lt;p&gt;ここでは、各プロジェクトの大まかなゴールを簡単に示すとともに、彼らが商業規模での細胞培養肉生産をどのようにしてより経済的で効率的なものにしていくかを簡単に紹介します。&lt;/p&gt;
 &lt;h3&gt;細胞株開発&lt;/h3&gt;
 &lt;p&gt;アカデミックの研究室で細胞培養肉研究に取り組んでいるのはほとんどありません。この分野での研究を遂行する上での潜在的な課題は、培養の始めとなる、一般的に食べ物として消費される動物（例えば、哺乳類の肝臓や家禽）の細胞株を手に入れなくてはならないということです。多くの動物種の培養に適した細胞株は利用可能ではありません。そのため、ほどんどの学術的な細胞培養肉研究は、細胞株の作製に時間と努力、リソースを費やすことから始まります。この分野に取り組む研究が増えるに連れて、各々の研究室が自ら細胞株を作製するのはとても非効率的になるでしょう。細胞株のリポジトリが標準化された手続きによって作製され、それらの細胞株がよく特徴付けられることを保証することで、これらの細胞株を使うこれからの研究開発は、研究室間や実験間に生じるばらつきを抑えることができるでしょう。&lt;/p&gt;
-&lt;p&gt;Gareth Sullivani（オスロ大学、ノルウェー）は冷凍農場の基礎を提供する、包括的な線維芽細胞（結合組織細胞）のライブラリを作製しています。最終的には、これらの線維芽細胞はiPS細胞の生産に必要なもののリソースとして役立ちます。
+&lt;p&gt;Gareth Sullivan（オスロ大学、ノルウェー）は冷凍農場の基礎を提供する、包括的な線維芽細胞（結合組織細胞）のライブラリを作製しています。最終的には、これらの線維芽細胞はiPS細胞の生産に必要なもののリソースとして役立ちます。
 iPS細胞は大人の組織から取られ、何度も分裂できるような状態にリプログラミングされた細胞です。iPS細胞は、体内の成熟した全ての種類の細胞に分化する能力を持っており、筋肉細胞、脂肪細胞、血球、線維芽細胞などになることができます（これらの種類の細胞は細胞培養肉において非常に重要です）。
 Sullivan博士の冷凍農場は、ますます拡大する細胞株のリポジトリです。異なる種や幅広い品種からなる細胞株を利用可能にすることで、細胞培養肉業界における洞察に満ちた基礎研究を可能にします。&lt;/p&gt;
 &lt;h3&gt;細胞培地&lt;/h3&gt;
@@ -165,8 +587,11 @@ Sullivan博士の冷凍農場は、ますます拡大する細胞株のリポジ
 &lt;p&gt;今後数カ月にわたって、GFIブログ読者には、これらのプロジェクトとそれに取り組む研究者の詳細を紹介していきます。もし、2018年の支援金受賞者に直接会いたいのであれば、9月に開催される&lt;a href="https://goodfoodconference.com/"&gt;2019 Good Food Conference&lt;/a&gt;に是非参加登録してください！&lt;/p&gt;
 &lt;p&gt;記事の翻訳はここまで&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;
+&lt;div id="words"&gt;&lt;/p&gt;
 &lt;h1&gt;英単語&lt;/h1&gt;
+&lt;/div&gt;
+
 &lt;p&gt;sinewy ... 頑丈な、引き締まった、筋骨たくましい&lt;/p&gt;
 &lt;p&gt;building block ... 積み木&lt;/p&gt;
 &lt;p&gt;stiffness ... 堅いこと、曲げや捻りに強い、剛性&lt;/p&gt;
@@ -175,116 +600,222 @@ Sullivan博士の冷凍農場は、ますます拡大する細胞株のリポジ
 &lt;p&gt;brewery ... 醸造所&lt;/p&gt;
 &lt;p&gt;filter out ... 除去する&lt;/p&gt;
 &lt;p&gt;replenish ... 補充する&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;
+&lt;div id="thoughts"&gt;&lt;/p&gt;
 &lt;h2&gt;感想、おわりに&lt;/h2&gt;
+&lt;/div&gt;
+
 &lt;p&gt;自分の研究分野を選択する上で非常に参考になりました。短い文章で、シンプルな英語で適切にまとめられており、人工培養肉生産における研究課題を俯瞰できたと思います。
 今後、各プロジェクトの紹介記事も出るようで楽しみです。そちらも可能であれば翻訳していきたいと思います！&lt;/p&gt;
-&lt;h2&gt;関連&lt;/h2&gt;
+&lt;div id="links"&gt;
+
+## 関連
+
+&lt;/div&gt;
+
 &lt;p&gt;その他の関連記事
 &lt;a href="https://www.gfi.org/researchgrants"&gt;The winners of Good Food Institute Grand Program&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.gfi.org/gfi-research-program-update-part-1-introduction"&gt;Plant-Based Research Projects&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.gfi.org/gfideas-food-financials"&gt;Cell-Based Research Projects&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;またGFI主催のカンファレンスが9月にSFであります。
 &lt;a href="https://goodfoodconference.com/"&gt;The Good Food Conference&lt;/a&gt;
-参加を熱望しており、予定調整中です。一緒に行く人がいたら行きましょう(笑）。&lt;/p&gt;</content><category term="細胞農業"></category><category term="記事翻訳"></category><category term="研究"></category><category term="翻訳"></category></entry><entry><title>自宅での安価な細胞培養方法の簡易まとめ</title><link href="https://naoto-yamaguchi.github.io/site/low_cost_cell_culture.html" rel="alternate"></link><published>2019-06-07T00:00:00+09:00</published><updated>2019-06-07T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-07:/site/low_cost_cell_culture.html</id><summary type="html">&lt;p&gt;自宅での安価に細胞を培養する方法を軽くまとめました&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
-&lt;p&gt;New Harvest 2019という細胞農業のカンファレンスで、ポスター発表するにあたっての、個人的な軽いまとめです。実際に、Shojinmeat Projectが見つけた、自宅でも可能な安価な細胞培養方法を紹介しています。
-英語版はこちらです。以下は、Shojinmeat Projectが公開している、[さいきょうのDIY培養](https://docs.google.com/presentation/d/17m3gNAUOnFVm9pAm7dDVeM8KM85FzEvPqw34S7kck0c/edit#slide=id.g5683e89615_0_0）を大いに参考にし、軽くまとめたものです。この資料は非常によくまとまっているので、私がまとめるまでもありませんが、個人的に整理しておきたかったので書きました。&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://animescience.net/?p=3647"&gt;ビタミン剤などから自作した培養液でニワトリ心臓細胞を培養してみた件&lt;/a&gt;
-をほぼ参考にしています。&lt;/p&gt;
-&lt;h1&gt;導入&lt;/h1&gt;
-&lt;h1&gt;概観&lt;/h1&gt;
-&lt;h1&gt;基礎培地&lt;/h1&gt;
-&lt;h2&gt;モチベーション : 自宅での培養には、研究用の試薬ではなく、安いものが必要！&lt;/h2&gt;
-&lt;h2&gt;DMEMとは？&lt;/h2&gt;
-&lt;p&gt;DMEMは、ダルベッコ改変イーグル培地(Dulbecco's Modifies Eagle Medium)の略で、哺乳類細胞の培養に幅広く用いられています。&lt;/p&gt;
-&lt;p&gt;[ロンザジャパン株式会社バイオサイエンス](http://www.lonzabio.jp/catalog/350/）&lt;/p&gt;
-&lt;p&gt;方法① DMEMの60%をグリーンダカラで代用
-試算によると、-56%!!&lt;/p&gt;
-&lt;p&gt;しかし、結局40%はDMEMを使うため、一般人には手の届く価格ではありません。
-また、DMEMには、フェノールレッドというpHを示す溶液が入っており、これは多少の神経毒性があることが報告されています。
-方法② DIY DMEM
-個人では購入できない、DMEMをDIY DMEMで代用しました。
-Sigma Aldrich社が公表しているDMEMの中身に従って、
-具体的には、
-もっともDIY DMEM&lt;/p&gt;
-&lt;p&gt;MgSO4
-&lt;a href="https://www.amazon.co.jp/%E3%82%A8%E3%83%97%E3%82%BD%E3%83%A0%E3%82%BD%E3%83%AB%E3%83%88-%E7%A1%AB%E9%85%B8%E3%83%9E%E3%82%B0%E3%83%8D%E3%82%B7%E3%82%A6%E3%83%A0-99-5-%E3%82%AA%E3%83%BC%E3%83%AB%E3%83%AA%E3%82%AD%E3%83%83%E3%83%89-%E5%90%84%E3%82%B5%E3%82%A4%E3%82%BA%E9%81%B8%E3%81%B9%E3%81%BE%E3%81%99/dp/B077PBRZKW/ref=sr_1_2_sspa?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;amp;keywords=%E7%A1%AB%E9%85%B8%E3%83%9E%E3%82%B0%E3%83%8D%E3%82%B7%E3%82%A6%E3%83%A0&amp;amp;qid=1562415735&amp;amp;s=gateway&amp;amp;sr=8-2-spons&amp;amp;psc=1"&gt;エプソムソルト&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;KCl
-&lt;a href="https://www.amazon.co.jp/NOW-Foods-733739014719-100%EF%BC%85%E3%83%94%E3%83%A5%E3%82%A2%E3%83%91%E3%82%A6%E3%83%80%E3%83%BC%EF%BC%88%E3%82%B0%E3%83%AB%E3%82%B3%E3%83%B3%E9%85%B8%E7%B5%90%E5%90%88%EF%BC%89-%E6%B5%B7%E5%A4%96%E7%9B%B4%E9%80%81%E5%93%81/dp/B0015C2ZI2/ref=pd_sbs_121_5/357-8514783-3116511?_encoding=UTF8&amp;amp;pd_rd_i=B0015C2ZI2&amp;amp;pd_rd_r=efa5fd70-9fe9-11e9-8924-833d5d723e91&amp;amp;pd_rd_w=MOB3n&amp;amp;pd_rd_wg=Lpn24&amp;amp;pf_rd_p=ad2ea29d-ea11-483c-9db2-6b5875bb9b73&amp;amp;pf_rd_r=GDX1GF1S1V4BG41MSH7F&amp;amp;psc=1&amp;amp;refRID=GDX1GF1S1V4BG41MSH7F"&gt;カリウムピュアパウダー&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.amazon.co.jp/MATSUBA-85-%E3%83%AA%E3%83%B3%E9%85%B8%E3%80%90%E9%A3%9F%E5%93%81%E6%B7%BB%E5%8A%A0%E7%89%A9%E3%80%91/dp/B071JDSJBC/ref=sr_1_1?s=food-beverage&amp;amp;ie=UTF8&amp;amp;qid=1517748041&amp;amp;sr=1-1&amp;amp;keywords=%E3%83%AA%E3%83%B3%E9%85%B8"&gt;85%リン酸(食品添加物)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;硝酸鉄の代わりに硫化鉄は、&lt;a href="https://www.monotaro.com/g/01278495/?t.q=%89%96%89%BB%93S"&gt;モノタロウ&lt;/a&gt;で買えます。&lt;/p&gt;
-&lt;h1&gt;添加物（成長因子）&lt;/h1&gt;
-&lt;p&gt;FBSという高価な添加物を、卵黄で代用しました。&lt;/p&gt;
-&lt;p&gt;酵母エキスでの代用
- HeLa cells and 293T cells were cultured using yeast extract.22 Yeast extract was ineffective for mouse L6 myoblast cell line which has been suggested to be the result of the absence of certain growth factors (GFs) or the presence of some inhibitors in the yeast extract.  A study showed that GF’s could be supplemented by co-culturing L6 cells with liver cells which are known to produce GF’s required for myoblast growth.23 &lt;/p&gt;
-&lt;p&gt;[22] Ohlsson, C., Mohan, S., Sjögren, K., Tivesten, A., Isgaard, J., Isaksson, O., Jansson, J.O., Svensson, J., (2009), Endocr. Rev., 30(5) 494-535 DOI:10.1210/er.2009-0010.
-[23] Shojinmeat Project, (2018), Clean Meat Initiative (2018 edition), https://www.slideshare.net/YukiHanyu/shojinmeat-project-clean-meat-initiative-april-2018-95638514 (Accessed October 24, 2018)&lt;/p&gt;
-&lt;h1&gt;細胞凍結&lt;/h1&gt;
-&lt;p&gt;仕組み：&lt;/p&gt;
-&lt;p&gt;手順:
-細胞をコラゲナーゼ分散液に入れる、40分程度37度の水浴に浸す。
-目に見える臓器はピンセットで取り出し、残りは遠心分離にかけ、上清を捨てる。
-コラゲナーゼを洗い流すために、PBSを用いて3回ウォッシュする。（PBSを入れて遠心して上清を捨てる操作を3回繰り返す）
-細胞保存液(DMSOなど、楽天で購入可能)を入れたチューブに細胞を入れた後、ドライアイス、イソプロパノール浴につけて完全に凍結するのを待つ。（イソプロパノールではなく無水エタノールでも-80度にすることができるということが知られている。）&lt;/p&gt;
-&lt;p&gt;解凍方法:
-細胞の入ったチューブごと37度の水浴に浸す。
-完全に解凍されたら遠心分離機にかけ、細胞保存液を捨てる。
-温めたDMEMを加えて静置した後、保存液の成分を除くために2回DMEMを加えてウォッシュする。
-培養液を加えてディッシュにまく。&lt;/p&gt;
-&lt;p&gt;ドライアイス、イソプロパノールへの代用
--72度を実現できる。&lt;/p&gt;
-&lt;p&gt;冷たくなるのは昇華熱だけです。
-アルコールでなく、ふつうの水にドライアイスを放り込むと、最初はブクブク泡を立ててケムリのようなものがでてきますが、静かにおいておくと、まもなくあまりブクブクしなくなります。
-これは、水がドライアイスに凍り付いてしまい、ドライアイスが溶けるのをジャマしているからです。
-アルコールなどは、融点がマイナス100度より低いため、ドライアイス（常圧で約-78.5度）にあっても凍りません。
-ですから、気体（空気や二酸化炭素)より熱伝導のよい液体に触れることで、ドライアイスがより温められるため、昇華熱をガンガン奪うというのが、寒剤としてのアルコール・ドライアイスペアの主な働きです。
-エタノールのほか、メタノールやアセトンを使ってもよく冷えますが、最低温度が違います。
-これは、それぞれの物質の熱伝導度、粘度の違いが支配的なようです。
-https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1411686024&lt;/p&gt;
-&lt;p&gt;寒剤の仕組み&lt;/p&gt;
-&lt;p&gt;1週間以上経った時の状態は、まだわからない。&lt;/p&gt;
-&lt;p&gt;細胞凍結のメリット&lt;/p&gt;
-&lt;h1&gt;遠心分離&lt;/h1&gt;
-&lt;p&gt;遠心力
-【遠心力[5]】
-遠心力は以下の式で表すことができる。
-f=mr2&lt;em&gt;m:粒子の質量gr:回転半径cm:回転角速度rads
-一般に遠心分離を行う場合には、遠心加速度の単位として、地球の重力加速度との比で表した「相対遠心加速度」(RCF: Rerative Centrifugal Force)を用いる。相対遠心加速度は、”G”または”×g”等をつけて表す。
-ここで粒子が回転軸を中心に1分あたりN回転しているとすると、=2N/60 (rad/s)、地球の重力加速度=980.665(cms2)であるから、相対遠心加速度RCFは、
-RCF=遠心加速度地球の重力加速度=r&lt;/em&gt;2N602*1/980.665
-となり、これを整理すると、
-RCF=1118  r  N2  10-8 gr:回転半径cmN:1分間当たりの回転数(rpm)
-以上のように、相対遠心加速度を表すことができる。&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://docs.google.com/document/d/1UCX8Xy5B0NPygs7u16LNwtacJ4_U5QXX/edit"&gt;実験レポ&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;インキュベーター&lt;/h1&gt;
-&lt;h1&gt;その他&lt;/h1&gt;
-&lt;p&gt;自宅での人工培養は実現するのか？
-結局、大量生産した方がコストが安くなる。自宅でやるメリットは？
-自分で作りたいものを作れる。→難しいよなぁ...&lt;/p&gt;
-&lt;p&gt;液体窒素
-&lt;a href="https://ja.wikipedia.org/wiki/%E9%85%B8%E7%B4%A0%E6%AC%A0%E4%B9%8F%E7%97%87"&gt;酸素欠乏症&lt;/a&gt;
-一度でも酸素濃度が16%以下の空気を吸うとかなり危険。死に至ることも。&lt;/p&gt;</content><category term="細胞農業"></category><category term="記事翻訳"></category><category term="研究"></category><category term="翻訳"></category></entry><entry><title>細胞農業に取り組むスタートアップまとめ</title><link href="https://naoto-yamaguchi.github.io/site/startups_in_cellular_agriculture.html" rel="alternate"></link><published>2019-06-07T00:00:00+09:00</published><updated>2019-06-07T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-07:/site/startups_in_cellular_agriculture.html</id><summary type="html">&lt;p&gt;細胞農業に取り組むスタートアップまとめ&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Cell-Based Meat&lt;/h1&gt;
-&lt;h1&gt;Plant-Based Meat&lt;/h1&gt;
+参加を熱望しており、予定調整中です。一緒に行く人がいたら行きましょう(笑）。&lt;/p&gt;</content><category term="細胞農業"></category><category term="記事翻訳"></category><category term="研究"></category><category term="翻訳"></category></entry><entry><title>細胞農業に取り組むスタートアップまとめ</title><link href="https://naoto-yamaguchi.github.io/site/startups_in_cellular_agriculture.html" rel="alternate"></link><published>2019-06-07T00:00:00+09:00</published><updated>2019-06-07T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-07:/site/startups_in_cellular_agriculture.html</id><summary type="html">&lt;p&gt;細胞農業に取り組むスタートアップまとめ&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
+&lt;p&gt;色々と調べる中で、様々な会社が出てきて頭の中が混乱したため、それぞれの会社が何をやっているのかを軽く整理する必要性を感じたから。
+とはいえ、以下の参考にあるような記事を見るのが一番。この記事は、自分が理解している範囲を日本語でまとめたもの程度。&lt;/p&gt;
+&lt;p&gt;随時追記していきたい。&lt;/p&gt;
+&lt;h1&gt;参考&lt;/h1&gt;
+&lt;p&gt;以下の2つは大いに参考にした。
+* &lt;a href="https://www.cell.ag/companies"&gt;CellAgのJob Listing Site&lt;/a&gt;
+* &lt;a href="https://docs.google.com/spreadsheets/d/1-GxB1FjgRIyuELLP9vvLBUv4hqHXGqrK_j-oP9su-a8/edit#gid=0"&gt;Robert Yaman → Resources → Industry Snapshot&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;それ以上に情報量があるのは、
+* &lt;a href="https://golden.com/wiki/Cluster%3A_Cell-based_and_plant-based_meat"&gt;Golden&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Cellular Agriculture (Tissue engineering-based)&lt;/h1&gt;
+&lt;h2&gt;Cell-Based Meat&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.aleph-farms.com/"&gt;Alpha Farms&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Ashdod, Israel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://biftek.co/"&gt;BIFTEK&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Ankara, Turkey&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.cellularagriculture.co.uk/"&gt;Cellular Agriculture&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Research DirectorのMarianne Eliisさんは、University of Bathの教授。&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.new-harvest.org/getting_to_know_marianne_ellis"&gt;Mariannneさんのインタビュー by New Harvest&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;会社自体はそんなに活動していないっぽい？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://highersteaks.com/"&gt;Higher Steaks&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bristol, UK&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://integriculture.jp/"&gt;Integriculture&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Tokyo, Japan&lt;/li&gt;
+&lt;li&gt;現時点で、日本で唯一の細胞農業スタートアップ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.memphismeats.com/"&gt;Memphis Meats&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Berkeley, California&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.meatable.com/"&gt;Meatable&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Leiden, the Netherlands&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://missionbarns.com/"&gt;Mission Barns&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Berkeley, California&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://mosameat.eu/"&gt;MosaMeat&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Maastricht, The Netherlands&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://newagemeats.com/"&gt;New Age Meats&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;San Francisco, California&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://supermeat.com/"&gt;SuperMeat&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Tel Aviv, Israel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://wildearth.com/"&gt;Wild Earth&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;San Francisco, California&lt;/li&gt;
+&lt;li&gt;Pet Food - mostly plant-based, but cultured mouse for cats&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=""&gt;Cellular Agriculture Society(CAS)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cambridge, Massachusetts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h1&gt;Cell-Based Seafood&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
 &lt;p&gt;[BlueNalu](https://www.bluenalu.com/)&lt;/p&gt;
-&lt;p&gt;Finless Foods&lt;/p&gt;
-&lt;p&gt;shiokmeats&lt;/p&gt;
-&lt;h1&gt;Smart Foods&lt;/h1&gt;
-&lt;p&gt;既に作られて便利なだけでなく、栄養価的に最適化された食べ物の提供を目指す。
-&lt;a href="https://soylent.com/"&gt;Soylent (U.S)&lt;/a&gt;
-完全栄養食みたいなノリ。ドリンクやパウダー、固形物を販売。タンパク質は大豆由来のもの、炭水化物は代謝に時間のかかる二価の糖イソマルトースを使用。脂質は、一価不飽和脂肪酸の高品質源である高オレイン酸ひまわり油を使用。26種類のビタミンとミネラルを含む。Twitterアカウントのフォロワーは42.4Kもいたので、そこそこ有名(?)
-[Huel(U.K.)] (https://jp.huel.com/)
-完全栄養食。日本語サイトがあったのでそちらを参照。買おうと思ったが、1ボトル555円で、12ボトル13320円からしか買えなかった（2019-07-05）ので購入は保留。動物性のものは使っていないみたい。
-&lt;a href="https://vitaline.shop/"&gt;Vitaline (France)&lt;/a&gt;
-Twitterのフォロワーは700弱と少なめ。フランス語発信だからか?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;San Diego, California&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=""&gt;Finless Foods&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;San Francisco, California&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.thewildtype.com/mission"&gt;Wild Type&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;San Francisco, California&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://shiokmeats.com/"&gt;Shiok Meats&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Singapore&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Acellular Agriculture(Fermentation-based )&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.clarafoods.com/"&gt;Clara Foods&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Sourh San Francisco, California&lt;/li&gt;
+&lt;li&gt;Egg&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://justforall.com/"&gt;JUST&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;San Francisco, California&lt;/li&gt;
+&lt;li&gt;Just Eggを開発&lt;/li&gt;
+&lt;li&gt;それ以外にも、チキンナゲットを開発しており、Cell-based meatにも取り組んでいる。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.perfectdayfoods.com/"&gt;Perfect Day&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Berkeley, California&lt;/li&gt;
+&lt;li&gt;Diary, Ice cream&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.modernmeadow.com/"&gt;Modern Meadow&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Nutley, New Jersey&lt;/li&gt;
+&lt;li&gt;Leather&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://boltthreads.com/"&gt;Bolt Threads&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Emeryville, California&lt;/li&gt;
+&lt;li&gt;Silk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.spiber.jp/en"&gt;Spiber&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;SFC(慶應湘南藤沢)発のスタートアップ&lt;/li&gt;
+&lt;li&gt;Silk&lt;/li&gt;
+&lt;li&gt;蜘蛛の糸で有名。タンパク質生産。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://geltor.com/"&gt;Geltor&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;San Leandro, California&lt;/li&gt;
+&lt;li&gt;Collagen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.pembient.com/"&gt;Pembient&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Seattle, Washington&lt;/li&gt;
+&lt;li&gt;Wildlife product, biofabricated horn&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Plant-Based Meat&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Impossible Foods&lt;ul&gt;
+&lt;li&gt;有名&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Beyond Meat&lt;ul&gt;
+&lt;li&gt;有名&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;その他&lt;/h1&gt;
+&lt;h2&gt;レストラン&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://bistro-invitro.com/en/bistro-invitro/"&gt;Bistro In Vitro&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;謎のサイト&lt;/li&gt;
+&lt;li&gt;世界初の(オンライン上の)lab-grown meatのレストラン。予約すると抽選でIn Vitro Meat Cookbooksをもらえる。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Smart Foods&lt;/h2&gt;
+&lt;p&gt;既に作られて便利なだけでなく、栄養価的に最適化された食べ物の提供を目指す。&lt;a href="https://www.forbes.com/sites/bernardmarr/2019/06/28/the-future-of-food-amazing-lab-grown-and-3d-printed-meat-and-fish/#7715849746f6"&gt;こちらの記事&lt;/a&gt;に載っていた会社を少し調べてみた。
+* &lt;a href="https://soylent.com/"&gt;Soylent (U.S)&lt;/a&gt;
+    * 完全栄養食みたいなノリ。ドリンクやパウダー、固形物を販売。タンパク質は大豆由来のもの、炭水化物は代謝に時間のかかる二価の糖イソマルトースを使用。脂質は、一価不飽和脂肪酸の高品質源である高オレイン酸ひまわり油を使用。26種類のビタミンとミネラルを含む。Twitterアカウントのフォロワーは42.4Kもいたので、そこそこ有名(?)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://jp.huel.com/"&gt;Huel(U.K.)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;完全栄養食。日本語サイトがあったのでそちらを参照。買おうと思ったが、1ボトル555円で、12ボトル13320円からしか買えなかった（2019-07-05）ので購入は保留。動物性のものは使っていないみたい。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://vitaline.shop/"&gt;Vitaline (France)&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Twitterのフォロワーは700弱と少なめ。フランス語発信だからか?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;日本だと、BASE PASTAやCOMPなどがあります。BASE PASTAは試してみましたが、特にパンが美味しかったです。何もつけなくても美味しく食べられましたし、腹持ちが良かったです。
 完全栄養食は、どこで差別化し、どのようにして広まっていくのか興味あります。&lt;/p&gt;
-&lt;h1&gt;その他&lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://bistro-invitro.com/en/bistro-invitro/"&gt;Bistro In Vitro&lt;/a&gt;
-謎のサイト
-世界初のlab-grown meatのレストラン。予約すると抽選でIn Vitro Meat Cookbooksをもらえる。&lt;/p&gt;
-&lt;h1&gt;参考&lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://www.forbes.com/sites/bernardmarr/2019/06/28/the-future-of-food-amazing-lab-grown-and-3d-printed-meat-and-fish/#7715849746f6"&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="細胞農業"></category><category term="記事翻訳"></category><category term="研究"></category><category term="翻訳"></category></entry><entry><title>4,5月の振り返り</title><link href="https://naoto-yamaguchi.github.io/site/diary_1905.html" rel="alternate"></link><published>2019-06-06T00:00:00+09:00</published><updated>2019-06-06T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-06:/site/diary_1905.html</id><summary type="html">&lt;p&gt;4,5月の振り返り&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
+&lt;h2&gt;Laboratory Automation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://opentrons.com/"&gt;Opentrons&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;生命科学実験自動化のためのプラットフォーム(API?)開発。共通の言語で、様々な生命科学実験を自動でおこなうロボットへの指示を出せるように。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content><category term="細胞農業"></category><category term="スタートアップ"></category><category term="Cellular Agriculture"></category></entry><entry><title>4,5月の振り返り</title><link href="https://naoto-yamaguchi.github.io/site/diary_1905.html" rel="alternate"></link><published>2019-06-06T00:00:00+09:00</published><updated>2019-06-06T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-06:/site/diary_1905.html</id><summary type="html">&lt;p&gt;4,5月の振り返り&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
 &lt;p&gt;ブログを書いている友達に良い刺激を受けて、ハードル低めに思ったこととかやったことの記録も気軽に書いてみることにしました。とりあえず、月1で振り返りとして書いてみるというマイルストーンを設定しようと思います。私の尊敬する&lt;a href="https://medium.com/@tumada/side-project-success-and-failure-pattern-b8b02b27d073"&gt;馬田隆明さんのMediumでの記事&lt;/a&gt;でも、「定期的な予定を持つ方が圧倒的に生産性がよくなる」という話がありますし、自分の振り返り記録を残しておくことは、未来に見返した時に面白いし、未来の自分による記憶の書き換えにも対抗できます（良いか悪いかは別にして）。
 思ったことを書き連ねていく試みは今までもあったのですが、うまくまとまらないとか、忙しいとか言い訳して書ききれていませんでした。&lt;/p&gt;
 &lt;h1&gt;目次&lt;/h1&gt;
@@ -694,41 +1225,61 @@ https://ganjoho.jp/public/dia_tre/knowledge/basic.html&lt;/p&gt;
 &lt;p&gt;がんは伝統的に、由来する組織や細胞の種類によって分類されますひらがなの「がん」は悪性腫瘍全体を示す時に用いられ、漢字の「癌」を用いる時は、上皮細胞から発生するがんに限定されます。&lt;/p&gt;
 &lt;p&gt;発生部位によるがん（悪性腫瘍）の分類&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;癌（上皮腫, cancer, carcinoma）&lt;/li&gt;
-&lt;li&gt;上皮を構成する細胞である上皮細胞から発生するがん&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;癌（上皮腫, cancer, carcinoma）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;上皮を構成する細胞である上皮細胞から発生するがん&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;がん症例の 80%は上皮腫。ガンの発生を助長する物理的・化学的損傷に最も頻繁に晒されるため&lt;/li&gt;
 &lt;li&gt;例として、肺がん、乳がん、胃がん、大腸がん、子宮がん、卵巣がんなど&lt;/li&gt;
 &lt;li&gt;cancer?&lt;/li&gt;
-&lt;li&gt;肉腫&lt;/li&gt;
-&lt;li&gt;結合組織や筋細胞などの非上皮細胞から生じる。&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;肉腫&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;結合組織や筋細胞などの非上皮細胞から生じる。&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;代表的な肉腫には、骨肉腫、軟骨肉腫、横紋筋肉腫、平滑筋肉腫、線維肉腫、脂肪肉腫、血管肉腫があります。&lt;/li&gt;
-&lt;li&gt;造血器から発生するがん&lt;/li&gt;
-&lt;li&gt;血液をつくる臓器である骨髄やリンパ節を造血器といいます。造血器から発生するがんには、白血病(leukemia)、悪性リンパ腫(lymphoma)、骨髄腫等があります。&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;造血器から発生するがん&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;血液をつくる臓器である骨髄やリンパ節を造血器といいます。造血器から発生するがんには、白血病(leukemia)、悪性リンパ腫(lymphoma)、骨髄腫等があります。&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2&gt;がんの原理&lt;/h2&gt;
 &lt;p&gt;がんは細胞が無秩序に増えていってしまう病気なので、細胞が増えるような変異がおこるとがんの発生の原因となる可能性となる。
 そこで、細胞が制御以上に増えるような変化には、遺伝子による変化とエピジェネティックな変化の両方が考えられるが、まずは遺伝子による変化を考える。
-がん発生の原因となる遺伝子
-* 原がん遺伝子(proto-oncogene)への変異
-  * 起こり方（過剰活性型になり方）
-    * 翻訳領域内の欠失または点変異による高活性タンパクの正常生産
-    * 調整領域の変異による正常タンパクの過剰生産
-    * 遺伝子増幅による正常タンパクの過剰生産
-    * 染色体再編成により
-      * 調節DNAが近傍にきて、正常タンパクの過剰生産を起こさせる
-      * 活発に転写される遺伝子との融合が起こり、高活性の融合タンパクを生産（これが融合遺伝子というやつか!?）
-  * 例
-    * Srcタンパク - 細胞の増殖シグナルを制御するタンパク質キナーゼ
-      * 点突然変異により、活性の抑制に必要なC末端を欠いた、常に活性化型のタンパク質キナーゼがコードされる
-    * Mycタンパク - 核内にあって細胞の成長と分裂を刺激する
-      * 遺伝子増幅や染色体転座による強力な調節配列の制御下への移動などにより、正常型の過剰生産でがんにつながる
-    * Rasタンパク - GTPase活性化
-      * ??
-    * EGF (epidermal growth factor、細胞外シグナルタンパクである上皮増殖因子)の受容体
-      * 細胞外領域の一部を欠失して除去されると活性化
-      * 変異受容体は、EGFがなくても活性型二量体を形成し、勝手になる呼び鈴のように、不適切な刺激シグナルをだす。脳腫瘍で最も多い、神経膠芽腫によく見られる。&lt;/p&gt;
+がん発生の原因となる遺伝子&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;がん抑制遺伝子(tumor suppressor gene)への変異&lt;/li&gt;
+&lt;li&gt;原がん遺伝子(proto-oncogene)への変異&lt;/li&gt;
+&lt;li&gt;起こり方（過剰活性型になり方）&lt;ul&gt;
+&lt;li&gt;翻訳領域内の欠失または点変異による高活性タンパクの正常生産&lt;/li&gt;
+&lt;li&gt;調整領域の変異による正常タンパクの過剰生産&lt;/li&gt;
+&lt;li&gt;遺伝子増幅による正常タンパクの過剰生産&lt;/li&gt;
+&lt;li&gt;染色体再編成により&lt;/li&gt;
+&lt;li&gt;調節DNAが近傍にきて、正常タンパクの過剰生産を起こさせる&lt;/li&gt;
+&lt;li&gt;活発に転写される遺伝子との融合が起こり、高活性の融合タンパクを生産（これが融合遺伝子というやつか!?）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;例&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Srcタンパク - 細胞の増殖シグナルを制御するタンパク質キナーゼ&lt;/li&gt;
+&lt;li&gt;点突然変異により、活性の抑制に必要なC末端を欠いた、常に活性化型のタンパク質キナーゼがコードされる&lt;/li&gt;
+&lt;li&gt;Mycタンパク - 核内にあって細胞の成長と分裂を刺激する&lt;/li&gt;
+&lt;li&gt;遺伝子増幅や染色体転座による強力な調節配列の制御下への移動などにより、正常型の過剰生産でがんにつながる&lt;/li&gt;
+&lt;li&gt;Rasタンパク - GTPase活性化&lt;/li&gt;
+&lt;li&gt;??&lt;/li&gt;
+&lt;li&gt;EGF (epidermal growth factor、細胞外シグナルタンパクである上皮増殖因子)の受容体&lt;/li&gt;
+&lt;li&gt;細胞外領域の一部を欠失して除去されると活性化&lt;/li&gt;
+&lt;li&gt;変異受容体は、EGFがなくても活性型二量体を形成し、勝手になる呼び鈴のように、不適切な刺激シグナルをだす。脳腫瘍で最も多い、神経膠芽腫によく見られる。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;がん抑制遺伝子(tumor suppressor gene)への変異&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;起こり方&lt;ul&gt;
 &lt;li&gt;1つめは、点突然変異だったり&lt;/li&gt;
 &lt;li&gt;2つめは、色々&lt;/li&gt;
@@ -752,16 +1303,17 @@ https://ganjoho.jp/public/dia_tre/knowledge/basic.html&lt;/p&gt;
 &lt;li&gt;損傷した染色体をもつ細胞を分裂させてがん細胞に特有の遺伝的不安定性をもたらし細胞分裂に伴ってがんを促進する変異を蓄積させる&lt;/li&gt;
 &lt;li&gt;腫瘍によっては抗がん剤や放射線照射への抵抗性を持たせてしまう&lt;/li&gt;
 &lt;li&gt;APC(APC/Cとは違うので注意)&lt;/li&gt;
-&lt;li&gt;BRCA1&lt;/li&gt;
+&lt;li&gt;BRCA1/BRCA2 - 相同組換えにDNA2本鎖切断の修復の際に、Rad51タンパク（原核生物ではRecA）と相互作用する補助タンパク（こっちじゃない気もする、先生のスライドだとこっち、まあこっちでもあるのかな）&lt;/li&gt;
+&lt;li&gt;MLH1 - DNA修復&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;DNA維持遺伝子への変異&lt;/p&gt;
+&lt;p&gt;DNA維持遺伝子（変異誘発遺伝子）への変異（がん抑制遺伝子と被りあり）&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;ゲノムの安定性を保っている遺伝子&lt;/li&gt;
-&lt;li&gt;Mutator(突然変異が生じる確率が正常よりも高くなるような変異)が入ると起こる&lt;/li&gt;
+&lt;li&gt;ゲノムの安定性を保っている遺伝子、特に修復系と関わる&lt;/li&gt;
+&lt;li&gt;この遺伝子に変異（Mutator、突然変異が生じる確率が正常よりも高くなるような変異）が入ると、ゲノムの修復が正常におこなわれなくなり、が原がん遺伝子や、がん抑制遺伝子に変異が入ったりして、がんが発生する。なので関わり方としては間接的ではある。&lt;/li&gt;
 &lt;li&gt;例&lt;ul&gt;
-&lt;li&gt;BRCA1 いや、違う気がする&lt;/li&gt;
+&lt;li&gt;BRCA1/BRCA2 - 相同組換えにDNA2本鎖切断の修復の際に、Rad51タンパク（原核生物ではRecA）と相互作用する補助タンパク。乳がんと卵巣がんの一部のみに関わる。予防的乳房の切除を行ったアンジェリーナ・ジョリーは、このBRCA1という遺伝子に変異があった。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -777,13 +1329,13 @@ https://ganjoho.jp/public/dia_tre/knowledge/basic.html&lt;/p&gt;
 おそらくウイルスは、この変異を持った動物細胞に感染し、変異したがん遺伝子を自身のゲノムに組み込んだと思われる。&lt;/p&gt;
 &lt;p&gt;つまり、流れとしては、
 細胞増殖刺激に関わるタンパク質キナーゼをコードする原がん遺伝子c-Srcを動物ゲノムが持っていた（人はまだ知らない）
-→特定の変異でv-Src遺伝子(がん遺伝子)となり、常に活性化型のタンパク質キナーゼをコードするようになった。(まだ知らない)
-→それをその遺伝子を感染したレトロウイルスがGETした
-→ニワトリに感染した
-→人間がそのニワトリを調べてみたら、Srcががん化の原因だとわかった
-→Srcっぽい配列を脊椎動物でも調べてみたら、似たのが見つかった
-→c-Srcが原がん遺伝子で、変異で、v-Srcとなると常に細胞増殖シグナルをだしがん発生に関わることがわかった。
-→これでがんの原因の1つがわかった！&lt;/p&gt;
+→特定の変異でv-Src遺伝子(がん遺伝子)となり、常に活性化型のタンパク質キナーゼをコードするようになった。(まだ知らない)&lt;/p&gt;
+&lt;p&gt;→それをその遺伝子を感染したレトロウイルスがGETした&lt;/p&gt;
+&lt;p&gt;→ニワトリに感染した&lt;/p&gt;
+&lt;p&gt;→人間がそのニワトリを調べてみたら、Srcががん化の原因だとわかった&lt;/p&gt;
+&lt;p&gt;→Srcっぽい配列を脊椎動物でも調べてみたら、似たのが見つかった&lt;/p&gt;
+&lt;p&gt;→c-Srcが原がん遺伝子で、変異で、v-Srcとなると常に細胞増殖シグナルをだしがん発生に関わることがわかった。&lt;/p&gt;
+&lt;p&gt;→これでがんの原因の1つがわかった！&lt;/p&gt;
 &lt;p&gt;これと同様にして、他のがん遺伝子もレトロウイルスから多数同定され、正常動物細胞に存在する原がん遺伝子の発見に繋がった。&lt;/p&gt;
 &lt;h3&gt;原がん遺伝子の発見2 by がん細胞のゲノム導入によるRasの発見&lt;/h3&gt;
 &lt;p&gt;ここまで、レトロウイルスを使ったがん遺伝子の探索だったが、もっと直接的な方法をとる研究者もいた。
@@ -916,98 +1468,6 @@ B,Cは潜伏型の慢性的な肝臓の炎症。肝臓ガンの原因の90%
 &lt;/li&gt;
 &lt;li&gt;放射線療法&lt;/li&gt;
 &lt;li&gt;免疫療法&lt;/li&gt;
-&lt;/ul&gt;</content><category term="生物学"></category><category term="解説"></category><category term="授業まとめ"></category></entry><entry><title>エピジェネティクス</title><link href="https://naoto-yamaguchi.github.io/site/epigenetics.html" rel="alternate"></link><published>2019-05-31T00:00:00+09:00</published><updated>2019-05-31T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-05-31:/site/epigenetics.html</id><summary type="html">&lt;p&gt;エピジェネティクスの勉強&lt;/p&gt;</summary><content type="html">&lt;h1&gt;エピジェネティクス&lt;/h1&gt;
-&lt;p&gt;エピジェネティクスとは？&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;DNAの配列に依存せず、かつ細胞分裂を経て引き継がれる遺伝子の機能の変化や仕組み及びその研究
-のことを言います。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;エピトランスクリプトームは？
-細胞分裂を経て引き継がれることはない？&lt;/p&gt;
-&lt;p&gt;ではどういう仕組みで、するのでしょうか？&lt;/p&gt;
-&lt;h1&gt;動機、対象&lt;/h1&gt;
-&lt;p&gt;生物を学び始めた方で、がんについてよく知らないという人。
-Cell 等を参考にしているので、分子細胞生物学的な観点からのがんの説明になります。がんの治療についての知識や、より大衆的な情報を求めている方は、参考に載せた、国立がん研究センター ガン情報サービス (2018)等をご確認下さい。&lt;/p&gt;
-&lt;h1&gt;参考&lt;/h1&gt;
-&lt;p&gt;cell chap20
-国立がん研究センター ガン情報サービス (2018)
-知っておきたいがんの基礎知識
-https://ganjoho.jp/public/dia_tre/knowledge/basic.html&lt;/p&gt;
-&lt;h1&gt;目次&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;エピジェネティクスとは？&lt;/li&gt;
-&lt;li&gt;エピジェネティクス制御の分子機構&lt;ul&gt;
-&lt;li&gt;クロマチン（ヒストン）修飾&lt;/li&gt;
-&lt;li&gt;ゲノムDNAのメチル化&lt;/li&gt;
-&lt;li&gt;機能性RNAによる制御&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;エピジェネティクスに関わる生命現象&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Cell によると&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;がんとは、変異細胞クローンが周囲の細胞を犠牲にして増殖し、ついにはこのクローンが成長し進化し広がって細胞社会全体を破壊する病気である。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img alt="" src="https://paper-attachments.dropbox.com/s_B3B22EDC6578FBAF240D04242C36697E34E90BE462ACB6A923FB4B2FE05F2BDF_1558404445476_image.png"&gt;&lt;/p&gt;
-&lt;p&gt;がん細胞は、子孫細胞に受け継がれる次の 2 つの性質によって定義されます。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;1 　細胞の成長と分裂に関する制御を無視して増殖し、&lt;/p&gt;
-&lt;p&gt;2 　他の細胞の領地に侵入して棲みつく。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;特にこの 2 を、浸潤という。浸潤とは、束縛を逃れて血管やリンパ管に入り、体内の他の場所に転移(metastasis)して、二次腫瘍を形成することであり、がん細胞の本質的な特徴である。
-2 の性質を持たない腫瘍は、良性(benign)腫瘍と呼ばれ、悪影響を及ぼすことはない。腫瘍を切除や破壊することで通常は完治する。
-1 に加えて 2 んの性質を持った腫瘍が悪性(malignant)腫瘍であり、体内に浸潤して細胞組織を破壊する。がん患者の死因の大半は、浸潤（転移）したがん細胞である。また、良性腫瘍が変異によって悪性腫瘍になることもあるので注意が必要である。&lt;/p&gt;
-&lt;h2&gt;がんの分類&lt;/h2&gt;
-&lt;p&gt;がんは伝統的に、由来する組織や細胞の種類によって分類されます。ひらがなの「がん」は悪性腫瘍全体を示す時に用いられ、漢字の「癌」を用いる時は、上皮細胞から発生するがんに限定されます。&lt;/p&gt;
-&lt;p&gt;発生部位によるがん（悪性腫瘍）の分類&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;癌（上皮腫, cancer, carcinoma）&lt;/li&gt;
-&lt;li&gt;上皮を構成する細胞である上皮細胞から発生するがん&lt;/li&gt;
-&lt;li&gt;がん症例の 80%は上皮腫。ガンの発生を助長する物理的・化学的損傷に最も頻繁に晒されるため&lt;/li&gt;
-&lt;li&gt;例として、肺がん、乳がん、胃がん、大腸がん、子宮がん、卵巣がんなど&lt;/li&gt;
-&lt;li&gt;cancer?&lt;/li&gt;
-&lt;li&gt;肉腫&lt;/li&gt;
-&lt;li&gt;結合組織や筋細胞などの非上皮細胞から生じる。&lt;/li&gt;
-&lt;li&gt;代表的な肉腫には、骨肉腫、軟骨肉腫、横紋筋肉腫、平滑筋肉腫、線維肉腫、脂肪肉腫、血管肉腫があります。&lt;/li&gt;
-&lt;li&gt;造血器から発生するがん&lt;/li&gt;
-&lt;li&gt;血液をつくる臓器である骨髄やリンパ節を造血器といいます。造血器から発生するがんには、白血病(leukemia)、悪性リンパ腫(lymphoma)、骨髄腫等があります。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;がんの歴史的発見&lt;/h2&gt;
-&lt;p&gt;ウイルス性家族性&lt;/p&gt;
-&lt;p&gt;がん発生に関わる遺伝子&lt;/p&gt;
-&lt;p&gt;&lt;a id="cancer_treatment"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;がんの治療法&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;標準治療&lt;/li&gt;
-&lt;li&gt;外科手術&lt;/li&gt;
-&lt;li&gt;薬物療法&lt;ul&gt;
-&lt;li&gt;分子標的薬&lt;ul&gt;
-&lt;li&gt;化合物でタンパク質に対して特異性&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;抗体医薬&lt;ul&gt;
-&lt;li&gt;タンパク質のもつ抗体がくっついてタンパク質を分解&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;核酸医薬 (new!)&lt;ul&gt;
-&lt;li&gt;核酸がmRNAに結合して、発現を抑制したり分解することで、病気の原因となるタンパク質を作らせないようにする。分子標的薬や抗体医薬は、タンパク質を分解するのに対して、核酸医薬は、mRNAの段階で分解したり翻訳を抑制するので、タンパク質になる前の段階で止めるイメージ。RNAなどの配列の特異性を生かすことで、より特異的に阻害できる薬を作れるのが、他にはない良い点。例えば、1塩基変異が原因の病気などに対する薬を作れる可能性がある。&lt;/li&gt;
-&lt;li&gt;アンチセンスによるもの&lt;ul&gt;
-&lt;li&gt;標的のmRNAのアンチセンス鎖をいれて、標的のmRNAにくっつき、タンパク質への翻訳を抑制する。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;アプタマーによるもの&lt;ul&gt;
-&lt;li&gt;標的のmRNAに結合する立体構造をもつRNAをいれて、タンパク質への翻訳を抑制する。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;siRNAによるもの
-    標的のmRNAを分解するsiRNAをいれて、mRNAを分解する。
-    最近日本で承認されたものに、アミロイド蓄積遺伝子から発現したmRNAを分解する、siRNAによる薬がある。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;放射線療法&lt;/li&gt;
-&lt;li&gt;免疫療法&lt;/li&gt;
 &lt;/ul&gt;</content><category term="生物学"></category><category term="解説"></category><category term="授業まとめ"></category></entry><entry><title>EC2からRDSへの接続と、RDSへのデータ投入&amp;日本語文字化け対応の備忘録</title><link href="https://naoto-yamaguchi.github.io/site/ec2_to_rds.html" rel="alternate"></link><published>2019-04-29T00:00:00+09:00</published><updated>2019-04-29T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-04-29:/site/ec2_to_rds.html</id><summary type="html">&lt;p&gt;RDS文字化け対応備忘録&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630545434_rds.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;動機&lt;/h2&gt;
 &lt;p&gt;あるプロジェクトで、EC2インスタンスからRDSに接続できるように設定する必要がありました。また、RDSへのデータの投入も初めてだったので、記録を残しておこうと思いました。&lt;/p&gt;
 &lt;h2&gt;EC2からRDSへの接続&lt;/h2&gt;
@@ -1081,7 +1541,7 @@ IGNORE 1 LINES;
 
 &lt;p&gt;コマンドが重要です。&lt;/p&gt;
 &lt;p&gt;今後、RDSインスタンス新規作成の際に、パラメータグループをきちんと設定すると良さそうです。&lt;/p&gt;
-&lt;p&gt;どうでも良いですが、mysqlのテーブル名は最長で63文字らしいです。&lt;/p&gt;</content><category term="AWS"></category></entry><entry><title>チューリングパターンとは</title><link href="https://naoto-yamaguchi.github.io/site/turing_pattern.html" rel="alternate"></link><published>2019-04-04T00:00:00+09:00</published><updated>2019-04-04T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-04-04:/site/turing_pattern.html</id><summary type="html">&lt;p&gt;チューリングパターンの解説&lt;br&gt;&lt;img src="https://camo.qiitausercontent.com/58b0457b75d51790ad0c73dc752d27a2434d6a97/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3134313530332f35636465656163632d366132362d343566612d636264332d3539316561316264373238612e6a706567"&gt;&lt;/img&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;動機&lt;/h2&gt;
+&lt;p&gt;どうでも良いですが、mysqlのテーブル名は最長で63文字らしいです。&lt;/p&gt;</content><category term="AWS"></category></entry><entry><title>チューリングパターンとは</title><link href="https://naoto-yamaguchi.github.io/site/turing_pattern.html" rel="alternate"></link><published>2019-04-04T00:00:00+09:00</published><updated>2019-04-04T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-04-04:/site/turing_pattern.html</id><summary type="html">&lt;p&gt;チューリングパターンの解説&lt;br&gt;&lt;img src="https://camo.qiitausercontent.com/58b0457b75d51790ad0c73dc752d27a2434d6a97/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3134313530332f35636465656163632d366132362d343566612d636264332d3539316561316264373238612e6a706567"&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;動機&lt;/h2&gt;
 &lt;p&gt;システム生物学の授業が書くことになったきっかけです。
 &lt;a href="https://nafoto-z.hatenablog.com/entry/2018/12/07/184450"&gt;hatenablog&lt;/a&gt; に書いたところ数式を上手く表示できず書き途中であったため、こちらで書きました。&lt;a href="https://nafoto-z.hatenablog.com/entry/2018/12/07/184450"&gt;hatenablog&lt;/a&gt; の方に、意外とアクセスがあったので、折角訪問してくださった方にちゃんと見ていただきたいと思いました。&lt;a href="https://nafoto-z.hatenablog.com/entry/2018/12/07/184450"&gt;hatenablog&lt;/a&gt; の方は放置していてひどいです。こちらのサイトも見た目等変なところが多いですがご容赦下さい。そのうち直します。&lt;/p&gt;
 &lt;h2&gt;参考&lt;/h2&gt;
@@ -1485,6 +1945,7 @@ todo あとで追記&lt;/p&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;</content><category term="生物学"></category><category term="Bioinfo"></category></entry><entry><title>SSHのポートフォワード（トンネリング）とは？</title><link href="https://naoto-yamaguchi.github.io/site/ssh_port_forward.html" rel="alternate"></link><published>2019-03-31T00:00:00+09:00</published><updated>2019-03-31T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-03-31:/site/ssh_port_forward.html</id><summary type="html">&lt;p&gt;SSHポートフォーワードとは（未完）&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630562939_port_forwarding.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h3&gt;動機&lt;/h3&gt;
+&lt;p&gt;&amp;lt;注意&amp;gt; 要修正の記事です&lt;/p&gt;
 &lt;p&gt;SSH ポートフォワードを使っていた時に、SCP でファイルを送信したかったため。&lt;/p&gt;
 &lt;h3&gt;参考&lt;/h3&gt;
 &lt;p&gt;サムネイル画像は&lt;a href="https://cookbook.fortinet.com/port-forwarding-60/"&gt;こちら&lt;/a&gt;より引用&lt;/p&gt;
@@ -1531,15 +1992,15 @@ abci-gate した状態で
 「こうした決断主義は、無批判に何かを信じ込んだ状態であるため、避けるべきである。そこで、絶対性を求めず、相対　的に複数の選択肢を比較し続けるというユーモア的な方法へと向かうーーー比較を続ける途中で中断し、ベターな結論を仮固定し、また比較を再開するのである。これが勉強のプロセスにおいて基本姿勢である。」&lt;/p&gt;
 &lt;p&gt;結論として内容が後ろにまとめられていた部分があり、それを写真に撮り載せようと思っていたが、図書館で爆睡してしまい、撮り忘れた。
 もう一度くらい借りて読んでみるかー
-→再度読んでみました。&lt;/p&gt;
+→再度購入したのでまた読みます。&lt;/p&gt;
 &lt;p&gt;入門書、専門書、準専門書
 読書は完璧にできない&lt;/p&gt;</content><category term="Book"></category></entry><entry><title>私のおすすめのもの、好きなもの</title><link href="https://naoto-yamaguchi.github.io/site/my_favorites.html" rel="alternate"></link><published>2019-02-24T00:00:00+09:00</published><updated>2019-02-24T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-24:/site/my_favorites.html</id><summary type="html">&lt;p&gt;おすすめ集、好きなもの&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
 &lt;p&gt;人のおすすめを聞いて自分の興味の幅が広がったり、新たな発見をすることがあったので。
-現状適当ですが、随時載せていきます。&lt;/p&gt;
+現状かなり適当ですが、随時載せていきます。&lt;/p&gt;
 &lt;h1&gt;参考&lt;/h1&gt;
 &lt;h1&gt;目次&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;好きな本（小説は除く）&lt;ul&gt;
+&lt;li&gt;好きな本（小説は除く、一般書）&lt;ul&gt;
 &lt;li&gt;サピエンス全史（超おすすめ）&lt;/li&gt;
 &lt;li&gt;ホモデウス（絶対読むべき）&lt;/li&gt;
 &lt;li&gt;史上最強の哲学入門（わかりやすく哲学を紹介）&lt;/li&gt;
@@ -1554,28 +2015,31 @@ abci-gate した状態で
 &lt;li&gt;エピゲノムと生命&lt;/li&gt;
 &lt;li&gt;嫌われる技術&lt;/li&gt;
 &lt;li&gt;アイデア大全（読書猿さんおすすめ）&lt;/li&gt;
-&lt;li&gt;マギーキッチンサイエンス（読み途中）&lt;/li&gt;
-&lt;li&gt;Cooking for geeks (読み途中)&lt;/li&gt;
+&lt;li&gt;マギーキッチンサイエンス（読み途中,全然読めてない）&lt;/li&gt;
+&lt;li&gt;Cooking for geeks (読み途中, 全然読めてない)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;好きな映画（追記します）&lt;ul&gt;
+&lt;li&gt;ショーシャンクの空に&lt;/li&gt;
 &lt;li&gt;イミテーションゲーム&lt;/li&gt;
 &lt;li&gt;Begin Again&lt;/li&gt;
+&lt;li&gt;Onec ダブリンの街角で&lt;/li&gt;
 &lt;li&gt;きっとうまくいく&lt;/li&gt;
 &lt;li&gt;容疑者Xの献身&lt;/li&gt;
 &lt;li&gt;ゴールデンスランバー&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;好きなドラマ&lt;ul&gt;
-&lt;li&gt;glee&lt;/li&gt;
-&lt;li&gt;the big bang theory&lt;/li&gt;
-&lt;li&gt;逃げるは恥だが役に立つ&lt;/li&gt;
+&lt;li&gt;好きな漫画&lt;ul&gt;
+&lt;li&gt;Death Note&lt;/li&gt;
+&lt;li&gt;進撃の巨人&lt;/li&gt;
+&lt;li&gt;GIANT KILLING&lt;/li&gt;
+&lt;li&gt;etc...&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;好きな(MarkDown)エディタ&lt;ul&gt;
-&lt;li&gt;vim&lt;/li&gt;
-&lt;li&gt;Dropbox Paper&lt;/li&gt;
-&lt;li&gt;VScode&lt;/li&gt;
+&lt;li&gt;好きなドラマ&lt;ul&gt;
+&lt;li&gt;the big bang theory&lt;/li&gt;
+&lt;li&gt;glee&lt;/li&gt;
+&lt;li&gt;逃げるは恥だが役に立つ&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;おすすめのYouTubeチャンネル&lt;ul&gt;
@@ -1584,6 +2048,8 @@ abci-gate した状態で
 &lt;li&gt;MinuteEarth (様々な話題をわかりやすく)&lt;/li&gt;
 &lt;li&gt;Linguamarina (英語チャンネル)&lt;/li&gt;
 &lt;li&gt;Sarada Herke (離散数学、グラフ理論)&lt;/li&gt;
+&lt;li&gt;中田敦彦のYouTube大学&lt;/li&gt;
+&lt;li&gt;びじゅチューン&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;おすすめのSSG(静的サイトジェネレーター)&lt;ul&gt;
@@ -1599,7 +2065,9 @@ abci-gate した状態で
 &lt;li&gt;おすすめの国、街&lt;/li&gt;
 &lt;li&gt;おすすめのアプリ&lt;ul&gt;
 &lt;li&gt;Nuzzle&lt;/li&gt;
-&lt;li&gt;...&lt;/li&gt;
+&lt;li&gt;Instapaper&lt;/li&gt;
+&lt;li&gt;CouchSurfing&lt;/li&gt;
+&lt;li&gt;Dropbox Paper&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;おすすめのサイト&lt;ul&gt;
@@ -1610,6 +2078,7 @@ abci-gate した状態で
 &lt;p&gt;みなさんのオススメのもの、好きなもの是非教えてください！！
 超募集中@nafoto_z&lt;/p&gt;
 &lt;p&gt;リンクとかはそのうち貼ります。&lt;/p&gt;</content><category term="好きなもの"></category><category term="嗜好"></category></entry><entry><title>NCBIからゲノムデータを取得する方法</title><link href="https://naoto-yamaguchi.github.io/site/how_to_get_genome_data_from_ncbi.html" rel="alternate"></link><published>2019-02-22T00:00:00+09:00</published><updated>2019-02-22T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-22:/site/how_to_get_genome_data_from_ncbi.html</id><summary type="html">&lt;p&gt;ゲノムデータ取得&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630593492_ncbi.png" width=150 height=150&gt;&lt;/p&gt;</summary><content type="html">&lt;h3&gt;動機&lt;/h3&gt;
+&lt;p&gt;&amp;lt;注意&amp;gt; 要修正の記事です&lt;/p&gt;
 &lt;p&gt;NCBI からゲノムデータを取ってきたい時どうすれば良いかわからなかった。ftp を知らなかったけど、ダウンロードできました！&lt;/p&gt;
 &lt;h3&gt;参考&lt;/h3&gt;
 &lt;p&gt;サムネイル画像は&lt;a href="https://en.wikipedia.org/wiki/National_Center_for_Biotechnology_Information"&gt;こちら&lt;/a&gt;より引用&lt;/p&gt;
@@ -1620,7 +2089,7 @@ abci-gate した状態で
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;というエラーとお友達になれました。&lt;/p&gt;
+&lt;p&gt;というエラーになりました。&lt;/p&gt;
 &lt;p&gt;zip ファイルの解凍は、&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ gunzip
 &lt;/pre&gt;&lt;/div&gt;

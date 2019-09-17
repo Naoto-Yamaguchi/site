@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog - 嗜好</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/shi-hao.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-02-24T00:00:00+09:00</updated><entry><title>私のおすすめのもの、好きなもの</title><link href="https://naoto-yamaguchi.github.io/site/my_favorites.html" rel="alternate"></link><published>2019-02-24T00:00:00+09:00</published><updated>2019-02-24T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-24:/site/my_favorites.html</id><summary type="html">&lt;p&gt;おすすめ集、好きなもの&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
 &lt;p&gt;人のおすすめを聞いて自分の興味の幅が広がったり、新たな発見をすることがあったので。
-現状適当ですが、随時載せていきます。&lt;/p&gt;
+現状かなり適当ですが、随時載せていきます。&lt;/p&gt;
 &lt;h1&gt;参考&lt;/h1&gt;
 &lt;h1&gt;目次&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;好きな本（小説は除く）&lt;ul&gt;
+&lt;li&gt;好きな本（小説は除く、一般書）&lt;ul&gt;
 &lt;li&gt;サピエンス全史（超おすすめ）&lt;/li&gt;
 &lt;li&gt;ホモデウス（絶対読むべき）&lt;/li&gt;
 &lt;li&gt;史上最強の哲学入門（わかりやすく哲学を紹介）&lt;/li&gt;
@@ -20,28 +20,31 @@
 &lt;li&gt;エピゲノムと生命&lt;/li&gt;
 &lt;li&gt;嫌われる技術&lt;/li&gt;
 &lt;li&gt;アイデア大全（読書猿さんおすすめ）&lt;/li&gt;
-&lt;li&gt;マギーキッチンサイエンス（読み途中）&lt;/li&gt;
-&lt;li&gt;Cooking for geeks (読み途中)&lt;/li&gt;
+&lt;li&gt;マギーキッチンサイエンス（読み途中,全然読めてない）&lt;/li&gt;
+&lt;li&gt;Cooking for geeks (読み途中, 全然読めてない)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;好きな映画（追記します）&lt;ul&gt;
+&lt;li&gt;ショーシャンクの空に&lt;/li&gt;
 &lt;li&gt;イミテーションゲーム&lt;/li&gt;
 &lt;li&gt;Begin Again&lt;/li&gt;
+&lt;li&gt;Onec ダブリンの街角で&lt;/li&gt;
 &lt;li&gt;きっとうまくいく&lt;/li&gt;
 &lt;li&gt;容疑者Xの献身&lt;/li&gt;
 &lt;li&gt;ゴールデンスランバー&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;好きなドラマ&lt;ul&gt;
-&lt;li&gt;glee&lt;/li&gt;
-&lt;li&gt;the big bang theory&lt;/li&gt;
-&lt;li&gt;逃げるは恥だが役に立つ&lt;/li&gt;
+&lt;li&gt;好きな漫画&lt;ul&gt;
+&lt;li&gt;Death Note&lt;/li&gt;
+&lt;li&gt;進撃の巨人&lt;/li&gt;
+&lt;li&gt;GIANT KILLING&lt;/li&gt;
+&lt;li&gt;etc...&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;好きな(MarkDown)エディタ&lt;ul&gt;
-&lt;li&gt;vim&lt;/li&gt;
-&lt;li&gt;Dropbox Paper&lt;/li&gt;
-&lt;li&gt;VScode&lt;/li&gt;
+&lt;li&gt;好きなドラマ&lt;ul&gt;
+&lt;li&gt;the big bang theory&lt;/li&gt;
+&lt;li&gt;glee&lt;/li&gt;
+&lt;li&gt;逃げるは恥だが役に立つ&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;おすすめのYouTubeチャンネル&lt;ul&gt;
@@ -50,6 +53,8 @@
 &lt;li&gt;MinuteEarth (様々な話題をわかりやすく)&lt;/li&gt;
 &lt;li&gt;Linguamarina (英語チャンネル)&lt;/li&gt;
 &lt;li&gt;Sarada Herke (離散数学、グラフ理論)&lt;/li&gt;
+&lt;li&gt;中田敦彦のYouTube大学&lt;/li&gt;
+&lt;li&gt;びじゅチューン&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;おすすめのSSG(静的サイトジェネレーター)&lt;ul&gt;
@@ -65,7 +70,9 @@
 &lt;li&gt;おすすめの国、街&lt;/li&gt;
 &lt;li&gt;おすすめのアプリ&lt;ul&gt;
 &lt;li&gt;Nuzzle&lt;/li&gt;
-&lt;li&gt;...&lt;/li&gt;
+&lt;li&gt;Instapaper&lt;/li&gt;
+&lt;li&gt;CouchSurfing&lt;/li&gt;
+&lt;li&gt;Dropbox Paper&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;おすすめのサイト&lt;ul&gt;

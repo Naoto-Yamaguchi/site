@@ -9,13 +9,13 @@ Summary: おすすめ集、好きなもの
 
 # 動機、対象
 人のおすすめを聞いて自分の興味の幅が広がったり、新たな発見をすることがあったので。
-現状適当ですが、随時載せていきます。
+現状かなり適当ですが、随時載せていきます。
 
 # 参考
 
 # 目次
 
-* 好きな本（小説は除く）
+* 好きな本（小説は除く、一般書）
     * サピエンス全史（超おすすめ）
     * ホモデウス（絶対読むべき）
     * 史上最強の哲学入門（わかりやすく哲学を紹介）
@@ -30,28 +30,33 @@ Summary: おすすめ集、好きなもの
     * エピゲノムと生命
     * 嫌われる技術
     * アイデア大全（読書猿さんおすすめ）
-    * マギーキッチンサイエンス（読み途中）
-    * Cooking for geeks (読み途中)
+    * マギーキッチンサイエンス（読み途中,全然読めてない）
+    * Cooking for geeks (読み途中, 全然読めてない)
 * 好きな映画（追記します）
+    * ショーシャンクの空に
     * イミテーションゲーム
     * Begin Again
+    * Onec ダブリンの街角で
     * きっとうまくいく
     * 容疑者Xの献身
     * ゴールデンスランバー
+* 好きな漫画
+    * Death Note
+    * 進撃の巨人
+    * GIANT KILLING
+    * etc...
 * 好きなドラマ
-    * glee
     * the big bang theory
+    * glee
     * 逃げるは恥だが役に立つ
-* 好きな(MarkDown)エディタ
-    * vim
-    * Dropbox Paper
-    * VScode
 * おすすめのYouTubeチャンネル
     * Cultured Meat Future Food Show (細胞農業)
     * [Kurzgesagt - In a Nutshell](https://www.youtube.com/user/Kurzgesagt) (様々な学術分野をわかりやすく)
     * MinuteEarth (様々な話題をわかりやすく)
     * Linguamarina (英語チャンネル)
     * Sarada Herke (離散数学、グラフ理論)
+    * 中田敦彦のYouTube大学
+    * びじゅチューン
 * おすすめのSSG(静的サイトジェネレーター)
     * Hugo
     * Pelican（このサイトもこれで作成）
@@ -61,7 +66,9 @@ Summary: おすすめ集、好きなもの
 * おすすめの国、街
 * おすすめのアプリ
     * Nuzzle
-    * ...
+    * Instapaper
+    * CouchSurfing
+    * Dropbox Paper
 * おすすめのサイト
     * Golden
 
