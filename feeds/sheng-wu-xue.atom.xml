@@ -73,41 +73,61 @@ https://ganjoho.jp/public/dia_tre/knowledge/basic.html&lt;/p&gt;
 &lt;p&gt;がんは伝統的に、由来する組織や細胞の種類によって分類されますひらがなの「がん」は悪性腫瘍全体を示す時に用いられ、漢字の「癌」を用いる時は、上皮細胞から発生するがんに限定されます。&lt;/p&gt;
 &lt;p&gt;発生部位によるがん（悪性腫瘍）の分類&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;癌（上皮腫, cancer, carcinoma）&lt;/li&gt;
-&lt;li&gt;上皮を構成する細胞である上皮細胞から発生するがん&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;癌（上皮腫, cancer, carcinoma）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;上皮を構成する細胞である上皮細胞から発生するがん&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;がん症例の 80%は上皮腫。ガンの発生を助長する物理的・化学的損傷に最も頻繁に晒されるため&lt;/li&gt;
 &lt;li&gt;例として、肺がん、乳がん、胃がん、大腸がん、子宮がん、卵巣がんなど&lt;/li&gt;
 &lt;li&gt;cancer?&lt;/li&gt;
-&lt;li&gt;肉腫&lt;/li&gt;
-&lt;li&gt;結合組織や筋細胞などの非上皮細胞から生じる。&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;肉腫&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;結合組織や筋細胞などの非上皮細胞から生じる。&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;代表的な肉腫には、骨肉腫、軟骨肉腫、横紋筋肉腫、平滑筋肉腫、線維肉腫、脂肪肉腫、血管肉腫があります。&lt;/li&gt;
-&lt;li&gt;造血器から発生するがん&lt;/li&gt;
-&lt;li&gt;血液をつくる臓器である骨髄やリンパ節を造血器といいます。造血器から発生するがんには、白血病(leukemia)、悪性リンパ腫(lymphoma)、骨髄腫等があります。&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;造血器から発生するがん&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;血液をつくる臓器である骨髄やリンパ節を造血器といいます。造血器から発生するがんには、白血病(leukemia)、悪性リンパ腫(lymphoma)、骨髄腫等があります。&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2&gt;がんの原理&lt;/h2&gt;
 &lt;p&gt;がんは細胞が無秩序に増えていってしまう病気なので、細胞が増えるような変異がおこるとがんの発生の原因となる可能性となる。
 そこで、細胞が制御以上に増えるような変化には、遺伝子による変化とエピジェネティックな変化の両方が考えられるが、まずは遺伝子による変化を考える。
-がん発生の原因となる遺伝子
-* 原がん遺伝子(proto-oncogene)への変異
-  * 起こり方（過剰活性型になり方）
-    * 翻訳領域内の欠失または点変異による高活性タンパクの正常生産
-    * 調整領域の変異による正常タンパクの過剰生産
-    * 遺伝子増幅による正常タンパクの過剰生産
-    * 染色体再編成により
-      * 調節DNAが近傍にきて、正常タンパクの過剰生産を起こさせる
-      * 活発に転写される遺伝子との融合が起こり、高活性の融合タンパクを生産（これが融合遺伝子というやつか!?）
-  * 例
-    * Srcタンパク - 細胞の増殖シグナルを制御するタンパク質キナーゼ
-      * 点突然変異により、活性の抑制に必要なC末端を欠いた、常に活性化型のタンパク質キナーゼがコードされる
-    * Mycタンパク - 核内にあって細胞の成長と分裂を刺激する
-      * 遺伝子増幅や染色体転座による強力な調節配列の制御下への移動などにより、正常型の過剰生産でがんにつながる
-    * Rasタンパク - GTPase活性化
-      * ??
-    * EGF (epidermal growth factor、細胞外シグナルタンパクである上皮増殖因子)の受容体
-      * 細胞外領域の一部を欠失して除去されると活性化
-      * 変異受容体は、EGFがなくても活性型二量体を形成し、勝手になる呼び鈴のように、不適切な刺激シグナルをだす。脳腫瘍で最も多い、神経膠芽腫によく見られる。&lt;/p&gt;
+がん発生の原因となる遺伝子&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;がん抑制遺伝子(tumor suppressor gene)への変異&lt;/li&gt;
+&lt;li&gt;原がん遺伝子(proto-oncogene)への変異&lt;/li&gt;
+&lt;li&gt;起こり方（過剰活性型になり方）&lt;ul&gt;
+&lt;li&gt;翻訳領域内の欠失または点変異による高活性タンパクの正常生産&lt;/li&gt;
+&lt;li&gt;調整領域の変異による正常タンパクの過剰生産&lt;/li&gt;
+&lt;li&gt;遺伝子増幅による正常タンパクの過剰生産&lt;/li&gt;
+&lt;li&gt;染色体再編成により&lt;/li&gt;
+&lt;li&gt;調節DNAが近傍にきて、正常タンパクの過剰生産を起こさせる&lt;/li&gt;
+&lt;li&gt;活発に転写される遺伝子との融合が起こり、高活性の融合タンパクを生産（これが融合遺伝子というやつか!?）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;例&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Srcタンパク - 細胞の増殖シグナルを制御するタンパク質キナーゼ&lt;/li&gt;
+&lt;li&gt;点突然変異により、活性の抑制に必要なC末端を欠いた、常に活性化型のタンパク質キナーゼがコードされる&lt;/li&gt;
+&lt;li&gt;Mycタンパク - 核内にあって細胞の成長と分裂を刺激する&lt;/li&gt;
+&lt;li&gt;遺伝子増幅や染色体転座による強力な調節配列の制御下への移動などにより、正常型の過剰生産でがんにつながる&lt;/li&gt;
+&lt;li&gt;Rasタンパク - GTPase活性化&lt;/li&gt;
+&lt;li&gt;??&lt;/li&gt;
+&lt;li&gt;EGF (epidermal growth factor、細胞外シグナルタンパクである上皮増殖因子)の受容体&lt;/li&gt;
+&lt;li&gt;細胞外領域の一部を欠失して除去されると活性化&lt;/li&gt;
+&lt;li&gt;変異受容体は、EGFがなくても活性型二量体を形成し、勝手になる呼び鈴のように、不適切な刺激シグナルをだす。脳腫瘍で最も多い、神経膠芽腫によく見られる。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;がん抑制遺伝子(tumor suppressor gene)への変異&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;起こり方&lt;ul&gt;
 &lt;li&gt;1つめは、点突然変異だったり&lt;/li&gt;
 &lt;li&gt;2つめは、色々&lt;/li&gt;
@@ -131,16 +151,17 @@ https://ganjoho.jp/public/dia_tre/knowledge/basic.html&lt;/p&gt;
 &lt;li&gt;損傷した染色体をもつ細胞を分裂させてがん細胞に特有の遺伝的不安定性をもたらし細胞分裂に伴ってがんを促進する変異を蓄積させる&lt;/li&gt;
 &lt;li&gt;腫瘍によっては抗がん剤や放射線照射への抵抗性を持たせてしまう&lt;/li&gt;
 &lt;li&gt;APC(APC/Cとは違うので注意)&lt;/li&gt;
-&lt;li&gt;BRCA1&lt;/li&gt;
+&lt;li&gt;BRCA1/BRCA2 - 相同組換えにDNA2本鎖切断の修復の際に、Rad51タンパク（原核生物ではRecA）と相互作用する補助タンパク（こっちじゃない気もする、先生のスライドだとこっち、まあこっちでもあるのかな）&lt;/li&gt;
+&lt;li&gt;MLH1 - DNA修復&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;DNA維持遺伝子への変異&lt;/p&gt;
+&lt;p&gt;DNA維持遺伝子（変異誘発遺伝子）への変異（がん抑制遺伝子と被りあり）&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;ゲノムの安定性を保っている遺伝子&lt;/li&gt;
-&lt;li&gt;Mutator(突然変異が生じる確率が正常よりも高くなるような変異)が入ると起こる&lt;/li&gt;
+&lt;li&gt;ゲノムの安定性を保っている遺伝子、特に修復系と関わる&lt;/li&gt;
+&lt;li&gt;この遺伝子に変異（Mutator、突然変異が生じる確率が正常よりも高くなるような変異）が入ると、ゲノムの修復が正常におこなわれなくなり、が原がん遺伝子や、がん抑制遺伝子に変異が入ったりして、がんが発生する。なので関わり方としては間接的ではある。&lt;/li&gt;
 &lt;li&gt;例&lt;ul&gt;
-&lt;li&gt;BRCA1 いや、違う気がする&lt;/li&gt;
+&lt;li&gt;BRCA1/BRCA2 - 相同組換えにDNA2本鎖切断の修復の際に、Rad51タンパク（原核生物ではRecA）と相互作用する補助タンパク。乳がんと卵巣がんの一部のみに関わる。予防的乳房の切除を行ったアンジェリーナ・ジョリーは、このBRCA1という遺伝子に変異があった。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -156,13 +177,13 @@ https://ganjoho.jp/public/dia_tre/knowledge/basic.html&lt;/p&gt;
 おそらくウイルスは、この変異を持った動物細胞に感染し、変異したがん遺伝子を自身のゲノムに組み込んだと思われる。&lt;/p&gt;
 &lt;p&gt;つまり、流れとしては、
 細胞増殖刺激に関わるタンパク質キナーゼをコードする原がん遺伝子c-Srcを動物ゲノムが持っていた（人はまだ知らない）
-→特定の変異でv-Src遺伝子(がん遺伝子)となり、常に活性化型のタンパク質キナーゼをコードするようになった。(まだ知らない)
-→それをその遺伝子を感染したレトロウイルスがGETした
-→ニワトリに感染した
-→人間がそのニワトリを調べてみたら、Srcががん化の原因だとわかった
-→Srcっぽい配列を脊椎動物でも調べてみたら、似たのが見つかった
-→c-Srcが原がん遺伝子で、変異で、v-Srcとなると常に細胞増殖シグナルをだしがん発生に関わることがわかった。
-→これでがんの原因の1つがわかった！&lt;/p&gt;
+→特定の変異でv-Src遺伝子(がん遺伝子)となり、常に活性化型のタンパク質キナーゼをコードするようになった。(まだ知らない)&lt;/p&gt;
+&lt;p&gt;→それをその遺伝子を感染したレトロウイルスがGETした&lt;/p&gt;
+&lt;p&gt;→ニワトリに感染した&lt;/p&gt;
+&lt;p&gt;→人間がそのニワトリを調べてみたら、Srcががん化の原因だとわかった&lt;/p&gt;
+&lt;p&gt;→Srcっぽい配列を脊椎動物でも調べてみたら、似たのが見つかった&lt;/p&gt;
+&lt;p&gt;→c-Srcが原がん遺伝子で、変異で、v-Srcとなると常に細胞増殖シグナルをだしがん発生に関わることがわかった。&lt;/p&gt;
+&lt;p&gt;→これでがんの原因の1つがわかった！&lt;/p&gt;
 &lt;p&gt;これと同様にして、他のがん遺伝子もレトロウイルスから多数同定され、正常動物細胞に存在する原がん遺伝子の発見に繋がった。&lt;/p&gt;
 &lt;h3&gt;原がん遺伝子の発見2 by がん細胞のゲノム導入によるRasの発見&lt;/h3&gt;
 &lt;p&gt;ここまで、レトロウイルスを使ったがん遺伝子の探索だったが、もっと直接的な方法をとる研究者もいた。
@@ -295,99 +316,7 @@ B,Cは潜伏型の慢性的な肝臓の炎症。肝臓ガンの原因の90%
 &lt;/li&gt;
 &lt;li&gt;放射線療法&lt;/li&gt;
 &lt;li&gt;免疫療法&lt;/li&gt;
-&lt;/ul&gt;</content><category term="生物学"></category><category term="解説"></category><category term="授業まとめ"></category></entry><entry><title>エピジェネティクス</title><link href="https://naoto-yamaguchi.github.io/site/epigenetics.html" rel="alternate"></link><published>2019-05-31T00:00:00+09:00</published><updated>2019-05-31T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-05-31:/site/epigenetics.html</id><summary type="html">&lt;p&gt;エピジェネティクスの勉強&lt;/p&gt;</summary><content type="html">&lt;h1&gt;エピジェネティクス&lt;/h1&gt;
-&lt;p&gt;エピジェネティクスとは？&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;DNAの配列に依存せず、かつ細胞分裂を経て引き継がれる遺伝子の機能の変化や仕組み及びその研究
-のことを言います。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;エピトランスクリプトームは？
-細胞分裂を経て引き継がれることはない？&lt;/p&gt;
-&lt;p&gt;ではどういう仕組みで、するのでしょうか？&lt;/p&gt;
-&lt;h1&gt;動機、対象&lt;/h1&gt;
-&lt;p&gt;生物を学び始めた方で、がんについてよく知らないという人。
-Cell 等を参考にしているので、分子細胞生物学的な観点からのがんの説明になります。がんの治療についての知識や、より大衆的な情報を求めている方は、参考に載せた、国立がん研究センター ガン情報サービス (2018)等をご確認下さい。&lt;/p&gt;
-&lt;h1&gt;参考&lt;/h1&gt;
-&lt;p&gt;cell chap20
-国立がん研究センター ガン情報サービス (2018)
-知っておきたいがんの基礎知識
-https://ganjoho.jp/public/dia_tre/knowledge/basic.html&lt;/p&gt;
-&lt;h1&gt;目次&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;エピジェネティクスとは？&lt;/li&gt;
-&lt;li&gt;エピジェネティクス制御の分子機構&lt;ul&gt;
-&lt;li&gt;クロマチン（ヒストン）修飾&lt;/li&gt;
-&lt;li&gt;ゲノムDNAのメチル化&lt;/li&gt;
-&lt;li&gt;機能性RNAによる制御&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;エピジェネティクスに関わる生命現象&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Cell によると&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;がんとは、変異細胞クローンが周囲の細胞を犠牲にして増殖し、ついにはこのクローンが成長し進化し広がって細胞社会全体を破壊する病気である。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img alt="" src="https://paper-attachments.dropbox.com/s_B3B22EDC6578FBAF240D04242C36697E34E90BE462ACB6A923FB4B2FE05F2BDF_1558404445476_image.png"&gt;&lt;/p&gt;
-&lt;p&gt;がん細胞は、子孫細胞に受け継がれる次の 2 つの性質によって定義されます。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;1 　細胞の成長と分裂に関する制御を無視して増殖し、&lt;/p&gt;
-&lt;p&gt;2 　他の細胞の領地に侵入して棲みつく。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;特にこの 2 を、浸潤という。浸潤とは、束縛を逃れて血管やリンパ管に入り、体内の他の場所に転移(metastasis)して、二次腫瘍を形成することであり、がん細胞の本質的な特徴である。
-2 の性質を持たない腫瘍は、良性(benign)腫瘍と呼ばれ、悪影響を及ぼすことはない。腫瘍を切除や破壊することで通常は完治する。
-1 に加えて 2 んの性質を持った腫瘍が悪性(malignant)腫瘍であり、体内に浸潤して細胞組織を破壊する。がん患者の死因の大半は、浸潤（転移）したがん細胞である。また、良性腫瘍が変異によって悪性腫瘍になることもあるので注意が必要である。&lt;/p&gt;
-&lt;h2&gt;がんの分類&lt;/h2&gt;
-&lt;p&gt;がんは伝統的に、由来する組織や細胞の種類によって分類されます。ひらがなの「がん」は悪性腫瘍全体を示す時に用いられ、漢字の「癌」を用いる時は、上皮細胞から発生するがんに限定されます。&lt;/p&gt;
-&lt;p&gt;発生部位によるがん（悪性腫瘍）の分類&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;癌（上皮腫, cancer, carcinoma）&lt;/li&gt;
-&lt;li&gt;上皮を構成する細胞である上皮細胞から発生するがん&lt;/li&gt;
-&lt;li&gt;がん症例の 80%は上皮腫。ガンの発生を助長する物理的・化学的損傷に最も頻繁に晒されるため&lt;/li&gt;
-&lt;li&gt;例として、肺がん、乳がん、胃がん、大腸がん、子宮がん、卵巣がんなど&lt;/li&gt;
-&lt;li&gt;cancer?&lt;/li&gt;
-&lt;li&gt;肉腫&lt;/li&gt;
-&lt;li&gt;結合組織や筋細胞などの非上皮細胞から生じる。&lt;/li&gt;
-&lt;li&gt;代表的な肉腫には、骨肉腫、軟骨肉腫、横紋筋肉腫、平滑筋肉腫、線維肉腫、脂肪肉腫、血管肉腫があります。&lt;/li&gt;
-&lt;li&gt;造血器から発生するがん&lt;/li&gt;
-&lt;li&gt;血液をつくる臓器である骨髄やリンパ節を造血器といいます。造血器から発生するがんには、白血病(leukemia)、悪性リンパ腫(lymphoma)、骨髄腫等があります。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;がんの歴史的発見&lt;/h2&gt;
-&lt;p&gt;ウイルス性家族性&lt;/p&gt;
-&lt;p&gt;がん発生に関わる遺伝子&lt;/p&gt;
-&lt;p&gt;&lt;a id="cancer_treatment"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;がんの治療法&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;標準治療&lt;/li&gt;
-&lt;li&gt;外科手術&lt;/li&gt;
-&lt;li&gt;薬物療法&lt;ul&gt;
-&lt;li&gt;分子標的薬&lt;ul&gt;
-&lt;li&gt;化合物でタンパク質に対して特異性&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;抗体医薬&lt;ul&gt;
-&lt;li&gt;タンパク質のもつ抗体がくっついてタンパク質を分解&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;核酸医薬 (new!)&lt;ul&gt;
-&lt;li&gt;核酸がmRNAに結合して、発現を抑制したり分解することで、病気の原因となるタンパク質を作らせないようにする。分子標的薬や抗体医薬は、タンパク質を分解するのに対して、核酸医薬は、mRNAの段階で分解したり翻訳を抑制するので、タンパク質になる前の段階で止めるイメージ。RNAなどの配列の特異性を生かすことで、より特異的に阻害できる薬を作れるのが、他にはない良い点。例えば、1塩基変異が原因の病気などに対する薬を作れる可能性がある。&lt;/li&gt;
-&lt;li&gt;アンチセンスによるもの&lt;ul&gt;
-&lt;li&gt;標的のmRNAのアンチセンス鎖をいれて、標的のmRNAにくっつき、タンパク質への翻訳を抑制する。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;アプタマーによるもの&lt;ul&gt;
-&lt;li&gt;標的のmRNAに結合する立体構造をもつRNAをいれて、タンパク質への翻訳を抑制する。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;siRNAによるもの
-    標的のmRNAを分解するsiRNAをいれて、mRNAを分解する。
-    最近日本で承認されたものに、アミロイド蓄積遺伝子から発現したmRNAを分解する、siRNAによる薬がある。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;放射線療法&lt;/li&gt;
-&lt;li&gt;免疫療法&lt;/li&gt;
-&lt;/ul&gt;</content><category term="生物学"></category><category term="解説"></category><category term="授業まとめ"></category></entry><entry><title>チューリングパターンとは</title><link href="https://naoto-yamaguchi.github.io/site/turing_pattern.html" rel="alternate"></link><published>2019-04-04T00:00:00+09:00</published><updated>2019-04-04T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-04-04:/site/turing_pattern.html</id><summary type="html">&lt;p&gt;チューリングパターンの解説&lt;br&gt;&lt;img src="https://camo.qiitausercontent.com/58b0457b75d51790ad0c73dc752d27a2434d6a97/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3134313530332f35636465656163632d366132362d343566612d636264332d3539316561316264373238612e6a706567"&gt;&lt;/img&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;動機&lt;/h2&gt;
+&lt;/ul&gt;</content><category term="生物学"></category><category term="解説"></category><category term="授業まとめ"></category></entry><entry><title>チューリングパターンとは</title><link href="https://naoto-yamaguchi.github.io/site/turing_pattern.html" rel="alternate"></link><published>2019-04-04T00:00:00+09:00</published><updated>2019-04-04T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-04-04:/site/turing_pattern.html</id><summary type="html">&lt;p&gt;チューリングパターンの解説&lt;br&gt;&lt;img src="https://camo.qiitausercontent.com/58b0457b75d51790ad0c73dc752d27a2434d6a97/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3134313530332f35636465656163632d366132362d343566612d636264332d3539316561316264373238612e6a706567"&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;動機&lt;/h2&gt;
 &lt;p&gt;システム生物学の授業が書くことになったきっかけです。
 &lt;a href="https://nafoto-z.hatenablog.com/entry/2018/12/07/184450"&gt;hatenablog&lt;/a&gt; に書いたところ数式を上手く表示できず書き途中であったため、こちらで書きました。&lt;a href="https://nafoto-z.hatenablog.com/entry/2018/12/07/184450"&gt;hatenablog&lt;/a&gt; の方に、意外とアクセスがあったので、折角訪問してくださった方にちゃんと見ていただきたいと思いました。&lt;a href="https://nafoto-z.hatenablog.com/entry/2018/12/07/184450"&gt;hatenablog&lt;/a&gt; の方は放置していてひどいです。こちらのサイトも見た目等変なところが多いですがご容赦下さい。そのうち直します。&lt;/p&gt;
 &lt;h2&gt;参考&lt;/h2&gt;
