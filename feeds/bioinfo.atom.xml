@@ -7,7 +7,7 @@
 &lt;h3&gt;Step1: 取得したいデータの ftp パスを手に入れる&lt;/h3&gt;
 &lt;p&gt;NCBI にどういうデータがどういう風に  あるかよくわかっていませんが、とりあえず自分がやった範囲では、ftp パスを用いて、圧縮された fna ファイルを  ダウンロードし、解凍しました。(解凍せずに中身を見ようとして、文字コードエラーが出たので注意！)
 解凍せずに扱おうとしたところ、&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;UnicodeDecodeError: &amp;#39;utf-8&amp;#39; codec can&amp;#39;t decode byte 0x8b in position 1
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;UnicodeDecodeError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;utf-8&amp;#39;&lt;/span&gt; &lt;span class="n"&gt;codec&lt;/span&gt; &lt;span class="n"&gt;can&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt; &lt;span class="n"&gt;decode&lt;/span&gt; &lt;span class="n"&gt;byte&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="n"&gt;x8b&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="k"&gt;position&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 

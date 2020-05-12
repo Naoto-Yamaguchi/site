@@ -22,7 +22,17 @@
     <link rel="shortcut icon" href="/images/favicon_dna.ico" type="image/x-icon">
     <link rel="icon" href="/images/favicon_dna.ico" type="image/x-icon">
 
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-111812315-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
 
 <meta name="author" content="Naoto Yamaguchi" />
 <meta name="description" content="OpenMP環境構築、コマンド等" />
@@ -92,18 +102,18 @@
 また、OpenMPの並列化の際、いくつのスレッドが立っているのか、いくつのコアを使っているのかを調べる必要があったためです。</p>
 <h1>OpenMP環境構築</h1>
 <p>環境構築方法は基本、そのマシンによって異なります。私のMacbookでできた方法を記載しています。</p>
-<div class="highlight"><pre><span></span>gcc4.9以上じゃないとopenmpは使えない模様
-$ brew install llvm
-(llvmはコンパイラ基盤らしい）
-$ open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg
-でできると言われたが、これはfile does not existとなり、/Library/Developer/CommandLineTools/以下にはPackagesというディレクトリがなかった。
-そのため、一旦これはやめて、
-$ brew reinstall gcc
-$ brew install gcc49
-で
-$ g++-4.9 -std=c++11 -fopenmp &lt;ファイル名&gt;.cpp
-とすればできた
-環境は個々人によるので、これでできるかはわかりません
+<div class="highlight"><pre><span></span><span class="n">gcc4</span><span class="p">.</span><span class="mi">9</span><span class="err">以上じゃないと</span><span class="n">openmpは使えない模様</span>
+<span class="err">$</span> <span class="n">brew</span> <span class="n">install</span> <span class="n">llvm</span>
+<span class="p">(</span><span class="n">llvmはコンパイラ基盤らしい</span><span class="err">）</span>
+<span class="err">$</span> <span class="k">open</span> <span class="o">/</span><span class="n">Library</span><span class="o">/</span><span class="n">Developer</span><span class="o">/</span><span class="n">CommandLineTools</span><span class="o">/</span><span class="n">Packages</span><span class="o">/</span><span class="n">macOS_SDK_headers_for_macOS_10</span><span class="p">.</span><span class="mi">14</span><span class="p">.</span><span class="n">pkg</span>
+<span class="err">でできると言われたが、これは</span><span class="n">file</span> <span class="n">does</span> <span class="k">not</span> <span class="n">existとなり</span><span class="err">、</span><span class="o">/</span><span class="n">Library</span><span class="o">/</span><span class="n">Developer</span><span class="o">/</span><span class="n">CommandLineTools</span><span class="o">/</span><span class="err">以下には</span><span class="n">Packagesというディレクトリがなかった</span><span class="err">。</span>
+<span class="err">そのため、一旦これはやめて、</span>
+<span class="err">$</span> <span class="n">brew</span> <span class="n">reinstall</span> <span class="n">gcc</span>
+<span class="err">$</span> <span class="n">brew</span> <span class="n">install</span> <span class="n">gcc49</span>
+<span class="err">で</span>
+<span class="err">$</span> <span class="k">g</span><span class="o">++-</span><span class="mi">4</span><span class="p">.</span><span class="mi">9</span> <span class="o">-</span><span class="n">std</span><span class="o">=</span><span class="k">c</span><span class="o">++</span><span class="mi">11</span> <span class="o">-</span><span class="n">fopenmp</span> <span class="o">&lt;</span><span class="err">ファイル名</span><span class="o">&gt;</span><span class="p">.</span><span class="n">cpp</span>
+<span class="err">とすればできた</span>
+<span class="err">環境は個々人によるので、これでできるかはわかりません</span>
 </pre></div>
 
 

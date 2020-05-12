@@ -4,18 +4,18 @@
 また、OpenMPの並列化の際、いくつのスレッドが立っているのか、いくつのコアを使っているのかを調べる必要があったためです。&lt;/p&gt;
 &lt;h1&gt;OpenMP環境構築&lt;/h1&gt;
 &lt;p&gt;環境構築方法は基本、そのマシンによって異なります。私のMacbookでできた方法を記載しています。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;gcc4.9以上じゃないとopenmpは使えない模様
-$ brew install llvm
-(llvmはコンパイラ基盤らしい）
-$ open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg
-でできると言われたが、これはfile does not existとなり、/Library/Developer/CommandLineTools/以下にはPackagesというディレクトリがなかった。
-そのため、一旦これはやめて、
-$ brew reinstall gcc
-$ brew install gcc49
-で
-$ g++-4.9 -std=c++11 -fopenmp &amp;lt;ファイル名&amp;gt;.cpp
-とすればできた
-環境は個々人によるので、これでできるかはわかりません
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;gcc4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="err"&gt;以上じゃないと&lt;/span&gt;&lt;span class="n"&gt;openmpは使えない模様&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;brew&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;llvm&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;llvmはコンパイラ基盤らしい&lt;/span&gt;&lt;span class="err"&gt;）&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="k"&gt;open&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Library&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Developer&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;CommandLineTools&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Packages&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;macOS_SDK_headers_for_macOS_10&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pkg&lt;/span&gt;
+&lt;span class="err"&gt;でできると言われたが、これは&lt;/span&gt;&lt;span class="n"&gt;file&lt;/span&gt; &lt;span class="n"&gt;does&lt;/span&gt; &lt;span class="k"&gt;not&lt;/span&gt; &lt;span class="n"&gt;existとなり&lt;/span&gt;&lt;span class="err"&gt;、&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Library&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Developer&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;CommandLineTools&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="err"&gt;以下には&lt;/span&gt;&lt;span class="n"&gt;Packagesというディレクトリがなかった&lt;/span&gt;&lt;span class="err"&gt;。&lt;/span&gt;
+&lt;span class="err"&gt;そのため、一旦これはやめて、&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;brew&lt;/span&gt; &lt;span class="n"&gt;reinstall&lt;/span&gt; &lt;span class="n"&gt;gcc&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;brew&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;gcc49&lt;/span&gt;
+&lt;span class="err"&gt;で&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="k"&gt;g&lt;/span&gt;&lt;span class="o"&gt;++-&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;c&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="mi"&gt;11&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fopenmp&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="err"&gt;ファイル名&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cpp&lt;/span&gt;
+&lt;span class="err"&gt;とすればできた&lt;/span&gt;
+&lt;span class="err"&gt;環境は個々人によるので、これでできるかはわかりません&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 

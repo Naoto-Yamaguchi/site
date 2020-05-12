@@ -22,7 +22,17 @@
     <link rel="shortcut icon" href="/images/favicon_dna.ico" type="image/x-icon">
     <link rel="icon" href="/images/favicon_dna.ico" type="image/x-icon">
 
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-111812315-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
 
 <meta name="author" content="Naoto Yamaguchi" />
 <meta name="description" content="ゲノムデータ取得" />
@@ -96,7 +106,7 @@
 <h3>Step1: 取得したいデータの ftp パスを手に入れる</h3>
 <p>NCBI にどういうデータがどういう風に  あるかよくわかっていませんが、とりあえず自分がやった範囲では、ftp パスを用いて、圧縮された fna ファイルを  ダウンロードし、解凍しました。(解凍せずに中身を見ようとして、文字コードエラーが出たので注意！)
 解凍せずに扱おうとしたところ、</p>
-<div class="highlight"><pre><span></span>UnicodeDecodeError: &#39;utf-8&#39; codec can&#39;t decode byte 0x8b in position 1
+<div class="highlight"><pre><span></span><span class="n">UnicodeDecodeError</span><span class="p">:</span> <span class="s1">&#39;utf-8&#39;</span> <span class="n">codec</span> <span class="n">can</span><span class="err">&#39;</span><span class="n">t</span> <span class="n">decode</span> <span class="n">byte</span> <span class="mi">0</span><span class="n">x8b</span> <span class="k">in</span> <span class="k">position</span> <span class="mi">1</span>
 </pre></div>
 
 

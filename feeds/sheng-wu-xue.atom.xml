@@ -316,7 +316,80 @@ B,Cは潜伏型の慢性的な肝臓の炎症。肝臓ガンの原因の90%
 &lt;/li&gt;
 &lt;li&gt;放射線療法&lt;/li&gt;
 &lt;li&gt;免疫療法&lt;/li&gt;
-&lt;/ul&gt;</content><category term="生物学"></category><category term="解説"></category><category term="授業まとめ"></category></entry><entry><title>チューリングパターンとは</title><link href="https://naoto-yamaguchi.github.io/site/turing_pattern.html" rel="alternate"></link><published>2019-04-04T00:00:00+09:00</published><updated>2019-04-04T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-04-04:/site/turing_pattern.html</id><summary type="html">&lt;p&gt;チューリングパターンの解説&lt;br&gt;&lt;img src="https://camo.qiitausercontent.com/58b0457b75d51790ad0c73dc752d27a2434d6a97/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3134313530332f35636465656163632d366132362d343566612d636264332d3539316561316264373238612e6a706567"&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;動機&lt;/h2&gt;
+&lt;/ul&gt;</content><category term="生物学"></category><category term="解説"></category><category term="授業まとめ"></category></entry><entry><title>がん</title><link href="https://naoto-yamaguchi.github.io/site/molecular%20evolution.html" rel="alternate"></link><published>2019-05-31T00:00:00+09:00</published><updated>2019-05-31T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-05-31:/site/molecular evolution.html</id><summary type="html">&lt;p&gt;がんの仕組みの解説&lt;/p&gt;</summary><content type="html">&lt;h1&gt;参考文献&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;[1] カール・ジンマー（著）/ダグラス・J・エムレン（著）『BLUE BACKS 進化の教科書 第3巻 系統樹や生態から見た進化』&lt;/li&gt;
+&lt;li&gt;[2] 長田直樹（著）『進化で読み解く バイオインフォマティクス入門』&lt;/li&gt;
+&lt;li&gt;[3] Ziheng Yang（著）『分子系統学への統計的アプローチ　計算分子進化学』&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;様々な制約の中での推測&lt;/p&gt;
+&lt;h1&gt;手法 [1]&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;最節約法 ... 最もシンプルな答えが最も良い答え！&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;様々な分類群の形質に合うように系統樹を作る→候補はたくさんある→最小限必要な形質の進化的変化の回数を数えて一番形質変化の回数が少ない系統樹を再節約的な系統樹とする。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ホモプラシーがあると、最節約的でない系統樹を最節約的と見誤ることがあるので、統計的手法を用いる。ゲノムの中で系統情報を持つと思われる部分に重み付けをして、ホモぷらし＝が起きやすい部分の影響を減らす。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;エクソンは、DNAの中でタンパク質をコードしている領域なので強い純化淘汰を受け進化速度が遅いため（進化に方向性がありその変化速度が遅いので）、ホモプラシーが少なくなり系統樹復元に有用となる。&lt;/li&gt;
+&lt;li&gt;イントロンや非コード領域は逆でホモプラシーの影響を減らしたいときは重みを軽くする。しかし、最近分かれた種の系統樹を作るときは、変化の速い領域の方が多くの情報が含まれて有用となる。&lt;/li&gt;
+&lt;li&gt;最節約的な系統樹は1つに決まる時もあれば、複数の時もある。統計的な評価は、ブートストラップ法などで行う。&lt;/li&gt;
+&lt;li&gt;ブートストラップ法は、完全なデータセットからランダムにデータを抽出し、その部分データに対して系統樹を作成することを繰り返す。この系統樹の類似性の高さが重要。また、これにより1つの系統樹における各分岐点について信頼性を評価することができる。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;距離行列法 ... 異なる種の配列を揃えて並べ、配列の相違度を表す進化距離（遺伝距離）の行列に変換する。そして配列が似ている種をクレードとしてまとめる。進化距離を系統樹の枝の長さで表す。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;距離行列法の1つとして、最も進化距離（遺伝距離）が近い2種をペアにしてまとめていく方法が近隣結合法である。&lt;/li&gt;
+&lt;li&gt;最終的に全体の枝の長さが最短になるような系統樹が得られることが期待される。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;実際には、DNAの全ての塩基が同じように蓄積するわけではない。この変化速度の情報を追加情報として利用できるのが、以下の方法になる。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;最尤法 ... 系統推定で最も強力で広く普及した方法。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;分子進化モデルが必要。例えば、塩基置換率は一定ではなく、トランジション（プリン間AG, ピリミジン間CT）はトランスバージョン（プリンとピリミジンの変換）より起こりやすいといった確率モデル。遺伝子や領域ごとにも異なるモデルを用いる。&lt;/li&gt;
+&lt;li&gt;分子進化モデルが決まれば、ある系統樹がデータによってどれくらい強く支持されているのかを計算できる。具体的には、データの塩基配列が生じる確率（尤度）を系統樹ごとに求めて比較する。尤度が最大の系統樹を選べば、データと分子進化モデルに最もあった系統樹を決めることができる。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ベイズ法 ... ある分子進化モデルの下で、データが実現した前提で最も確率の高い系統樹を探す方法。まずは系統樹を1つ用意して、その樹形に小さな変更を加える。新たな樹形をデータと進化モデルを使って評価してから、再び樹形変化させる。この過程を何度も繰り返して、様々な系統樹の確率分布を得る。最終的には最も確率の高い系統樹が選ばれる。　&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;塩基置換のモデル&lt;/h1&gt;
+&lt;h2&gt;進化距離 [3]&lt;/h2&gt;
+&lt;p&gt;2つの配列間の距離は、サイトあたりの塩基置換数の期待値として定義される。その2つの配列で起こった置換数をサイト数で割ったもの。
+最も単純な距離の尺度は、2つの配列間で差異のあるサイトの割合であり、p距離と呼ばれる。
+遠い関係の配列の間では、このあたいは実際に生じた置換の数を過小に評価してしまう。例えば、多重置換、平行置換、収斂置換、復帰置換などがあげられる。
+p &amp;lt; 5% くらいならpは利用可能とされている。&lt;/p&gt;
+&lt;p&gt;そこでよく用いられるのが、連続時間マルコフ連鎖モデル。&lt;/p&gt;
+&lt;p&gt;塩基置換速度行列から、対角化可能であれば、数値計算によって適切な塩基遷移確率行列を求めることができる。&lt;/p&gt;
+&lt;h3&gt;ジュークス-カンターモデル [2]&lt;/h3&gt;
+&lt;p&gt;塩基置換速度は全ての塩基間で同じであると仮定したモデル。
+ジュークス-カンター距離dは
+2つの配列で違っているサイトの数をサイト数で割った値Dを観測値として、&lt;/p&gt;
+&lt;p&gt;$ d = -3/4 log(1 - 4/3 D) $&lt;/p&gt;
+&lt;p&gt;として求められる。
+観察データが1/4以下の一致率をとると、対数の中が負値になり、進化距離が計算できなくなる。&lt;/p&gt;
+&lt;h3&gt;木村の2パラメーターモデル [2]&lt;/h3&gt;
+&lt;p&gt;トランジッションとトランスバージョンで塩基置換速度が異なることを考慮に入れたモデル。
+木村の距離dは、
+トランジッションで異なっているサイトの割合をS、トランスバージョンで異なっているサイトの割合をVとすると、&lt;/p&gt;
+&lt;h3&gt;塩基組成の偏りを考慮に入れたモデル [2]&lt;/h3&gt;
+&lt;p&gt;塩基配列のそれぞれの塩基の出現頻度が1/4であるというのは少々非現実的。
+平衡状態に置ける塩基の頻度を考える。
+長谷川・岸野・矢野モデル(HKY model)
+現実的ではないが、数学的な取り扱いを簡単にするために、時間的可逆性を担保している。
+さらに、この時間的可逆性を保った上で最も多くの変数を含む塩基置換モデルは、一般時間可逆モデル(general time reversible, GTR)と呼ばれる。
+GTRは、配列進化の確率論的アプローチでしばしば用いられる。
+これらの複雑なモデルでは、進化距離を式の形で求めるのが困難であるので、数値的に各パラメータを推定し、進化距離を求めることが多い。&lt;/p&gt;
+&lt;h3&gt;サイトによる置換速度の違い&lt;/h3&gt;
+&lt;p&gt;これまでは、サイトごとの置換速度は一定と仮定されていたが、領域によって塩基配列の置換速度に差があることはよく知られている。例えば、CpG配列のCは、変異率が他に比べてとても高い。様々な手法が提案されてきたが、現在、サイトごとの置換速度のばらつきをガンマ分布を用いて表現するモデルがとく用いられている。&lt;/p&gt;</content><category term="生物学"></category><category term="解説"></category><category term="授業まとめ"></category></entry><entry><title>チューリングパターンとは</title><link href="https://naoto-yamaguchi.github.io/site/turing_pattern.html" rel="alternate"></link><published>2019-04-04T00:00:00+09:00</published><updated>2019-04-04T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-04-04:/site/turing_pattern.html</id><summary type="html">&lt;p&gt;チューリングパターンの解説&lt;br&gt;&lt;img src="https://camo.qiitausercontent.com/58b0457b75d51790ad0c73dc752d27a2434d6a97/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3134313530332f35636465656163632d366132362d343566612d636264332d3539316561316264373238612e6a706567"&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;動機&lt;/h2&gt;
 &lt;p&gt;システム生物学の授業が書くことになったきっかけです。
 &lt;a href="https://nafoto-z.hatenablog.com/entry/2018/12/07/184450"&gt;hatenablog&lt;/a&gt; に書いたところ数式を上手く表示できず書き途中であったため、こちらで書きました。&lt;a href="https://nafoto-z.hatenablog.com/entry/2018/12/07/184450"&gt;hatenablog&lt;/a&gt; の方に、意外とアクセスがあったので、折角訪問してくださった方にちゃんと見ていただきたいと思いました。&lt;a href="https://nafoto-z.hatenablog.com/entry/2018/12/07/184450"&gt;hatenablog&lt;/a&gt; の方は放置していてひどいです。こちらのサイトも見た目等変なところが多いですがご容赦下さい。そのうち直します。&lt;/p&gt;
 &lt;h2&gt;参考&lt;/h2&gt;
