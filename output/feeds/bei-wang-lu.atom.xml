@@ -10,7 +10,7 @@
 * RDSインスタンスのセキュリティグループで、MySQLポート(3306)を開放している（できる）&lt;/p&gt;
 &lt;p&gt;ここでは、目的のEC2インスタンスとRDSインスタンスが作成してあることは前提とします。作成については他の記事を参照してください。&lt;/p&gt;
 &lt;p&gt;EC2インスタンスからRDSインスタンスへは、&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mysql -h [ENDPOINT] -P 3306 -u [Username] –p [Name]
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;mysql&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;ENDPOINT&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;P&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;3306&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;Username&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;–&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;Name&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -48,12 +48,12 @@
 &lt;p&gt;ECSインスタンス上にあるデータをRDSのDBに投入する方法です。
 以下の記事を参考にしました。
 RDSインスタンスにログインした状態で、データベースを指定し(use database_name)、&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;LOAD DATA LOCAL INFILE &amp;#39;sample.csv&amp;#39;
-REPLACE INTO TABLE database_name
-CHARACTER SET utf8
-FIELDS TERMINATED BY &amp;#39;,&amp;#39;
-OPTIONALLY ENCLOSED BY &amp;#39;&amp;quot;&amp;#39;
-IGNORE 1 LINES;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;LOAD&lt;/span&gt; &lt;span class="k"&gt;DATA&lt;/span&gt; &lt;span class="k"&gt;LOCAL&lt;/span&gt; &lt;span class="n"&gt;INFILE&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;sample.csv&amp;#39;&lt;/span&gt;
+&lt;span class="k"&gt;REPLACE&lt;/span&gt; &lt;span class="k"&gt;INTO&lt;/span&gt; &lt;span class="k"&gt;TABLE&lt;/span&gt; &lt;span class="n"&gt;database_name&lt;/span&gt;
+&lt;span class="nb"&gt;CHARACTER&lt;/span&gt; &lt;span class="k"&gt;SET&lt;/span&gt; &lt;span class="n"&gt;utf8&lt;/span&gt;
+&lt;span class="n"&gt;FIELDS&lt;/span&gt; &lt;span class="n"&gt;TERMINATED&lt;/span&gt; &lt;span class="k"&gt;BY&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;,&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;OPTIONALLY&lt;/span&gt; &lt;span class="n"&gt;ENCLOSED&lt;/span&gt; &lt;span class="k"&gt;BY&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;quot;&amp;#39;&lt;/span&gt;
+&lt;span class="k"&gt;IGNORE&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="n"&gt;LINES&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 

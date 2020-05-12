@@ -11,15 +11,15 @@ DockerでCentOSコンテナを立ち上げる&lt;/p&gt;
 と出たが、これはgccがインストールされていなかったからだった。&lt;a href="https://qiita.com/tmak_tsukamoto/items/b1c1f04d2a2ac527887c"&gt;以下&lt;/a&gt;に記載の同様のエラーだったため、gccのインストールで解決&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://blog.sioyaki.com/entry/2017/04/10/101610"&gt;g++をyumでインストール&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;gdb使ってみたら&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(gdb) b main
-Breakpoint 1 at 0x4007e8: file a.cpp, line 6.
-(gdb) run
-Starting program: /root/01/a.out
-warning: no loadable sections found in added symbol-file system-supplied DSO at 0x7ffff7ffa000
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;gdb&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;
+&lt;span class="n"&gt;Breakpoint&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="k"&gt;at&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="n"&gt;x4007e8&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;file&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cpp&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;gdb&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt;
+&lt;span class="n"&gt;Starting&lt;/span&gt; &lt;span class="n"&gt;program&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;01&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="k"&gt;out&lt;/span&gt;
+&lt;span class="n"&gt;warning&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="k"&gt;no&lt;/span&gt; &lt;span class="n"&gt;loadable&lt;/span&gt; &lt;span class="n"&gt;sections&lt;/span&gt; &lt;span class="k"&gt;found&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="n"&gt;added&lt;/span&gt; &lt;span class="n"&gt;symbol&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;file&lt;/span&gt; &lt;span class="k"&gt;system&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;supplied&lt;/span&gt; &lt;span class="n"&gt;DSO&lt;/span&gt; &lt;span class="k"&gt;at&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="n"&gt;x7ffff7ffa000&lt;/span&gt;
 
-Breakpoint 1, main () at a.cpp:6
-6                cout &amp;lt;&amp;lt; 1 &amp;lt;&amp;lt; endl;
-Missing separate debuginfos, use: debuginfo-install glibc-2.12-1.212.el6_10.3.x86_64 libgcc-4.4.7-23.el6.x86_64 libstdc++-4.4.7-23.el6.x86_64
+&lt;span class="n"&gt;Breakpoint&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="k"&gt;at&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cpp&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;
+&lt;span class="mi"&gt;6&lt;/span&gt;                &lt;span class="n"&gt;cout&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;endl&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="n"&gt;Missing&lt;/span&gt; &lt;span class="n"&gt;separate&lt;/span&gt; &lt;span class="n"&gt;debuginfos&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;use&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;debuginfo&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;glibc&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;212&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;el6_10&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x86_64&lt;/span&gt; &lt;span class="n"&gt;libgcc&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;23&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;el6&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x86_64&lt;/span&gt; &lt;span class="n"&gt;libstdc&lt;/span&gt;&lt;span class="o"&gt;++-&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;23&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;el6&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x86_64&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -37,14 +37,14 @@ Missing separate debuginfos, use: debuginfo-install glibc-2.12-1.212.el6_10.3.x8
 &lt;ul&gt;
 &lt;li&gt;centosイメージのダウンロード&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;docker pull centos
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;docker&lt;/span&gt; &lt;span class="n"&gt;pull&lt;/span&gt; &lt;span class="n"&gt;centos&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;コンテナの起動&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;docker run -d --cap-add=SYS_PTRACE --security-opt=&amp;quot;seccomp=unconfined&amp;quot; --name gdb centos:centos6.9 /bin/bash
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;docker&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt; &lt;span class="c1"&gt;--cap-add=SYS_PTRACE --security-opt=&amp;quot;seccomp=unconfined&amp;quot; --name gdb centos:centos6.9 /bin/bash&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -52,12 +52,12 @@ Missing separate debuginfos, use: debuginfo-install glibc-2.12-1.212.el6_10.3.x8
 &lt;ul&gt;
 &lt;li&gt;起動しているコンテナの確認&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;docker ps
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;docker&lt;/span&gt; &lt;span class="n"&gt;ps&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;停止しているものも確認したい場合は&lt;code&gt;-a&lt;/code&gt;をつける&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;docker exec -it gdb /bin/bash
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;docker&lt;/span&gt; &lt;span class="k"&gt;exec&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;it&lt;/span&gt; &lt;span class="nv"&gt;gdb&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;bash&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -66,7 +66,7 @@ Missing separate debuginfos, use: debuginfo-install glibc-2.12-1.212.el6_10.3.x8
 &lt;ul&gt;
 &lt;li&gt;gdbのインストール&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;yum install gdb
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;yum&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;gdb&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -128,15 +128,15 @@ $ run
 
 
 &lt;p&gt;したところ、&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    (gdb) b main
-    Breakpoint 1 at 0x4007e8: file a.cpp, line 6.
-    (gdb) run
-    Starting program: /root/01/a.out
-    warning: no loadable sections found in added symbol-file system-supplied DSO at 0x7ffff7ffa000
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;gdb&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;
+    &lt;span class="n"&gt;Breakpoint&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="k"&gt;at&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="n"&gt;x4007e8&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;file&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cpp&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;gdb&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt;
+    &lt;span class="n"&gt;Starting&lt;/span&gt; &lt;span class="n"&gt;program&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;01&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="k"&gt;out&lt;/span&gt;
+    &lt;span class="n"&gt;warning&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="k"&gt;no&lt;/span&gt; &lt;span class="n"&gt;loadable&lt;/span&gt; &lt;span class="n"&gt;sections&lt;/span&gt; &lt;span class="k"&gt;found&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="n"&gt;added&lt;/span&gt; &lt;span class="n"&gt;symbol&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;file&lt;/span&gt; &lt;span class="k"&gt;system&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;supplied&lt;/span&gt; &lt;span class="n"&gt;DSO&lt;/span&gt; &lt;span class="k"&gt;at&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="n"&gt;x7ffff7ffa000&lt;/span&gt;
 
-    Breakpoint 1, main () at a.cpp:6
-    6                cout &amp;lt;&amp;lt; 1 &amp;lt;&amp;lt; endl;
-    Missing separate debuginfos, use: debuginfo-install glibc-2.12-1.212.el6_10.3.x86_64 libgcc-4.4.7-23.el6.x86_64 libstdc++-4.4.7-23.el6.x86_64
+    &lt;span class="n"&gt;Breakpoint&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="k"&gt;at&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cpp&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;
+    &lt;span class="mi"&gt;6&lt;/span&gt;                &lt;span class="n"&gt;cout&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;endl&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;Missing&lt;/span&gt; &lt;span class="n"&gt;separate&lt;/span&gt; &lt;span class="n"&gt;debuginfos&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;use&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;debuginfo&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;glibc&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;212&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;el6_10&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x86_64&lt;/span&gt; &lt;span class="n"&gt;libgcc&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;23&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;el6&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x86_64&lt;/span&gt; &lt;span class="n"&gt;libstdc&lt;/span&gt;&lt;span class="o"&gt;++-&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;23&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;el6&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x86_64&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -165,20 +165,20 @@ Docker Hubにimageを公開すれば他の人も利用可能になります。�
 &lt;ul&gt;
 &lt;li&gt;commitしたgdbenvというイメージから、gdbenvという名前のコンテナを起動して、bashを動かした。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ docker run --name gdbenv -it -d gdbenv /bin/bash
-$ docker &lt;span class="nb"&gt;exec&lt;/span&gt; -it gdbenv /bin/bash
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nv"&gt;docker&lt;/span&gt; &lt;span class="nv"&gt;run&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nv"&gt;name&lt;/span&gt; &lt;span class="nv"&gt;gdbenv&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;it&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;d&lt;/span&gt; &lt;span class="nv"&gt;gdbenv&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;bash&lt;/span&gt;
+$ &lt;span class="nv"&gt;docker&lt;/span&gt; &lt;span class="k"&gt;exec&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;it&lt;/span&gt; &lt;span class="nv"&gt;gdbenv&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;bash&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;これでgdbででバックしようとしたら、&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(gdb) b main
-Breakpoint 1 at 0x4007e8: file a.cpp, line 6.
-(gdb) run
-Starting program: /root/01/a.out
-warning: Error disabling address space randomization: Operation not permitted
-1
-2
-During startup program exited normally.
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;gdb&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;
+&lt;span class="n"&gt;Breakpoint&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="k"&gt;at&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="n"&gt;x4007e8&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;file&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cpp&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;gdb&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt;
+&lt;span class="n"&gt;Starting&lt;/span&gt; &lt;span class="n"&gt;program&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;01&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="k"&gt;out&lt;/span&gt;
+&lt;span class="n"&gt;warning&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Error&lt;/span&gt; &lt;span class="n"&gt;disabling&lt;/span&gt; &lt;span class="n"&gt;address&lt;/span&gt; &lt;span class="k"&gt;space&lt;/span&gt; &lt;span class="n"&gt;randomization&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="k"&gt;Operation&lt;/span&gt; &lt;span class="k"&gt;not&lt;/span&gt; &lt;span class="n"&gt;permitted&lt;/span&gt;
+&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="mi"&gt;2&lt;/span&gt;
+&lt;span class="n"&gt;During&lt;/span&gt; &lt;span class="n"&gt;startup&lt;/span&gt; &lt;span class="n"&gt;program&lt;/span&gt; &lt;span class="n"&gt;exited&lt;/span&gt; &lt;span class="n"&gt;normally&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -188,8 +188,8 @@ gdbはシステムコールを使ってデバッグしているので、Docker�
 * --security-opt="seccomp=unconfined": コンテナ内からのシステムコールの発行に制限を掛けない
 の2つのオプションを追加する必要があるようです。（初めのCentOSのイメージからコンテナ起動するときに使ったコマンドと同じ。てっきり忘れていました。
 &lt;a href="https://www.cyamax.com/entry/2018/02/09/070000"&gt;こちら&lt;/a&gt;を参考にさせていただきました。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ docker run --cap-add&lt;span class="o"&gt;=&lt;/span&gt;SYS_PTRACE --security-opt&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;seccomp=unconfined&amp;quot;&lt;/span&gt; --name gdbenv -it -d gdbenv /bin/bash
-$ docker &lt;span class="nb"&gt;exec&lt;/span&gt; -it gdbenv /bin/bash
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nv"&gt;docker&lt;/span&gt; &lt;span class="nv"&gt;run&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nv"&gt;cap&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;add&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;SYS_PTRACE&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nv"&gt;security&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;opt&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;seccomp=unconfined&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nv"&gt;name&lt;/span&gt; &lt;span class="nv"&gt;gdbenv&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;it&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;d&lt;/span&gt; &lt;span class="nv"&gt;gdbenv&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;bash&lt;/span&gt;
+$ &lt;span class="nv"&gt;docker&lt;/span&gt; &lt;span class="k"&gt;exec&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;it&lt;/span&gt; &lt;span class="nv"&gt;gdbenv&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;bash&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
