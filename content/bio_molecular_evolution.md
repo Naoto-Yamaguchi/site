@@ -2,7 +2,7 @@ Title: がん
 Date: 2019-05-31
 Category: 生物学
 Tags: 生物学, 解説, 授業まとめ
-Slug: cancer
+Slug: molecular evolution
 Authors: Naoto Yamaguchi
 Summary: がんの仕組みの解説
 

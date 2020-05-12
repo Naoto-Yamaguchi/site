@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/font-awesome.min.css">
+
+
+
+
+    <link rel="shortcut icon" href="/images/favicon_dna.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon_dna.ico" type="image/x-icon">
+
+
+
+<meta name="author" content="Naoto Yamaguchi" />
+<meta name="description" content="がんの仕組みの解説" />
+<meta name="keywords" content="生物学, 解説, 授業まとめ">
+
+<meta property="og:site_name" content="nafoto'z_blog"/>
+<meta property="og:title" content="がん"/>
+<meta property="og:description" content="がんの仕組みの解説"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="/molecular evolution.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2019-05-31 00:00:00+09:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="/author/naoto-yamaguchi.html">
+<meta property="article:section" content="生物学"/>
+<meta property="article:tag" content="生物学"/>
+<meta property="article:tag" content="解説"/>
+<meta property="article:tag" content="授業まとめ"/>
+<meta property="og:image" content="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875512584_profile_dubai.jpg">
+
+  <title>nafoto'z_blog &ndash; がん</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="">
+        <img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875512584_profile_dubai.jpg" alt="" title="">
+      </a>
+      <h1><a href=""></a></h1>
+
+
+      <nav>
+        <ul class="list">
+
+          <li><a href="" target="_blank">Home</a></li>
+          <li><a href="http://twitter.com/nafoto_z" target="_blank">Twitter</a></li>
+          <li><a href="http://tatekaetaro.work/" target="_blank">立替たろう</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-You can add links in your config file" href="#" target="_blank"><i class="fa fa-You can add links in your config file"></i></a></li>
+        <li><a class="sc-Another social link" href="#" target="_blank"><i class="fa fa-Another social link"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="molecular evolution">がん</h1>
+    <p>
+          Posted on 金 31 5月 2019 in <a href="/category/sheng-wu-xue.html">生物学</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <h1>参考文献</h1>
+<ul>
+<li>[1] カール・ジンマー（著）/ダグラス・J・エムレン（著）『BLUE BACKS 進化の教科書 第3巻 系統樹や生態から見た進化』</li>
+<li>[2] 長田直樹（著）『進化で読み解く バイオインフォマティクス入門』</li>
+<li>[3] Ziheng Yang（著）『分子系統学への統計的アプローチ　計算分子進化学』</li>
+</ul>
+<p>様々な制約の中での推測</p>
+<h1>手法 [1]</h1>
+<ul>
+<li>
+<p>最節約法 ... 最もシンプルな答えが最も良い答え！</p>
+<ul>
+<li>
+<p>様々な分類群の形質に合うように系統樹を作る→候補はたくさんある→最小限必要な形質の進化的変化の回数を数えて一番形質変化の回数が少ない系統樹を再節約的な系統樹とする。</p>
+</li>
+<li>
+<p>ホモプラシーがあると、最節約的でない系統樹を最節約的と見誤ることがあるので、統計的手法を用いる。ゲノムの中で系統情報を持つと思われる部分に重み付けをして、ホモぷらし＝が起きやすい部分の影響を減らす。</p>
+</li>
+<li>エクソンは、DNAの中でタンパク質をコードしている領域なので強い純化淘汰を受け進化速度が遅いため（進化に方向性がありその変化速度が遅いので）、ホモプラシーが少なくなり系統樹復元に有用となる。</li>
+<li>イントロンや非コード領域は逆でホモプラシーの影響を減らしたいときは重みを軽くする。しかし、最近分かれた種の系統樹を作るときは、変化の速い領域の方が多くの情報が含まれて有用となる。</li>
+<li>最節約的な系統樹は1つに決まる時もあれば、複数の時もある。統計的な評価は、ブートストラップ法などで行う。</li>
+<li>ブートストラップ法は、完全なデータセットからランダムにデータを抽出し、その部分データに対して系統樹を作成することを繰り返す。この系統樹の類似性の高さが重要。また、これにより1つの系統樹における各分岐点について信頼性を評価することができる。</li>
+</ul>
+</li>
+<li>
+<p>距離行列法 ... 異なる種の配列を揃えて並べ、配列の相違度を表す進化距離（遺伝距離）の行列に変換する。そして配列が似ている種をクレードとしてまとめる。進化距離を系統樹の枝の長さで表す。</p>
+<ul>
+<li>距離行列法の1つとして、最も進化距離（遺伝距離）が近い2種をペアにしてまとめていく方法が近隣結合法である。</li>
+<li>最終的に全体の枝の長さが最短になるような系統樹が得られることが期待される。</li>
+</ul>
+</li>
+</ul>
+<p>実際には、DNAの全ての塩基が同じように蓄積するわけではない。この変化速度の情報を追加情報として利用できるのが、以下の方法になる。</p>
+<ul>
+<li>
+<p>最尤法 ... 系統推定で最も強力で広く普及した方法。</p>
+<ul>
+<li>分子進化モデルが必要。例えば、塩基置換率は一定ではなく、トランジション（プリン間AG, ピリミジン間CT）はトランスバージョン（プリンとピリミジンの変換）より起こりやすいといった確率モデル。遺伝子や領域ごとにも異なるモデルを用いる。</li>
+<li>分子進化モデルが決まれば、ある系統樹がデータによってどれくらい強く支持されているのかを計算できる。具体的には、データの塩基配列が生じる確率（尤度）を系統樹ごとに求めて比較する。尤度が最大の系統樹を選べば、データと分子進化モデルに最もあった系統樹を決めることができる。</li>
+</ul>
+</li>
+<li>
+<p>ベイズ法 ... ある分子進化モデルの下で、データが実現した前提で最も確率の高い系統樹を探す方法。まずは系統樹を1つ用意して、その樹形に小さな変更を加える。新たな樹形をデータと進化モデルを使って評価してから、再び樹形変化させる。この過程を何度も繰り返して、様々な系統樹の確率分布を得る。最終的には最も確率の高い系統樹が選ばれる。　</p>
+</li>
+</ul>
+<h1>塩基置換のモデル</h1>
+<h2>進化距離 [3]</h2>
+<p>2つの配列間の距離は、サイトあたりの塩基置換数の期待値として定義される。その2つの配列で起こった置換数をサイト数で割ったもの。
+最も単純な距離の尺度は、2つの配列間で差異のあるサイトの割合であり、p距離と呼ばれる。
+遠い関係の配列の間では、このあたいは実際に生じた置換の数を過小に評価してしまう。例えば、多重置換、平行置換、収斂置換、復帰置換などがあげられる。
+p &lt; 5% くらいならpは利用可能とされている。</p>
+<p>そこでよく用いられるのが、連続時間マルコフ連鎖モデル。</p>
+<p>塩基置換速度行列から、対角化可能であれば、数値計算によって適切な塩基遷移確率行列を求めることができる。</p>
+<h3>ジュークス-カンターモデル [2]</h3>
+<p>塩基置換速度は全ての塩基間で同じであると仮定したモデル。
+ジュークス-カンター距離dは
+2つの配列で違っているサイトの数をサイト数で割った値Dを観測値として、</p>
+<p>$ d = -3/4 log(1 - 4/3 D) $</p>
+<p>として求められる。
+観察データが1/4以下の一致率をとると、対数の中が負値になり、進化距離が計算できなくなる。</p>
+<h3>木村の2パラメーターモデル [2]</h3>
+<p>トランジッションとトランスバージョンで塩基置換速度が異なることを考慮に入れたモデル。
+木村の距離dは、
+トランジッションで異なっているサイトの割合をS、トランスバージョンで異なっているサイトの割合をVとすると、</p>
+<h3>塩基組成の偏りを考慮に入れたモデル [2]</h3>
+<p>塩基配列のそれぞれの塩基の出現頻度が1/4であるというのは少々非現実的。
+平衡状態に置ける塩基の頻度を考える。
+長谷川・岸野・矢野モデル(HKY model)
+現実的ではないが、数学的な取り扱いを簡単にするために、時間的可逆性を担保している。
+さらに、この時間的可逆性を保った上で最も多くの変数を含む塩基置換モデルは、一般時間可逆モデル(general time reversible, GTR)と呼ばれる。
+GTRは、配列進化の確率論的アプローチでしばしば用いられる。
+これらの複雑なモデルでは、進化距離を式の形で求めるのが困難であるので、数値的に各パラメータを推定し、進化距離を求めることが多い。</p>
+<h3>サイトによる置換速度の違い</h3>
+<p>これまでは、サイトごとの置換速度は一定と仮定されていたが、領域によって塩基配列の置換速度に差があることはよく知られている。例えば、CpG配列のCは、変異率が他に比べてとても高い。様々な手法が提案されてきたが、現在、サイトごとの置換速度のばらつきをガンマ分布を用いて表現するモデルがとく用いられている。</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/sheng-wu-xue.html">生物学</a>
+      <a href="/tag/jie-shuo.html">解説</a>
+      <a href="/tag/shou-ye-matome.html">授業まとめ</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " nafoto'z_blog ",
+  "url" : "",
+  "image": "https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875512584_profile_dubai.jpg",
+  "description": ""
+}
+</script>
+
+</body>
+</html>
