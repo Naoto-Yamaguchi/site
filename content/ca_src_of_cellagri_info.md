@@ -53,6 +53,10 @@ Summary: 細胞農業について
 
 * [CELLULAR AGRICULTURE EBOOK](https://cellagri.mykajabi.com/ebook)
 
+* [My “Cellular Agriculture” Reading List — 2019 by Tristan Roth](https://medium.com/@tristanroth/my-cellular-agriculture-reading-list-2019-9147aaa5aeca)
+
+* [RethinkXの環境問題等に関するレポート](https://www.rethinkx.com/food-and-agriculture)
+
 
 ## SlideShare
 日本語の情報としては、Shojenmeat Projectが出しているスライドが一番でしょう
@@ -69,6 +73,9 @@ Summary: 細胞農業について
 
 * [New HarvestのAbout](https://www.new-harvest.org/about)
 * [Good Food Instituteのブログ](https://www.gfi.org/blog)
+    * [GFI Library of Essential Reading](https://www.gfi.org/essentials)
+    * GFI Founder [Bruce Friedrich's Wired Article](https://www.wired.com/2016/10/nerds-cattle-food-technology-will-save-world/)
+    * GFI Founder [Bruce Friedrich's TED Talk](https://www.gfi.org/bruce-friedrich-ted-talk-plant-based-cell)
 
 * [CellAgriのブログとNewsletter](https://www.cell.ag/articles)
 
@@ -80,7 +87,12 @@ Summary: 細胞農業について
 
 ## Podcast
 * [Cultured Meat and Future Food](https://futurefoodshow.com/)
-    * Cell-based meatやPlant-based meatをはじめとした未来の食に関わる人たちのインタビューpodcast。HostのAlexさんが良い声。おすすめ。
+    * Cell-based meatやPlant-based meatをはじめとした未来の食に関わる人たちのインタビューpodcast。HostのAlexさんが良い声。おす
+    すめ。
+
+## Conference
+   * [New Harvest Confernce](https://www.youtube.com/channel/UCxq2JKQ4FNRbO73iw6FDsbw)
+   * [Good Food Institute Conference](https://goodfoodconference.com/videos/)
 
 ## Papers
 * [Stephens N Di Silvio L Dunsford I Ellis M Glencross A Sexton A. (2018) Bringing cultured meat to market: Technical, socio-political, and regulatory challenges in cellular agriculture. *Trends in Food Science & Technology* ,2018 vol: 78 pp: 155-166](www.sciencedirect.com/science/article/pii/S0924224417303400)

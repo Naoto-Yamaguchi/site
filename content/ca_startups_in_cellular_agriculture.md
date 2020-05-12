@@ -27,6 +27,8 @@ Summary: 細胞農業に取り組むスタートアップまとめ
 ## Cell-Based Meat
 * [Alpha Farms](https://www.aleph-farms.com/)
     * Ashdod, Israel
+* [Avant Meats]()
+    * Hong Kong
 * [BIFTEK](http://biftek.co/)
     * Ankara, Turkey
 * [Cellular Agriculture](https://www.cellularagriculture.co.uk/)
@@ -41,6 +43,7 @@ Summary: 細胞農業に取り組むスタートアップまとめ
     * 現時点で、日本で唯一の細胞農業スタートアップ
 * [Memphis Meats](http://www.memphismeats.com/)
     * Berkeley, California
+    * founded by Indian origin cardiologist Dr Uma Valeti
 * [Meatable](https://www.meatable.com/)
     * Leiden, the Netherlands
 * [Mission Barns](https://missionbarns.com/)
@@ -115,6 +118,19 @@ Summary: 細胞農業に取り組むスタートアップまとめ
 
 
 # その他
+## Research Institute
+* A research center for cellag in Mumbai
+    * GFI partner with ICT(Institute of Chemical Technology) to set up a research center for cellular agriculture in Mumbai
+    * Referencing [the article](https://www.indiatimes.com/news/india/mumbai-becomes-world-s-first-city-to-host-a-research-centre-dedicated-to-lab-grown-meat-362394.html)
+
+## 3D-printed meat alternatives
+* [Redfine Meat](https://www.redefinemeat.com)
+    * Israel
+    * Accoring to [this article on Sept.13, 2019](https://www.fooddive.com/news/redefine-meat-raises-6m-to-produce-3d-printed-meat-alternatives/562828/), Redfine Meat, an Israel startup launched last year, completed a $6 million funding round led by CPT Capital.
+    * Developing its 3D printing system to produce plant-based meat alternatives. The goal is to enter mass production in 2021.
+* [Nova Meat](https://www.novameat.com/)
+    * Barcelona, Spain
+    * According to [this article on Sept.6, 2019](https://techcrunch.com/2019/09/05/novameat-has-a-platform-for-3d-printing-steaks-and-has-new-money-to-take-it-to-market/), They provide the equipment, the machinery, under a licensing agreement to the plant-based companies.
 
 ## レストラン
 * [Bistro In Vitro](https://bistro-invitro.com/en/bistro-invitro/)
