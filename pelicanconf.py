@@ -44,3 +44,4 @@ PLUGINS = ['render_math']
 
 ARTICLE_URL = '{slug}.html'
 ARTICLE_SAVE_AS = '{slug}.html'
+GOOGLE_ANALYTICS = "UA-111812315-3"
