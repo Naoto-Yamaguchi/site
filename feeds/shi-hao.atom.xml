@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'zz_blog - 嗜好</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/shi-hao.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-02-24T00:00:00+09:00</updated><entry><title>私のおすすめのもの、好きなもの</title><link href="https://naoto-yamaguchi.github.io/site/my_favorites.html" rel="alternate"></link><published>2019-02-24T00:00:00+09:00</published><updated>2019-02-24T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-24:/site/my_favorites.html</id><summary type="html">&lt;p&gt;おすすめ集、好きなもの&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog - 嗜好</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/shi-hao.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-02-24T00:00:00+09:00</updated><subtitle>nafoto'z_blog</subtitle><entry><title>私のおすすめのもの、好きなもの</title><link href="https://naoto-yamaguchi.github.io/site/shi-hao/my_favorites.html" rel="alternate"></link><published>2019-02-24T00:00:00+09:00</published><updated>2019-02-24T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-24:/site/shi-hao/my_favorites.html</id><summary type="html">&lt;p&gt;おすすめ集、好きなもの&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
 &lt;p&gt;人のおすすめを聞いて自分の興味の幅が広がったり、新たな発見をすることがあったので。
 現状かなり適当ですが、随時載せていきます。&lt;/p&gt;
 &lt;h1&gt;参考&lt;/h1&gt;
@@ -82,4 +82,4 @@
 &lt;/ul&gt;
 &lt;p&gt;みなさんのオススメのもの、好きなもの是非教えてください！！
 超募集中@nafoto_z&lt;/p&gt;
-&lt;p&gt;リンクとかはそのうち貼ります。&lt;/p&gt;</content><category term="好きなもの"></category><category term="嗜好"></category></entry></feed>
+&lt;p&gt;リンクとかはそのうち貼ります。&lt;/p&gt;</content><category term="嗜好"></category><category term="好きなもの"></category><category term="嗜好"></category></entry></feed>

@@ -12,12 +12,23 @@
 
     <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/stylesheet/style.min.css">
 
-  <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/pygments/github.min.css">
-  <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/font-awesome/css/font-awesome.min.css">
 
-    <link href="https://naoto-yamaguchi.github.io/site/static/custom.css" rel="stylesheet">
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://naoto-yamaguchi.github.io/site/theme/pygments/monokai.min.css">
 
-    <link href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="nafoto'zz_blog Atom">
+    <script src="https://naoto-yamaguchi.github.io/site/theme/tipuesearch/jquery.min.js"></script>
+    <script src="https://naoto-yamaguchi.github.io/site/theme/tipuesearch/tipuesearch.min.js"></script>
+    <script src="https://naoto-yamaguchi.github.io/site/theme/tipuesearch/tipuesearch.min.js"></script>
+    <script src="https://naoto-yamaguchi.github.io/site/theme/tipuesearch/tipuesearch_set.min.js"></script>
+    <script src="https://naoto-yamaguchi.github.io/site/tipuesearch_content.js"></script>
+    <link rel="stylesheet" href="https://naoto-yamaguchi.github.io/site/theme/tipuesearch/tipuesearch.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/font-awesome/css/solid.css">
+
+
+    <link href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="nafoto'z_blog Atom">
 
 
     <link rel="shortcut icon" href="/images/favicon_dna.ico" type="image/x-icon">
@@ -35,20 +46,21 @@
 </script>
 <!-- End Google Analytics -->
     <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#FFD700">
+    <meta name="theme-color" content="#555">
     <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#FFD700">
+    <meta name="msapplication-navbutton-color" content="#555">
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!-- Microsoft EDGE -->
-    <meta name="msapplication-TileColor" content="#FFD700">
+    <meta name="msapplication-TileColor" content="#555">
 
 <meta name="author" content="Naoto Yamaguchi" />
 <meta name="description" content="RNA-seq解析の勉強" />
 <meta name="keywords" content="生物学, 解説, 授業まとめ">
 
-<meta property="og:site_name" content="nafoto'zz_blog"/>
+
+<meta property="og:site_name" content="nafoto'z_blog"/>
 <meta property="og:title" content="RNA-seq解析"/>
 <meta property="og:description" content="RNA-seq解析の勉強"/>
 <meta property="og:locale" content="en_US"/>
@@ -63,47 +75,67 @@
 <meta property="article:tag" content="授業まとめ"/>
 <meta property="og:image" content="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875512584_profile_dubai.jpg">
 
-  <title>nafoto'zz_blog &ndash; RNA-seq解析</title>
+  <title>nafoto'z_blog &ndash; RNA-seq解析</title>
 
 </head>
-<body>
+<body class="light-theme">
   <aside>
     <div>
       <a href="https://naoto-yamaguchi.github.io/site">
         <img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875512584_profile_dubai.jpg" alt="" title="">
       </a>
-      <h1><a href="https://naoto-yamaguchi.github.io/site"></a></h1>
 
+      <h1>
+        <a href="https://naoto-yamaguchi.github.io/site"></a>
+      </h1>
+
+<p>nafoto'z_blog</p>
+        <form class="navbar-search" action="/search.html" role="search">
+          <input type="text" name="q" id="tipue_search_input" placeholder="Search...">
+        </form>
 
       <nav>
         <ul class="list">
 
-          <li><a href="" target="_blank">Home</a></li>
-          <li><a href="http://twitter.com/nafoto_z" target="_blank">Twitter</a></li>
-          <li><a href="http://tatekaetaro.work/" target="_blank">立替たろう</a></li>
+
+
+            <li>
+              <a target="_self" href="" >Home</a>
+            </li>
+            <li>
+              <a target="_self" href="http://twitter.com/nafoto_z" >Twitter</a>
+            </li>
+            <li>
+              <a target="_self" href="http://tatekaetaro.work/" >立替たろう</a>
+            </li>
         </ul>
       </nav>
 
       <ul class="social">
-        <li><a class="sc-github" href="https://github.com/Naoto-Yamaguchi" target="_blank"><i class="fa fa-github"></i></a></li>
-        <li><a class="sc-twitter" href="https://twitter.com/nafoto_z" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li>
+            <a  class="sc-github" href="https://github.com/Naoto-Yamaguchi" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-twitter" href="https://twitter.com/nafoto_z" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
       </ul>
     </div>
-
 
   </aside>
   <main>
 
     <nav>
-      <a href="https://naoto-yamaguchi.github.io/site">    Home
-</a>
+      <a href="https://naoto-yamaguchi.github.io/site">Home</a>
 
       <a href="/archives.html">ARCHIVES</a>
       <a href="/categories.html">CATEGORIES</a>
       <a href="/tags.html">TAGS</a>
 
-      <a href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml">    Atom
-</a>
+      <a href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml">Atom</a>
 
     </nav>
 
@@ -112,8 +144,7 @@
       
     <h1 id="bio_rna_seq.md">RNA-seq解析</h1>
     <p>
-          Posted on 木 19 9月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/sheng-wu-xue.html">生物学</a>
-
+      Posted on 木 19 9月 2019 in <a href="https://naoto-yamaguchi.github.io/site/categories/sheng-wu-xue.html">生物学</a>
 
     </p>
   </header>
@@ -171,7 +202,7 @@ Cufflinksではスプライシングイアソフォームごとの発現量の�
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><span class="n">HISAT</span><span class="p">,</span><span class="w"> </span><span class="n">StringTie</span><span class="p">,</span><span class="w"> </span><span class="n">Ballgown</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">HISAT</span><span class="p">,</span><span class="w"> </span><span class="n">StringTie</span><span class="p">,</span><span class="w"> </span><span class="n">Ballgown</span><span class="w"></span>
 <span class="n">ゲノムへのマッピングと発現量定量には</span><span class="w"> </span><span class="n">TopHat</span><span class="o">+</span><span class="n">Cufflinks</span><span class="w"> </span><span class="n">が有名ですが</span><span class="err">、</span><span class="n">すでに後継のパイプライン</span><span class="w"> </span><span class="n">HISAT</span><span class="p">,</span><span class="w"> </span><span class="n">StringTie</span><span class="p">,</span><span class="w"> </span><span class="n">Ballgown</span><span class="w"> </span><span class="n">が発表されています</span><span class="err">。</span><span class="w"></span>
 
 <span class="n">HISAT2はRNA</span><span class="o">-</span><span class="n">seqのリードをゲノムにマッピングするソフトウェアです</span><span class="err">。</span><span class="n">StringTieはRNA</span><span class="o">-</span><span class="n">seqのリードをリファレンスゲノムにマッピングしたあとでアセンブリをおこなうソフトウェアです</span><span class="err">。</span><span class="n">Cufflinksより性能がよいと報告されています</span><span class="err">。</span><span class="n">アセンブリを行わず</span><span class="err">、</span><span class="n">発現量推定だけを行うこともできます</span><span class="err">。</span><span class="n">Ballgownは発現変動解析をおこなうソフトウェアです</span><span class="err">。</span><span class="w"></span>
@@ -180,7 +211,7 @@ Cufflinksではスプライシングイアソフォームごとの発現量の�
 <span class="o">*</span><span class="w"> </span><span class="o">[</span><span class="n">StringTie</span><span class="o">]</span><span class="p">(</span><span class="nl">https</span><span class="p">:</span><span class="o">//</span><span class="n">ccb</span><span class="p">.</span><span class="n">jhu</span><span class="p">.</span><span class="n">edu</span><span class="o">/</span><span class="n">software</span><span class="o">/</span><span class="n">stringtie</span><span class="o">/</span><span class="k">index</span><span class="p">.</span><span class="n">shtml</span><span class="p">)</span><span class="w"></span>
 <span class="o">*</span><span class="w"> </span><span class="o">[</span><span class="n">Ballgown</span><span class="o">]</span><span class="p">(</span><span class="nl">http</span><span class="p">:</span><span class="o">//</span><span class="n">bioconductor</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="n">packages</span><span class="o">/</span><span class="k">release</span><span class="o">/</span><span class="n">bioc</span><span class="o">/</span><span class="n">html</span><span class="o">/</span><span class="n">ballgown</span><span class="p">.</span><span class="n">html</span><span class="p">)</span><span class="w"></span>
 <span class="o">*</span><span class="w"> </span><span class="n">HISAT</span><span class="p">,</span><span class="w"> </span><span class="n">StringTie</span><span class="p">,</span><span class="w"> </span><span class="n">Ballgown</span><span class="w"> </span><span class="n">を用いた</span><span class="w"> </span><span class="o">[</span><span class="n">RNA-seqデータ解析のプロトコル論文</span><span class="o">]</span><span class="p">(</span><span class="nl">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">nature</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">articles</span><span class="o">/</span><span class="n">nprot</span><span class="mf">.2016.095</span><span class="p">)</span><span class="w"></span>
-</pre></div>
+</code></pre></div>
 
 
 <p><a href="http://rnakato.hatenablog.jp/entry/2018/11/09/165200">詳しい追試はこちら</a></p>
@@ -189,7 +220,7 @@ Cufflinksではスプライシングイアソフォームごとの発現量の�
 <li>HiSat2
 <a href="http://bioinfo-dojo.net/2018/02/20/hisat2-install_mapping/">HISAT2 使い方 インストールとマッピング バイオインフォ道場</a></li>
 </ul>
-<div class="highlight"><pre><span></span><span class="err">#</span><span class="w"> </span><span class="n">hisat2</span><span class="w"> </span><span class="n">ダウンロード</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="err">#</span><span class="w"> </span><span class="n">hisat2</span><span class="w"> </span><span class="n">ダウンロード</span><span class="w"></span>
 <span class="err">$</span><span class="w"> </span><span class="n">wget</span><span class="w"> </span><span class="nl">ftp</span><span class="p">:</span><span class="o">//</span><span class="n">ftp</span><span class="p">.</span><span class="n">ccb</span><span class="p">.</span><span class="n">jhu</span><span class="p">.</span><span class="n">edu</span><span class="o">/</span><span class="n">pub</span><span class="o">/</span><span class="n">infphilo</span><span class="o">/</span><span class="n">hisat2</span><span class="o">/</span><span class="n">downloads</span><span class="o">/</span><span class="n">hisat2</span><span class="o">-</span><span class="mf">2.1.0</span><span class="o">-</span><span class="n">Linux_x86_64</span><span class="p">.</span><span class="n">zip</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 
 <span class="err">#</span><span class="w"> </span><span class="n">hisat2</span><span class="w"> </span><span class="n">解凍</span><span class="w"></span>
@@ -207,18 +238,18 @@ Cufflinksではスプライシングイアソフォームごとの発現量の�
 <span class="n">HISAT2</span><span class="w"> </span><span class="n">version</span><span class="w"> </span><span class="mf">2.1.0</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">Daehwan</span><span class="w"> </span><span class="n">Kim</span><span class="w"> </span><span class="p">(</span><span class="n">infphilo</span><span class="nv">@gmail</span><span class="p">.</span><span class="n">com</span><span class="p">,</span><span class="w"> </span><span class="n">www</span><span class="p">.</span><span class="n">ccb</span><span class="p">.</span><span class="n">jhu</span><span class="p">.</span><span class="n">edu</span><span class="o">/</span><span class="n">people</span><span class="o">/</span><span class="n">infphilo</span><span class="p">)</span><span class="w"></span>
 <span class="k">Usage</span><span class="err">:</span><span class="w"> </span>
 <span class="w">  </span><span class="n">hisat2</span><span class="w"> </span><span class="o">[</span><span class="n">options</span><span class="o">]*</span><span class="w"> </span><span class="o">-</span><span class="n">x</span><span class="w">  </span><span class="err">{</span><span class="o">-</span><span class="mi">1</span><span class="w">  </span><span class="o">-</span><span class="mi">2</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="o">-</span><span class="n">U</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="c1">--sra-acc } [-S ]</span>
-</pre></div>
+</code></pre></div>
 
 
 <h1>RSEM, STAR</h1>
 <h2>STARのインストールでエラー</h2>
 <p><a href="http://rnakato.hatenablog.jp/entry/2018/12/26/142038">こちら</a>を参考に</p>
-<div class="highlight"><pre><span></span>$ wget https://github.com/alexdobin/STAR/archive/2.6.1d.tar.gz
+<div class="highlight"><pre><span></span><code>$ wget https://github.com/alexdobin/STAR/archive/2.6.1d.tar.gz
 $ tar -xzf <span class="m">2</span>.6.1d.tar.gz
 $ <span class="nb">cd</span> STAR-2.6.1d/source
 $ make STAR              <span class="c1"># Linuxの場合</span>
 $ make STARforMacStatic  <span class="c1"># Macの場合 </span>
-</pre></div>
+</code></pre></div>
 
 
 <p>Macで<code>$ make STARforMacStatic</code>を実行したところ、
@@ -243,38 +274,38 @@ Ensembleでマウスゲノムを取得
 <code>wget ftp://ftp.ensembl.org/pub/release-82/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.toplevel.fa.gz</code>
 GTFファイルも取得
 <code>wget ftp://ftp.ensembl.org/pub/release-82/gtf/mus_musculus/Mus_musculus.GRCm38.82.chr.gtf.gz</code></p>
-<div class="highlight"><pre><span></span><span class="nv">gunzip</span> <span class="nv">ref</span><span class="o">/</span><span class="nv">Mus_musculus</span>.<span class="nv">GRCm38</span>.<span class="nv">dna</span>.<span class="nv">toplevel</span>.<span class="nv">fa</span>.<span class="nv">gz</span>
-<span class="nv">gunzip</span> <span class="nv">ref</span><span class="o">/</span><span class="nv">Mus_musculus</span>.<span class="nv">GRCm38</span>.<span class="mi">82</span>.<span class="nv">chr</span>.<span class="nv">gtf</span>.<span class="nv">gz</span>
-<span class="nv">rsem</span><span class="o">-</span><span class="nv">prepare</span><span class="o">-</span><span class="nv">reference</span> <span class="o">--</span><span class="nv">gtf</span> <span class="nv">ref</span><span class="o">/</span><span class="nv">Mus_musculus</span>.<span class="nv">GRCm38</span>.<span class="mi">82</span>.<span class="nv">chr</span>.<span class="nv">gtf</span> \
-                         <span class="o">--</span><span class="nv">bowtie2</span> <span class="o">--</span><span class="nv">bowtie2</span><span class="o">-</span><span class="nv">path</span> <span class="o">/</span><span class="nv">usr</span><span class="o">/</span><span class="nv">local</span><span class="o">/</span><span class="nv">bin</span><span class="o">/</span><span class="nv">bowtie2</span> \
-                     <span class="nv">ref</span><span class="o">/</span><span class="nv">Mus_musculus</span>.<span class="nv">GRCm38</span>.<span class="nv">dna</span>.<span class="nv">toplevel</span>.<span class="nv">fa</span> <span class="nv">ref</span><span class="o">/</span><span class="nv">mouse_ref</span>
-                        ```
+<div class="highlight"><pre><span></span><code><span class="n">gunzip</span> <span class="k">ref</span><span class="o">/</span><span class="n">Mus_musculus</span><span class="p">.</span><span class="n">GRCm38</span><span class="p">.</span><span class="n">dna</span><span class="p">.</span><span class="n">toplevel</span><span class="p">.</span><span class="n">fa</span><span class="p">.</span><span class="n">gz</span>
+<span class="n">gunzip</span> <span class="k">ref</span><span class="o">/</span><span class="n">Mus_musculus</span><span class="p">.</span><span class="n">GRCm38</span><span class="p">.</span><span class="mi">82</span><span class="p">.</span><span class="n">chr</span><span class="p">.</span><span class="n">gtf</span><span class="p">.</span><span class="n">gz</span>
+<span class="n">rsem</span><span class="o">-</span><span class="k">prepare</span><span class="o">-</span><span class="n">reference</span> <span class="c1">--gtf ref/Mus_musculus.GRCm38.82.chr.gtf \</span>
+                         <span class="c1">--bowtie2 --bowtie2-path /usr/local/bin/bowtie2 \</span>
+                     <span class="k">ref</span><span class="o">/</span><span class="n">Mus_musculus</span><span class="p">.</span><span class="n">GRCm38</span><span class="p">.</span><span class="n">dna</span><span class="p">.</span><span class="n">toplevel</span><span class="p">.</span><span class="n">fa</span> <span class="k">ref</span><span class="o">/</span><span class="n">mouse_ref</span>
+                        <span class="o">```</span>
 
-[<span class="nv">bowtie2</span><span class="o">-</span><span class="nv">rsem</span>] <span class="nv">rsem</span><span class="o">-</span><span class="nv">calculate</span><span class="o">-</span><span class="nv">expression</span> <span class="o">-</span><span class="nv">p</span> <span class="mi">8</span> <span class="o">--</span><span class="nv">paired</span><span class="o">-</span><span class="k">end</span> \                               <span class="mi">18</span>:<span class="mi">00</span>:<span class="mi">05</span>
-                                        <span class="o">--</span><span class="nv">bowtie2</span> <span class="o">--</span><span class="nv">bowtie2</span><span class="o">-</span><span class="nv">path</span> <span class="nv">bowtie2</span> \
-                                        <span class="o">--</span><span class="nv">estimate</span><span class="o">-</span><span class="nv">rspd</span> \
-                                        <span class="o">--</span><span class="nv">append</span><span class="o">-</span><span class="nv">names</span> \
-                                        <span class="o">--</span><span class="nv">output</span><span class="o">-</span><span class="nv">genome</span><span class="o">-</span><span class="nv">bam</span> \
-                                        <span class="nv">data</span><span class="o">/</span><span class="nv">SRR937564_1</span>.<span class="nv">fastq</span> <span class="nv">data</span><span class="o">/</span><span class="nv">SRR937564_2</span>.<span class="nv">fastq</span> \
-                                        <span class="nv">ref</span><span class="o">/</span><span class="nv">mouse_ref</span> <span class="nv">exp</span><span class="o">/</span><span class="nv">LPS_6h</span>
-<span class="nv">bowtie2</span><span class="o">/</span><span class="nv">bowtie2</span> <span class="o">-</span><span class="nv">q</span> <span class="o">--</span><span class="nv">phred33</span> <span class="o">--</span><span class="nv">sensitive</span> <span class="o">--</span><span class="nv">dpad</span> <span class="mi">0</span> <span class="o">--</span><span class="nv">gbar</span> <span class="mi">99999999</span> <span class="o">--</span><span class="nv">mp</span> <span class="mi">1</span>,<span class="mi">1</span> <span class="o">--</span><span class="nv">np</span> <span class="mi">1</span> <span class="o">--</span><span class="nv">score</span><span class="o">-</span><span class="nv">min</span> <span class="nv">L</span>,<span class="mi">0</span>,<span class="o">-</span><span class="mi">0</span>.<span class="mi">1</span> <span class="o">-</span><span class="nv">I</span> <span class="mi">1</span> <span class="o">-</span><span class="nv">X</span> <span class="mi">1000</span> <span class="o">--</span><span class="nv">no</span><span class="o">-</span><span class="nv">mixed</span> <span class="o">--</span><span class="nv">no</span><span class="o">-</span><span class="nv">discordant</span> <span class="o">-</span><span class="nv">p</span> <span class="mi">8</span> <span class="o">-</span><span class="nv">k</span> <span class="mi">200</span> <span class="o">-</span><span class="nv">x</span> <span class="nv">ref</span><span class="o">/</span><span class="nv">mouse_ref</span> <span class="o">-</span><span class="mi">1</span> <span class="nv">data</span><span class="o">/</span><span class="nv">SRR937564_1</span>.<span class="nv">fastq</span> <span class="o">-</span><span class="mi">2</span> <span class="nv">data</span><span class="o">/</span><span class="nv">SRR937564_2</span>.<span class="nv">fastq</span> <span class="o">|</span> <span class="nv">samtools</span> <span class="nv">view</span> <span class="o">-</span><span class="nv">S</span> <span class="o">-</span><span class="nv">b</span> <span class="o">-</span><span class="nv">o</span> <span class="nv">exp</span><span class="o">/</span><span class="nv">LPS_6h</span>.<span class="nv">temp</span><span class="o">/</span><span class="nv">LPS_6h</span>.<span class="nv">bam</span> <span class="o">-</span>
-<span class="nv">sh</span>: <span class="nv">bowtie2</span><span class="o">/</span><span class="nv">bowtie2</span>: <span class="nv">No</span> <span class="nv">such</span> <span class="nv">file</span> <span class="nv">or</span> <span class="nv">directory</span>
+<span class="p">[</span><span class="n">bowtie2</span><span class="o">-</span><span class="n">rsem</span><span class="p">]</span> <span class="n">rsem</span><span class="o">-</span><span class="n">calculate</span><span class="o">-</span><span class="n">expression</span> <span class="o">-</span><span class="n">p</span> <span class="mi">8</span> <span class="c1">--paired-end \                               18:00:05</span>
+                                        <span class="c1">--bowtie2 --bowtie2-path bowtie2 \</span>
+                                        <span class="c1">--estimate-rspd \</span>
+                                        <span class="c1">--append-names \</span>
+                                        <span class="c1">--output-genome-bam \</span>
+                                        <span class="k">data</span><span class="o">/</span><span class="n">SRR937564_1</span><span class="p">.</span><span class="n">fastq</span> <span class="k">data</span><span class="o">/</span><span class="n">SRR937564_2</span><span class="p">.</span><span class="n">fastq</span> <span class="err">\</span>
+                                        <span class="k">ref</span><span class="o">/</span><span class="n">mouse_ref</span> <span class="n">exp</span><span class="o">/</span><span class="n">LPS_6h</span>
+<span class="n">bowtie2</span><span class="o">/</span><span class="n">bowtie2</span> <span class="o">-</span><span class="n">q</span> <span class="c1">--phred33 --sensitive --dpad 0 --gbar 99999999 --mp 1,1 --np 1 --score-min L,0,-0.1 -I 1 -X 1000 --no-mixed --no-discordant -p 8 -k 200 -x ref/mouse_ref -1 data/SRR937564_1.fastq -2 data/SRR937564_2.fastq | samtools view -S -b -o exp/LPS_6h.temp/LPS_6h.bam -</span>
+<span class="n">sh</span><span class="p">:</span> <span class="n">bowtie2</span><span class="o">/</span><span class="n">bowtie2</span><span class="p">:</span> <span class="k">No</span> <span class="n">such</span> <span class="n">file</span> <span class="k">or</span> <span class="n">directory</span>
 
-<span class="nv">rsem</span><span class="o">-</span><span class="nv">parse</span><span class="o">-</span><span class="nv">alignments</span> <span class="nv">ref</span><span class="o">/</span><span class="nv">mouse_ref</span> <span class="nv">exp</span><span class="o">/</span><span class="nv">LPS_6h</span>.<span class="nv">temp</span><span class="o">/</span><span class="nv">LPS_6h</span> <span class="nv">exp</span><span class="o">/</span><span class="nv">LPS_6h</span>.<span class="nv">stat</span><span class="o">/</span><span class="nv">LPS_6h</span> <span class="nv">exp</span><span class="o">/</span><span class="nv">LPS_6h</span>.<span class="nv">temp</span><span class="o">/</span><span class="nv">LPS_6h</span>.<span class="nv">bam</span> <span class="mi">3</span> <span class="o">-</span><span class="nv">tag</span> <span class="nv">XM</span>
-<span class="nv">The</span> <span class="nv">SAM</span><span class="o">/</span><span class="nv">BAM</span> <span class="nv">file</span> <span class="nv">declares</span> <span class="nv">less</span> <span class="nv">than</span> <span class="nv">one</span> <span class="nv">reference</span> <span class="nv">sequence</span><span class="o">!</span>
-<span class="s2">&quot;</span><span class="s">rsem-parse-alignments ref/mouse_ref exp/LPS_6h.temp/LPS_6h exp/LPS_6h.stat/LPS_6h exp/LPS_6h.temp/LPS_6h.bam 3 -tag XM</span><span class="s2">&quot;</span> <span class="nv">failed</span><span class="o">!</span> <span class="nv">Plase</span> <span class="nv">check</span> <span class="k">if</span> <span class="nv">you</span> <span class="nv">provide</span> <span class="nv">correct</span> <span class="nv">parameters</span><span class="o">/</span><span class="nv">options</span> <span class="k">for</span> <span class="nv">the</span> <span class="nv">pipeline</span><span class="o">!</span>
+<span class="n">rsem</span><span class="o">-</span><span class="n">parse</span><span class="o">-</span><span class="n">alignments</span> <span class="k">ref</span><span class="o">/</span><span class="n">mouse_ref</span> <span class="n">exp</span><span class="o">/</span><span class="n">LPS_6h</span><span class="p">.</span><span class="n">temp</span><span class="o">/</span><span class="n">LPS_6h</span> <span class="n">exp</span><span class="o">/</span><span class="n">LPS_6h</span><span class="p">.</span><span class="n">stat</span><span class="o">/</span><span class="n">LPS_6h</span> <span class="n">exp</span><span class="o">/</span><span class="n">LPS_6h</span><span class="p">.</span><span class="n">temp</span><span class="o">/</span><span class="n">LPS_6h</span><span class="p">.</span><span class="n">bam</span> <span class="mi">3</span> <span class="o">-</span><span class="n">tag</span> <span class="n">XM</span>
+<span class="n">The</span> <span class="n">SAM</span><span class="o">/</span><span class="n">BAM</span> <span class="n">file</span> <span class="n">declares</span> <span class="k">less</span> <span class="k">than</span> <span class="n">one</span> <span class="n">reference</span> <span class="n">sequence</span><span class="o">!</span>
+<span class="ss">&quot;rsem-parse-alignments ref/mouse_ref exp/LPS_6h.temp/LPS_6h exp/LPS_6h.stat/LPS_6h exp/LPS_6h.temp/LPS_6h.bam 3 -tag XM&quot;</span> <span class="n">failed</span><span class="o">!</span> <span class="n">Plase</span> <span class="k">check</span> <span class="k">if</span> <span class="n">you</span> <span class="n">provide</span> <span class="n">correct</span> <span class="k">parameters</span><span class="o">/</span><span class="k">options</span> <span class="k">for</span> <span class="n">the</span> <span class="n">pipeline</span><span class="o">!</span>
 
-これで動かず...
+<span class="err">これで動かず</span><span class="p">...</span>
 
-ソフトウェアが<span class="nv">bowtie2</span>なのがいけない?
+<span class="err">ソフトウェアが</span><span class="n">bowtie2なのがいけない</span><span class="o">?</span>
 
 
-諦めて<span class="nv">kallisto</span>へ
-</pre></div>
+<span class="err">諦めて</span><span class="n">kallistoへ</span>
+</code></pre></div>
 
 
 <p>brew install kallisto</p>
-<div class="highlight"><pre><span></span><span class="n">kallisto</span> <span class="n">indexにやたら時間かかる</span><span class="p">...</span>
+<div class="highlight"><pre><span></span><code><span class="n">kallisto</span> <span class="n">indexにやたら時間かかる</span><span class="p">...</span>
 <span class="err">他のサーバーで試してみる</span>
 
 
@@ -301,12 +332,12 @@ GTFファイルも取得
 <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">bioconductor</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="n">install</span><span class="o">/</span>
 
 <span class="n">rはcondaでも入ってるけど</span><span class="err">、</span><span class="n">brewで入れて</span><span class="err">、シンボリックリンク貼ってる状態</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>[kallisto] ls -la /usr/local/bin/R                                                         20:25:29
 lrwxr-xr-x  1 naoto  admin  25  9 23 20:20 /usr/local/bin/R -&gt; ../Cellar/r/3.6.1_1/bin/R</p>
-<div class="highlight"><pre><span></span><span class="n">Rを3</span><span class="p">.</span><span class="mi">6</span><span class="err">にした</span>
+<div class="highlight"><pre><span></span><code><span class="n">Rを3</span><span class="p">.</span><span class="mi">6</span><span class="err">にした</span>
 <span class="err">これで</span><span class="n">Bioconductorインストールできたと思ったら</span><span class="err">、</span>
 <span class="n">sleuthはR3</span><span class="p">.</span><span class="mi">6</span><span class="err">では使えませんだとさ</span>
 <span class="err">自分の</span><span class="n">pcどうなってるかもうわからん</span><span class="p">...</span>
@@ -314,7 +345,7 @@ lrwxr-xr-x  1 naoto  admin  25  9 23 20:20 /usr/local/bin/R -&gt; ../Cellar/r/3.
 <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">rocker</span><span class="o">-</span><span class="n">org</span><span class="o">/</span><span class="n">rocker</span><span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="k">Using</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">RStudio</span><span class="o">-</span><span class="n">image</span>
 
 <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">hub</span><span class="p">.</span><span class="n">docker</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">r</span><span class="o">/</span><span class="n">rocker</span><span class="o">/</span><span class="n">rstudio</span><span class="o">/</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>[shims] docker run -it rocker/rstudio                                                      21:04:06
@@ -364,21 +395,20 @@ Rのversion3.6やった</p>
   </div>
   <div class="tag-cloud">
     <p>
-      <a href="https://naoto-yamaguchi.github.io/site/tag/sheng-wu-xue.html">生物学</a>
-      <a href="https://naoto-yamaguchi.github.io/site/tag/jie-shuo.html">解説</a>
-      <a href="https://naoto-yamaguchi.github.io/site/tag/shou-ye-matome.html">授業まとめ</a>
+      <a href="https://naoto-yamaguchi.github.io/site/tags/sheng-wu-xue.html">生物学</a>
+      <a href="https://naoto-yamaguchi.github.io/site/tags/jie-shuo.html">解説</a>
+      <a href="https://naoto-yamaguchi.github.io/site/tags/shou-ye-matome.html">授業まとめ</a>
     </p>
   </div>
 
 
 
   <div class="related-posts">
-    <h4>    You might enjoy
-</h4>
+    <h4>You might enjoy</h4>
     <ul class="related-posts">
-      <li><a href="https://naoto-yamaguchi.github.io/site/cancer.html">がん</a></li>
-      <li><a href="https://naoto-yamaguchi.github.io/site/molecular evolution.html">がん</a></li>
-      <li><a href="https://naoto-yamaguchi.github.io/site/turing_pattern.html">チューリングパターンとは</a></li>
+      <li><a href="https://naoto-yamaguchi.github.io/site/sheng-wu-xue/cancer.html">がん</a></li>
+      <li><a href="https://naoto-yamaguchi.github.io/site/sheng-wu-xue/molecular evolution.html">がん</a></li>
+      <li><a href="https://naoto-yamaguchi.github.io/site/sheng-wu-xue/turing_pattern.html">チューリングパターンとは</a></li>
     </ul>
   </div>
 
@@ -386,8 +416,9 @@ Rのversion3.6やった</p>
 </article>
 
     <footer>
-<p>&copy;  </p>
-<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
+<p>&copy;  2020</p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
 </p>    </footer>
   </main>
 
@@ -398,13 +429,12 @@ Rのversion3.6やった</p>
 {
   "@context" : "http://schema.org",
   "@type" : "Blog",
-  "name": " nafoto'zz_blog ",
+  "name": " nafoto'z_blog ",
   "url" : "https://naoto-yamaguchi.github.io/site",
   "image": "https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875512584_profile_dubai.jpg",
-  "description": ""
+  "description": "Naoto Yamaguchi's Blog"
 }
 </script>
-
 <a href="https://github.com/Naoto-Yamaguchi" class="github-corner" aria-label="View source on Github">
     <svg width="80"
          height="80"
@@ -423,5 +453,12 @@ Rのversion3.6やった</p>
         </path>
     </svg>
 </a>
-<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></body>
+<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <script>
+      $(document).ready(function() {
+        $('#tipue_search_input').tipuesearch();
+      });
+    </script>
+
+</body>
 </html>

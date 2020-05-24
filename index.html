@@ -12,12 +12,23 @@
 
     <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/stylesheet/style.min.css">
 
-  <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/pygments/github.min.css">
-  <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/font-awesome/css/font-awesome.min.css">
 
-    <link href="https://naoto-yamaguchi.github.io/site/static/custom.css" rel="stylesheet">
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://naoto-yamaguchi.github.io/site/theme/pygments/monokai.min.css">
 
-    <link href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="nafoto'zz_blog Atom">
+    <script src="https://naoto-yamaguchi.github.io/site/theme/tipuesearch/jquery.min.js"></script>
+    <script src="https://naoto-yamaguchi.github.io/site/theme/tipuesearch/tipuesearch.min.js"></script>
+    <script src="https://naoto-yamaguchi.github.io/site/theme/tipuesearch/tipuesearch.min.js"></script>
+    <script src="https://naoto-yamaguchi.github.io/site/theme/tipuesearch/tipuesearch_set.min.js"></script>
+    <script src="https://naoto-yamaguchi.github.io/site/tipuesearch_content.js"></script>
+    <link rel="stylesheet" href="https://naoto-yamaguchi.github.io/site/theme/tipuesearch/tipuesearch.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://naoto-yamaguchi.github.io/site/theme/font-awesome/css/solid.css">
+
+
+    <link href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="nafoto'z_blog Atom">
 
 
     <link rel="shortcut icon" href="/images/favicon_dna.ico" type="image/x-icon">
@@ -35,66 +46,86 @@
 </script>
 <!-- End Google Analytics -->
     <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#FFD700">
+    <meta name="theme-color" content="#555">
     <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#FFD700">
+    <meta name="msapplication-navbutton-color" content="#555">
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!-- Microsoft EDGE -->
-    <meta name="msapplication-TileColor" content="#FFD700">
+    <meta name="msapplication-TileColor" content="#555">
 
     <meta name="author" content="Naoto Yamaguchi" />
-    <meta name="description" content="" />
-<meta property="og:site_name" content="nafoto'zz_blog"/>
+    <meta name="description" content="Naoto Yamaguchi's Blog" />
+<meta property="og:site_name" content="nafoto'z_blog"/>
 <meta property="og:type" content="blog"/>
-<meta property="og:title" content="nafoto'zz_blog"/>
-<meta property="og:description" content=""/>
+<meta property="og:title" content="nafoto'z_blog"/>
+<meta property="og:description" content="Naoto Yamaguchi's Blog"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:url" content="https://naoto-yamaguchi.github.io/site"/>
 <meta property="og:image" content="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875512584_profile_dubai.jpg">
 
-  <title>nafoto'zz_blog</title>
+  <title>nafoto'z_blog</title>
 
 </head>
-<body>
+<body class="light-theme">
   <aside>
     <div>
       <a href="https://naoto-yamaguchi.github.io/site">
         <img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875512584_profile_dubai.jpg" alt="" title="">
       </a>
-      <h1><a href="https://naoto-yamaguchi.github.io/site"></a></h1>
 
+      <h1>
+        <a href="https://naoto-yamaguchi.github.io/site"></a>
+      </h1>
+
+<p>nafoto'z_blog</p>
+        <form class="navbar-search" action="/search.html" role="search">
+          <input type="text" name="q" id="tipue_search_input" placeholder="Search...">
+        </form>
 
       <nav>
         <ul class="list">
 
-          <li><a href="" target="_blank">Home</a></li>
-          <li><a href="http://twitter.com/nafoto_z" target="_blank">Twitter</a></li>
-          <li><a href="http://tatekaetaro.work/" target="_blank">立替たろう</a></li>
+
+
+            <li>
+              <a target="_self" href="" >Home</a>
+            </li>
+            <li>
+              <a target="_self" href="http://twitter.com/nafoto_z" >Twitter</a>
+            </li>
+            <li>
+              <a target="_self" href="http://tatekaetaro.work/" >立替たろう</a>
+            </li>
         </ul>
       </nav>
 
       <ul class="social">
-        <li><a class="sc-github" href="https://github.com/Naoto-Yamaguchi" target="_blank"><i class="fa fa-github"></i></a></li>
-        <li><a class="sc-twitter" href="https://twitter.com/nafoto_z" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li>
+            <a  class="sc-github" href="https://github.com/Naoto-Yamaguchi" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-twitter" href="https://twitter.com/nafoto_z" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
       </ul>
     </div>
-
 
   </aside>
   <main>
 
     <nav>
-      <a href="https://naoto-yamaguchi.github.io/site">    Home
-</a>
+      <a href="https://naoto-yamaguchi.github.io/site">Home</a>
 
       <a href="/archives.html">ARCHIVES</a>
       <a href="/categories.html">CATEGORIES</a>
       <a href="/tags.html">TAGS</a>
 
-      <a href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml">    Atom
-</a>
+      <a href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml">Atom</a>
 
     </nav>
 
@@ -102,417 +133,416 @@
 
 <article>
   <header>
-    <h2><a href="https://naoto-yamaguchi.github.io/site/tj_2019_football.html#tj_2019_football"><旅行記> サッカー観戦あれこれ@プレミア,リーガ,エールディビジ</a></h2>
+    <h2><a href="https://naoto-yamaguchi.github.io/site/xi-bao-nong-ye/what_is_cellular_agriculture.html#what_is_cellular_agriculture">細胞農業とは</a></h2>
     <p>
-          Posted on 金 13 9月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/travel-journal.html">Travel Journal</a>
+      Posted on 木 03 10月 2019 in <a href="https://naoto-yamaguchi.github.io/site/categories/xi-bao-nong-ye.html">細胞農業</a>
 
+          &#8226; Tagged with
+              <a href="https://naoto-yamaguchi.github.io/site/tags/xi-bao-nong-ye.html">細胞農業</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/cellular-agriculture.html">Cellular Agriculture</a>
+    </p>
+  </header>
+  <div>
+      <p>細胞農業とは</p>
+        <br>
+        <a class="btn"
+           href="https://naoto-yamaguchi.github.io/site/xi-bao-nong-ye/what_is_cellular_agriculture.html#what_is_cellular_agriculture">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="https://naoto-yamaguchi.github.io/site/travel-journal/tj_2019_football.html#tj_2019_football"><旅行記> サッカー観戦あれこれ@プレミア,リーガ,エールディビジ</a></h2>
+    <p>
+      Posted on 金 13 9月 2019 in <a href="https://naoto-yamaguchi.github.io/site/categories/travel-journal.html">Travel Journal</a>
 
-          &#8226;     Tagged with
-
-              <a href="https://naoto-yamaguchi.github.io/site/tag/travel-journal.html">Travel Journal</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/football.html">Football</a>
+          &#8226; Tagged with
+              <a href="https://naoto-yamaguchi.github.io/site/tags/travel-journal.html">Travel Journal</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/football.html">Football</a>
     </p>
   </header>
   <div>
       <p>欧州サッカー半端ないって！！！！プレミアはまじでよかった</p>
-      <br>
-      <a class="btn" href="https://naoto-yamaguchi.github.io/site/tj_2019_football.html#tj_2019_football">    Continue reading
-</a>
+        <br>
+        <a class="btn"
+           href="https://naoto-yamaguchi.github.io/site/travel-journal/tj_2019_football.html#tj_2019_football">
+          Continue reading
+        </a>
   </div>
   <hr />
 </article>
 <article>
   <header>
-    <h2><a href="https://naoto-yamaguchi.github.io/site/diary_1907.html#diary_1907">6,7月の振り返り</a></h2>
+    <h2><a href="https://naoto-yamaguchi.github.io/site/diary/diary_1907.html#diary_1907">6,7月の振り返り</a></h2>
     <p>
-          Posted on 水 11 9月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/diary.html">Diary</a>
+      Posted on 水 11 9月 2019 in <a href="https://naoto-yamaguchi.github.io/site/categories/diary.html">Diary</a>
 
-
-          &#8226;     Tagged with
-
-              <a href="https://naoto-yamaguchi.github.io/site/tag/diary.html">Diary</a>
+          &#8226; Tagged with
+              <a href="https://naoto-yamaguchi.github.io/site/tags/diary.html">Diary</a>
     </p>
   </header>
   <div>
       <p>7月の振り返り</p>
-      <br>
-      <a class="btn" href="https://naoto-yamaguchi.github.io/site/diary_1907.html#diary_1907">    Continue reading
-</a>
+        <br>
+        <a class="btn"
+           href="https://naoto-yamaguchi.github.io/site/diary/diary_1907.html#diary_1907">
+          Continue reading
+        </a>
   </div>
   <hr />
 </article>
 <article>
   <header>
-    <h2><a href="https://naoto-yamaguchi.github.io/site/diary_1908.html#diary_1908">8月の振り返り</a></h2>
+    <h2><a href="https://naoto-yamaguchi.github.io/site/diary/diary_1908.html#diary_1908">8月の振り返り</a></h2>
     <p>
-          Posted on 水 11 9月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/diary.html">Diary</a>
+      Posted on 水 11 9月 2019 in <a href="https://naoto-yamaguchi.github.io/site/categories/diary.html">Diary</a>
 
-
-          &#8226;     Tagged with
-
-              <a href="https://naoto-yamaguchi.github.io/site/tag/diary.html">Diary</a>
+          &#8226; Tagged with
+              <a href="https://naoto-yamaguchi.github.io/site/tags/diary.html">Diary</a>
     </p>
   </header>
   <div>
       <p>8月の振り返り</p>
-      <br>
-      <a class="btn" href="https://naoto-yamaguchi.github.io/site/diary_1908.html#diary_1908">    Continue reading
-</a>
+        <br>
+        <a class="btn"
+           href="https://naoto-yamaguchi.github.io/site/diary/diary_1908.html#diary_1908">
+          Continue reading
+        </a>
   </div>
   <hr />
 </article>
 <article>
   <header>
-    <h2><a href="https://naoto-yamaguchi.github.io/site/tj_2019_valencia_villareal.html#tj_2019_valencia_villareal"><旅行記> バレンシア,メスタージャスタジアム,久保選手,ビジャレアル,エスタディオデラセラミカ,スペイン人の優しさ</a></h2>
+    <h2><a href="https://naoto-yamaguchi.github.io/site/travel-journal/tj_2019_valencia_villareal.html#tj_2019_valencia_villareal"><旅行記> バレンシア,メスタージャスタジアム,久保選手,ビジャレアル,エスタディオデラセラミカ,スペイン人の優しさ</a></h2>
     <p>
-          Posted on 月 02 9月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/travel-journal.html">Travel Journal</a>
+      Posted on 月 02 9月 2019 in <a href="https://naoto-yamaguchi.github.io/site/categories/travel-journal.html">Travel Journal</a>
 
-
-          &#8226;     Tagged with
-
-              <a href="https://naoto-yamaguchi.github.io/site/tag/travel-journal.html">Travel Journal</a>
+          &#8226; Tagged with
+              <a href="https://naoto-yamaguchi.github.io/site/tags/travel-journal.html">Travel Journal</a>
     </p>
   </header>
   <div>
       <p>バレンシア,ビジャレアルでのリーガ観戦記。久保建英選手のリーガデビュー！</p>
-      <br>
-      <a class="btn" href="https://naoto-yamaguchi.github.io/site/tj_2019_valencia_villareal.html#tj_2019_valencia_villareal">    Continue reading
-</a>
+        <br>
+        <a class="btn"
+           href="https://naoto-yamaguchi.github.io/site/travel-journal/tj_2019_valencia_villareal.html#tj_2019_valencia_villareal">
+          Continue reading
+        </a>
   </div>
   <hr />
 </article>
 <article>
   <header>
-    <h2><a href="https://naoto-yamaguchi.github.io/site/newharvest2019.html#newharvest2019">New Harvest 2019 参加レポート</a></h2>
+    <h2><a href="https://naoto-yamaguchi.github.io/site/cellular-agriculture/newharvest2019.html#newharvest2019">New Harvest 2019 参加レポート</a></h2>
     <p>
-          Posted on 日 21 7月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/cellular-agriculture.html">Cellular Agriculture</a>
+      Posted on 日 21 7月 2019 in <a href="https://naoto-yamaguchi.github.io/site/categories/cellular-agriculture.html">Cellular Agriculture</a>
 
-
-          &#8226;     Tagged with
-
-              <a href="https://naoto-yamaguchi.github.io/site/tag/cellular-agriculture.html">Cellular Agriculture</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/new-harvest.html">New Harvest</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/xi-bao-nong-ye.html">細胞農業</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/shojinmeat-project.html">Shojinmeat Project</a>
+          &#8226; Tagged with
+              <a href="https://naoto-yamaguchi.github.io/site/tags/cellular-agriculture.html">Cellular Agriculture</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/new-harvest.html">New Harvest</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/xi-bao-nong-ye.html">細胞農業</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/shojinmeat-project.html">Shojinmeat Project</a>
     </p>
   </header>
   <div>
       <p>New Harvest 2019 @ MIT Media Labに参加しポスター発表してきました!!<br><br><br><img src="./images/new_harvest_2019.png" width="30%" height="30%"></p>
-      <br>
-      <a class="btn" href="https://naoto-yamaguchi.github.io/site/newharvest2019.html#newharvest2019">    Continue reading
-</a>
+        <br>
+        <a class="btn"
+           href="https://naoto-yamaguchi.github.io/site/cellular-agriculture/newharvest2019.html#newharvest2019">
+          Continue reading
+        </a>
   </div>
   <hr />
 </article>
 <article>
   <header>
-    <h2><a href="https://naoto-yamaguchi.github.io/site/openmp.html#openmp">OpenMPによる並列処理メモ</a></h2>
+    <h2><a href="https://naoto-yamaguchi.github.io/site/programming/openmp.html#openmp">OpenMPによる並列処理メモ</a></h2>
     <p>
-          Posted on 月 24 6月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/programming.html">Programming</a>
+      Posted on 月 24 6月 2019 in <a href="https://naoto-yamaguchi.github.io/site/categories/programming.html">Programming</a>
 
-
-          &#8226;     Tagged with
-
-              <a href="https://naoto-yamaguchi.github.io/site/tag/programming.html">Programming</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/c.html">C</a>
+          &#8226; Tagged with
+              <a href="https://naoto-yamaguchi.github.io/site/tags/programming.html">Programming</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/c.html">C</a>
     </p>
   </header>
   <div>
       <p>OpenMP環境構築、コマンド等</p>
-      <br>
-      <a class="btn" href="https://naoto-yamaguchi.github.io/site/openmp.html#openmp">    Continue reading
-</a>
+        <br>
+        <a class="btn"
+           href="https://naoto-yamaguchi.github.io/site/programming/openmp.html#openmp">
+          Continue reading
+        </a>
   </div>
   <hr />
 </article>
 <article>
   <header>
-    <h2><a href="https://naoto-yamaguchi.github.io/site/what_i_found_when_i_write_an_essay.html#what_i_found_when_i_write_an_essay">英作文をしていて気がついたこと(What I realized when I write an essay)</a></h2>
+    <h2><a href="https://naoto-yamaguchi.github.io/site/essay/what_i_found_when_i_write_an_essay.html#what_i_found_when_i_write_an_essay">英作文をしていて気がついたこと(What I realized when I write an essay)</a></h2>
     <p>
-          Posted on 金 21 6月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/essay.html">Essay</a>
+      Posted on 金 21 6月 2019 in <a href="https://naoto-yamaguchi.github.io/site/categories/essay.html">Essay</a>
 
-
-          &#8226;     Tagged with
-
-              <a href="https://naoto-yamaguchi.github.io/site/tag/essay-qi-gatsuitakoto.html">Essay 気がついたこと</a>
+          &#8226; Tagged with
+              <a href="https://naoto-yamaguchi.github.io/site/tags/essay-qi-gatsuitakoto.html">Essay 気がついたこと</a>
     </p>
   </header>
   <div>
       <p>英作文をしていて気がついたこと</p>
-      <br>
-      <a class="btn" href="https://naoto-yamaguchi.github.io/site/what_i_found_when_i_write_an_essay.html#what_i_found_when_i_write_an_essay">    Continue reading
-</a>
+        <br>
+        <a class="btn"
+           href="https://naoto-yamaguchi.github.io/site/essay/what_i_found_when_i_write_an_essay.html#what_i_found_when_i_write_an_essay">
+          Continue reading
+        </a>
   </div>
   <hr />
 </article>
 <article>
   <header>
-    <h2><a href="https://naoto-yamaguchi.github.io/site/src_of_cellagri_info.html#src_of_cellagri_info">細胞農業について知りたかったら。情報源は...(if you would like to know about cellular agriculture)</a></h2>
+    <h2><a href="https://naoto-yamaguchi.github.io/site/xi-bao-nong-ye/src_of_cellagri_info.html#src_of_cellagri_info">細胞農業について知りたかったら。情報源は...(if you would like to know about cellular agriculture)</a></h2>
     <p>
-          Posted on 木 20 6月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/xi-bao-nong-ye.html">細胞農業</a>
+      Posted on 木 20 6月 2019 in <a href="https://naoto-yamaguchi.github.io/site/categories/xi-bao-nong-ye.html">細胞農業</a>
 
-
-          &#8226;     Tagged with
-
-              <a href="https://naoto-yamaguchi.github.io/site/tag/hao-kinamono.html">好きなもの</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/sheng-wu.html">生物</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/xi-bao-nong-ye.html">細胞農業</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/cellular-agriculture.html">Cellular Agriculture</a>
+          &#8226; Tagged with
+              <a href="https://naoto-yamaguchi.github.io/site/tags/hao-kinamono.html">好きなもの</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/sheng-wu.html">生物</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/xi-bao-nong-ye.html">細胞農業</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/cellular-agriculture.html">Cellular Agriculture</a>
     </p>
   </header>
   <div>
       <p>細胞農業について</p>
-      <br>
-      <a class="btn" href="https://naoto-yamaguchi.github.io/site/src_of_cellagri_info.html#src_of_cellagri_info">    Continue reading
-</a>
+        <br>
+        <a class="btn"
+           href="https://naoto-yamaguchi.github.io/site/xi-bao-nong-ye/src_of_cellagri_info.html#src_of_cellagri_info">
+          Continue reading
+        </a>
   </div>
   <hr />
 </article>
 <article>
   <header>
-    <h2><a href="https://naoto-yamaguchi.github.io/site/cell_based_meat_research_projects.html#cell_based_meat_research_projects">記事翻訳 ~GFI Research Grants Update: Introduction to Cell-Based Meat Research Projects~</a></h2>
+    <h2><a href="https://naoto-yamaguchi.github.io/site/xi-bao-nong-ye/cell_based_meat_research_projects.html#cell_based_meat_research_projects">記事翻訳 ~GFI Research Grants Update: Introduction to Cell-Based Meat Research Projects~</a></h2>
     <p>
-          Posted on 金 07 6月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/xi-bao-nong-ye.html">細胞農業</a>
+      Posted on 金 07 6月 2019 in <a href="https://naoto-yamaguchi.github.io/site/categories/xi-bao-nong-ye.html">細胞農業</a>
 
-
-          &#8226;     Tagged with
-
-              <a href="https://naoto-yamaguchi.github.io/site/tag/xi-bao-nong-ye.html">細胞農業</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/ji-shi-fan-yi.html">記事翻訳</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/yan-jiu.html">研究</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/fan-yi.html">翻訳</a>
+          &#8226; Tagged with
+              <a href="https://naoto-yamaguchi.github.io/site/tags/xi-bao-nong-ye.html">細胞農業</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/ji-shi-fan-yi.html">記事翻訳</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/yan-jiu.html">研究</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/fan-yi.html">翻訳</a>
     </p>
   </header>
   <div>
       <p>培養肉研究プロジェクト紹介の英語記事翻訳<br><img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875522300_cell_based_meat_grant_programs.png"></p>
-      <br>
-      <a class="btn" href="https://naoto-yamaguchi.github.io/site/cell_based_meat_research_projects.html#cell_based_meat_research_projects">    Continue reading
-</a>
+        <br>
+        <a class="btn"
+           href="https://naoto-yamaguchi.github.io/site/xi-bao-nong-ye/cell_based_meat_research_projects.html#cell_based_meat_research_projects">
+          Continue reading
+        </a>
   </div>
   <hr />
 </article>
 <article>
   <header>
-    <h2><a href="https://naoto-yamaguchi.github.io/site/startups_in_cellular_agriculture.html#startups_in_cellular_agriculture">細胞農業に取り組むスタートアップまとめ</a></h2>
+    <h2><a href="https://naoto-yamaguchi.github.io/site/xi-bao-nong-ye/startups_in_cellular_agriculture.html#startups_in_cellular_agriculture">細胞農業に取り組むスタートアップまとめ</a></h2>
     <p>
-          Posted on 金 07 6月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/xi-bao-nong-ye.html">細胞農業</a>
+      Posted on 金 07 6月 2019 in <a href="https://naoto-yamaguchi.github.io/site/categories/xi-bao-nong-ye.html">細胞農業</a>
 
-
-          &#8226;     Tagged with
-
-              <a href="https://naoto-yamaguchi.github.io/site/tag/xi-bao-nong-ye.html">細胞農業</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/sutatoatsupu.html">スタートアップ</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/cellular-agriculture.html">Cellular Agriculture</a>
+          &#8226; Tagged with
+              <a href="https://naoto-yamaguchi.github.io/site/tags/xi-bao-nong-ye.html">細胞農業</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/sutatoatsupu.html">スタートアップ</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/cellular-agriculture.html">Cellular Agriculture</a>
     </p>
   </header>
   <div>
       <p>細胞農業に取り組むスタートアップまとめ</p>
-      <br>
-      <a class="btn" href="https://naoto-yamaguchi.github.io/site/startups_in_cellular_agriculture.html#startups_in_cellular_agriculture">    Continue reading
-</a>
+        <br>
+        <a class="btn"
+           href="https://naoto-yamaguchi.github.io/site/xi-bao-nong-ye/startups_in_cellular_agriculture.html#startups_in_cellular_agriculture">
+          Continue reading
+        </a>
   </div>
   <hr />
 </article>
 <article>
   <header>
-    <h2><a href="https://naoto-yamaguchi.github.io/site/diary_1905.html#diary_1905">4,5月の振り返り</a></h2>
+    <h2><a href="https://naoto-yamaguchi.github.io/site/diary/diary_1905.html#diary_1905">4,5月の振り返り</a></h2>
     <p>
-          Posted on 木 06 6月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/diary.html">Diary</a>
+      Posted on 木 06 6月 2019 in <a href="https://naoto-yamaguchi.github.io/site/categories/diary.html">Diary</a>
 
-
-          &#8226;     Tagged with
-
-              <a href="https://naoto-yamaguchi.github.io/site/tag/diary.html">Diary</a>
+          &#8226; Tagged with
+              <a href="https://naoto-yamaguchi.github.io/site/tags/diary.html">Diary</a>
     </p>
   </header>
   <div>
       <p>4,5月の振り返り</p>
-      <br>
-      <a class="btn" href="https://naoto-yamaguchi.github.io/site/diary_1905.html#diary_1905">    Continue reading
-</a>
+        <br>
+        <a class="btn"
+           href="https://naoto-yamaguchi.github.io/site/diary/diary_1905.html#diary_1905">
+          Continue reading
+        </a>
   </div>
   <hr />
 </article>
 <article>
   <header>
-    <h2><a href="https://naoto-yamaguchi.github.io/site/docker_gdbenv.html#docker_gdbenv">Dockerでgdb環境構築</a></h2>
+    <h2><a href="https://naoto-yamaguchi.github.io/site/docker/docker_gdbenv.html#docker_gdbenv">Dockerでgdb環境構築</a></h2>
     <p>
-          Posted on 水 05 6月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/docker.html">Docker</a>
+      Posted on 水 05 6月 2019 in <a href="https://naoto-yamaguchi.github.io/site/categories/docker.html">Docker</a>
 
-
-          &#8226;     Tagged with
-
-              <a href="https://naoto-yamaguchi.github.io/site/tag/docker.html">Docker</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/programming.html">Programming</a>
+          &#8226; Tagged with
+              <a href="https://naoto-yamaguchi.github.io/site/tags/docker.html">Docker</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/programming.html">Programming</a>
     </p>
   </header>
   <div>
       <p>Dockerでgdb環境を構築した備忘録<br><img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559697621860_docker.png"></p>
-      <br>
-      <a class="btn" href="https://naoto-yamaguchi.github.io/site/docker_gdbenv.html#docker_gdbenv">    Continue reading
-</a>
+        <br>
+        <a class="btn"
+           href="https://naoto-yamaguchi.github.io/site/docker/docker_gdbenv.html#docker_gdbenv">
+          Continue reading
+        </a>
   </div>
   <hr />
 </article>
 <article>
   <header>
-    <h2><a href="https://naoto-yamaguchi.github.io/site/interest_in_cellular_agriculture.html#interest_in_cellular_agriculture">細胞農業に興味がある理由(The reason why I'm interested in cellular agriculture)</a></h2>
+    <h2><a href="https://naoto-yamaguchi.github.io/site/xi-bao-nong-ye/interest_in_cellular_agriculture.html#interest_in_cellular_agriculture">細胞農業に興味がある理由(The reason why I'm interested in cellular agriculture)</a></h2>
     <p>
-          Posted on 土 01 6月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/xi-bao-nong-ye.html">細胞農業</a>
+      Posted on 土 01 6月 2019 in <a href="https://naoto-yamaguchi.github.io/site/categories/xi-bao-nong-ye.html">細胞農業</a>
 
-
-          &#8226;     Tagged with
-
-              <a href="https://naoto-yamaguchi.github.io/site/tag/hao-kinamono.html">好きなもの</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/sheng-wu.html">生物</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/xi-bao-nong-ye.html">細胞農業</a>
+          &#8226; Tagged with
+              <a href="https://naoto-yamaguchi.github.io/site/tags/hao-kinamono.html">好きなもの</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/sheng-wu.html">生物</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/xi-bao-nong-ye.html">細胞農業</a>
     </p>
   </header>
   <div>
       <p>細胞農業について</p>
-      <br>
-      <a class="btn" href="https://naoto-yamaguchi.github.io/site/interest_in_cellular_agriculture.html#interest_in_cellular_agriculture">    Continue reading
-</a>
+        <br>
+        <a class="btn"
+           href="https://naoto-yamaguchi.github.io/site/xi-bao-nong-ye/interest_in_cellular_agriculture.html#interest_in_cellular_agriculture">
+          Continue reading
+        </a>
   </div>
   <hr />
 </article>
 <article>
   <header>
-    <h2><a href="https://naoto-yamaguchi.github.io/site/cancer.html#cancer">がん</a></h2>
+    <h2><a href="https://naoto-yamaguchi.github.io/site/sheng-wu-xue/cancer.html#cancer">がん</a></h2>
     <p>
-          Posted on 金 31 5月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/sheng-wu-xue.html">生物学</a>
+      Posted on 金 31 5月 2019 in <a href="https://naoto-yamaguchi.github.io/site/categories/sheng-wu-xue.html">生物学</a>
 
-
-          &#8226;     Tagged with
-
-              <a href="https://naoto-yamaguchi.github.io/site/tag/sheng-wu-xue.html">生物学</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/jie-shuo.html">解説</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/shou-ye-matome.html">授業まとめ</a>
+          &#8226; Tagged with
+              <a href="https://naoto-yamaguchi.github.io/site/tags/sheng-wu-xue.html">生物学</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/jie-shuo.html">解説</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/shou-ye-matome.html">授業まとめ</a>
     </p>
   </header>
   <div>
       <p>がんの仕組みの解説</p>
-      <br>
-      <a class="btn" href="https://naoto-yamaguchi.github.io/site/cancer.html#cancer">    Continue reading
-</a>
+        <br>
+        <a class="btn"
+           href="https://naoto-yamaguchi.github.io/site/sheng-wu-xue/cancer.html#cancer">
+          Continue reading
+        </a>
   </div>
   <hr />
 </article>
 <article>
   <header>
-    <h2><a href="https://naoto-yamaguchi.github.io/site/molecular evolution.html#molecular evolution">がん</a></h2>
+    <h2><a href="https://naoto-yamaguchi.github.io/site/sheng-wu-xue/molecular evolution.html#molecular evolution">がん</a></h2>
     <p>
-          Posted on 金 31 5月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/sheng-wu-xue.html">生物学</a>
+      Posted on 金 31 5月 2019 in <a href="https://naoto-yamaguchi.github.io/site/categories/sheng-wu-xue.html">生物学</a>
 
-
-          &#8226;     Tagged with
-
-              <a href="https://naoto-yamaguchi.github.io/site/tag/sheng-wu-xue.html">生物学</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/jie-shuo.html">解説</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/shou-ye-matome.html">授業まとめ</a>
+          &#8226; Tagged with
+              <a href="https://naoto-yamaguchi.github.io/site/tags/sheng-wu-xue.html">生物学</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/jie-shuo.html">解説</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/shou-ye-matome.html">授業まとめ</a>
     </p>
   </header>
   <div>
       <p>がんの仕組みの解説</p>
-      <br>
-      <a class="btn" href="https://naoto-yamaguchi.github.io/site/molecular evolution.html#molecular evolution">    Continue reading
-</a>
+        <br>
+        <a class="btn"
+           href="https://naoto-yamaguchi.github.io/site/sheng-wu-xue/molecular evolution.html#molecular evolution">
+          Continue reading
+        </a>
   </div>
   <hr />
 </article>
 <article>
   <header>
-    <h2><a href="https://naoto-yamaguchi.github.io/site/ec2_to_rds.html#ec2_to_rds">EC2からRDSへの接続と、RDSへのデータ投入&日本語文字化け対応の備忘録</a></h2>
+    <h2><a href="https://naoto-yamaguchi.github.io/site/bei-wang-lu/ec2_to_rds.html#ec2_to_rds">EC2からRDSへの接続と、RDSへのデータ投入&日本語文字化け対応の備忘録</a></h2>
     <p>
-          Posted on 月 29 4月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/bei-wang-lu.html">備忘録</a>
+      Posted on 月 29 4月 2019 in <a href="https://naoto-yamaguchi.github.io/site/categories/bei-wang-lu.html">備忘録</a>
 
-
-          &#8226;     Tagged with
-
-              <a href="https://naoto-yamaguchi.github.io/site/tag/aws.html">AWS</a>
+          &#8226; Tagged with
+              <a href="https://naoto-yamaguchi.github.io/site/tags/aws.html">AWS</a>
     </p>
   </header>
   <div>
       <p>RDS文字化け対応備忘録<br><img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630545434_rds.png"></p>
-      <br>
-      <a class="btn" href="https://naoto-yamaguchi.github.io/site/ec2_to_rds.html#ec2_to_rds">    Continue reading
-</a>
+        <br>
+        <a class="btn"
+           href="https://naoto-yamaguchi.github.io/site/bei-wang-lu/ec2_to_rds.html#ec2_to_rds">
+          Continue reading
+        </a>
   </div>
   <hr />
 </article>
 <article>
   <header>
-    <h2><a href="https://naoto-yamaguchi.github.io/site/turing_pattern.html#turing_pattern">チューリングパターンとは</a></h2>
+    <h2><a href="https://naoto-yamaguchi.github.io/site/sheng-wu-xue/turing_pattern.html#turing_pattern">チューリングパターンとは</a></h2>
     <p>
-          Posted on 木 04 4月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/sheng-wu-xue.html">生物学</a>
+      Posted on 木 04 4月 2019 in <a href="https://naoto-yamaguchi.github.io/site/categories/sheng-wu-xue.html">生物学</a>
 
-
-          &#8226;     Tagged with
-
-              <a href="https://naoto-yamaguchi.github.io/site/tag/sheng-wu-xue.html">生物学</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/bioinfo.html">Bioinfo</a>
+          &#8226; Tagged with
+              <a href="https://naoto-yamaguchi.github.io/site/tags/sheng-wu-xue.html">生物学</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/bioinfo.html">Bioinfo</a>
     </p>
   </header>
   <div>
       <p>チューリングパターンの解説<br><img src="https://camo.qiitausercontent.com/58b0457b75d51790ad0c73dc752d27a2434d6a97/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3134313530332f35636465656163632d366132362d343566612d636264332d3539316561316264373238612e6a706567"></p>
-      <br>
-      <a class="btn" href="https://naoto-yamaguchi.github.io/site/turing_pattern.html#turing_pattern">    Continue reading
-</a>
+        <br>
+        <a class="btn"
+           href="https://naoto-yamaguchi.github.io/site/sheng-wu-xue/turing_pattern.html#turing_pattern">
+          Continue reading
+        </a>
   </div>
   <hr />
 </article>
 <article>
   <header>
-    <h2><a href="https://naoto-yamaguchi.github.io/site/ssh_port_forward.html#ssh_port_forward">SSHのポートフォワード（トンネリング）とは？</a></h2>
+    <h2><a href="https://naoto-yamaguchi.github.io/site/ssh/ssh_port_forward.html#ssh_port_forward">SSHのポートフォワード（トンネリング）とは？</a></h2>
     <p>
-          Posted on 日 31 3月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/ssh.html">SSH</a>
+      Posted on 日 31 3月 2019 in <a href="https://naoto-yamaguchi.github.io/site/categories/ssh.html">SSH</a>
 
-
-          &#8226;     Tagged with
-
-              <a href="https://naoto-yamaguchi.github.io/site/tag/ssh.html">SSH</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/portforward.html">portforward</a>
+          &#8226; Tagged with
+              <a href="https://naoto-yamaguchi.github.io/site/tags/ssh.html">SSH</a>,              <a href="https://naoto-yamaguchi.github.io/site/tags/portforward.html">portforward</a>
     </p>
   </header>
   <div>
       <p>SSHポートフォーワードとは（未完）<br><img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630562939_port_forwarding.png"></p>
-      <br>
-      <a class="btn" href="https://naoto-yamaguchi.github.io/site/ssh_port_forward.html#ssh_port_forward">    Continue reading
-</a>
+        <br>
+        <a class="btn"
+           href="https://naoto-yamaguchi.github.io/site/ssh/ssh_port_forward.html#ssh_port_forward">
+          Continue reading
+        </a>
   </div>
   <hr />
 </article>
 <article>
   <header>
-    <h2><a href="https://naoto-yamaguchi.github.io/site/the_philosophy_of_study.html#the_philosophy_of_study">感想~勉強の哲学：千葉雅也~</a></h2>
+    <h2><a href="https://naoto-yamaguchi.github.io/site/du-shu/the_philosophy_of_study.html#the_philosophy_of_study">感想~勉強の哲学：千葉雅也~</a></h2>
     <p>
-          Posted on 木 21 3月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/du-shu.html">読書</a>
+      Posted on 木 21 3月 2019 in <a href="https://naoto-yamaguchi.github.io/site/categories/du-shu.html">読書</a>
 
-
-          &#8226;     Tagged with
-
-              <a href="https://naoto-yamaguchi.github.io/site/tag/book.html">Book</a>
+          &#8226; Tagged with
+              <a href="https://naoto-yamaguchi.github.io/site/tags/book.html">Book</a>
     </p>
   </header>
   <div>
       <p>勉強の哲学を読んで考えたこと</p>
-      <br>
-      <a class="btn" href="https://naoto-yamaguchi.github.io/site/the_philosophy_of_study.html#the_philosophy_of_study">    Continue reading
-</a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2><a href="https://naoto-yamaguchi.github.io/site/my_favorites.html#my_favorites">私のおすすめのもの、好きなもの</a></h2>
-    <p>
-          Posted on 日 24 2月 2019 in <a href="https://naoto-yamaguchi.github.io/site/category/shi-hao.html">嗜好</a>
-
-
-          &#8226;     Tagged with
-
-              <a href="https://naoto-yamaguchi.github.io/site/tag/hao-kinamono.html">好きなもの</a>,              <a href="https://naoto-yamaguchi.github.io/site/tag/shi-hao.html">嗜好</a>
-    </p>
-  </header>
-  <div>
-      <p>おすすめ集、好きなもの</p>
-      <br>
-      <a class="btn" href="https://naoto-yamaguchi.github.io/site/my_favorites.html#my_favorites">    Continue reading
-</a>
+        <br>
+        <a class="btn"
+           href="https://naoto-yamaguchi.github.io/site/du-shu/the_philosophy_of_study.html#the_philosophy_of_study">
+          Continue reading
+        </a>
   </div>
 </article>
 
   <div class="pagination">
     <a class="btn float-left" href="https://naoto-yamaguchi.github.io/site/index2.html">
-      <i class="fa fa-angle-left"></i>     Older Posts
-
+      <i class="fa fa-angle-left"></i> Older Posts
     </a>
   </div>
 
 
 
-
     <footer>
-<p>&copy;  </p>
-<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
+<p>&copy;  2020</p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
 </p>    </footer>
   </main>
 
@@ -523,13 +553,12 @@
 {
   "@context" : "http://schema.org",
   "@type" : "Blog",
-  "name": " nafoto'zz_blog ",
+  "name": " nafoto'z_blog ",
   "url" : "https://naoto-yamaguchi.github.io/site",
   "image": "https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875512584_profile_dubai.jpg",
-  "description": ""
+  "description": "Naoto Yamaguchi's Blog"
 }
 </script>
-
 <a href="https://github.com/Naoto-Yamaguchi" class="github-corner" aria-label="View source on Github">
     <svg width="80"
          height="80"
@@ -548,5 +577,12 @@
         </path>
     </svg>
 </a>
-<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></body>
+<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <script>
+      $(document).ready(function() {
+        $('#tipue_search_input').tipuesearch();
+      });
+    </script>
+
+</body>
 </html>

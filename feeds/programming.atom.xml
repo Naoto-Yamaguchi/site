@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'zz_blog - Programming</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/programming.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-06-24T00:00:00+09:00</updated><entry><title>OpenMPによる並列処理メモ</title><link href="https://naoto-yamaguchi.github.io/site/openmp.html" rel="alternate"></link><published>2019-06-24T00:00:00+09:00</published><updated>2019-06-24T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-24:/site/openmp.html</id><summary type="html">&lt;p&gt;OpenMP環境構築、コマンド等&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog - Programming</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/programming.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-06-24T00:00:00+09:00</updated><subtitle>nafoto'z_blog</subtitle><entry><title>OpenMPによる並列処理メモ</title><link href="https://naoto-yamaguchi.github.io/site/programming/openmp.html" rel="alternate"></link><published>2019-06-24T00:00:00+09:00</published><updated>2019-06-24T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-24:/site/programming/openmp.html</id><summary type="html">&lt;p&gt;OpenMP環境構築、コマンド等&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
 &lt;p&gt;OpenMPを用いた並列コンピューティングの実装課題に取り組む際に、環境構築がよくわからなかったこと、また、OpenMPを使う際に、スレッド数やプロセス数についてよくわからないことがあったので、軽くわかったことを書いてみました。
 また、OpenMPの並列化の際、いくつのスレッドが立っているのか、いくつのコアを使っているのかを調べる必要があったためです。&lt;/p&gt;
 &lt;h1&gt;OpenMP環境構築&lt;/h1&gt;
 &lt;p&gt;環境構築方法は基本、そのマシンによって異なります。私のMacbookでできた方法を記載しています。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;gcc4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="err"&gt;以上じゃないと&lt;/span&gt;&lt;span class="n"&gt;openmpは使えない模様&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;brew&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;llvm&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;llvmはコンパイラ基盤らしい&lt;/span&gt;&lt;span class="err"&gt;）&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="k"&gt;open&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Library&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Developer&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;CommandLineTools&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Packages&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;macOS_SDK_headers_for_macOS_10&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pkg&lt;/span&gt;
-&lt;span class="err"&gt;でできると言われたが、これは&lt;/span&gt;&lt;span class="n"&gt;file&lt;/span&gt; &lt;span class="n"&gt;does&lt;/span&gt; &lt;span class="k"&gt;not&lt;/span&gt; &lt;span class="n"&gt;existとなり&lt;/span&gt;&lt;span class="err"&gt;、&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Library&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Developer&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;CommandLineTools&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="err"&gt;以下には&lt;/span&gt;&lt;span class="n"&gt;Packagesというディレクトリがなかった&lt;/span&gt;&lt;span class="err"&gt;。&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;gcc4.9以上じゃないとopenmpは使えない模様&lt;/span&gt;
+&lt;span class="err"&gt;$ brew install llvm&lt;/span&gt;
+&lt;span class="err"&gt;(llvmはコンパイラ基盤らしい）&lt;/span&gt;
+&lt;span class="err"&gt;$ open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg&lt;/span&gt;
+&lt;span class="err"&gt;でできると言われたが、これはfile does not existとなり、/Library/Developer/CommandLineTools/以下にはPackagesというディレクトリがなかった。&lt;/span&gt;
 &lt;span class="err"&gt;そのため、一旦これはやめて、&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;brew&lt;/span&gt; &lt;span class="n"&gt;reinstall&lt;/span&gt; &lt;span class="n"&gt;gcc&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;brew&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;gcc49&lt;/span&gt;
+&lt;span class="err"&gt;$ brew reinstall gcc&lt;/span&gt;
+&lt;span class="err"&gt;$ brew install gcc49&lt;/span&gt;
 &lt;span class="err"&gt;で&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="k"&gt;g&lt;/span&gt;&lt;span class="o"&gt;++-&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;c&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="mi"&gt;11&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fopenmp&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="err"&gt;ファイル名&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cpp&lt;/span&gt;
+&lt;span class="err"&gt;$ g++-4.9 -std=c++11 -fopenmp &amp;lt;ファイル名&amp;gt;.cpp&lt;/span&gt;
 &lt;span class="err"&gt;とすればできた&lt;/span&gt;
 &lt;span class="err"&gt;環境は個々人によるので、これでできるかはわかりません&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h1&gt;thread数、process数、コア数を調べる、ハイパースレッティング&lt;/h1&gt;
@@ -29,7 +29,7 @@ http://no213015e.hatenablog.com/entry/2018/02/07/223914&lt;/p&gt;
 そのプロセッサの情報に、メモリの種類という項目があり、3種類程しか載っておらず、最大メモリ帯域も決まった値が記載されていました。私は、メモリとプロセッサは独立に決められると思っていたのですが、プロセッサに合うメモリというのがある程度決まっていて、そのスペックもほぼ決まっているのでしょうか。そのプロセッサが対応できるメモリの種類、サイズ、転送速度を記載しているという認識で良いのでしょうか。ここは、まだ自分が理解できていない部分です。&lt;/p&gt;
 &lt;h1&gt;コマンド&lt;/h1&gt;
 &lt;p&gt;以下のコマンドで、ハードウェアの情報の一部を見ることができます。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ system_profiler SPHardwareDataType
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ system_profiler SPHardwareDataType
 Hardware:
 
     Hardware Overview:
@@ -47,22 +47,22 @@ Hardware:
       SMC Version &lt;span class="o"&gt;(&lt;/span&gt;system&lt;span class="o"&gt;)&lt;/span&gt;: &lt;span class="m"&gt;2&lt;/span&gt;.36f96
       Serial Number &lt;span class="o"&gt;(&lt;/span&gt;system&lt;span class="o"&gt;)&lt;/span&gt;: C02TJ0Q7GVC8
       Hardware UUID: 0B84C404-0239-5964-883A-B5BBB085C4C7
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;また、物理CPUのMAX数&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sysctl -n hw.physicalcpu_max             
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ sysctl -n hw.physicalcpu_max             
 &lt;span class="m"&gt;2&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;論理CPUのMAX数も見ることができます。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sysctl -n hw.logicalcpu_max
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ sysctl -n hw.logicalcpu_max
 &lt;span class="m"&gt;4&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;これらからわかることは、このMacbookには1つのプロセッサー(四角いチップ)があり、その中に2つのコアが入っていて（これは物理的なコア）、各コアが仮想的に2コアとして動くことで、最大論理コア数は4になっているということです。&lt;/p&gt;
 &lt;p&gt;なぜ、こういうことを調べたかというと、
 MacBookの「このMacについて」を調べたり、ネットで型番を調べても、コア数は2という記載だったのにも関わらず、OpenMPを用いたプログラムで、&lt;code&gt;omp_get_num_procs()&lt;/code&gt;というコア数を返してくれる関数を実行した際の返り値が、4であったことに疑問を持ったためです。
-これはCPUのハイパースレッティングにより、1つのコアを擬似的に2つにすることで、プログラム側からは4つのコアがあるように見えていたためだと考えられます。&lt;/p&gt;</content><category term="Programming"></category><category term="C"></category></entry></feed>
+これはCPUのハイパースレッティングにより、1つのコアを擬似的に2つにすることで、プログラム側からは4つのコアがあるように見えていたためだと考えられます。&lt;/p&gt;</content><category term="Programming"></category><category term="Programming"></category><category term="C"></category></entry></feed>

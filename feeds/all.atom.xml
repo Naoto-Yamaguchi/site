@@ -1,5 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'zz_blog</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-09-13T00:00:00+09:00</updated><entry><title>サッカー観戦あれこれ@プレミア,リーガ,エールディビジ</title><link href="https://naoto-yamaguchi.github.io/site/tj_2019_football.html" rel="alternate"></link><published>2019-09-13T00:00:00+09:00</published><updated>2019-09-13T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-09-13:/site/tj_2019_football.html</id><summary type="html">&lt;p&gt;欧州サッカー半端ないって！！！！プレミアはまじでよかった&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/all.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-10-03T00:00:00+09:00</updated><subtitle>nafoto'z_blog</subtitle><entry><title>細胞農業とは</title><link href="https://naoto-yamaguchi.github.io/site/xi-bao-nong-ye/what_is_cellular_agriculture.html" rel="alternate"></link><published>2019-10-03T00:00:00+09:00</published><updated>2019-10-03T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-10-03:/site/xi-bao-nong-ye/what_is_cellular_agriculture.html</id><summary type="html">&lt;p&gt;細胞農業とは&lt;/p&gt;</summary><content type="html">&lt;h1&gt;目次&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#motivation"&gt;動機、目的&lt;/a&gt;です。
+そして、これに加わる第6の食糧生産方法が、今回紹介した「培養」なのです。&lt;/li&gt;
+&lt;li&gt;&lt;a href="#what_is_cellular_agriculture"&gt;細胞農業とは？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#references"&gt;参考&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id="motivation"&gt;
+
+# 概要、動機
+
+&lt;/div&gt;
+
+&lt;div id="what_is_cellular_agriculture"&gt;
+
+# 培養肉って？〜細胞農業による食糧生産〜
+
+&lt;/div&gt;
+
+&lt;p&gt;皆さん、「細胞農業」という言葉はご存知ですか？恐らくほとんどの人が聞いたことがないでしょう。では、「培養肉」もしくは「人工肉」はどうでしょうか？これなら聞いたことがあるという人もいると思います。
+一方、聞いたことはあってもどういうものか詳しくは知らないという方が大半なのではないかと思います。
+そんな皆さんにあまり馴染みのない「培養肉」そして「細胞農業」についてお話したいと思います。&lt;/p&gt;
+&lt;h2&gt;培養肉事例の紹介&lt;/h2&gt;
+&lt;p&gt;いきなり培養肉と言われてもピンとこない方もいるかもしれないので、具体的な例から見ていきましょう。&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/aleph_farms_steak.png"&gt;
+&lt;img src="images/integriculture_foie_gras.png"&gt;&lt;/p&gt;
+&lt;p&gt;これは、左がステーキ肉、右がフォアグラです。&lt;/p&gt;
+&lt;p&gt;どちらも本物の肉です。本物の肉、なのですが、動物を屠殺場で殺して調理した肉ではありません。これは「細胞培養」という技術を用いて実験室で作られた肉なのです。
+ざっくり言うと、細胞=体を構成する基本単位、培養=細胞に栄養を与えを育てること、です。
+牛や豚から採取した筋肉細胞を培養して上手に増やすと我々が普段食べているミンチ肉やステーキ肉のようになりますし、鶏の肝臓細胞をとってきて上手く培養するとフォアグラになります。
+今まで動物を育てて出来上がった肉をとって食べていましたが、培養肉では、発想が異なり、動物からとってきた細胞を動物の体外で育ててそれを肉として食べるということです。
+このようにして作られたのが上の写真に写っている肉なのです。
+1枚目の写真はイスラエル発のスタートアップ、Aleph Farmsが2019年8月に発表した培養ステーキ肉、2枚目の写真は日本発のスタートアップ、Integriculture, Inc.が同じ8月に発表した培養フォアグラです。&lt;/p&gt;
+&lt;p&gt;とても美味しそうです。実際、これらの肉は一流のシェフによって調理され試食会が行われたそうですが、とても美味しかったらしいです。（食べてみたい...）&lt;/p&gt;
+&lt;p&gt;やはり何か不気味に思う人もいるかもしれませんが、この技術は特段驚くほどのものではありません。
+培養（=細胞を育てる）操作は、生物学や医学などの研究において日常的に使われているものであります。
+何か魔法をかけている訳でもありません。これは、生物の力を利用したものなのです。
+家庭菜園に馴染みのある人ならわかるかもしれませんが、豆苗やネギの根っこを水につけるとまた育ってきて、再度収穫できることがありますよね。再生野菜（リボーンベジタブル、略してリボベジ）と呼ぶらしいのですが、培養肉でやっていることのイメージはこれに大変近いです。
+これらの野菜は水につけておくだけですが、肉の場合は、細胞が育つために必要な栄養が揃った環境で培養することで、同じように育て増やすことができます。&lt;/p&gt;
+&lt;p&gt;生物の力を利用したもう1つの例は、「発酵」です。
+発酵とは、目に見えない微生物が食べ物など有機物を分解し、人間にとって有益なものになることです。人間にとってマイナスなものになる場合は腐敗と呼ばれることが多いです。（実は発酵と腐敗の分類は人間の主観によるものなのです）
+人間は長い歴史の中で、「人間に有益な微生物」を見つけ、そいつらが気持ちよく働ける環境をつくる技術を開発してきました。
+ご存知の通り日本は発酵大国であり、醤油、納豆、お酒、パン、チーズ、ヨーグルトなど発酵によって作られた美味しい食べ物を日常的に食べています。
+こう見てみると、生物の力を利用し食料を生産することははるか昔からやられてきたことであり、我々日本人も比較的馴染みの深いものであるはずです。&lt;/p&gt;
+&lt;p&gt;ここまでの話を含めて整理してみます。
+人類がこれまでの歴史でも用いてきた食料供給方法は大きく分けて5つあります。狩猟、栽培、飼育、合成、発酵(醸造)です。
+&lt;img src="images/food_production_method.png"&gt;&lt;/p&gt;
+&lt;p&gt;そして、これに加わる第6の食糧生産方法が、今回紹介した「培養」なのです。
+この培養を利用して、食品（肉、牛乳、卵、魚など）や革製品、それに関わる風味、芳香などを、作り出すことを目指す分野が細胞農業なのです。
+そのため、細胞農業の対象は牛や鶏の肉だけにとどまりません、エビなどの魚介類だったり、酵母を培養してタンパク質を作らせることで、普通の牛乳や卵と分子レベルで同じタンパク質を作ることができます。また皮革製品や香料なども作ることができます。
+このように、新しい食糧生産方法が細胞農業であり、その中の培養肉が最近注目を集めているのです。&lt;/p&gt;
+&lt;p&gt;次回は、なぜ現在そのようなトレンドが盛んになっているのか、世界の代替タンパク質市場の現状と共に、細胞農業が注目される理由について考えたいと思います。&lt;/p&gt;
+&lt;div id="references"&gt;
+
+# 参考
+
+&lt;/div&gt;</content><category term="細胞農業"></category><category term="細胞農業"></category><category term="Cellular Agriculture"></category></entry><entry><title>サッカー観戦あれこれ@プレミア,リーガ,エールディビジ</title><link href="https://naoto-yamaguchi.github.io/site/travel-journal/tj_2019_football.html" rel="alternate"></link><published>2019-09-13T00:00:00+09:00</published><updated>2019-09-13T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-09-13:/site/travel-journal/tj_2019_football.html</id><summary type="html">&lt;p&gt;欧州サッカー半端ないって！！！！プレミアはまじでよかった&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
 &lt;h1&gt;目次&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;観戦した試合&lt;ul&gt;
@@ -25,7 +81,7 @@
 なぜかペットボトルの蓋はダメ
 荷物検査の効率の悪さ&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="Travel Journal"></category><category term="Football"></category></entry><entry><title>6,7月の振り返り</title><link href="https://naoto-yamaguchi.github.io/site/diary_1907.html" rel="alternate"></link><published>2019-09-11T00:00:00+09:00</published><updated>2019-09-11T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-09-11:/site/diary_1907.html</id><summary type="html">&lt;p&gt;7月の振り返り&lt;/p&gt;</summary><content type="html">&lt;h1&gt;6月やったこと&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="Travel Journal"></category><category term="Travel Journal"></category><category term="Football"></category></entry><entry><title>6,7月の振り返り</title><link href="https://naoto-yamaguchi.github.io/site/diary/diary_1907.html" rel="alternate"></link><published>2019-09-11T00:00:00+09:00</published><updated>2019-09-11T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-09-11:/site/diary/diary_1907.html</id><summary type="html">&lt;p&gt;7月の振り返り&lt;/p&gt;</summary><content type="html">&lt;h1&gt;6月やったこと&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;CL決勝テレビで観戦 (Liverpool vs Tottenham: 2-1)&lt;ul&gt;
 &lt;li&gt;バーでの中継を見ていたが、リアルタイムより少し遅れて放送されていた。隣のおじさんがTwitterで速報を見て、「あ、点入ったらしいよ」とか言って台無しに。さすがにそれはひどいと思った。(思い出すと怒りが湧いてくるので忘れることにします)&lt;/li&gt;
@@ -50,7 +106,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;隅田川花火大会をみんなで鑑賞&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Diary"></category></entry><entry><title>8月の振り返り</title><link href="https://naoto-yamaguchi.github.io/site/diary_1908.html" rel="alternate"></link><published>2019-09-11T00:00:00+09:00</published><updated>2019-09-11T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-09-11:/site/diary_1908.html</id><summary type="html">&lt;p&gt;8月の振り返り&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><category term="Diary"></category><category term="Diary"></category></entry><entry><title>8月の振り返り</title><link href="https://naoto-yamaguchi.github.io/site/diary/diary_1908.html" rel="alternate"></link><published>2019-09-11T00:00:00+09:00</published><updated>2019-09-11T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-09-11:/site/diary/diary_1908.html</id><summary type="html">&lt;p&gt;8月の振り返り&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;/p&gt;
 &lt;h1&gt;やったこと&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;富士山ご来光&lt;/li&gt;
@@ -63,7 +119,7 @@
 &lt;li&gt;ローマ建築の中の吹き抜けをアトリウムと言う&lt;/li&gt;
 &lt;li&gt;サッカーチームのFCバルセロナの創設者は、スイス人。チームカラーのblaugrana (blue and garnet)は、そのスイス人の地元チームのバーゼルの色を使ったという説が有力。（カンプノウでの展示）&lt;/li&gt;
 &lt;li&gt;スペインは1920-1970年くらいまで独裁国家で、カタルーニャ語は禁止されていた。そのため、その時代のFC Barcelona(カタルーニャ語でFootball Club)は、C de F Barcelona (スペイン語でClub de Football)と呼ばれ、優勝カップでもその名前が刻まれている。&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Diary"></category></entry><entry><title>バレンシア,メスタージャスタジアム,久保選手,ビジャレアル,エスタディオデラセラミカ,スペイン人の優しさ</title><link href="https://naoto-yamaguchi.github.io/site/tj_2019_valencia_villareal.html" rel="alternate"></link><published>2019-09-02T00:00:00+09:00</published><updated>2019-09-02T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-09-02:/site/tj_2019_valencia_villareal.html</id><summary type="html">&lt;p&gt;バレンシア,ビジャレアルでのリーガ観戦記。久保建英選手のリーガデビュー！&lt;/p&gt;</summary><content type="html">&lt;h1&gt;旅行日程&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="Diary"></category><category term="Diary"></category></entry><entry><title>バレンシア,メスタージャスタジアム,久保選手,ビジャレアル,エスタディオデラセラミカ,スペイン人の優しさ</title><link href="https://naoto-yamaguchi.github.io/site/travel-journal/tj_2019_valencia_villareal.html" rel="alternate"></link><published>2019-09-02T00:00:00+09:00</published><updated>2019-09-02T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-09-02:/site/travel-journal/tj_2019_valencia_villareal.html</id><summary type="html">&lt;p&gt;バレンシア,ビジャレアルでのリーガ観戦記。久保建英選手のリーガデビュー！&lt;/p&gt;</summary><content type="html">&lt;h1&gt;旅行日程&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;バレンシア,メスタージャスタジアムで、Valencia vs Marollcaの観戦。久保くんのベンチ入りが発表されたため急遽チケット購入。&lt;/li&gt;
 &lt;li&gt;ビジャレアル,エスタディオセラミカで、Vilarreal vs Real Madridの観戦。&lt;/li&gt;
@@ -78,7 +134,7 @@ Renfeのプラットフォーム行きの列に並ぼうとしたけど、違っ
 &lt;p&gt;Renfeは日本の新幹線のようで、普通に快適であった。ちゃんと電源があって安心でした。隣のおじちゃんは、足元の足置きの使い方を教えてくれて優しかった一方、隣に座っている間ずっとTinderやってた(おい笑。メッセージ送ってニヤニヤしてたし。おい)。席に座っていない間は、新幹線の中にあるバーみたいなところでバーのお姉ちゃんをナンパしているっぽかった...(遠巻きに見てただけなのでわからないけど)&lt;/p&gt;
 &lt;p&gt;ついにValenciaに到着！乗り換えも急がねばと急いでメスタージャスタジアムへ!とにかく急いでチケットを買おうと思うも、いくら分買えば良いかもよくわからず後ろに並んでいたおじさんに聞いてみた。これまた優しく教えてくれて無事購入。予定の電車にも乗れた。&lt;/p&gt;
 &lt;p&gt;最寄駅について地下から地上に上がりメスタージャスタジアムを見たときはもう感動。。。応援歌が聞こえてきてはやる気持ちを抑えながら、急いで自分のゲートへ。しかしハーフタイムだからか自分のゲートが空いてない...誰かが一瞬出てくる際にドアが空いたので、中にいる警備員にチケットを見せて入りたいというジェスチャーを見せるも即却下。なんでや。そこで近くにいるオヤジ2人組に聞くと、なんならそこから入れやみたいな感じで隣を勧められ入ってみた。&lt;/p&gt;
-&lt;p&gt;バルセロナに到着→17:00からのバレンシアの試合&lt;/p&gt;</content><category term="Travel Journal"></category></entry><entry><title>New Harvest 2019 参加レポート</title><link href="https://naoto-yamaguchi.github.io/site/newharvest2019.html" rel="alternate"></link><published>2019-07-21T00:00:00+09:00</published><updated>2019-07-21T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-07-21:/site/newharvest2019.html</id><summary type="html">&lt;p&gt;New Harvest 2019 @ MIT Media Labに参加しポスター発表してきました!!&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;img src="./images/new_harvest_2019.png" width="30%" height="30%"&gt;&lt;/p&gt;</summary><content type="html">&lt;h1&gt;目次&lt;/h1&gt;
+&lt;p&gt;バルセロナに到着→17:00からのバレンシアの試合&lt;/p&gt;</content><category term="Travel Journal"></category><category term="Travel Journal"></category></entry><entry><title>New Harvest 2019 参加レポート</title><link href="https://naoto-yamaguchi.github.io/site/cellular-agriculture/newharvest2019.html" rel="alternate"></link><published>2019-07-21T00:00:00+09:00</published><updated>2019-07-21T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-07-21:/site/cellular-agriculture/newharvest2019.html</id><summary type="html">&lt;p&gt;New Harvest 2019 @ MIT Media Labに参加しポスター発表してきました!!&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;img src="./images/new_harvest_2019.png" width="30%" height="30%"&gt;&lt;/p&gt;</summary><content type="html">&lt;h1&gt;目次&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#motivation"&gt;概要、動機&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#about1"&gt;New Harvestとは？&lt;/a&gt;&lt;/li&gt;
@@ -301,24 +357,24 @@ PhDコースに大事になってくるのは向こうの教授とのコンタ�
 &lt;p&gt;東大新聞で出して、facebookで告知
 武さんに連絡
 Animal Rebellion
-サマースクールでのヴィーガン&lt;/p&gt;</content><category term="Cellular Agriculture"></category><category term="New Harvest"></category><category term="細胞農業"></category><category term="Shojinmeat Project"></category></entry><entry><title>OpenMPによる並列処理メモ</title><link href="https://naoto-yamaguchi.github.io/site/openmp.html" rel="alternate"></link><published>2019-06-24T00:00:00+09:00</published><updated>2019-06-24T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-24:/site/openmp.html</id><summary type="html">&lt;p&gt;OpenMP環境構築、コマンド等&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
+サマースクールでのヴィーガン&lt;/p&gt;</content><category term="Cellular Agriculture"></category><category term="Cellular Agriculture"></category><category term="New Harvest"></category><category term="細胞農業"></category><category term="Shojinmeat Project"></category></entry><entry><title>OpenMPによる並列処理メモ</title><link href="https://naoto-yamaguchi.github.io/site/programming/openmp.html" rel="alternate"></link><published>2019-06-24T00:00:00+09:00</published><updated>2019-06-24T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-24:/site/programming/openmp.html</id><summary type="html">&lt;p&gt;OpenMP環境構築、コマンド等&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
 &lt;p&gt;OpenMPを用いた並列コンピューティングの実装課題に取り組む際に、環境構築がよくわからなかったこと、また、OpenMPを使う際に、スレッド数やプロセス数についてよくわからないことがあったので、軽くわかったことを書いてみました。
 また、OpenMPの並列化の際、いくつのスレッドが立っているのか、いくつのコアを使っているのかを調べる必要があったためです。&lt;/p&gt;
 &lt;h1&gt;OpenMP環境構築&lt;/h1&gt;
 &lt;p&gt;環境構築方法は基本、そのマシンによって異なります。私のMacbookでできた方法を記載しています。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;gcc4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="err"&gt;以上じゃないと&lt;/span&gt;&lt;span class="n"&gt;openmpは使えない模様&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;brew&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;llvm&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;llvmはコンパイラ基盤らしい&lt;/span&gt;&lt;span class="err"&gt;）&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="k"&gt;open&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Library&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Developer&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;CommandLineTools&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Packages&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;macOS_SDK_headers_for_macOS_10&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pkg&lt;/span&gt;
-&lt;span class="err"&gt;でできると言われたが、これは&lt;/span&gt;&lt;span class="n"&gt;file&lt;/span&gt; &lt;span class="n"&gt;does&lt;/span&gt; &lt;span class="k"&gt;not&lt;/span&gt; &lt;span class="n"&gt;existとなり&lt;/span&gt;&lt;span class="err"&gt;、&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Library&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Developer&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;CommandLineTools&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="err"&gt;以下には&lt;/span&gt;&lt;span class="n"&gt;Packagesというディレクトリがなかった&lt;/span&gt;&lt;span class="err"&gt;。&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;gcc4.9以上じゃないとopenmpは使えない模様&lt;/span&gt;
+&lt;span class="err"&gt;$ brew install llvm&lt;/span&gt;
+&lt;span class="err"&gt;(llvmはコンパイラ基盤らしい）&lt;/span&gt;
+&lt;span class="err"&gt;$ open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg&lt;/span&gt;
+&lt;span class="err"&gt;でできると言われたが、これはfile does not existとなり、/Library/Developer/CommandLineTools/以下にはPackagesというディレクトリがなかった。&lt;/span&gt;
 &lt;span class="err"&gt;そのため、一旦これはやめて、&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;brew&lt;/span&gt; &lt;span class="n"&gt;reinstall&lt;/span&gt; &lt;span class="n"&gt;gcc&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;brew&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;gcc49&lt;/span&gt;
+&lt;span class="err"&gt;$ brew reinstall gcc&lt;/span&gt;
+&lt;span class="err"&gt;$ brew install gcc49&lt;/span&gt;
 &lt;span class="err"&gt;で&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="k"&gt;g&lt;/span&gt;&lt;span class="o"&gt;++-&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;c&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="mi"&gt;11&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fopenmp&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="err"&gt;ファイル名&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cpp&lt;/span&gt;
+&lt;span class="err"&gt;$ g++-4.9 -std=c++11 -fopenmp &amp;lt;ファイル名&amp;gt;.cpp&lt;/span&gt;
 &lt;span class="err"&gt;とすればできた&lt;/span&gt;
 &lt;span class="err"&gt;環境は個々人によるので、これでできるかはわかりません&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h1&gt;thread数、process数、コア数を調べる、ハイパースレッティング&lt;/h1&gt;
@@ -331,7 +387,7 @@ http://no213015e.hatenablog.com/entry/2018/02/07/223914&lt;/p&gt;
 そのプロセッサの情報に、メモリの種類という項目があり、3種類程しか載っておらず、最大メモリ帯域も決まった値が記載されていました。私は、メモリとプロセッサは独立に決められると思っていたのですが、プロセッサに合うメモリというのがある程度決まっていて、そのスペックもほぼ決まっているのでしょうか。そのプロセッサが対応できるメモリの種類、サイズ、転送速度を記載しているという認識で良いのでしょうか。ここは、まだ自分が理解できていない部分です。&lt;/p&gt;
 &lt;h1&gt;コマンド&lt;/h1&gt;
 &lt;p&gt;以下のコマンドで、ハードウェアの情報の一部を見ることができます。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ system_profiler SPHardwareDataType
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ system_profiler SPHardwareDataType
 Hardware:
 
     Hardware Overview:
@@ -349,25 +405,25 @@ Hardware:
       SMC Version &lt;span class="o"&gt;(&lt;/span&gt;system&lt;span class="o"&gt;)&lt;/span&gt;: &lt;span class="m"&gt;2&lt;/span&gt;.36f96
       Serial Number &lt;span class="o"&gt;(&lt;/span&gt;system&lt;span class="o"&gt;)&lt;/span&gt;: C02TJ0Q7GVC8
       Hardware UUID: 0B84C404-0239-5964-883A-B5BBB085C4C7
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;また、物理CPUのMAX数&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sysctl -n hw.physicalcpu_max             
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ sysctl -n hw.physicalcpu_max             
 &lt;span class="m"&gt;2&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;論理CPUのMAX数も見ることができます。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sysctl -n hw.logicalcpu_max
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ sysctl -n hw.logicalcpu_max
 &lt;span class="m"&gt;4&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;これらからわかることは、このMacbookには1つのプロセッサー(四角いチップ)があり、その中に2つのコアが入っていて（これは物理的なコア）、各コアが仮想的に2コアとして動くことで、最大論理コア数は4になっているということです。&lt;/p&gt;
 &lt;p&gt;なぜ、こういうことを調べたかというと、
 MacBookの「このMacについて」を調べたり、ネットで型番を調べても、コア数は2という記載だったのにも関わらず、OpenMPを用いたプログラムで、&lt;code&gt;omp_get_num_procs()&lt;/code&gt;というコア数を返してくれる関数を実行した際の返り値が、4であったことに疑問を持ったためです。
-これはCPUのハイパースレッティングにより、1つのコアを擬似的に2つにすることで、プログラム側からは4つのコアがあるように見えていたためだと考えられます。&lt;/p&gt;</content><category term="Programming"></category><category term="C"></category></entry><entry><title>英作文をしていて気がついたこと(What I realized when I write an essay)</title><link href="https://naoto-yamaguchi.github.io/site/what_i_found_when_i_write_an_essay.html" rel="alternate"></link><published>2019-06-21T00:00:00+09:00</published><updated>2019-06-21T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-21:/site/what_i_found_when_i_write_an_essay.html</id><summary type="html">&lt;p&gt;英作文をしていて気がついたこと&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
+これはCPUのハイパースレッティングにより、1つのコアを擬似的に2つにすることで、プログラム側からは4つのコアがあるように見えていたためだと考えられます。&lt;/p&gt;</content><category term="Programming"></category><category term="Programming"></category><category term="C"></category></entry><entry><title>英作文をしていて気がついたこと(What I realized when I write an essay)</title><link href="https://naoto-yamaguchi.github.io/site/essay/what_i_found_when_i_write_an_essay.html" rel="alternate"></link><published>2019-06-21T00:00:00+09:00</published><updated>2019-06-21T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-21:/site/essay/what_i_found_when_i_write_an_essay.html</id><summary type="html">&lt;p&gt;英作文をしていて気がついたこと&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
 &lt;p&gt;ごく最近ですが、定期的に英文を書いて添削してもらうことを始めました。理由は英語でのライティングスキルを高めたかったからです。やはり定期的に英語でのアウトプットは非常に重要だと感じ、兼ねてからやってみたいと思っていた、英文添削サービスを受け始めてみることにしました。
 私は、少しインターネットで英文添削サービスを検索して&lt;a href="https://idiy.biz/"&gt;IDIY&lt;/a&gt;というサービスを使ってみることにしました。もっと色々なサービスを比較してもよかったですが、比較することに時間を費やして英文添削を延ばし延ばしにしてしまうのは良くないし、すぐに始めるべきだ！と思ったので、調査もそこそこに（いつもこういうのは納得するまで調べてしまう）、評価もそこそこ良さそうで、安価なIDIYを使ってみることにしました。
 添削サービスは一長一短あると思いますし、人によって適したものは異なるので、軽く調べて自分に合うのを選ぶと良いと思います。ただ調べるのに時間をかけすぎるのは、本末転倒で,参考書マニアになった受験生（いつしかの私）みたいになるので要注意です。実際、英文添削サービスやオンライン英会話のサービスは、初回無料体験のようなものが多く、それを使えばサービスの質を体感できるばかりか、実際に英作文や会話をする機会を得られるので、まずサービスを使ってみるのが一番かと思います。個人的にはIDIYが今のところ良いので、自分は英文添削サービスについては、IDIYしか使ったことがありませんが（無料のGrammerlyは使っている）、オンライン英会話はDMMやCamblyなどを無料体験で使ってみてサービスがどんな感じか掴めたのでおすすめです。&lt;/p&gt;
@@ -384,7 +440,7 @@ Thus, if you would like to improve your English writing skills, you should be fa
 ただ、普通に考えて、日本語で書けない文章を英語でかけるわけではありません。自分が書くトピックに対して自分の頭の中が整理されていなければ、英語であろうと日本語であろうと相手に伝わる文章を書くことは非常に難しいです。逆に、頭の中でよく整理されたシンプルにまとまっていれば、それを日本語であろと英語であろうと、そのまま書けばわかりやすく伝わりやすい文章が書けるはずです。自分は英文を書くとき、慣れたトピックは比較的スラスラかけましたが、普段考えたこともないようなお題に対しては、すぐにキーボードを打つ手（もしくは筆）が止まってしまいました。
 これはある程度簡単な表現は英語でも書けることが前提ですが、そういう簡単でシンプルな表現でも書けて、かつ説得力のある文章になるように、上手く文を構成できれば難しい表現を使う必要はないのではないかと思いました。
 だからこそ、様々なトピックに対して、よく整理された(well-organized)な考えを持っておきたいと思いました。どうしても知らない内容は当然あると思うので、その際は、いかにシンプルに主張を整理していくかが大事で、それには訓練が必要そうです...&lt;/p&gt;
-&lt;p&gt;英作文以前に、文章自体を構成することに悩んだので、&lt;a href="https://www.amazon.co.jp/%E8%80%83%E3%81%88%E3%82%8B%E6%8A%80%E8%A1%93%E3%83%BB%E6%9B%B8%E3%81%8F%E6%8A%80%E8%A1%93%E2%80%95%E5%95%8F%E9%A1%8C%E8%A7%A3%E6%B1%BA%E5%8A%9B%E3%82%92%E4%BC%B8%E3%81%B0%E3%81%99%E3%83%94%E3%83%A9%E3%83%9F%E3%83%83%E3%83%89%E5%8E%9F%E5%89%87-%E3%83%90%E3%83%BC%E3%83%90%E3%83%A9-%E3%83%9F%E3%83%B3%E3%83%88/dp/4478490279"&gt;「考える技術・書く技術」&lt;/a&gt;という本を読んでみました。文章を書く目的である、「主張」に対して、ピラミッド構造で要素を展開していくことの重要性とその実践について書かれています。まだ半分ほどしか読んでいませんが、わかりやすく書くためのアイデアが詰まっているのでおすすめです。&lt;/p&gt;</content><category term="Essay 気がついたこと"></category></entry><entry><title>細胞農業について知りたかったら。情報源は...(if you would like to know about cellular agriculture)</title><link href="https://naoto-yamaguchi.github.io/site/src_of_cellagri_info.html" rel="alternate"></link><published>2019-06-20T00:00:00+09:00</published><updated>2019-06-20T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-20:/site/src_of_cellagri_info.html</id><summary type="html">&lt;p&gt;細胞農業について&lt;/p&gt;</summary><content type="html">&lt;h1&gt;目次&lt;/h1&gt;
+&lt;p&gt;英作文以前に、文章自体を構成することに悩んだので、&lt;a href="https://www.amazon.co.jp/%E8%80%83%E3%81%88%E3%82%8B%E6%8A%80%E8%A1%93%E3%83%BB%E6%9B%B8%E3%81%8F%E6%8A%80%E8%A1%93%E2%80%95%E5%95%8F%E9%A1%8C%E8%A7%A3%E6%B1%BA%E5%8A%9B%E3%82%92%E4%BC%B8%E3%81%B0%E3%81%99%E3%83%94%E3%83%A9%E3%83%9F%E3%83%83%E3%83%89%E5%8E%9F%E5%89%87-%E3%83%90%E3%83%BC%E3%83%90%E3%83%A9-%E3%83%9F%E3%83%B3%E3%83%88/dp/4478490279"&gt;「考える技術・書く技術」&lt;/a&gt;という本を読んでみました。文章を書く目的である、「主張」に対して、ピラミッド構造で要素を展開していくことの重要性とその実践について書かれています。まだ半分ほどしか読んでいませんが、わかりやすく書くためのアイデアが詰まっているのでおすすめです。&lt;/p&gt;</content><category term="Essay"></category><category term="Essay 気がついたこと"></category></entry><entry><title>細胞農業について知りたかったら。情報源は...(if you would like to know about cellular agriculture)</title><link href="https://naoto-yamaguchi.github.io/site/xi-bao-nong-ye/src_of_cellagri_info.html" rel="alternate"></link><published>2019-06-20T00:00:00+09:00</published><updated>2019-06-20T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-20:/site/xi-bao-nong-ye/src_of_cellagri_info.html</id><summary type="html">&lt;p&gt;細胞農業について&lt;/p&gt;</summary><content type="html">&lt;h1&gt;目次&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;動機、対象&lt;/li&gt;
 &lt;li&gt;細胞農業とは？&lt;/li&gt;
@@ -507,7 +563,7 @@ Thus, if you would like to improve your English writing skills, you should be fa
 &lt;h2&gt;畜産業と肉の消費量を減らすことについて&lt;/h2&gt;
 &lt;p&gt;以下にあげるのはほんの一部です。
 * &lt;a href="http://www.cowspiracy.com/"&gt;Cowspiracy&lt;/a&gt;
-* &lt;a href="https://www.youtube.com/watch?v=NxvQPzrg2Wg&amp;amp;t=1s"&gt;Kurzgesaght - In a Nutshell&lt;/a&gt;&lt;/p&gt;</content><category term="好きなもの"></category><category term="生物"></category><category term="細胞農業"></category><category term="Cellular Agriculture"></category></entry><entry><title>記事翻訳 ~GFI Research Grants Update: Introduction to Cell-Based Meat Research Projects~</title><link href="https://naoto-yamaguchi.github.io/site/cell_based_meat_research_projects.html" rel="alternate"></link><published>2019-06-07T00:00:00+09:00</published><updated>2019-06-07T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-07:/site/cell_based_meat_research_projects.html</id><summary type="html">&lt;p&gt;培養肉研究プロジェクト紹介の英語記事翻訳&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875522300_cell_based_meat_grant_programs.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;目次 (Table of Contents)&lt;/h2&gt;
+* &lt;a href="https://www.youtube.com/watch?v=NxvQPzrg2Wg&amp;amp;t=1s"&gt;Kurzgesaght - In a Nutshell&lt;/a&gt;&lt;/p&gt;</content><category term="細胞農業"></category><category term="好きなもの"></category><category term="生物"></category><category term="細胞農業"></category><category term="Cellular Agriculture"></category></entry><entry><title>記事翻訳 ~GFI Research Grants Update: Introduction to Cell-Based Meat Research Projects~</title><link href="https://naoto-yamaguchi.github.io/site/xi-bao-nong-ye/cell_based_meat_research_projects.html" rel="alternate"></link><published>2019-06-07T00:00:00+09:00</published><updated>2019-06-07T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-07:/site/xi-bao-nong-ye/cell_based_meat_research_projects.html</id><summary type="html">&lt;p&gt;培養肉研究プロジェクト紹介の英語記事翻訳&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875522300_cell_based_meat_grant_programs.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;目次 (Table of Contents)&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#introduction"&gt;紹介&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#motivation"&gt;動機、目的&lt;/a&gt;&lt;/li&gt;
@@ -605,7 +661,7 @@ Sullivan博士の冷凍農場は、ますます拡大する細胞株のリポジ
 &lt;p&gt;&lt;a href="https://www.gfi.org/gfideas-food-financials"&gt;Cell-Based Research Projects&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;またGFI主催のカンファレンスが9月にSFであります。
 &lt;a href="https://goodfoodconference.com/"&gt;The Good Food Conference&lt;/a&gt;
-参加を熱望しており、予定調整中です。一緒に行く人がいたら行きましょう(笑）。&lt;/p&gt;</content><category term="細胞農業"></category><category term="記事翻訳"></category><category term="研究"></category><category term="翻訳"></category></entry><entry><title>細胞農業に取り組むスタートアップまとめ</title><link href="https://naoto-yamaguchi.github.io/site/startups_in_cellular_agriculture.html" rel="alternate"></link><published>2019-06-07T00:00:00+09:00</published><updated>2019-06-07T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-07:/site/startups_in_cellular_agriculture.html</id><summary type="html">&lt;p&gt;細胞農業に取り組むスタートアップまとめ&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
+参加を熱望しており、予定調整中です。一緒に行く人がいたら行きましょう(笑）。&lt;/p&gt;</content><category term="細胞農業"></category><category term="細胞農業"></category><category term="記事翻訳"></category><category term="研究"></category><category term="翻訳"></category></entry><entry><title>細胞農業に取り組むスタートアップまとめ</title><link href="https://naoto-yamaguchi.github.io/site/xi-bao-nong-ye/startups_in_cellular_agriculture.html" rel="alternate"></link><published>2019-06-07T00:00:00+09:00</published><updated>2019-06-07T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-07:/site/xi-bao-nong-ye/startups_in_cellular_agriculture.html</id><summary type="html">&lt;p&gt;細胞農業に取り組むスタートアップまとめ&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
 &lt;p&gt;色々と調べる中で、様々な会社が出てきて頭の中が混乱したため、それぞれの会社が何をやっているのかを軽く整理する必要性を感じたから。
 とはいえ、以下の参考にあるような記事を見るのが一番。この記事は、自分が理解している範囲を日本語でまとめたもの程度。&lt;/p&gt;
 &lt;p&gt;随時追記していきたい。&lt;/p&gt;
@@ -828,7 +884,7 @@ Sullivan博士の冷凍農場は、ますます拡大する細胞株のリポジ
 &lt;li&gt;生命科学実験自動化のためのプラットフォーム(API?)開発。共通の言語で、様々な生命科学実験を自動でおこなうロボットへの指示を出せるように。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="細胞農業"></category><category term="スタートアップ"></category><category term="Cellular Agriculture"></category></entry><entry><title>4,5月の振り返り</title><link href="https://naoto-yamaguchi.github.io/site/diary_1905.html" rel="alternate"></link><published>2019-06-06T00:00:00+09:00</published><updated>2019-06-06T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-06:/site/diary_1905.html</id><summary type="html">&lt;p&gt;4,5月の振り返り&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="細胞農業"></category><category term="細胞農業"></category><category term="スタートアップ"></category><category term="Cellular Agriculture"></category></entry><entry><title>4,5月の振り返り</title><link href="https://naoto-yamaguchi.github.io/site/diary/diary_1905.html" rel="alternate"></link><published>2019-06-06T00:00:00+09:00</published><updated>2019-06-06T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-06:/site/diary/diary_1905.html</id><summary type="html">&lt;p&gt;4,5月の振り返り&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
 &lt;p&gt;ブログを書いている友達に良い刺激を受けて、ハードル低めに思ったこととかやったことの記録も気軽に書いてみることにしました。とりあえず、月1で振り返りとして書いてみるというマイルストーンを設定しようと思います。私の尊敬する&lt;a href="https://medium.com/@tumada/side-project-success-and-failure-pattern-b8b02b27d073"&gt;馬田隆明さんのMediumでの記事&lt;/a&gt;でも、「定期的な予定を持つ方が圧倒的に生産性がよくなる」という話がありますし、自分の振り返り記録を残しておくことは、未来に見返した時に面白いし、未来の自分による記憶の書き換えにも対抗できます（良いか悪いかは別にして）。
 思ったことを書き連ねていく試みは今までもあったのですが、うまくまとまらないとか、忙しいとか言い訳して書ききれていませんでした。&lt;/p&gt;
 &lt;h1&gt;目次&lt;/h1&gt;
@@ -904,7 +960,7 @@ Sullivan博士の冷凍農場は、ますます拡大する細胞株のリポジ
 * 講義の復習を中心に生物学を学ぶ&lt;/p&gt;
 &lt;p&gt;です。
 「環境変化」で、上述したように、自分はシェアハウスを始めてから友人に良い影響を受けてきました。一緒に住むとなるとお互い過ごす時間も長く、与える影響も大きくなります。馬田隆明さんの&lt;a href="https://medium.com/@tumada/startup-environment-c6615b501b49"&gt;成功する起業家は居場所を選ぶ&lt;/a&gt;にもあるように、自分が周りの環境を良くすることで、その環境から自分が良い影響を受けるようになり、自分も環境も（環境は自分の一部）を良くしていくことができます。少し抽象的な目標なので、これをより具体的に分解して定量的に評価できるようになると良いですが、ひとまず抽象的な行動指針として、「周りに良い影響を与える」というのを意識していきたいと思います。&lt;/p&gt;
-&lt;p&gt;また文章を書く機会が増えたことで、どうすればより良く伝えることができるのかということについて考え、&lt;a href=""&gt;書く技術、考える技術&lt;/a&gt;という本も読んでみました。そこで学んだ書き方を生かして、自分の文章で伝える力をつけていきたいと思います。&lt;/p&gt;</content><category term="Diary"></category></entry><entry><title>Dockerでgdb環境構築</title><link href="https://naoto-yamaguchi.github.io/site/docker_gdbenv.html" rel="alternate"></link><published>2019-06-05T00:00:00+09:00</published><updated>2019-06-05T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-05:/site/docker_gdbenv.html</id><summary type="html">&lt;p&gt;Dockerでgdb環境を構築した備忘録&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559697621860_docker.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機対象&lt;/h1&gt;
+&lt;p&gt;また文章を書く機会が増えたことで、どうすればより良く伝えることができるのかということについて考え、&lt;a href=""&gt;書く技術、考える技術&lt;/a&gt;という本も読んでみました。そこで学んだ書き方を生かして、自分の文章で伝える力をつけていきたいと思います。&lt;/p&gt;</content><category term="Diary"></category><category term="Diary"></category></entry><entry><title>Dockerでgdb環境構築</title><link href="https://naoto-yamaguchi.github.io/site/docker/docker_gdbenv.html" rel="alternate"></link><published>2019-06-05T00:00:00+09:00</published><updated>2019-06-05T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-05:/site/docker/docker_gdbenv.html</id><summary type="html">&lt;p&gt;Dockerでgdb環境を構築した備忘録&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559697621860_docker.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機対象&lt;/h1&gt;
 &lt;p&gt;学校の課題で、dえC++と機械語の命令を比較しながら、メモリアクセスを少なくし、実行クロック数の少ない命令で目的の計算をすることでという速いアルゴリズムを設計できるようになろう！というものがありました。そこで、gdbデバッガで、機械語リストを出力させるということをやったのですが、Mac OS Sierraでは、gdbコード署名用の証明書の作成が必要とのことで、面倒そうでした。そこで、DockerでCentOSコンテナを立てて、gdb環境を整えることで、その代わりとすることにしました！&lt;/p&gt;
 &lt;h1&gt;参考&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://qiita.com/kurkuru/items/127fa99ef5b2f0288b81"&gt;DockerをMacOSにinstall&lt;/a&gt;
@@ -916,7 +972,7 @@ DockerでCentOSコンテナを立ち上げる&lt;/p&gt;
 と出たが、これはgccがインストールされていなかったからだった。&lt;a href="https://qiita.com/tmak_tsukamoto/items/b1c1f04d2a2ac527887c"&gt;以下&lt;/a&gt;に記載の同様のエラーだったため、gccのインストールで解決&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://blog.sioyaki.com/entry/2017/04/10/101610"&gt;g++をyumでインストール&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;gdb使ってみたら&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;gdb&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;gdb&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;
 &lt;span class="n"&gt;Breakpoint&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="k"&gt;at&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="n"&gt;x4007e8&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;file&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cpp&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;gdb&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt;
 &lt;span class="n"&gt;Starting&lt;/span&gt; &lt;span class="n"&gt;program&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;01&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="k"&gt;out&lt;/span&gt;
@@ -925,7 +981,7 @@ DockerでCentOSコンテナを立ち上げる&lt;/p&gt;
 &lt;span class="n"&gt;Breakpoint&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="k"&gt;at&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cpp&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;
 &lt;span class="mi"&gt;6&lt;/span&gt;                &lt;span class="n"&gt;cout&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;endl&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="n"&gt;Missing&lt;/span&gt; &lt;span class="n"&gt;separate&lt;/span&gt; &lt;span class="n"&gt;debuginfos&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;use&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;debuginfo&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;glibc&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;212&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;el6_10&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x86_64&lt;/span&gt; &lt;span class="n"&gt;libgcc&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;23&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;el6&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x86_64&lt;/span&gt; &lt;span class="n"&gt;libstdc&lt;/span&gt;&lt;span class="o"&gt;++-&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;23&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;el6&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x86_64&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;となったので、
@@ -942,28 +998,28 @@ DockerでCentOSコンテナを立ち上げる&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;centosイメージのダウンロード&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;docker&lt;/span&gt; &lt;span class="n"&gt;pull&lt;/span&gt; &lt;span class="n"&gt;centos&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;docker pull centos&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;コンテナの起動&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;docker&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt; &lt;span class="c1"&gt;--cap-add=SYS_PTRACE --security-opt=&amp;quot;seccomp=unconfined&amp;quot; --name gdb centos:centos6.9 /bin/bash&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;docker run -d --cap-add=SYS_PTRACE --security-opt=&amp;quot;seccomp=unconfined&amp;quot; --name gdb centos:centos6.9 /bin/bash&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;-dオプションをつけてバックグラウンドで起動しないとうまくいかなかったので注意。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;起動しているコンテナの確認&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;docker&lt;/span&gt; &lt;span class="n"&gt;ps&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;docker ps&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;停止しているものも確認したい場合は&lt;code&gt;-a&lt;/code&gt;をつける&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;docker&lt;/span&gt; &lt;span class="k"&gt;exec&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;it&lt;/span&gt; &lt;span class="nv"&gt;gdb&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;bash&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;docker exec -it gdb /bin/bash&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;でbashを起動し、中に入れる&lt;/p&gt;
@@ -971,8 +1027,8 @@ DockerでCentOSコンテナを立ち上げる&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;gdbのインストール&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;yum&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;gdb&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;yum install gdb&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;これでできた！と思って、ファイルを作ってデバッグしてみようと思ったらvimがインストールされてなかった。&lt;/p&gt;
@@ -980,60 +1036,60 @@ DockerでCentOSコンテナを立ち上げる&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;vimをインストールするのに必要なパッケージが入っているかを以下のコマンドで確認。"list installed"はインストール済みのパッケージ一覧を表示。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ yum list installed &lt;span class="p"&gt;|&lt;/span&gt; grep mercurial
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ yum list installed &lt;span class="p"&gt;|&lt;/span&gt; grep mercurial
 $ yum list installed &lt;span class="p"&gt;|&lt;/span&gt; grep ncurses-devel
 $ yum list installed &lt;span class="p"&gt;|&lt;/span&gt; grep make         
 $ yum list installed &lt;span class="p"&gt;|&lt;/span&gt; grep gcc 
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;インストールされていない場合はそれぞれインストール。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ yum install mercurial
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ yum install mercurial
 $ yum install ncurses-devel
 $ yum install make
 $ yum install gcc
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;vimのインストール&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; /usr/local/src
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; /usr/local/src
 $ sudo hg clone https://bitbucket.org/vim-mirror/vim vim
 $ &lt;span class="nb"&gt;cd&lt;/span&gt; vim
 $ ./configure --with-features&lt;span class="o"&gt;=&lt;/span&gt;huge --enable-multibyte --disable-selinux
 $ make
 $ make install
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;必要があれば、&lt;a href="https://qiita.com/meio/items/08143eacd174ac0f7bd5"&gt;こちら&lt;/a&gt;を参考に、日本語文字化けしないように、&lt;code&gt;~/.vimrc&lt;/code&gt;の設定をしておきましょう。&lt;/p&gt;
 &lt;h1&gt;CentOSにg++, debuginfoをインストール&lt;/h1&gt;
 &lt;p&gt;これで、vimが使えるので、C++ファイルの作成をしました。コンパイルしようとしたところ、g++をインストールしていないことに気がついたので、&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ yum install gcc-c++
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ yum install gcc-c++
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;でインストールし、&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ g++ -g a.cpp
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ g++ -g a.cpp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;-gオプションをつけて、gdbデバック用にコンパイル。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ gdb ./a.out
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ gdb ./a.out
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;で実行して、&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ b main
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ b main
 $ run
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;したところ、&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;gdb&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;gdb&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;
     &lt;span class="n"&gt;Breakpoint&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="k"&gt;at&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="n"&gt;x4007e8&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;file&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cpp&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;gdb&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt;
     &lt;span class="n"&gt;Starting&lt;/span&gt; &lt;span class="n"&gt;program&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;01&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="k"&gt;out&lt;/span&gt;
@@ -1042,25 +1098,25 @@ $ run
     &lt;span class="n"&gt;Breakpoint&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="k"&gt;at&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cpp&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;
     &lt;span class="mi"&gt;6&lt;/span&gt;                &lt;span class="n"&gt;cout&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;endl&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="n"&gt;Missing&lt;/span&gt; &lt;span class="n"&gt;separate&lt;/span&gt; &lt;span class="n"&gt;debuginfos&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;use&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;debuginfo&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;glibc&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;212&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;el6_10&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x86_64&lt;/span&gt; &lt;span class="n"&gt;libgcc&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;23&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;el6&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x86_64&lt;/span&gt; &lt;span class="n"&gt;libstdc&lt;/span&gt;&lt;span class="o"&gt;++-&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;23&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;el6&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x86_64&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;となったので、
 debuginfoをインストール&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ yum install yum-utils
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ yum install yum-utils
 $ debuginfo-installglibc-2.12-1.212.el6_10.3.x86_64 libgcc-4.4.7-23.el6.x86_64 libstdc++-4.4.7-23.el6.x86_64 
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;これで、gdbでデバッグできるようになりました！
 参考にさせていただいた記事、ありがとうございます。&lt;/p&gt;
 &lt;h1&gt;Dockerコンテナをcommitしてみる&lt;/h1&gt;
 &lt;p&gt;gdbという名前のコンテナで動かしていたものを、gdbenvというイメージとして保存します。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ docker commit gdb gdbenv
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ docker commit gdb gdbenv
 $ docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 gdbenv              latest              c7e81afda91c        &lt;span class="m"&gt;22&lt;/span&gt; seconds ago      &lt;span class="m"&gt;1&lt;/span&gt;.34GB
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;で、&lt;code&gt;gdbenv&lt;/code&gt;という名前のイメージができていることを確認。
@@ -1070,21 +1126,21 @@ Docker Hubにimageを公開すれば他の人も利用可能になります。�
 &lt;ul&gt;
 &lt;li&gt;commitしたgdbenvというイメージから、gdbenvという名前のコンテナを起動して、bashを動かした。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nv"&gt;docker&lt;/span&gt; &lt;span class="nv"&gt;run&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nv"&gt;name&lt;/span&gt; &lt;span class="nv"&gt;gdbenv&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;it&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;d&lt;/span&gt; &lt;span class="nv"&gt;gdbenv&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;bash&lt;/span&gt;
-$ &lt;span class="nv"&gt;docker&lt;/span&gt; &lt;span class="k"&gt;exec&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;it&lt;/span&gt; &lt;span class="nv"&gt;gdbenv&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;bash&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ docker run --name gdbenv -it -d gdbenv /bin/bash
+$ docker &lt;span class="nb"&gt;exec&lt;/span&gt; -it gdbenv /bin/bash
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;これでgdbででバックしようとしたら、&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;gdb&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;
-&lt;span class="n"&gt;Breakpoint&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="k"&gt;at&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="n"&gt;x4007e8&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;file&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cpp&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;gdb&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt;
-&lt;span class="n"&gt;Starting&lt;/span&gt; &lt;span class="n"&gt;program&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;01&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="k"&gt;out&lt;/span&gt;
-&lt;span class="n"&gt;warning&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Error&lt;/span&gt; &lt;span class="n"&gt;disabling&lt;/span&gt; &lt;span class="n"&gt;address&lt;/span&gt; &lt;span class="k"&gt;space&lt;/span&gt; &lt;span class="n"&gt;randomization&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="k"&gt;Operation&lt;/span&gt; &lt;span class="k"&gt;not&lt;/span&gt; &lt;span class="n"&gt;permitted&lt;/span&gt;
-&lt;span class="mi"&gt;1&lt;/span&gt;
-&lt;span class="mi"&gt;2&lt;/span&gt;
-&lt;span class="n"&gt;During&lt;/span&gt; &lt;span class="n"&gt;startup&lt;/span&gt; &lt;span class="n"&gt;program&lt;/span&gt; &lt;span class="n"&gt;exited&lt;/span&gt; &lt;span class="n"&gt;normally&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;(gdb) b main&lt;/span&gt;
+&lt;span class="err"&gt;Breakpoint 1 at 0x4007e8: file a.cpp, line 6.&lt;/span&gt;
+&lt;span class="err"&gt;(gdb) run&lt;/span&gt;
+&lt;span class="err"&gt;Starting program: /root/01/a.out&lt;/span&gt;
+&lt;span class="c"&gt;warning: Error disabling address space randomization: Operation not permitted&lt;/span&gt;
+&lt;span class="err"&gt;1&lt;/span&gt;
+&lt;span class="err"&gt;2&lt;/span&gt;
+&lt;span class="err"&gt;During startup program exited normally.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;となったので、調べてみると、
@@ -1093,9 +1149,9 @@ gdbはシステムコールを使ってデバッグしているので、Docker�
 * --security-opt="seccomp=unconfined": コンテナ内からのシステムコールの発行に制限を掛けない
 の2つのオプションを追加する必要があるようです。（初めのCentOSのイメージからコンテナ起動するときに使ったコマンドと同じ。てっきり忘れていました。
 &lt;a href="https://www.cyamax.com/entry/2018/02/09/070000"&gt;こちら&lt;/a&gt;を参考にさせていただきました。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nv"&gt;docker&lt;/span&gt; &lt;span class="nv"&gt;run&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nv"&gt;cap&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;add&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;SYS_PTRACE&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nv"&gt;security&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;opt&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;seccomp=unconfined&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nv"&gt;name&lt;/span&gt; &lt;span class="nv"&gt;gdbenv&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;it&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;d&lt;/span&gt; &lt;span class="nv"&gt;gdbenv&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;bash&lt;/span&gt;
-$ &lt;span class="nv"&gt;docker&lt;/span&gt; &lt;span class="k"&gt;exec&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;it&lt;/span&gt; &lt;span class="nv"&gt;gdbenv&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;bash&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ docker run --cap-add&lt;span class="o"&gt;=&lt;/span&gt;SYS_PTRACE --security-opt&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;seccomp=unconfined&amp;quot;&lt;/span&gt; --name gdbenv -it -d gdbenv /bin/bash
+$ docker &lt;span class="nb"&gt;exec&lt;/span&gt; -it gdbenv /bin/bash
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;このようすることで、うまくできました。&lt;/p&gt;
@@ -1103,14 +1159,14 @@ $ &lt;span class="nv"&gt;docker&lt;/span&gt; &lt;span class="k"&gt;exec&lt;/span
 &lt;p&gt;&lt;a href="https://qiita.com/umi/items/d4b5a68263ad0444693b"&gt;これ&lt;/a&gt;を参考に
 &lt;a href="https://hub.docker.com/explore/"&gt;Docker Hub&lt;/a&gt;にアカウント登録して、
 そのアカウントで、ターミナルからログイン&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ docker login
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ docker login
 Username: nyamaguchi
 Password: 
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;pushしたいイメージに、&lt;code&gt;docker tag&lt;/code&gt; コマンドで&lt;code&gt;&amp;lt;アカウント名&amp;gt;&amp;lt;リポジトリ名&amp;gt;:&amp;lt;タグ名&amp;gt;&lt;/code&gt; というタグを付加。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ docker images                                                                          &lt;span class="m"&gt;13&lt;/span&gt;:34:35
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ docker images                                                                          &lt;span class="m"&gt;13&lt;/span&gt;:34:35
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 gdbenv              latest              c7e81afda91c        &lt;span class="m"&gt;27&lt;/span&gt; hours ago        &lt;span class="m"&gt;1&lt;/span&gt;.34GB
 $ docker tag c7e81afda91c nyamaguchi/gdbenv:latest
@@ -1118,23 +1174,23 @@ $ docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 gdbenv              latest              c7e81afda91c        &lt;span class="m"&gt;27&lt;/span&gt; hours ago        &lt;span class="m"&gt;1&lt;/span&gt;.34GB
 nyamaguchi/gdbenv   latest              c7e81afda91c        &lt;span class="m"&gt;27&lt;/span&gt; hours ago        &lt;span class="m"&gt;1&lt;/span&gt;.34GB
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;これをリモートリポジトリへとpush&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ docker push nyamaguchi/gdbenv:latest
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ docker push nyamaguchi/gdbenv:latest
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h1&gt;Docker Hubからpullする&lt;/h1&gt;
 &lt;p&gt;centosにgdb, vim, g++をinstallしたこのイメージを私がDocker Hubのパブリックリポジトリにpushしたので、&lt;code&gt;docker pull&lt;/code&gt;で自分のローカル環境に持ってくることができます。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ docker pull nyamaguchi/gdbenv
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ docker pull nyamaguchi/gdbenv
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;でこのimageでも利用可能になります。
 ほぼ使い道ないかもしれませんが、もしよかったら使ってみてください。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;docker search gdbenv&lt;/code&gt;で検索できるはずですが、なぜか見つかりませんでした。&lt;/p&gt;</content><category term="Docker"></category><category term="Programming"></category></entry><entry><title>細胞農業に興味がある理由(The reason why I'm interested in cellular agriculture)</title><link href="https://naoto-yamaguchi.github.io/site/interest_in_cellular_agriculture.html" rel="alternate"></link><published>2019-06-01T00:00:00+09:00</published><updated>2019-06-01T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-01:/site/interest_in_cellular_agriculture.html</id><summary type="html">&lt;p&gt;細胞農業について&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;docker search gdbenv&lt;/code&gt;で検索できるはずですが、なぜか見つかりませんでした。&lt;/p&gt;</content><category term="Docker"></category><category term="Docker"></category><category term="Programming"></category></entry><entry><title>細胞農業に興味がある理由(The reason why I'm interested in cellular agriculture)</title><link href="https://naoto-yamaguchi.github.io/site/xi-bao-nong-ye/interest_in_cellular_agriculture.html" rel="alternate"></link><published>2019-06-01T00:00:00+09:00</published><updated>2019-06-01T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-01:/site/xi-bao-nong-ye/interest_in_cellular_agriculture.html</id><summary type="html">&lt;p&gt;細胞農業について&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
 &lt;p&gt;自分の興味があるプロジェクトについて、英語で記述する機会がありました。
 そこで他人に見せることを意識しながら、自分が興味ある学問分野について書いてみました。チェックをまだ受けておらず、きちんと修正していない文なので、間違い等あるかもしれませんが、ご容赦下さい。I appriciate if you could correct me if I am wrong.
 全ての人&lt;/p&gt;
@@ -1164,7 +1220,7 @@ Through the film, I understood that not only animal agriculture is unsustainable
 I have been hoping to be engaged in the projects which have a huge impact on human history and their way of thinking. As I did some research about cellular agriculture, I came to feel cellular agriculture is the subject that I need to pursue. The main reasons are three followings I mention below. &lt;/p&gt;
 &lt;p&gt;If cellular agriculture technology develops, most people will eat beef, pork, chicken and fish meat made from animal cells in a laboratory, which is an innovative change in a way people eat.
 In this topic, I will be able to make use of my specialization and tackle sustainability issues.&lt;/p&gt;
-&lt;p&gt;TBE...&lt;/p&gt;</content><category term="好きなもの"></category><category term="生物"></category><category term="細胞農業"></category></entry><entry><title>がん</title><link href="https://naoto-yamaguchi.github.io/site/cancer.html" rel="alternate"></link><published>2019-05-31T00:00:00+09:00</published><updated>2019-05-31T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-05-31:/site/cancer.html</id><summary type="html">&lt;p&gt;がんの仕組みの解説&lt;/p&gt;</summary><content type="html">&lt;h1&gt;がん&lt;/h1&gt;
+&lt;p&gt;TBE...&lt;/p&gt;</content><category term="細胞農業"></category><category term="好きなもの"></category><category term="生物"></category><category term="細胞農業"></category></entry><entry><title>がん</title><link href="https://naoto-yamaguchi.github.io/site/sheng-wu-xue/cancer.html" rel="alternate"></link><published>2019-05-31T00:00:00+09:00</published><updated>2019-05-31T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-05-31:/site/sheng-wu-xue/cancer.html</id><summary type="html">&lt;p&gt;がんの仕組みの解説&lt;/p&gt;</summary><content type="html">&lt;h1&gt;がん&lt;/h1&gt;
 &lt;p&gt;がんは、細胞制御機構に異常が発生することでおこる病気です。現代では、5 人に 1 人ががんで命を失いますが、がんを研究で扱う理由は命を救うだけにとどまりません。がんの原因を調べることで、細胞制御機構の解明が進み、細胞生物学の基礎となるのです。我々多細胞生物の体の中では、数多くの細胞が協調して働くことで、多細胞としての個体が正常に生きることができます。しかし、この協調を乱すような細胞が生まれると、細胞社会の秩序を壊し、正常に生きることができなくなります。この協調を壊しうる細胞は、各細胞での塩基配列の変異により、毎日我々の体の中で生じていますが、それを修復する機構によって、秩序が保たれているのです。この修復する機構が壊れたり、変異が入った異常な細胞（秩序を満たす細胞）がとめどなく増殖できるようになると、我々の体の中の細胞社会の秩序を乱し、破壊に導いていくのです。&lt;/p&gt;
 &lt;p&gt;ではどういう仕組みで、するのでしょうか？&lt;/p&gt;
 &lt;h1&gt;動機対象&lt;/h1&gt;
@@ -1481,7 +1537,7 @@ B,Cは潜伏型の慢性的な肝臓の炎症。肝臓ガンの原因の90%
 &lt;/li&gt;
 &lt;li&gt;放射線療法&lt;/li&gt;
 &lt;li&gt;免疫療法&lt;/li&gt;
-&lt;/ul&gt;</content><category term="生物学"></category><category term="解説"></category><category term="授業まとめ"></category></entry><entry><title>がん</title><link href="https://naoto-yamaguchi.github.io/site/molecular%20evolution.html" rel="alternate"></link><published>2019-05-31T00:00:00+09:00</published><updated>2019-05-31T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-05-31:/site/molecular evolution.html</id><summary type="html">&lt;p&gt;がんの仕組みの解説&lt;/p&gt;</summary><content type="html">&lt;h1&gt;参考文献&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="生物学"></category><category term="生物学"></category><category term="解説"></category><category term="授業まとめ"></category></entry><entry><title>がん</title><link href="https://naoto-yamaguchi.github.io/site/sheng-wu-xue/molecular%20evolution.html" rel="alternate"></link><published>2019-05-31T00:00:00+09:00</published><updated>2019-05-31T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-05-31:/site/sheng-wu-xue/molecular evolution.html</id><summary type="html">&lt;p&gt;がんの仕組みの解説&lt;/p&gt;</summary><content type="html">&lt;h1&gt;参考文献&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;[1] カール・ジンマー（著）/ダグラス・J・エムレン（著）『BLUE BACKS 進化の教科書 第3巻 系統樹や生態から見た進化』&lt;/li&gt;
 &lt;li&gt;[2] 長田直樹（著）『進化で読み解く バイオインフォマティクス入門』&lt;/li&gt;
@@ -1554,7 +1610,7 @@ p &amp;lt; 5% くらいならpは利用可能とされている。&lt;/p&gt;
 GTRは、配列進化の確率論的アプローチでしばしば用いられる。
 これらの複雑なモデルでは、進化距離を式の形で求めるのが困難であるので、数値的に各パラメータを推定し、進化距離を求めることが多い。&lt;/p&gt;
 &lt;h3&gt;サイトによる置換速度の違い&lt;/h3&gt;
-&lt;p&gt;これまでは、サイトごとの置換速度は一定と仮定されていたが、領域によって塩基配列の置換速度に差があることはよく知られている。例えば、CpG配列のCは、変異率が他に比べてとても高い。様々な手法が提案されてきたが、現在、サイトごとの置換速度のばらつきをガンマ分布を用いて表現するモデルがとく用いられている。&lt;/p&gt;</content><category term="生物学"></category><category term="解説"></category><category term="授業まとめ"></category></entry><entry><title>EC2からRDSへの接続と、RDSへのデータ投入&amp;日本語文字化け対応の備忘録</title><link href="https://naoto-yamaguchi.github.io/site/ec2_to_rds.html" rel="alternate"></link><published>2019-04-29T00:00:00+09:00</published><updated>2019-04-29T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-04-29:/site/ec2_to_rds.html</id><summary type="html">&lt;p&gt;RDS文字化け対応備忘録&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630545434_rds.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;動機&lt;/h2&gt;
+&lt;p&gt;これまでは、サイトごとの置換速度は一定と仮定されていたが、領域によって塩基配列の置換速度に差があることはよく知られている。例えば、CpG配列のCは、変異率が他に比べてとても高い。様々な手法が提案されてきたが、現在、サイトごとの置換速度のばらつきをガンマ分布を用いて表現するモデルがとく用いられている。&lt;/p&gt;</content><category term="生物学"></category><category term="生物学"></category><category term="解説"></category><category term="授業まとめ"></category></entry><entry><title>EC2からRDSへの接続と、RDSへのデータ投入&amp;日本語文字化け対応の備忘録</title><link href="https://naoto-yamaguchi.github.io/site/bei-wang-lu/ec2_to_rds.html" rel="alternate"></link><published>2019-04-29T00:00:00+09:00</published><updated>2019-04-29T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-04-29:/site/bei-wang-lu/ec2_to_rds.html</id><summary type="html">&lt;p&gt;RDS文字化け対応備忘録&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630545434_rds.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;動機&lt;/h2&gt;
 &lt;p&gt;あるプロジェクトで、EC2インスタンスからRDSに接続できるように設定する必要がありました。また、RDSへのデータの投入も初めてだったので、記録を残しておこうと思いました。&lt;/p&gt;
 &lt;h2&gt;EC2からRDSへの接続&lt;/h2&gt;
 &lt;p&gt;EC2からRDSへ接続するには以下のことが必要です。
@@ -1565,20 +1621,20 @@ GTRは、配列進化の確率論的アプローチでしばしば用いられ�
 * RDSインスタンスのセキュリティグループで、MySQLポート(3306)を開放している（できる）&lt;/p&gt;
 &lt;p&gt;ここでは、目的のEC2インスタンスとRDSインスタンスが作成してあることは前提とします。作成については他の記事を参照してください。&lt;/p&gt;
 &lt;p&gt;EC2インスタンスからRDSインスタンスへは、&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;mysql&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;ENDPOINT&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;P&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;3306&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;Username&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;–&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;Name&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;mysql&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;ENDPOINT&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;P&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;3306&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;Username&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;–&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;Name&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;というコマンドで接続することができるのですが、そのためには以下の準備が必要です。
 * mysqlコマンドが実行できる
 * 今回のようにmysqlがEC2インスタンスにインストールされていない場合は、以下のようにしてインストールしました&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo yum install mysql
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ sudo yum install mysql
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;インストールできているかの確認は&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ yum list installed &lt;span class="p"&gt;|&lt;/span&gt; grep mysql
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ yum list installed &lt;span class="p"&gt;|&lt;/span&gt; grep mysql
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
@@ -1603,13 +1659,13 @@ GTRは、配列進化の確率論的アプローチでしばしば用いられ�
 &lt;p&gt;ECSインスタンス上にあるデータをRDSのDBに投入する方法です。
 以下の記事を参考にしました。
 RDSインスタンスにログインした状態で、データベースを指定し(use database_name)、&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;LOAD&lt;/span&gt; &lt;span class="k"&gt;DATA&lt;/span&gt; &lt;span class="k"&gt;LOCAL&lt;/span&gt; &lt;span class="n"&gt;INFILE&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;sample.csv&amp;#39;&lt;/span&gt;
-&lt;span class="k"&gt;REPLACE&lt;/span&gt; &lt;span class="k"&gt;INTO&lt;/span&gt; &lt;span class="k"&gt;TABLE&lt;/span&gt; &lt;span class="n"&gt;database_name&lt;/span&gt;
-&lt;span class="nb"&gt;CHARACTER&lt;/span&gt; &lt;span class="k"&gt;SET&lt;/span&gt; &lt;span class="n"&gt;utf8&lt;/span&gt;
-&lt;span class="n"&gt;FIELDS&lt;/span&gt; &lt;span class="n"&gt;TERMINATED&lt;/span&gt; &lt;span class="k"&gt;BY&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;,&amp;#39;&lt;/span&gt;
-&lt;span class="n"&gt;OPTIONALLY&lt;/span&gt; &lt;span class="n"&gt;ENCLOSED&lt;/span&gt; &lt;span class="k"&gt;BY&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;quot;&amp;#39;&lt;/span&gt;
-&lt;span class="k"&gt;IGNORE&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="n"&gt;LINES&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;LOAD DATA LOCAL INFILE &amp;#39;sample.csv&amp;#39;&lt;/span&gt;
+&lt;span class="err"&gt;REPLACE INTO TABLE database_name&lt;/span&gt;
+&lt;span class="err"&gt;CHARACTER SET utf8&lt;/span&gt;
+&lt;span class="err"&gt;FIELDS TERMINATED BY &amp;#39;,&amp;#39;&lt;/span&gt;
+&lt;span class="err"&gt;OPTIONALLY ENCLOSED BY &amp;#39;&amp;quot;&amp;#39;&lt;/span&gt;
+&lt;span class="err"&gt;IGNORE 1 LINES;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;でEC2上にあるCSVファイルをインポートできます。
@@ -1621,13 +1677,13 @@ RDSインスタンスにログインした状態で、データベースを指�
 &lt;a href="https://qiita.com/reoy/items/e355debf1e2b2abd703b"&gt;RDSで日本語が文字化けする問題&lt;/a&gt;という記事を参考に、AWSコンソールから、RDSインスタンスのパラメータグループを設定しました。
 これだけ(Step4まで)では、すでに作成されているDBに対してパラメターグループの設定を行っても"character_set_database"は、latin1 のまま変更されないので、
 &lt;a href="http://d.hatena.ne.jp/It_lives_vainly/touch/20160906/1473154857"&gt;RDS の mySQL で日本語が文字化けて困った時の対応方法&lt;/a&gt;を参考に、設定すると無事日本語文字化けが直りました。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ ALTER DATABASE database_name default character &lt;span class="nb"&gt;set&lt;/span&gt; utf8
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ ALTER DATABASE database_name default character &lt;span class="nb"&gt;set&lt;/span&gt; utf8
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;コマンドが重要です。&lt;/p&gt;
 &lt;p&gt;今後、RDSインスタンス新規作成の際に、パラメータグループをきちんと設定すると良さそうです。&lt;/p&gt;
-&lt;p&gt;どうでも良いですが、mysqlのテーブル名は最長で63文字らしいです。&lt;/p&gt;</content><category term="AWS"></category></entry><entry><title>チューリングパターンとは</title><link href="https://naoto-yamaguchi.github.io/site/turing_pattern.html" rel="alternate"></link><published>2019-04-04T00:00:00+09:00</published><updated>2019-04-04T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-04-04:/site/turing_pattern.html</id><summary type="html">&lt;p&gt;チューリングパターンの解説&lt;br&gt;&lt;img src="https://camo.qiitausercontent.com/58b0457b75d51790ad0c73dc752d27a2434d6a97/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3134313530332f35636465656163632d366132362d343566612d636264332d3539316561316264373238612e6a706567"&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;動機&lt;/h2&gt;
+&lt;p&gt;どうでも良いですが、mysqlのテーブル名は最長で63文字らしいです。&lt;/p&gt;</content><category term="備忘録"></category><category term="AWS"></category></entry><entry><title>チューリングパターンとは</title><link href="https://naoto-yamaguchi.github.io/site/sheng-wu-xue/turing_pattern.html" rel="alternate"></link><published>2019-04-04T00:00:00+09:00</published><updated>2019-04-04T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-04-04:/site/sheng-wu-xue/turing_pattern.html</id><summary type="html">&lt;p&gt;チューリングパターンの解説&lt;br&gt;&lt;img src="https://camo.qiitausercontent.com/58b0457b75d51790ad0c73dc752d27a2434d6a97/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3134313530332f35636465656163632d366132362d343566612d636264332d3539316561316264373238612e6a706567"&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;動機&lt;/h2&gt;
 &lt;p&gt;システム生物学の授業が書くことになったきっかけです。
 &lt;a href="https://nafoto-z.hatenablog.com/entry/2018/12/07/184450"&gt;hatenablog&lt;/a&gt; に書いたところ数式を上手く表示できず書き途中であったため、こちらで書きました。&lt;a href="https://nafoto-z.hatenablog.com/entry/2018/12/07/184450"&gt;hatenablog&lt;/a&gt; の方に、意外とアクセスがあったので、折角訪問してくださった方にちゃんと見ていただきたいと思いました。&lt;a href="https://nafoto-z.hatenablog.com/entry/2018/12/07/184450"&gt;hatenablog&lt;/a&gt; の方は放置していてひどいです。こちらのサイトも見た目等変なところが多いですがご容赦下さい。そのうち直します。&lt;/p&gt;
 &lt;h2&gt;参考&lt;/h2&gt;
@@ -1879,10 +1935,10 @@ https://www.terumozaidan.or.jp/labo/technology/15/index.html
 &lt;div class="math"&gt;$$ ∂v(x, t) / ∂t = g(u(x, t), v(x, t)) + d_q∂^2u(x, t) / ∂x^2$$&lt;/div&gt;
 &lt;h3&gt;実装&lt;/h3&gt;
 &lt;h4&gt;1. パッケージのインストール&lt;/h4&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
-&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;plt&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;plt&lt;/span&gt;
 &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;matplotlib&lt;/span&gt; &lt;span class="n"&gt;inline&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h4&gt;2. チューリングパターンのシミュレーションに、以下の偏微分方程式を用いる。範囲は-1~1&lt;/h4&gt;
@@ -1902,7 +1958,7 @@ T = 54.0
 dt = .001
 n = int(T / dt&lt;/p&gt;
 &lt;h4&gt;5. u と v を初期化。&lt;/h4&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;U&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rand&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;U&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rand&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;V&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rand&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;laplacian&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Z&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
@@ -1912,11 +1968,11 @@ n = int(T / dt&lt;/p&gt;
     &lt;span class="n"&gt;Zright&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Z&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:]&lt;/span&gt;
     &lt;span class="n"&gt;Zcenter&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Z&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Ztop&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;Zleft&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;Zbottom&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;Zright&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;Zcenter&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;dx&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h4&gt;7.行列を表示する関数を定義&lt;/h4&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;show_patterns&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;U&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;show_patterns&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;U&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;None&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;imshow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;U&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;cmap&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;copper&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;interpolation&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;bilinear&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;extent&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
     &lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_axis_off&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 
@@ -1957,13 +2013,13 @@ n = int(T / dt&lt;/p&gt;
         &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="n"&gt;step_plot&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;9&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;step_plot&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
             &lt;span class="n"&gt;ax&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;axes&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;flat&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="n"&gt;step_plot&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
             &lt;span class="n"&gt;show_patterns&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;U&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-            &lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_title&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;$t={i*dt:.2f}$&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+            &lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_title&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;$t=&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;dt&lt;/span&gt;&lt;span class="si"&gt;:&lt;/span&gt;&lt;span class="s1"&gt;.2f&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;$&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;fig&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ax&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;subplots&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;figsize&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;fig&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ax&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;subplots&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;figsize&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;span class="n"&gt;show_patterns&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;U&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;img alt="" src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630570606_turing_pattern.png"&gt;&lt;/p&gt;
@@ -2005,7 +2061,8 @@ todo あとで追記&lt;/p&gt;
         "        preview: 'TeX'," +
         "    }, " +
         "    'HTML-CSS': { " +
-        "        fonts: [['STIX', 'TeX']]," +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
         "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
         "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
         "    }, " +
@@ -2030,7 +2087,7 @@ todo あとで追記&lt;/p&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="生物学"></category><category term="Bioinfo"></category></entry><entry><title>SSHのポートフォワード（トンネリング）とは？</title><link href="https://naoto-yamaguchi.github.io/site/ssh_port_forward.html" rel="alternate"></link><published>2019-03-31T00:00:00+09:00</published><updated>2019-03-31T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-03-31:/site/ssh_port_forward.html</id><summary type="html">&lt;p&gt;SSHポートフォーワードとは（未完）&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630562939_port_forwarding.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h3&gt;動機&lt;/h3&gt;
+&lt;/script&gt;</content><category term="生物学"></category><category term="生物学"></category><category term="Bioinfo"></category></entry><entry><title>SSHのポートフォワード（トンネリング）とは？</title><link href="https://naoto-yamaguchi.github.io/site/ssh/ssh_port_forward.html" rel="alternate"></link><published>2019-03-31T00:00:00+09:00</published><updated>2019-03-31T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-03-31:/site/ssh/ssh_port_forward.html</id><summary type="html">&lt;p&gt;SSHポートフォーワードとは（未完）&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630562939_port_forwarding.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h3&gt;動機&lt;/h3&gt;
 &lt;p&gt;&amp;lt;注意&amp;gt; 要修正の記事です&lt;/p&gt;
 &lt;p&gt;SSH ポートフォワードを使っていた時に、SCP でファイルを送信したかったため。&lt;/p&gt;
 &lt;h3&gt;参考&lt;/h3&gt;
@@ -2066,7 +2123,7 @@ tmux ってなに
 
 abci-gate した状態で
 [~] scp -r -P 10022 [送りたいディレクトリ][usrname]@localhost:[送り先のディレクトリ]
-でできた --&gt;</content><category term="SSH"></category><category term="portforward"></category></entry><entry><title>感想~勉強の哲学：千葉雅也~</title><link href="https://naoto-yamaguchi.github.io/site/the_philosophy_of_study.html" rel="alternate"></link><published>2019-03-21T00:00:00+09:00</published><updated>2019-03-21T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-03-21:/site/the_philosophy_of_study.html</id><summary type="html">&lt;p&gt;勉強の哲学を読んで考えたこと&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
+でできた --&gt;</content><category term="SSH"></category><category term="SSH"></category><category term="portforward"></category></entry><entry><title>感想~勉強の哲学：千葉雅也~</title><link href="https://naoto-yamaguchi.github.io/site/du-shu/the_philosophy_of_study.html" rel="alternate"></link><published>2019-03-21T00:00:00+09:00</published><updated>2019-03-21T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-03-21:/site/du-shu/the_philosophy_of_study.html</id><summary type="html">&lt;p&gt;勉強の哲学を読んで考えたこと&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
 &lt;p&gt;割と前に読んだ本なのだけど、振り返る価値のある本だと思ってたので書いてみます。
 とりあえず昔のメモを載せておきます。&lt;/p&gt;
 &lt;h1&gt;以下メモ&lt;/h1&gt;
@@ -2080,7 +2137,7 @@ abci-gate した状態で
 もう一度くらい借りて読んでみるかー
 →再度購入したのでまた読みます。&lt;/p&gt;
 &lt;p&gt;入門書、専門書、準専門書
-読書は完璧にできない&lt;/p&gt;</content><category term="Book"></category></entry><entry><title>私のおすすめのもの、好きなもの</title><link href="https://naoto-yamaguchi.github.io/site/my_favorites.html" rel="alternate"></link><published>2019-02-24T00:00:00+09:00</published><updated>2019-02-24T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-24:/site/my_favorites.html</id><summary type="html">&lt;p&gt;おすすめ集、好きなもの&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
+読書は完璧にできない&lt;/p&gt;</content><category term="読書"></category><category term="Book"></category></entry><entry><title>私のおすすめのもの、好きなもの</title><link href="https://naoto-yamaguchi.github.io/site/shi-hao/my_favorites.html" rel="alternate"></link><published>2019-02-24T00:00:00+09:00</published><updated>2019-02-24T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-24:/site/shi-hao/my_favorites.html</id><summary type="html">&lt;p&gt;おすすめ集、好きなもの&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
 &lt;p&gt;人のおすすめを聞いて自分の興味の幅が広がったり、新たな発見をすることがあったので。
 現状かなり適当ですが、随時載せていきます。&lt;/p&gt;
 &lt;h1&gt;参考&lt;/h1&gt;
@@ -2163,7 +2220,7 @@ abci-gate した状態で
 &lt;/ul&gt;
 &lt;p&gt;みなさんのオススメのもの、好きなもの是非教えてください！！
 超募集中@nafoto_z&lt;/p&gt;
-&lt;p&gt;リンクとかはそのうち貼ります。&lt;/p&gt;</content><category term="好きなもの"></category><category term="嗜好"></category></entry><entry><title>NCBIからゲノムデータを取得する方法</title><link href="https://naoto-yamaguchi.github.io/site/how_to_get_genome_data_from_ncbi.html" rel="alternate"></link><published>2019-02-22T00:00:00+09:00</published><updated>2019-02-22T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-22:/site/how_to_get_genome_data_from_ncbi.html</id><summary type="html">&lt;p&gt;ゲノムデータ取得&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630593492_ncbi.png" width=150 height=150&gt;&lt;/p&gt;</summary><content type="html">&lt;h3&gt;動機&lt;/h3&gt;
+&lt;p&gt;リンクとかはそのうち貼ります。&lt;/p&gt;</content><category term="嗜好"></category><category term="好きなもの"></category><category term="嗜好"></category></entry><entry><title>NCBIからゲノムデータを取得する方法</title><link href="https://naoto-yamaguchi.github.io/site/bioinfo/how_to_get_genome_data_from_ncbi.html" rel="alternate"></link><published>2019-02-22T00:00:00+09:00</published><updated>2019-02-22T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-22:/site/bioinfo/how_to_get_genome_data_from_ncbi.html</id><summary type="html">&lt;p&gt;ゲノムデータ取得&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630593492_ncbi.png" width=150 height=150&gt;&lt;/p&gt;</summary><content type="html">&lt;h3&gt;動機&lt;/h3&gt;
 &lt;p&gt;&amp;lt;注意&amp;gt; 要修正の記事です&lt;/p&gt;
 &lt;p&gt;NCBI からゲノムデータを取ってきたい時どうすれば良いかわからなかった。ftp を知らなかったけど、ダウンロードできました！&lt;/p&gt;
 &lt;h3&gt;参考&lt;/h3&gt;
@@ -2171,85 +2228,85 @@ abci-gate した状態で
 &lt;h3&gt;Step1: 取得したいデータの ftp パスを手に入れる&lt;/h3&gt;
 &lt;p&gt;NCBI にどういうデータがどういう風に  あるかよくわかっていませんが、とりあえず自分がやった範囲では、ftp パスを用いて、圧縮された fna ファイルを  ダウンロードし、解凍しました。(解凍せずに中身を見ようとして、文字コードエラーが出たので注意！)
 解凍せずに扱おうとしたところ、&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;UnicodeDecodeError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;utf-8&amp;#39;&lt;/span&gt; &lt;span class="n"&gt;codec&lt;/span&gt; &lt;span class="n"&gt;can&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt; &lt;span class="n"&gt;decode&lt;/span&gt; &lt;span class="n"&gt;byte&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="n"&gt;x8b&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="k"&gt;position&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;UnicodeDecodeError: &amp;#39;utf-8&amp;#39; codec can&amp;#39;t decode byte 0x8b in position 1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;というエラーになりました。&lt;/p&gt;
 &lt;p&gt;zip ファイルの解凍は、&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ gunzip
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ gunzip
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;でできました。&lt;/p&gt;
 &lt;p&gt;流れとしては、例えば、~/data/に GCF_000010525.1.fna.gz というファイル名でダウンロードする場合、&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ wget -O ~/data/GCF_000010525.1.fna.gz ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/010/525/GCF_000010525.1_ASM1052v1/GCF_000010525.1_ASM1052v1_cds_from_genomic.fna.gz
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ wget -O ~/data/GCF_000010525.1.fna.gz ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/010/525/GCF_000010525.1_ASM1052v1/GCF_000010525.1_ASM1052v1_cds_from_genomic.fna.gz
 $ gunzip
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;これで GCF_000010525.1.fna ファイルを見たり読み込ませたりして解析に用いることができます！&lt;/p&gt;
-&lt;p&gt;自分はこれしかやったことがないので、他にも試してみて、追記したいと思います。&lt;/p&gt;</content><category term="Bioinfo"></category><category term="生物情報"></category><category term="NCBI"></category></entry><entry><title>Jupyter Notebookをリモートサーバーで利用し、ローカルのブラウザで確認する"</title><link href="https://naoto-yamaguchi.github.io/site/remote_jupyternotebook.html" rel="alternate"></link><published>2019-02-20T00:00:00+09:00</published><updated>2019-02-20T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-20:/site/remote_jupyternotebook.html</id><summary type="html">&lt;p&gt;Jupyter Notebook利用の備忘録&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630601567_jupyter.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h3&gt;動機&lt;/h3&gt;
+&lt;p&gt;自分はこれしかやったことがないので、他にも試してみて、追記したいと思います。&lt;/p&gt;</content><category term="Bioinfo"></category><category term="Bioinfo"></category><category term="生物情報"></category><category term="NCBI"></category></entry><entry><title>Jupyter Notebookをリモートサーバーで利用し、ローカルのブラウザで確認する"</title><link href="https://naoto-yamaguchi.github.io/site/python/remote_jupyternotebook.html" rel="alternate"></link><published>2019-02-20T00:00:00+09:00</published><updated>2019-02-20T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-20:/site/python/remote_jupyternotebook.html</id><summary type="html">&lt;p&gt;Jupyter Notebook利用の備忘録&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630601567_jupyter.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h3&gt;動機&lt;/h3&gt;
 &lt;p&gt;データ分析で大量のデータを扱う際、ローカルの  コンピューターではなく  リモートサーバーにダウンロードなどを行うことがありました。そのデータを分析するために、Jupyter Notebook を利用したかったのですが、 ローカルで使えるだけではデータを参照できないので、データがおかれているリモートサーバーで  使えるようにする必要がありました。やりたいことは以下のような感じです。
 http://starpentagon.net/analytics/remote_jupyter_notebook/&lt;/p&gt;
 &lt;h3&gt;参考&lt;/h3&gt;
 &lt;p&gt;サムネイル画像は&lt;a href="https://en.wikipedia.org/wiki/Project_Jupyter"&gt;こちら&lt;/a&gt;より引用&lt;/p&gt;
 &lt;h3&gt;Step1: リモートサーバーに Jupyter Notebook をインストール&lt;/h3&gt;
 &lt;p&gt;リモートサーバーにおける権限などに注意する必要があります。おそらく&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ pip install jupyter --user
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ pip install jupyter --user
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;で十分ですが、自分は anaconda をインストールしました。このページの Linux でのインストール方法を参考にしました。
 https://qiita.com/t2y/items/2a3eb58103e85d8064b6
 https://stackoverflow.com/questions/38080407/how-can-i-install-the-latest-anaconda-with-wget&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ wget http://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ wget http://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh
 $ bash Anaconda3-4.2.0-Linux-x86_64.sh
 &lt;span class="c1"&gt;#PATHの設定&lt;/span&gt;
 ~/.bash_profileに
 &lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/home/yamaguchi/anaconda3/bin:PATH
 &lt;span class="c1"&gt;#を追記&lt;/span&gt;
 $ &lt;span class="nb"&gt;source&lt;/span&gt; ~/.bash_profile
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h3&gt;Step2: サーバー側の設定&lt;/h3&gt;
 &lt;p&gt;基本的にこちらを参考にしました。
 http://starpentagon.net/analytics/remote_jupyter_notebook/&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;ipython3&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;ipython3&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;notebook.auth&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;passwd&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;passwd&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="c1"&gt;# ここでパスワードを入力し、出力されたsha1値をコピー&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;quit&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;~/.jupyter/jupyter_notebook_config.py を変更。なければ、&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ jupyter notebook --generate-config
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ jupyter notebook --generate-config
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;~/.jupyter/jupyter_notebook_config.py を開き&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;c&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;NotebookApp&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ip&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;*&amp;#39;&lt;/span&gt;
-&lt;span class="k"&gt;c&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;NotebookApp&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;open_browser&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;False&lt;/span&gt;
-&lt;span class="k"&gt;c&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;NotebookApp&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;port&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;8888&lt;/span&gt;
-&lt;span class="k"&gt;c&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;NotebookApp&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;password&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;sha1:XXXXXXX&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt; &lt;span class="err"&gt;先ほど記録した&lt;/span&gt;&lt;span class="n"&gt;sha1値を記載&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;c.NotebookApp.ip = &amp;#39;*&amp;#39;&lt;/span&gt;
+&lt;span class="err"&gt;c.NotebookApp.open_browser = False&lt;/span&gt;
+&lt;span class="err"&gt;c.NotebookApp.port = 8888&lt;/span&gt;
+&lt;span class="err"&gt;c.NotebookApp.password = u&amp;#39;sha1:XXXXXXX&amp;#39; # 先ほど記録したsha1値を記載&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;以下のように設定。&lt;/p&gt;
 &lt;p&gt;これにて設定終了。 自分の場合、一旦 ssh 接続を切って、&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;ssh&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;L&lt;/span&gt; &lt;span class="mi"&gt;8888&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;localhost&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;8888&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;username&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;@&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;ip&lt;/span&gt; &lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;ssh -L 8888:localhost:8888 &amp;lt;username&amp;gt;@&amp;lt;ip address&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;で再度リモートサーバーに接続し、&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;jupyter&lt;/span&gt; &lt;span class="n"&gt;notebook&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;jupyter notebook&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;を実行し、起動。&lt;/p&gt;
 &lt;p&gt;クライアント側のブラウザから、
 &lt;code&gt;http://localhost:8888&lt;/code&gt;にアクセス。jupyter notebook ぽい画面が表示され、sha1 値  生成時に入力したパスワード入力すると、認証が成功し、クライアント側のブラウザからリモートサーバー上で動く Jupyter Notebook を利用できます。&lt;/p&gt;
 &lt;h3&gt;参考&lt;/h3&gt;
-&lt;p&gt;https://qiita.com/Miggy/items/5466a2c1e968602f3ebe&lt;/p&gt;</content><category term="Python SSh"></category></entry></feed>
+&lt;p&gt;https://qiita.com/Miggy/items/5466a2c1e968602f3ebe&lt;/p&gt;</content><category term="Python"></category><category term="Python SSh"></category></entry></feed>

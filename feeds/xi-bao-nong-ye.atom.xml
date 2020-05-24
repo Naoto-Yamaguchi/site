@@ -1,5 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'zz_blog - 細胞農業</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/xi-bao-nong-ye.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-06-20T00:00:00+09:00</updated><entry><title>細胞農業について知りたかったら。情報源は...(if you would like to know about cellular agriculture)</title><link href="https://naoto-yamaguchi.github.io/site/src_of_cellagri_info.html" rel="alternate"></link><published>2019-06-20T00:00:00+09:00</published><updated>2019-06-20T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-20:/site/src_of_cellagri_info.html</id><summary type="html">&lt;p&gt;細胞農業について&lt;/p&gt;</summary><content type="html">&lt;h1&gt;目次&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog - 細胞農業</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/xi-bao-nong-ye.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-10-03T00:00:00+09:00</updated><subtitle>nafoto'z_blog</subtitle><entry><title>細胞農業とは</title><link href="https://naoto-yamaguchi.github.io/site/xi-bao-nong-ye/what_is_cellular_agriculture.html" rel="alternate"></link><published>2019-10-03T00:00:00+09:00</published><updated>2019-10-03T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-10-03:/site/xi-bao-nong-ye/what_is_cellular_agriculture.html</id><summary type="html">&lt;p&gt;細胞農業とは&lt;/p&gt;</summary><content type="html">&lt;h1&gt;目次&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#motivation"&gt;動機、目的&lt;/a&gt;です。
+そして、これに加わる第6の食糧生産方法が、今回紹介した「培養」なのです。&lt;/li&gt;
+&lt;li&gt;&lt;a href="#what_is_cellular_agriculture"&gt;細胞農業とは？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#references"&gt;参考&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id="motivation"&gt;
+
+# 概要、動機
+
+&lt;/div&gt;
+
+&lt;div id="what_is_cellular_agriculture"&gt;
+
+# 培養肉って？〜細胞農業による食糧生産〜
+
+&lt;/div&gt;
+
+&lt;p&gt;皆さん、「細胞農業」という言葉はご存知ですか？恐らくほとんどの人が聞いたことがないでしょう。では、「培養肉」もしくは「人工肉」はどうでしょうか？これなら聞いたことがあるという人もいると思います。
+一方、聞いたことはあってもどういうものか詳しくは知らないという方が大半なのではないかと思います。
+そんな皆さんにあまり馴染みのない「培養肉」そして「細胞農業」についてお話したいと思います。&lt;/p&gt;
+&lt;h2&gt;培養肉事例の紹介&lt;/h2&gt;
+&lt;p&gt;いきなり培養肉と言われてもピンとこない方もいるかもしれないので、具体的な例から見ていきましょう。&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/aleph_farms_steak.png"&gt;
+&lt;img src="images/integriculture_foie_gras.png"&gt;&lt;/p&gt;
+&lt;p&gt;これは、左がステーキ肉、右がフォアグラです。&lt;/p&gt;
+&lt;p&gt;どちらも本物の肉です。本物の肉、なのですが、動物を屠殺場で殺して調理した肉ではありません。これは「細胞培養」という技術を用いて実験室で作られた肉なのです。
+ざっくり言うと、細胞=体を構成する基本単位、培養=細胞に栄養を与えを育てること、です。
+牛や豚から採取した筋肉細胞を培養して上手に増やすと我々が普段食べているミンチ肉やステーキ肉のようになりますし、鶏の肝臓細胞をとってきて上手く培養するとフォアグラになります。
+今まで動物を育てて出来上がった肉をとって食べていましたが、培養肉では、発想が異なり、動物からとってきた細胞を動物の体外で育ててそれを肉として食べるということです。
+このようにして作られたのが上の写真に写っている肉なのです。
+1枚目の写真はイスラエル発のスタートアップ、Aleph Farmsが2019年8月に発表した培養ステーキ肉、2枚目の写真は日本発のスタートアップ、Integriculture, Inc.が同じ8月に発表した培養フォアグラです。&lt;/p&gt;
+&lt;p&gt;とても美味しそうです。実際、これらの肉は一流のシェフによって調理され試食会が行われたそうですが、とても美味しかったらしいです。（食べてみたい...）&lt;/p&gt;
+&lt;p&gt;やはり何か不気味に思う人もいるかもしれませんが、この技術は特段驚くほどのものではありません。
+培養（=細胞を育てる）操作は、生物学や医学などの研究において日常的に使われているものであります。
+何か魔法をかけている訳でもありません。これは、生物の力を利用したものなのです。
+家庭菜園に馴染みのある人ならわかるかもしれませんが、豆苗やネギの根っこを水につけるとまた育ってきて、再度収穫できることがありますよね。再生野菜（リボーンベジタブル、略してリボベジ）と呼ぶらしいのですが、培養肉でやっていることのイメージはこれに大変近いです。
+これらの野菜は水につけておくだけですが、肉の場合は、細胞が育つために必要な栄養が揃った環境で培養することで、同じように育て増やすことができます。&lt;/p&gt;
+&lt;p&gt;生物の力を利用したもう1つの例は、「発酵」です。
+発酵とは、目に見えない微生物が食べ物など有機物を分解し、人間にとって有益なものになることです。人間にとってマイナスなものになる場合は腐敗と呼ばれることが多いです。（実は発酵と腐敗の分類は人間の主観によるものなのです）
+人間は長い歴史の中で、「人間に有益な微生物」を見つけ、そいつらが気持ちよく働ける環境をつくる技術を開発してきました。
+ご存知の通り日本は発酵大国であり、醤油、納豆、お酒、パン、チーズ、ヨーグルトなど発酵によって作られた美味しい食べ物を日常的に食べています。
+こう見てみると、生物の力を利用し食料を生産することははるか昔からやられてきたことであり、我々日本人も比較的馴染みの深いものであるはずです。&lt;/p&gt;
+&lt;p&gt;ここまでの話を含めて整理してみます。
+人類がこれまでの歴史でも用いてきた食料供給方法は大きく分けて5つあります。狩猟、栽培、飼育、合成、発酵(醸造)です。
+&lt;img src="images/food_production_method.png"&gt;&lt;/p&gt;
+&lt;p&gt;そして、これに加わる第6の食糧生産方法が、今回紹介した「培養」なのです。
+この培養を利用して、食品（肉、牛乳、卵、魚など）や革製品、それに関わる風味、芳香などを、作り出すことを目指す分野が細胞農業なのです。
+そのため、細胞農業の対象は牛や鶏の肉だけにとどまりません、エビなどの魚介類だったり、酵母を培養してタンパク質を作らせることで、普通の牛乳や卵と分子レベルで同じタンパク質を作ることができます。また皮革製品や香料なども作ることができます。
+このように、新しい食糧生産方法が細胞農業であり、その中の培養肉が最近注目を集めているのです。&lt;/p&gt;
+&lt;p&gt;次回は、なぜ現在そのようなトレンドが盛んになっているのか、世界の代替タンパク質市場の現状と共に、細胞農業が注目される理由について考えたいと思います。&lt;/p&gt;
+&lt;div id="references"&gt;
+
+# 参考
+
+&lt;/div&gt;</content><category term="細胞農業"></category><category term="細胞農業"></category><category term="Cellular Agriculture"></category></entry><entry><title>細胞農業について知りたかったら。情報源は...(if you would like to know about cellular agriculture)</title><link href="https://naoto-yamaguchi.github.io/site/xi-bao-nong-ye/src_of_cellagri_info.html" rel="alternate"></link><published>2019-06-20T00:00:00+09:00</published><updated>2019-06-20T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-20:/site/xi-bao-nong-ye/src_of_cellagri_info.html</id><summary type="html">&lt;p&gt;細胞農業について&lt;/p&gt;</summary><content type="html">&lt;h1&gt;目次&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;動機、対象&lt;/li&gt;
 &lt;li&gt;細胞農業とは？&lt;/li&gt;
@@ -122,7 +178,7 @@
 &lt;h2&gt;畜産業と肉の消費量を減らすことについて&lt;/h2&gt;
 &lt;p&gt;以下にあげるのはほんの一部です。
 * &lt;a href="http://www.cowspiracy.com/"&gt;Cowspiracy&lt;/a&gt;
-* &lt;a href="https://www.youtube.com/watch?v=NxvQPzrg2Wg&amp;amp;t=1s"&gt;Kurzgesaght - In a Nutshell&lt;/a&gt;&lt;/p&gt;</content><category term="好きなもの"></category><category term="生物"></category><category term="細胞農業"></category><category term="Cellular Agriculture"></category></entry><entry><title>記事翻訳 ~GFI Research Grants Update: Introduction to Cell-Based Meat Research Projects~</title><link href="https://naoto-yamaguchi.github.io/site/cell_based_meat_research_projects.html" rel="alternate"></link><published>2019-06-07T00:00:00+09:00</published><updated>2019-06-07T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-07:/site/cell_based_meat_research_projects.html</id><summary type="html">&lt;p&gt;培養肉研究プロジェクト紹介の英語記事翻訳&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875522300_cell_based_meat_grant_programs.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;目次 (Table of Contents)&lt;/h2&gt;
+* &lt;a href="https://www.youtube.com/watch?v=NxvQPzrg2Wg&amp;amp;t=1s"&gt;Kurzgesaght - In a Nutshell&lt;/a&gt;&lt;/p&gt;</content><category term="細胞農業"></category><category term="好きなもの"></category><category term="生物"></category><category term="細胞農業"></category><category term="Cellular Agriculture"></category></entry><entry><title>記事翻訳 ~GFI Research Grants Update: Introduction to Cell-Based Meat Research Projects~</title><link href="https://naoto-yamaguchi.github.io/site/xi-bao-nong-ye/cell_based_meat_research_projects.html" rel="alternate"></link><published>2019-06-07T00:00:00+09:00</published><updated>2019-06-07T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-07:/site/xi-bao-nong-ye/cell_based_meat_research_projects.html</id><summary type="html">&lt;p&gt;培養肉研究プロジェクト紹介の英語記事翻訳&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559875522300_cell_based_meat_grant_programs.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;目次 (Table of Contents)&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#introduction"&gt;紹介&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#motivation"&gt;動機、目的&lt;/a&gt;&lt;/li&gt;
@@ -220,7 +276,7 @@ Sullivan博士の冷凍農場は、ますます拡大する細胞株のリポジ
 &lt;p&gt;&lt;a href="https://www.gfi.org/gfideas-food-financials"&gt;Cell-Based Research Projects&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;またGFI主催のカンファレンスが9月にSFであります。
 &lt;a href="https://goodfoodconference.com/"&gt;The Good Food Conference&lt;/a&gt;
-参加を熱望しており、予定調整中です。一緒に行く人がいたら行きましょう(笑）。&lt;/p&gt;</content><category term="細胞農業"></category><category term="記事翻訳"></category><category term="研究"></category><category term="翻訳"></category></entry><entry><title>細胞農業に取り組むスタートアップまとめ</title><link href="https://naoto-yamaguchi.github.io/site/startups_in_cellular_agriculture.html" rel="alternate"></link><published>2019-06-07T00:00:00+09:00</published><updated>2019-06-07T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-07:/site/startups_in_cellular_agriculture.html</id><summary type="html">&lt;p&gt;細胞農業に取り組むスタートアップまとめ&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
+参加を熱望しており、予定調整中です。一緒に行く人がいたら行きましょう(笑）。&lt;/p&gt;</content><category term="細胞農業"></category><category term="細胞農業"></category><category term="記事翻訳"></category><category term="研究"></category><category term="翻訳"></category></entry><entry><title>細胞農業に取り組むスタートアップまとめ</title><link href="https://naoto-yamaguchi.github.io/site/xi-bao-nong-ye/startups_in_cellular_agriculture.html" rel="alternate"></link><published>2019-06-07T00:00:00+09:00</published><updated>2019-06-07T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-07:/site/xi-bao-nong-ye/startups_in_cellular_agriculture.html</id><summary type="html">&lt;p&gt;細胞農業に取り組むスタートアップまとめ&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機&lt;/h1&gt;
 &lt;p&gt;色々と調べる中で、様々な会社が出てきて頭の中が混乱したため、それぞれの会社が何をやっているのかを軽く整理する必要性を感じたから。
 とはいえ、以下の参考にあるような記事を見るのが一番。この記事は、自分が理解している範囲を日本語でまとめたもの程度。&lt;/p&gt;
 &lt;p&gt;随時追記していきたい。&lt;/p&gt;
@@ -443,7 +499,7 @@ Sullivan博士の冷凍農場は、ますます拡大する細胞株のリポジ
 &lt;li&gt;生命科学実験自動化のためのプラットフォーム(API?)開発。共通の言語で、様々な生命科学実験を自動でおこなうロボットへの指示を出せるように。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="細胞農業"></category><category term="スタートアップ"></category><category term="Cellular Agriculture"></category></entry><entry><title>細胞農業に興味がある理由(The reason why I'm interested in cellular agriculture)</title><link href="https://naoto-yamaguchi.github.io/site/interest_in_cellular_agriculture.html" rel="alternate"></link><published>2019-06-01T00:00:00+09:00</published><updated>2019-06-01T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-01:/site/interest_in_cellular_agriculture.html</id><summary type="html">&lt;p&gt;細胞農業について&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="細胞農業"></category><category term="細胞農業"></category><category term="スタートアップ"></category><category term="Cellular Agriculture"></category></entry><entry><title>細胞農業に興味がある理由(The reason why I'm interested in cellular agriculture)</title><link href="https://naoto-yamaguchi.github.io/site/xi-bao-nong-ye/interest_in_cellular_agriculture.html" rel="alternate"></link><published>2019-06-01T00:00:00+09:00</published><updated>2019-06-01T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-06-01:/site/xi-bao-nong-ye/interest_in_cellular_agriculture.html</id><summary type="html">&lt;p&gt;細胞農業について&lt;/p&gt;</summary><content type="html">&lt;h1&gt;動機、対象&lt;/h1&gt;
 &lt;p&gt;自分の興味があるプロジェクトについて、英語で記述する機会がありました。
 そこで他人に見せることを意識しながら、自分が興味ある学問分野について書いてみました。チェックをまだ受けておらず、きちんと修正していない文なので、間違い等あるかもしれませんが、ご容赦下さい。I appriciate if you could correct me if I am wrong.
 全ての人&lt;/p&gt;
@@ -473,4 +529,4 @@ Through the film, I understood that not only animal agriculture is unsustainable
 I have been hoping to be engaged in the projects which have a huge impact on human history and their way of thinking. As I did some research about cellular agriculture, I came to feel cellular agriculture is the subject that I need to pursue. The main reasons are three followings I mention below. &lt;/p&gt;
 &lt;p&gt;If cellular agriculture technology develops, most people will eat beef, pork, chicken and fish meat made from animal cells in a laboratory, which is an innovative change in a way people eat.
 In this topic, I will be able to make use of my specialization and tackle sustainability issues.&lt;/p&gt;
-&lt;p&gt;TBE...&lt;/p&gt;</content><category term="好きなもの"></category><category term="生物"></category><category term="細胞農業"></category></entry></feed>
+&lt;p&gt;TBE...&lt;/p&gt;</content><category term="細胞農業"></category><category term="好きなもの"></category><category term="生物"></category><category term="細胞農業"></category></entry></feed>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'zz_blog - Bioinfo</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/bioinfo.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-02-22T00:00:00+09:00</updated><entry><title>NCBIからゲノムデータを取得する方法</title><link href="https://naoto-yamaguchi.github.io/site/how_to_get_genome_data_from_ncbi.html" rel="alternate"></link><published>2019-02-22T00:00:00+09:00</published><updated>2019-02-22T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-22:/site/how_to_get_genome_data_from_ncbi.html</id><summary type="html">&lt;p&gt;ゲノムデータ取得&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630593492_ncbi.png" width=150 height=150&gt;&lt;/p&gt;</summary><content type="html">&lt;h3&gt;動機&lt;/h3&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>nafoto'z_blog - Bioinfo</title><link href="https://naoto-yamaguchi.github.io/site/" rel="alternate"></link><link href="https://naoto-yamaguchi.github.io/site/feeds/bioinfo.atom.xml" rel="self"></link><id>https://naoto-yamaguchi.github.io/site/</id><updated>2019-02-22T00:00:00+09:00</updated><subtitle>nafoto'z_blog</subtitle><entry><title>NCBIからゲノムデータを取得する方法</title><link href="https://naoto-yamaguchi.github.io/site/bioinfo/how_to_get_genome_data_from_ncbi.html" rel="alternate"></link><published>2019-02-22T00:00:00+09:00</published><updated>2019-02-22T00:00:00+09:00</updated><author><name>Naoto Yamaguchi</name></author><id>tag:naoto-yamaguchi.github.io,2019-02-22:/site/bioinfo/how_to_get_genome_data_from_ncbi.html</id><summary type="html">&lt;p&gt;ゲノムデータ取得&lt;br&gt;&lt;img src="https://paper-attachments.dropbox.com/s_8FAC27AC251845FE76C63F0EAF156DF8B3F4D3C17D70B16D9D9AEE81A162B247_1559630593492_ncbi.png" width=150 height=150&gt;&lt;/p&gt;</summary><content type="html">&lt;h3&gt;動機&lt;/h3&gt;
 &lt;p&gt;&amp;lt;注意&amp;gt; 要修正の記事です&lt;/p&gt;
 &lt;p&gt;NCBI からゲノムデータを取ってきたい時どうすれば良いかわからなかった。ftp を知らなかったけど、ダウンロードできました！&lt;/p&gt;
 &lt;h3&gt;参考&lt;/h3&gt;
@@ -7,22 +7,22 @@
 &lt;h3&gt;Step1: 取得したいデータの ftp パスを手に入れる&lt;/h3&gt;
 &lt;p&gt;NCBI にどういうデータがどういう風に  あるかよくわかっていませんが、とりあえず自分がやった範囲では、ftp パスを用いて、圧縮された fna ファイルを  ダウンロードし、解凍しました。(解凍せずに中身を見ようとして、文字コードエラーが出たので注意！)
 解凍せずに扱おうとしたところ、&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;UnicodeDecodeError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;utf-8&amp;#39;&lt;/span&gt; &lt;span class="n"&gt;codec&lt;/span&gt; &lt;span class="n"&gt;can&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt; &lt;span class="n"&gt;decode&lt;/span&gt; &lt;span class="n"&gt;byte&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="n"&gt;x8b&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="k"&gt;position&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;UnicodeDecodeError: &amp;#39;utf-8&amp;#39; codec can&amp;#39;t decode byte 0x8b in position 1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;というエラーになりました。&lt;/p&gt;
 &lt;p&gt;zip ファイルの解凍は、&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ gunzip
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ gunzip
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;でできました。&lt;/p&gt;
 &lt;p&gt;流れとしては、例えば、~/data/に GCF_000010525.1.fna.gz というファイル名でダウンロードする場合、&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ wget -O ~/data/GCF_000010525.1.fna.gz ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/010/525/GCF_000010525.1_ASM1052v1/GCF_000010525.1_ASM1052v1_cds_from_genomic.fna.gz
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ wget -O ~/data/GCF_000010525.1.fna.gz ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/010/525/GCF_000010525.1_ASM1052v1/GCF_000010525.1_ASM1052v1_cds_from_genomic.fna.gz
 $ gunzip
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;これで GCF_000010525.1.fna ファイルを見たり読み込ませたりして解析に用いることができます！&lt;/p&gt;
-&lt;p&gt;自分はこれしかやったことがないので、他にも試してみて、追記したいと思います。&lt;/p&gt;</content><category term="Bioinfo"></category><category term="生物情報"></category><category term="NCBI"></category></entry></feed>
+&lt;p&gt;自分はこれしかやったことがないので、他にも試してみて、追記したいと思います。&lt;/p&gt;</content><category term="Bioinfo"></category><category term="Bioinfo"></category><category term="生物情報"></category><category term="NCBI"></category></entry></feed>
